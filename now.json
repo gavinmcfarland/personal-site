@@ -1,6 +1,7 @@
 {
     "name": "test",
     "version": 2,
+    "build": "npm build",
     "builds": [{
         "src": "dist/server/main.js",
         "use": "@now/node-server"
