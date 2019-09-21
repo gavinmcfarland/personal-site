@@ -1,7 +1,7 @@
 var usersService = require('./users');
 
-module.exports = function(app) {
-    app.get('/services/users', function(req, res) {
+module.exports = function (app) {
+    app.get('/services/users', function (req, res) {
         var pageIndex = req.query.pageIndex;
         if (typeof pageIndex === 'string') {
             pageIndex = parseInt(pageIndex, 10);
@@ -9,11 +9,13 @@ module.exports = function(app) {
             pageIndex = 0;
         }
 
-        usersService.getUsers({ pageIndex: pageIndex })
-            .then(function(data) {
+        usersService.getUsers({
+                pageIndex: pageIndex
+            })
+            .then(function (data) {
                 res.json(data);
             })
-            .catch(function(err) {
+            .catch(function (err) {
                 console.log(err);
                 res.status(500).send('Unable to load users');
             });

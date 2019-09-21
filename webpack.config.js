@@ -15,8 +15,6 @@ const isProd = NODE_ENV === "production";
 const isDev = !isProd;
 const markoPlugin = new MarkoPlugin();
 const spawnedServer = isDev && new SpawnServerPlugin();
-const PrerenderSPAPlugin = require('prerender-spa-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = [
   compiler({
@@ -44,13 +42,6 @@ module.exports = [
       new CSSExtractPlugin({
         filename: "[name].[contenthash:8].css"
       }),
-
-      // new PrerenderSPAPlugin({
-      //   // Required - The path to the webpack-outputted app to prerender.
-      //   staticDir: path.join(__dirname, "dist/client"),
-      //   // Required - Routes to render.
-      //   routes: ['/'],
-      // }),
       isProd && new OptimizeCssAssetsPlugin(),
       markoPlugin.browser
     ]
@@ -67,12 +58,9 @@ module.exports = [
       path: path.join(__dirname, "dist/server")
     },
     plugins: [
-      // Trying to pass variables that the template needs. Where do I get $__MARKO_MANIFEST__$ from?
       new webpack.DefinePlugin({
         "process.browser": undefined,
-        "process.env.BUNDLE": true,
-        'process.env': JSON.stringify(process.env),
-        '$__MARKO_MANIFEST__$': true
+        "process.env.BUNDLE": true
       }),
       new webpack.BannerPlugin({
         banner: 'require("source-map-support").install();',
@@ -81,19 +69,6 @@ module.exports = [
       new CSSExtractPlugin({
         filename: "[name].[contenthash:8].css"
       }),
-      // Can't get variables to be available to the template
-      new HtmlWebpackPlugin({
-        inject: false,
-        template: path.resolve(__dirname, 'src/pages/home/index.js'),
-        filename: path.resolve(__dirname, 'dist/index.html')
-      }),
-      // new HtmlWebpackPlugin(),
-      // new PrerenderSPAPlugin({
-      //   // Required - The path to the webpack-outputted app to prerender.
-      //   staticDir: path.join(__dirname, "dist/client"),
-      //   // Required - Routes to render.
-      //   routes: ['/'],
-      // }),
       isDev && spawnedServer,
       markoPlugin.server
     ]
@@ -131,7 +106,7 @@ function compiler(config) {
           loader: "file-loader",
           options: {
             // File assets from server & browser compiler output to client folder.
-            outputPath: "../client"
+            outputPath: ""
           }
         }
       ]

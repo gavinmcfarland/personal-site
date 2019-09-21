@@ -1,0 +1,25 @@
+{
+    "name": "test",
+    "version": 2,
+    "builds": [{
+        "src": "dist/server/main.js",
+        "use": "@now/node-server"
+    }, {
+        "src": "dist/client/**",
+        "use": "@now/static"
+    }],
+    "routes": [{
+            "src": "/static/(.*)",
+            "dest": "dist/client/$1",
+            "headers": {
+                "cache-control": "s-maxage=604800"
+            },
+            "methods": ["GET"]
+        },
+        {
+            "src": "/(.*)",
+            "dest": "dist/server/main.js",
+            "methods": ["GET"]
+        }
+    ]
+}

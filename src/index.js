@@ -19,6 +19,10 @@ initServices(app);
 import HomePage from "./pages/home";
 app.get("/", HomePage);
 
+// Map the "/" route to the home page
+import Test from "./pages/test";
+app.get("/test", Test);
+
 // Start the server
 app.listen(port, err => {
   if (err) {
