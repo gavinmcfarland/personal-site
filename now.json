@@ -1,20 +1,16 @@
 {
-    "name": "test",
+    "name": "marko",
     "version": 2,
-    "build": "npm build",
     "builds": [{
-        "src": "dist/server/main.js",
-        "use": "@now/node-server"
-    }, {
         "src": "dist/client/**",
         "use": "@now/static"
+    }, {
+        "src": "dist/server/main.js",
+        "use": "@now/node-server"
     }],
     "routes": [{
             "src": "/static/(.*)",
             "dest": "dist/client/$1",
-            "headers": {
-                "cache-control": "s-maxage=604800"
-            },
             "methods": ["GET"]
         },
         {

@@ -23,6 +23,10 @@ app.get("/", HomePage);
 import Test from "./pages/test";
 app.get("/test", Test);
 
+// Map the "/" route to the home page
+import Cv from "./pages/cv";
+app.get("/cv", Cv);
+
 // Start the server
 app.listen(port, err => {
   if (err) {

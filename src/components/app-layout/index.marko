@@ -1,23 +1,41 @@
-<!doctype html>
+import imgCA from "./CA.png";
+import logo from "./logo.svg";
+
+style {
+  @import "../../styles";
+}
+
+
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width"/>
     <title>
-      <${data.title}/>
+      <${input.title}/>
     </title>
     <!-- <link> tags to include optimized CSS URLs will be included below: -->
-    <${data.styles}/>
+    <${input.styles}/>
   </head>
   <body>
     <div class="container">
       <h1>
-        <${data.title}/>
+        <${input.title}/>
       </h1>
-      <main id="main">
-        <${data.body}/>
-      </main>
+      <header.flex>
+        <a href="/"><img src=logo></a>
+        <img src=imgCA/>
+        <nav.flex.flex-grow.justify-end style="line-height: 32px;">
+            <a.ml-8 href="/hello/routing">Routes</a>
+            <a.ml-8 href="/layouts">Layouts</a>
+			<a.ml-8 href="/test">Test</a>
+        </nav>
+    </header>
+    <main.max-w-2.mx-auto>
+      <${input.body}/>
+    </main>
     </div>
     <!-- <script> tags to include optimized JS URLs will be included below: -->
-    <${data.scripts}/>
+    <${input.scripts}/>
   </body>
 </html>

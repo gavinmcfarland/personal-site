@@ -27,6 +27,7 @@ module.exports = [
     },
     output: {
       filename: "[name].[contenthash:8].js",
+      // chunkFilename: '[name].[contenthash:8].chunk.js',
       path: path.join(__dirname, "dist/client")
     },
     devServer: isDev ? {
@@ -37,7 +38,7 @@ module.exports = [
     } : undefined,
     plugins: [
       new webpack.DefinePlugin({
-        "process.browser": true,
+        "process.browser": true
       }),
       new CSSExtractPlugin({
         filename: "[name].[contenthash:8].css"
@@ -94,15 +95,15 @@ function compiler(config) {
           loader: "@marko/webpack/loader"
         },
         {
-          test: /\.(less|css)$/,
-          use: [CSSExtractPlugin.loader, "css-loader", "less-loader"]
+          test: /\.(css)$/,
+          use: [CSSExtractPlugin.loader, "css-loader", 'postcss-loader']
         },
+        // {
+        //   test: /\.svg/,
+        //   loader: "svg-url-loader"
+        // },
         {
-          test: /\.svg/,
-          loader: "svg-url-loader"
-        },
-        {
-          test: /\.(jpg|jpeg|gif|png)$/,
+          test: /\.(jpg|jpeg|gif|png|svg)$/,
           loader: "file-loader",
           options: {
             // File assets from server & browser compiler output to client folder.
