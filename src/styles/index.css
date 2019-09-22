@@ -1,3 +1,76 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import 'karamel';
+@import './typography';
+@import './code-syntax';
+
+/* Custom properties */
+
+:root {
+	--flex-grow: 1;
+}
+
+/* Utilities */
+
+@responsive {
+	.max-w-2 {
+		width: 100%;
+	}
+	.flex {
+		display: flex;
+	}
+	.flex > * {
+		flex-grow: 1;
+	}
+	.flex-o > * {
+		flex-basis: auto;
+	}
+	.w-shrink {
+		flex-grow: 0 !important;
+	}
+	.w-grow {
+		flex-grow: 1 !important;
+	}
+	.w-200 {
+		width: 200px;
+		flex-grow: 0 !important;
+		flex-shrink: 0;
+	}
+	.cols-2 {
+		column-count: 2;
+	}
+	.gap-2 > * {
+		margin-bottom: 20px;
+	}
+	.remove-margin > * {
+		margin-top: unset;
+		margin-bottom: unset;
+	}
+	.remove-margin > * > :first-child {
+		margin-top: unset;
+	}
+
+	.remove-margin > * > :last-child {
+		margin-bottom: unset;
+	}
+	.bt {
+		border-top-width: 1px;
+	}
+	.br {
+		border-right-width: 1px;
+	}
+	.bb {
+		border-bottom-width: 1px;
+	}
+	.bl {
+		border-left-width: 1px;
+	}
+	.flex-shrink > * {
+		flex-shrink: 0;
+	}
+	.w-viewport {
+		padding-left: inherit;
+		padding-right: inherit;
+	}
+}

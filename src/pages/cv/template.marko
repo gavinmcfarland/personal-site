@@ -1,37 +1,46 @@
-<app-layout>
+<app-layout class="page__cv">
 	<@title>Layouts</@title>
 	<@body>
-    <div>
-		<h2>Profile</h2>
-		<!-- <markdown> -->
-		An astute and versatile designer with a proven track record of creating successful services and products. I have a strong commitment to delivering intuitive designs for mobile applications and websites, using the most appropriate methods to validate choices where necessary.
-		<!-- </markdown> -->
-    </div>
-    <div>
-		<h2>Core Skills</h2>
-		<!-- <markdown> -->
-		- Visual design
-		- Interaction design
-		- Prototyping
-		- Frontend coding (HTML, CSS, JS)
-		- Facilitating user research
-		- Workshops
-		- Agile best practices
-		- Figma, Sketch, Illustrator, Photoshop
-		- Invision, Marvel, Axure
-
-		<!-- </markdown> -->
-    </div>
-    <div>
-		<h2>Highlights</h2>
-		<!-- <markdown> -->
-		- Aliquam magna tortor, pellentesque eget ullamcorper a, feugiat nec justo. Morbi erat sapien, tempor egestas eros vel.
-		- Nunc efficitur semper lorem, nec sodales dolor pharetra a. Quisque aliquam sed lacus non aliquet. Fusce facilisis gravida gravida leo hendrerit quis.
-		- Vestibulum sapien dolor, porttitor at nulla nec, viverra porta risus. Donec pharetra est nec vehicula eleifend. Vestibulum non sodales est.
-		- Cras efficitur egestas quam ut vestibulum. Nullam sit amet velit lectus. Quisque viverra convallis mi, id elementum nulla interdum nec. Praesent varius varius tortor
-		- Cras efficitur egestas quam ut vestibulum. Nullam sit amet velit lectus. Quisque viverra convallis mi, id elementum nulla interdum nec. Praesent varius varius tortor
-		- Nunc tincidunt at nisi id tristique. Cras lobortis ultrices nibh, et fermentum nibh interdum sed. Integer facilisis convallis metus. Curabitur eu vulputate nisl. Maecenas tempus, orci sed efficitur egestas, turpis ligula pretium sapien.
-		<!-- </markdown> -->
-    </div>
-  </@body>
+		<Section>
+			<h2>Profile</h2>
+			<Markdown>An astute and versatile designer with a proven track record of creating successful services and products. I have a strong commitment to delivering intuitive designs for mobile applications and websites, using the most appropriate methods to validate choices where necessary.</Markdown>
+		</Section>
+		<Section>
+			<h2>Core Skills</h2>
+			<Markdown>
+				- Visual design
+				- Interaction design
+				- Prototyping
+				- Frontend coding (HTML, CSS, JS)
+				- Facilitating user research
+				- Workshops
+				- Agile best practices
+				- Figma, Sketch, Illustrator, Photoshop
+				- Invision, Marvel, Axure
+			</Markdown>
+		</Section>
+		<Section>
+			<h2>Highlights</h2>
+			<Markdown>
+				- Aliquam magna tortor, pellentesque eget ullamcorper a, feugiat nec justo. Morbi erat sapien, tempor egestas eros vel.
+				- Nunc efficitur semper lorem, nec sodales dolor pharetra a. Quisque aliquam sed lacus non aliquet. Fusce facilisis gravida gravida leo hendrerit quis.
+				- Vestibulum sapien dolor, porttitor at nulla nec, viverra porta risus. Donec pharetra est nec vehicula eleifend. Vestibulum non sodales est.
+				- Cras efficitur egestas quam ut vestibulum. Nullam sit amet velit lectus. Quisque viverra convallis mi, id elementum nulla interdum nec. Praesent varius varius tortor
+				- Cras efficitur egestas quam ut vestibulum. Nullam sit amet velit lectus. Quisque viverra convallis mi, id elementum nulla interdum nec. Praesent varius varius tortor
+				- Nunc tincidunt at nisi id tristique. Cras lobortis ultrices nibh, et fermentum nibh interdum sed. Integer facilisis convallis metus. Curabitur eu vulputate nisl. Maecenas tempus, orci sed efficitur egestas, turpis ligula pretium sapien.
+			</Markdown>
+		</Section>
+	</@body>
 </app-layout>
+style {
+	@import "../../styles";
+
+	.page__cv {
+		& h2 {
+			@extend .f-caps, .f-0, .w-200;
+		}
+		section {
+			@extend .flex;
+		}
+	}
+}

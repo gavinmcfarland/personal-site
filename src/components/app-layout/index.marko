@@ -1,9 +1,4 @@
-import imgCA from "./CA.png"
 import logo from "./logo.svg"
-
-style {
-	@import "../../styles";
-}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,27 +11,56 @@ style {
 		<!-- <link> tags to include optimized CSS URLs will be included below: -->
 		<${input.styles}/>
 	</head>
-	<body>
-		<div class="container">
-			<h1>
-				<${input.title}/>
-			</h1>
-			<header.flex>
-				<a href="/">
-					<img src=logo/>
-				</a>
-				<img src=imgCA/>
-				<nav.flex.flex-grow.justify-end style="line-height: 32px;">
-					<a.ml-8 href="/hello/routing">Routes</a>
-					<a.ml-8 href="/layouts">Layouts</a>
-					<a.ml-8 href="/test">Test</a>
-				</nav>
-			</header>
-			<main.max-w-2.mx-auto>
-				<${input.body}/>
-			</main>
-		</div>
+	<body.px-10 class=input.class>
+		<header.p-10.w-viewport>
+			<a.w-shrink href="/">
+				<img src=logo/>
+			</a>
+			<!-- Hide for now until worked into design -->
+			<!-- <h1><${input.title}/></h1> -->
+			<nav>
+				<a.ml-8 href="/projects">Projects</a>
+				<a.ml-8 href="/about">About</a>
+				<a.ml-8 href="/cv">CV</a>
+			</nav>
+		</header>
+		<main.max-w-2.mx-auto>
+			<${input.body}/>
+		</main>
+		<footer.p-10.remove-margin.w-viewport>
+			<p>Limitless Loop &copy; 2019</p>
+			<nav style="line-height: 32px;">
+				<a.ml-8 href="/test">Twitter</a>
+			</nav>
+			<${input.footer}/>
+		</footer>
 		<!-- <script> tags to include optimized JS URLs will be included below: -->
 		<${input.scripts}/>
 	</body>
 </html>
+style {
+	@import "../../styles";
+
+	html {
+		height: 100%;
+	}
+
+	body {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		& > main {
+			@extend .w-grow;
+		}
+		& > header,
+		& > footer {
+			@extend .w-shrink, .flex;
+			justify-content: space-between;
+			line-height: 32px;
+		}
+		& > :matches(header, footer) > nav {
+			display: flex;
+			@extend .w-shrink;
+		}
+	}
+}
