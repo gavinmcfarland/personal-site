@@ -1,22 +1,21 @@
 {
-    "name": "marko",
-    "version": 2,
-    "builds": [{
-        "src": "dist/client/**",
-        "use": "@now/static"
-    }, {
-        "src": "dist/server/main.js",
-        "use": "@now/node-server"
-    }],
-    "routes": [{
-            "src": "/static/(.*)",
-            "dest": "dist/client/$1",
-            "methods": ["GET"]
-        },
-        {
-            "src": "/(.*)",
-            "dest": "dist/server/main.js",
-            "methods": ["GET"]
-        }
-    ]
+	"version": 2,
+	"builds": [{
+		"src": "dist/client/**",
+		"use": "@now/static"
+	}, {
+		"src": "dist/server/main.js",
+		"use": "@now/node-server"
+	}],
+	"routes": [{
+			"src": "/static/(.*)",
+			"dest": "dist/client/$1",
+			"methods": ["GET"]
+		},
+		{
+			"src": "/(.*)",
+			"dest": "dist/server/main.js",
+			"methods": ["GET"]
+		}
+	]
 }

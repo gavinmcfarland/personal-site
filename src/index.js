@@ -29,11 +29,11 @@ app.get("/cv", Cv);
 
 // Start the server
 app.listen(port, err => {
-  if (err) {
-    throw err;
-  }
+	if (err) {
+		throw err;
+	}
 
-  if (port !== "0") {
-    console.log(`Listening on port ${port}`);
-  }
+	if (port !== "0") {
+		console.log(`Listening on port ${port}`);
+	}
 });
