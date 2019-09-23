@@ -24,8 +24,11 @@ import Test from "./pages/test";
 app.get("/test", Test);
 
 // Map the "/" route to the home page
-import Cv from "./pages/cv";
-app.get("/cv", Cv);
+import Cv from "./pages/cv/template.marko";
+app.get("/cv", (req, res) => {
+	res.setHeader("Content-Type", "text/html; charset=utf-8");
+	Cv.render({}, res);
+});
 
 // Start the server
 app.listen(port, err => {
