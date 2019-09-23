@@ -1,12 +1,15 @@
 import express from "express";
+import slash from 'express-slash';
 
 const app = express();
 const port = process.env.PORT || 8080;
 
+app.enable('strict routing');
+
 // Enable gzip compression for all HTTP responses
 import compression from "compression";
 app.use(compression());
-
+app.use(slash());
 // Allow all of the generated files to be served up by Express
 import serveStatic from "serve-static";
 app.use("/static", serveStatic("dist/client"));
