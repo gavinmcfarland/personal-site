@@ -19,18 +19,29 @@ import initServices from "./services/routes";
 initServices(app);
 
 // Map the "/" route to the home page
-import HomePage from "./pages/home";
-app.get("/", HomePage);
-
-// Map the "/" route to the home page
-import Test from "./pages/test";
-app.get("/test", Test);
+import Home from "./pages/home/template.marko";
+app.get("/", (req, res) => {
+	res.setHeader("Content-Type", "text/html; charset=utf-8");
+	Home.render({}, res);
+});
 
 // Map the "/" route to the home page
 import Cv from "./pages/cv/template.marko";
 app.get("/cv", (req, res) => {
 	res.setHeader("Content-Type", "text/html; charset=utf-8");
 	Cv.render({}, res);
+});
+
+import Projects from "./pages/projects/template.marko";
+app.get("/projects", (req, res) => {
+	res.setHeader("Content-Type", "text/html; charset=utf-8");
+	Projects.render({}, res);
+});
+
+import About from "./pages/about/template.marko";
+app.get("/about", (req, res) => {
+	res.setHeader("Content-Type", "text/html; charset=utf-8");
+	About.render({}, res);
 });
 
 // Start the server

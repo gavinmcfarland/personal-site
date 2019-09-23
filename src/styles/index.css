@@ -44,14 +44,13 @@
 		margin-bottom: 20px;
 	}
 	.remove-margin > * {
-		margin-top: unset;
-		margin-bottom: unset;
+
 	}
-	.remove-margin > * > :first-child {
+	.remove-margin > :first-child {
 		margin-top: unset;
 	}
 
-	.remove-margin > * > :last-child {
+	.remove-margin > :last-child {
 		margin-bottom: unset;
 	}
 	.bt {

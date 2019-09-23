@@ -1,12 +1,18 @@
 import logo from "./logo.svg"
+import favicon from "./favicon.png"
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width"/>
+		<link rel="icon" href=favicon/>
 		<title>
-			<${input.title}/>
+			Gavin McFarland -
+			<if((input.title = "Home"))>Portfolio of Product Designer, Interaction Designer and Software Engineer</if>
+			<else>
+				<${input.title}/>
+			</else>
 		</title>
 		<!-- <link> tags to include optimized CSS URLs will be included below: -->
 		<${input.styles}/>
@@ -19,18 +25,20 @@ import logo from "./logo.svg"
 			<!-- Hide for now until worked into design -->
 			<!-- <h1><${input.title}/></h1> -->
 			<nav>
-				<a.ml-8 href="/projects">Projects</a>
 				<a.ml-8 href="/about">About</a>
-				<a.ml-8 href="/cv">CV</a>
 			</nav>
 		</header>
-		<main.max-w-4xl.mx-auto>
-			<${input.body}/>
+		<main.w-viewport>
+			<div.wrapper.mx-auto.max-w-4xl>
+				<${input.body}/>
+			</div>
 		</main>
-		<footer.p-10.remove-margin.w-viewport>
+		<footer.p-10.remove-margin.w-viewport.f-1>
 			<p>Limitless Loop &copy; 2019</p>
-			<nav style="line-height: 32px;">
-				<a.ml-8 href="/test">Twitter</a>
+			<nav>
+				<a.ml-8 href="https://github.com/limitlessloop">Github</a>
+				<a.ml-8 href="https://dribbble.com/limitlessloop">Dribbble</a>
+				<a.ml-8 href="https://twitter.com/gavinmcfarland">Twitter</a>
 			</nav>
 			<${input.footer}/>
 		</footer>
@@ -48,15 +56,30 @@ style {
 	body {
 		height: 100%;
 		display: flex;
+
 		flex-direction: column;
 		& > main {
 			@extend .w-grow;
+			padding-left: inherit;
+			padding-right: inherit;
+
+			display: flex;
+			justify-content: center;
+
+			& .wrapper {
+				box-sizing: content-box;
+				padding-left: inherit;
+				padding-right: inherit;
+				flex-basis: 100%;
+				flex-shrink: 0;
+			}
 		}
 		& > header,
 		& > footer {
 			@extend .w-shrink, .flex;
 			justify-content: space-between;
-			line-height: 32px;
+
+			align-items: center;
 		}
 		& > :matches(header, footer) > nav {
 			display: flex;

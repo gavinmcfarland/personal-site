@@ -27,7 +27,6 @@ module.exports = [
 		},
 		output: {
 			filename: "[name].[contenthash:8].js",
-			// chunkFilename: '[name].[contenthash:8].chunk.js',
 			path: path.join(__dirname, "dist/client")
 		},
 		devServer: isDev ? {
@@ -107,7 +106,8 @@ function compiler(config) {
 					loader: "file-loader",
 					options: {
 						// File assets from server & browser compiler output to client folder.
-						outputPath: ""
+						publicPath: '/static/',
+						outputPath: "../client"
 					}
 				}
 			]
