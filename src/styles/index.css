@@ -14,7 +14,7 @@
 /* Utilities */
 
 @responsive {
-	.max-w-2 {
+	.max-w-4xl {
 		width: 100%;
 	}
 	.flex {
