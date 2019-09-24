@@ -5,12 +5,13 @@ import API from 'static-api-generator'
 import Error404 from "./pages/404/template.marko";
 
 const api = new API({
-	blueprint: 'content/:year/:month/:post',
+	blueprint: 'content/:posts/:year/:month/:post',
 	outputPath: 'api'
 })
 
 api.generate({
-	endpoints: ['post']
+	endpoints: ['post'],
+	levels: ['post']
 })
 
 const app = express();
@@ -33,8 +34,22 @@ initServices(app);
 // Map the "/" route to the home page
 import Home from "./pages/home/template.marko";
 app.get("/", (req, res) => {
+
 	res.setHeader("Content-Type", "text/html; charset=utf-8");
-	Home.render({}, res);
+
+	let filePath = `${process.cwd()}/api/posts.json`;
+
+	let fileContent = ""
+	let nowJson = {}
+	if (fs.existsSync(filePath)) {
+		fileContent = fs.readFileSync(filePath).toString()
+		nowJson = JSON.parse(fileContent);
+		// console.log(nowJson);
+	} else {
+		let nowJson = {}
+	}
+
+	Home.render(nowJson.results[0], res);
 });
 
 // Map the "/" route to the home page
@@ -61,13 +76,11 @@ import Post from "./pages/posts/post/template.marko";
 app.get("/:year/:month/:post", (req, res) => {
 	res.setHeader("Content-Type", "text/html; charset=utf-8");
 
-	let filePath = `${process.cwd()}/api/${req.url}.json`
+	let filePath = `${process.cwd()}/api/posts/${req.url}.json`
 
-	let fileContent = ""
-	let nowJson = {}
 	if (fs.existsSync(filePath)) {
-		fileContent = fs.readFileSync(filePath).toString()
-		nowJson = JSON.parse(fileContent);
+		let fileContent = fs.readFileSync(filePath).toString()
+		let nowJson = JSON.parse(fileContent);
 		// console.log(nowJson);
 		Post.render(nowJson, res);
 	} else {
