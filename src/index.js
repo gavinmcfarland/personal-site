@@ -1,18 +1,9 @@
 import express from "express";
 import slash from 'express-slash';
-import API from 'static-api-generator'
+import fs from 'fs'
+import util from 'util'
 
 import Error404 from "./pages/404/template.marko";
-
-const api = new API({
-	blueprint: 'content/:posts/:year/:month/:post',
-	outputPath: 'api'
-})
-
-api.generate({
-	endpoints: ['post'],
-	levels: ['post']
-})
 
 const app = express();
 const port = process.env.PORT || 8080;
@@ -31,6 +22,13 @@ app.use("/static", serveStatic("dist/client"));
 import initServices from "./services/routes";
 initServices(app);
 
+// Convert fs.readFile into Promise version of same
+const readFile = util.promisify(fs.readFile);
+
+async function getStuff(filePath) {
+	return await readFile(filePath, 'utf8');
+}
+
 // Map the "/" route to the home page
 import Home from "./pages/home/template.marko";
 app.get("/", (req, res) => {
@@ -39,17 +37,13 @@ app.get("/", (req, res) => {
 
 	let filePath = `${process.cwd()}/api/posts.json`;
 
-	let fileContent = ""
-	let nowJson = {}
 	if (fs.existsSync(filePath)) {
-		fileContent = fs.readFileSync(filePath).toString()
-		nowJson = JSON.parse(fileContent);
-		// console.log(nowJson);
-	} else {
-		let nowJson = {}
-	}
 
-	Home.render(nowJson.results[0], res);
+		getStuff(filePath).then(data => {
+			console.log('data ->', JSON.parse(data).results[0])
+			Home.render(JSON.parse(data).results[0], res);
+		})
+	}
 });
 
 // Map the "/" route to the home page
@@ -71,18 +65,17 @@ app.get("/about", (req, res) => {
 	About.render({}, res);
 });
 
-// // Map the "/" route to the home page
+// Map the "/" route to the home page
 import Post from "./pages/posts/post/template.marko";
 app.get("/:year/:month/:post", (req, res) => {
 	res.setHeader("Content-Type", "text/html; charset=utf-8");
 
-	let filePath = `${process.cwd()}/api/posts/${req.url}.json`
-
+	let filePath = `${process.cwd()}/api/posts${req.url}.json`
+	// console.log('page ->', filePath)
 	if (fs.existsSync(filePath)) {
-		let fileContent = fs.readFileSync(filePath).toString()
-		let nowJson = JSON.parse(fileContent);
-		// console.log(nowJson);
-		Post.render(nowJson, res);
+		getStuff(filePath).then(data => {
+			Post.render(JSON.parse(data), res);
+		})
 	} else {
 		res.status(404);
 		Error404.render({}, res);

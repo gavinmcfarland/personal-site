@@ -6,7 +6,12 @@
 		"use": "@now/static"
 	}, {
 		"src": "dist/server/main.js",
-		"use": "@now/node-server"
+		"use": "@now/node-server",
+		"config": {
+			"includeFiles": [
+				"../../api/**"
+			]
+		}
 	}],
 	"routes": [{
 			"src": "/static/(.*)",
