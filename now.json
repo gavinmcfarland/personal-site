@@ -1,4 +1,5 @@
 {
+	"name": "personal-site",
 	"version": 2,
 	"builds": [{
 		"src": "dist/client/**",
