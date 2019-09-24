@@ -1,5 +1,17 @@
 import express from "express";
 import slash from 'express-slash';
+import API from 'static-api-generator'
+
+import Error404 from "./pages/404/template.marko";
+
+const api = new API({
+	blueprint: 'content/:year/:month/:post',
+	outputPath: 'api'
+})
+
+api.generate({
+	endpoints: ['post']
+})
 
 const app = express();
 const port = process.env.PORT || 8080;
@@ -42,6 +54,27 @@ import About from "./pages/about/template.marko";
 app.get("/about", (req, res) => {
 	res.setHeader("Content-Type", "text/html; charset=utf-8");
 	About.render({}, res);
+});
+
+// // Map the "/" route to the home page
+import Post from "./pages/posts/post/template.marko";
+app.get("/:year/:month/:post", (req, res) => {
+	res.setHeader("Content-Type", "text/html; charset=utf-8");
+
+	let filePath = `${process.cwd()}/api/${req.url}.json`
+
+	let fileContent = ""
+	let nowJson = {}
+	if (fs.existsSync(filePath)) {
+		fileContent = fs.readFileSync(filePath).toString()
+		nowJson = JSON.parse(fileContent);
+		// console.log(nowJson);
+		Post.render(nowJson, res);
+	} else {
+		res.status(404);
+		Error404.render({}, res);
+	}
+
 });
 
 // Start the server

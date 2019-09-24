@@ -1,0 +1,5 @@
+$ var marked = require("marked");
+<app-layout class="page__cv">
+	<@title>${input.title}</@title>
+	<@body>$!{marked(input.__body)}</@body>
+</app-layout>
