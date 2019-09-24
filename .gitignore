@@ -16,7 +16,6 @@
 /pids
 /logs
 /results
-/dist
 /build
 /.cache
 /node_modules
