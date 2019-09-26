@@ -1,0 +1,13 @@
+{
+	"name": "personal-site",
+	"version": 2,
+	"builds": [{
+		"src": "api/main.js",
+		"use": "@now/node",
+		"config": {
+			"includeFiles": [
+				"../content/**"
+			]
+		}
+	}]
+}

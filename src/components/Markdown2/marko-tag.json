@@ -1,0 +1,5 @@
+{
+	"body": "parsed-text",
+	"transformer": "./transformer.js",
+	"template": "./index.marko"
+}

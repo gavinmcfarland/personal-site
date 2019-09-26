@@ -7,6 +7,7 @@ const MarkoPlugin = require("@marko/webpack/plugin").default;
 const CSSExtractPlugin = require("mini-css-extract-plugin");
 const SpawnServerPlugin = require("spawn-server-webpack-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+// const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const {
 	NODE_ENV
@@ -112,6 +113,8 @@ function compiler(config) {
 				}
 			]
 		},
-		plugins: [...config.plugins, isProd && new CleanWebpackPlugin()].filter(Boolean)
+		plugins: [...config.plugins,
+			isProd && new CleanWebpackPlugin()
+		].filter(Boolean)
 	};
 }

@@ -1,5 +1,6 @@
-$ var marked = require("marked");
-<app-layout class="page__cv">
+import markdown from '../../../scripts/markdown'
+
+<Wrap class="page__cv">
 	<@title>${input.title}</@title>
-	<@body>$!{marked(input.__body)}</@body>
-</app-layout>
+	<@body>$!{markdown(input.__body)}</@body>
+</Wrap>
