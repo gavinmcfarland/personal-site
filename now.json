@@ -1,0 +1,27 @@
+{
+	"name": "personal-site",
+	"version": 2,
+	"builds": [{
+		"src": "dist/client/**",
+		"use": "@now/static"
+	}, {
+		"src": "dist/server/main.js",
+		"use": "@now/node-server",
+		"config": {
+			"includeFiles": [
+				"../../content/**"
+			]
+		}
+	}],
+	"routes": [{
+			"src": "/static/(.*)",
+			"dest": "dist/client/$1",
+			"methods": ["GET"]
+		},
+		{
+			"src": "/(.*)",
+			"dest": "dist/server/main.js",
+			"methods": ["GET"]
+		}
+	]
+}

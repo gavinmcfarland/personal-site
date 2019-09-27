@@ -1,6 +1,7 @@
 ---
 title: Another Post
-tags: project
+tag: project
+slug: a-test
 ---
 
 # Another Post {.class}

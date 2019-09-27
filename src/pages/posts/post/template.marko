@@ -2,5 +2,5 @@ import markdown from '../../../scripts/markdown'
 
 <Wrap class="page__cv">
 	<@title>${input.title}</@title>
-	<@body>$!{markdown(input.__body)}</@body>
+	<@body>$!{markdown(input.contents)}</@body>
 </Wrap>

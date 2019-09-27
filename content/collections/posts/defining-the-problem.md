@@ -1,6 +1,6 @@
 ---
 title: Defining the Problem
-tags: project
+tags: article
 ---
 
 # Defining the Problem
