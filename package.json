@@ -70,6 +70,7 @@
 		"url": "https://github.com/marko-js-samples/marko-webpack.git"
 	},
 	"scripts": {
+		"api": "node src/api && json-server --watch api/db.json",
 		"build": "NODE_ENV=production webpack --progress",
 		"dev": "webpack-dev-server",
 		"start": "NODE_ENV=production node dist/server/main.js"

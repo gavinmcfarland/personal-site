@@ -19,4 +19,11 @@ async function getContent() {
 
 const api = getContent()
 
-export default api
+api.then(content => {
+	console.log(content)
+	fs.outputFile('api/db.json', JSON.stringify(content), function(err) {
+		if (err) console.log(err) // => null
+	})
+})
+
+module.exports = api
