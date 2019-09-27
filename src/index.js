@@ -37,7 +37,10 @@ app.get("/", (req, res) => {
 
 app.get("/cv", (req, res) => {
 	res.setHeader("Content-Type", "text/html; charset=utf-8");
-	Cv.render({}, res);
+	api.then(content => {
+		Cv.render({ ...content.cv }, res);
+	})
+
 });
 
 app.get("/projects", (req, res) => {
