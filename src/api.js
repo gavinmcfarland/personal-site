@@ -20,7 +20,6 @@ async function getContent() {
 const api = getContent()
 
 api.then(content => {
-	console.log(content)
 	fs.outputFile('api/db.json', JSON.stringify(content), function(err) {
 		if (err) console.log(err) // => null
 	})

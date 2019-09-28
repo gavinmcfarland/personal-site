@@ -7,12 +7,12 @@ import compression from "compression";
 // Allow all of the generated files to be served up by Express
 import serveStatic from "serve-static";
 
-import Error404 from "./pages/404/template.marko";
-import Post from "./pages/posts/post/template.marko";
-import About from "./pages/about/template.marko";
-import Projects from "./pages/projects/template.marko";
-import Cv from "./pages/cv/template.marko";
-import Home from "./pages/home/template.marko";
+import Error404 from "./templates/404.marko";
+import Post from "./templates/post.marko";
+import About from "./templates/about.marko";
+import Projects from "./templates/projects.marko";
+import Cv from "./templates/cv.marko";
+import Home from "./templates/index.marko";
 
 const app = express();
 const port = process.env.PORT || 8080;
@@ -54,7 +54,6 @@ app.get("/about", (req, res) => {
 });
 
 app.get("/posts/:post", (req, res) => {
-	console.log()
 	res.setHeader("Content-Type", "text/html; charset=utf-8");
 
 	api.then(content => {
