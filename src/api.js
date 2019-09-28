@@ -12,17 +12,14 @@ async function getContent() {
 			}
 
 		}
+		fs.outputFile('api/db.json', JSON.stringify(content), function(err) {
+			if (err) console.log(err) // => null
+		})
 		return content
 	});
 
 }
 
 const api = getContent()
-
-api.then(content => {
-	fs.outputFile('api/db.json', JSON.stringify(content), function(err) {
-		if (err) console.log(err) // => null
-	})
-})
 
 module.exports = api
