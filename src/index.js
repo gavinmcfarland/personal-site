@@ -22,10 +22,6 @@ app.use(compression());
 app.use(slash());
 app.use("/static", serveStatic("dist/client"));
 
-// Initialize mock service routes
-import initServices from "./services/routes";
-initServices(app);
-
 app.get("/", (req, res) => {
 	api.then(content => {
 		content.posts.map(function(post) {
