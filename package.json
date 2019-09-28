@@ -15,6 +15,7 @@
 		"compression": "^1.7.4",
 		"express": "^4.17.1",
 		"express-slash": "^2.0.1",
+		"json-server": "^0.15.1",
 		"markdown-it": "^10.0.0",
 		"markdown-it-attrs": "^3.0.1",
 		"markdown-it-highlightjs": "^3.0.0",
@@ -70,7 +71,7 @@
 		"url": "https://github.com/marko-js-samples/marko-webpack.git"
 	},
 	"scripts": {
-		"api": "node src/api && json-server --watch api/db.json",
+		"api": "node src/api-server",
 		"build": "NODE_ENV=production webpack --progress",
 		"dev": "webpack-dev-server",
 		"start": "NODE_ENV=production node dist/server/main.js"

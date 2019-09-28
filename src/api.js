@@ -1,5 +1,4 @@
 const jdown = require('jdown');
-const fs = require('fs-extra');
 const v = require('voca');
 
 async function getContent() {
@@ -12,9 +11,9 @@ async function getContent() {
 			}
 
 		}
-		fs.outputFile('api/db.json', JSON.stringify(content), function(err) {
-			if (err) console.log(err) // => null
-		})
+
+		// createDb('api/db.json', content)
+
 		return content
 	});
 
@@ -22,4 +21,16 @@ async function getContent() {
 
 const api = getContent()
 
-module.exports = api
+// module.exports = {
+// 	api: function() {
+// 		return api
+// 	},
+// 	getContent: function() {
+// 		return getContent()
+// 	}
+// }
+
+const myModule = module.exports = api;
+myModule.getContent = function() {
+	return getContent()
+}

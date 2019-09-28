@@ -1,33 +1,11 @@
 ---
-heading: A framework for creating design systems
-features: 
-    - Create proportional spacing and typography using dimensions picked from numerical sequences
-    - Efficiently manage design choices across multiple devices and screensizes using inteligent styling options
-    - Components with self contained styles and behaviours which live in a living styleguide
-gettingstarted: 
-    steps:
-        - |
-          Clone the fiber kit into your project directory
-         
-          ```bash
-          git clone git@github.com:fiber/fiber-kit.git project
-          ```
-        - |
-          Cd into your new project and run a server
-
-          ```bash
-          cd project
-          gulp "serve"
-          ```
-        - |
-          Customise your elements in and watch them change in realtime.
-
-          ```bash
-            src/
-            fiber-button
-            fiber-modal
-            fiber-header
-            fiber-footer
-          ```
+hero:
+    heading: HSimply helping create a great service
+    content: Hi I'm Gavin, and I work with people who want a great experience for their customers but need the help of someone who can describe how their product should behave and feel like. I work to tackle the hairy problems that are keeping you from reaching your best and laying the foundation for a better service that you can build on for years to come.
+    slogan: |
+        Full
+        stack
+        des
+        igner
+    link: Something cool
 ---
-# Hello
