@@ -4,11 +4,15 @@ var md = new MarkdownIt({ html: true })
 md.use(require('markdown-it-attrs')).use(require('markdown-it-prism'))
 
 function removeIndentation(str) {
-	var indentMatches = /\s*\n(\s+)/.exec(str);
-	if (indentMatches) {
-		var indent = indentMatches[1];
-		str = str.replace(new RegExp("^" + indent, "mg"), "");
+	// remove the shortest leading indentation from each line (credit: https://github.com/declandewet/common-tags/blob/master/src/stripIndentTransformer/stripIndentTransformer.js)
+	const match = str.match(/^[^\S\n]*(?=\S)/gm);
+	const indent = match && Math.min(...match.map(el => el.length));
+	if (indent) {
+		const regexp = new RegExp(`^.{${indent}}`, 'gm');
+		return str.replace(regexp, '');
 	}
+
+	console.log(str)
 	return str;
 }
 

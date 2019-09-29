@@ -22,37 +22,33 @@ app.use(compression());
 app.use(slash());
 app.use("/static", serveStatic("dist/client"));
 
-app.get("/", (req, res) => {
-	api.then(content => {
-		content.posts.map(function(post) {
-			post.url = '/posts/' + post.slug
-		})
+api.then(content => {
+
+	app.get("/", (req, res) => {
 		Home.render({ posts: content.posts }, res);
-	})
-});
+	});
 
-app.get("/cv", (req, res) => {
-	res.setHeader("Content-Type", "text/html; charset=utf-8");
-	api.then(content => {
-		Cv.render({ ...content.cv }, res);
-	})
+	app.get("/cv", (req, res) => {
+		res.setHeader("Content-Type", "text/html; charset=utf-8");
+		api.then(content => {
+			Cv.render({ ...content.cv }, res);
+		})
 
-});
+	});
 
-app.get("/projects", (req, res) => {
-	res.setHeader("Content-Type", "text/html; charset=utf-8");
-	Projects.render({}, res);
-});
+	app.get("/projects", (req, res) => {
+		res.setHeader("Content-Type", "text/html; charset=utf-8");
+		Projects.render({}, res);
+	});
 
-app.get("/about", (req, res) => {
-	res.setHeader("Content-Type", "text/html; charset=utf-8");
-	About.render({}, res);
-});
+	app.get("/about", (req, res) => {
+		res.setHeader("Content-Type", "text/html; charset=utf-8");
+		About.render({}, res);
+	});
 
-app.get("/posts/:post", (req, res) => {
-	res.setHeader("Content-Type", "text/html; charset=utf-8");
+	app.get("/posts/:post", (req, res) => {
+		res.setHeader("Content-Type", "text/html; charset=utf-8");
 
-	api.then(content => {
 		let err = true;
 
 		for (let post of content.posts) {
@@ -68,22 +64,22 @@ app.get("/posts/:post", (req, res) => {
 		if (err) {
 			Error404.render({}, res.status(404));
 		}
-	})
 
-});
+	});
 
-// Render 404 for any unkown routes
-app.use(function(req, res) {
-	Error404.render({}, res.status(404));
-});
+	// Render 404 for any unkown routes
+	app.use(function(req, res) {
+		Error404.render({}, res.status(404));
+	});
 
-// Start the server
-app.listen(port, err => {
-	if (err) {
-		throw err;
-	}
+	// Start the server
+	app.listen(port, err => {
+		if (err) {
+			throw err;
+		}
 
-	if (port !== "0") {
-		console.log(`Listening on port ${port}`);
-	}
-});
+		if (port !== "0") {
+			console.log(`Listening on port ${port}`);
+		}
+	});
+})

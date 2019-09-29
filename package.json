@@ -74,6 +74,7 @@
 		"api": "node src/api-server",
 		"build": "NODE_ENV=production webpack --progress",
 		"dev": "webpack-dev-server",
+		"test": "NODE_ENV=production webpack --progress && node dist/server/main.js",
 		"start": "NODE_ENV=production node dist/server/main.js"
 	}
 }
