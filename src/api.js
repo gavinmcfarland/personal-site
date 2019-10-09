@@ -15,7 +15,7 @@ async function getContent() {
 			post.url = '/posts/' + post.slug
 		})
 
-		console.log(process.env.NODE_ENV)
+
 		if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'test') {
 
 			content.posts = content.posts.filter(post => post.status === 'publish')

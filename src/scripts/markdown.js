@@ -12,7 +12,6 @@ function removeIndentation(str) {
 		return str.replace(regexp, '');
 	}
 
-	console.log(str)
 	return str;
 }
 

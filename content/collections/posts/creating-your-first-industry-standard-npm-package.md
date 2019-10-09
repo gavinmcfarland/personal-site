@@ -4,7 +4,7 @@ tags: project
 status: draft
 ---
 
-Recently I set about creating my own preprocessor and I even though I've created several packages before there have been some areas of maintaining and publishing a package that didn't fully understand. [I stumbled across a few things that might help others while not only trying to create a NPM package – but also one that is ready to be used by people.]
+Test Recently I set about creating my own preprocessor and I even though I've created several packages before there have been some areas of maintaining and publishing a package that didn't fully understand. [I stumbled across a few things that might help others while not only trying to create a NPM package – but also one that is ready to be used by people.]
 
 In this article I'll cover how to:
 
