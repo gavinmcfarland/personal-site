@@ -25,7 +25,6 @@ app.use("/static", serveStatic("dist/client"));
 api.then(content => {
 
 	app.get("/", (req, res) => {
-		console.log(content)
 		Home.render({ posts: content.posts, ...content.home }, res);
 	});
 
