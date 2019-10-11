@@ -1,9 +1,6 @@
 ---
-title: Something Else
-tags: project
+title: A Guide to Creating a UX Portfolio
 status: draft
 ---
-
-# Something Else
 
 testsas

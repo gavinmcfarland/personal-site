@@ -1,4 +1,9 @@
 /* Typography */
 
+h1, h2 {
+	@extend .f-display;
+}
 
-
+a:hover {
+	background-color: #DDDDDD;
+}

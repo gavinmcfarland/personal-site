@@ -1,6 +1,5 @@
 ---
 title: Creating Your First Industry Standard NPM Package
-tags: project
 status: draft
 ---
 

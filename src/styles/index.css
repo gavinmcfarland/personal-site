@@ -2,6 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import 'karamel';
+@import 'karamel/normalize';
 @import './typography';
 
 /* Custom properties */
@@ -13,7 +14,7 @@
 /* Utilities */
 
 @responsive {
-	.max-w-4xl {
+	.max-w-5xl {
 		width: 100%;
 	}
 	.flex {
@@ -33,6 +34,11 @@
 	}
 	.w-200 {
 		width: 200px;
+		flex-grow: 0 !important;
+		flex-shrink: 0;
+	}
+	.w-300 {
+		width: 300px;
 		flex-grow: 0 !important;
 		flex-shrink: 0;
 	}

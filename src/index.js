@@ -25,7 +25,7 @@ app.use("/static", serveStatic("dist/client"));
 api.then(content => {
 
 	app.get("/", (req, res) => {
-		Home.render({ posts: content.posts }, res);
+		Home.render({ posts: content.posts, ...content.home }, res);
 	});
 
 	app.get("/cv", (req, res) => {

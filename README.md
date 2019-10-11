@@ -25,7 +25,7 @@ To view the content via an api
 npm run api
 ```
 
-To publish to now
+To publish to Now
 
 ```bash
 now
