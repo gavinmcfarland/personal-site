@@ -25,15 +25,13 @@ app.use("/static", serveStatic("dist/client"));
 api.then(content => {
 
 	app.get("/", (req, res) => {
+		console.log(content)
 		Home.render({ posts: content.posts, ...content.home }, res);
 	});
 
 	app.get("/cv", (req, res) => {
 		res.setHeader("Content-Type", "text/html; charset=utf-8");
-		api.then(content => {
-			Cv.render({ ...content.cv }, res);
-		})
-
+		Cv.render({ ...content.cv }, res);
 	});
 
 	app.get("/projects", (req, res) => {

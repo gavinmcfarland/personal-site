@@ -6,10 +6,10 @@
 		"use": "@now/static"
 	}, {
 		"src": "dist/server/main.js",
-		"use": "@now/node-server",
+		"use": "@now/node",
 		"config": {
 			"includeFiles": [
-				"../../content/**"
+				"content/**"
 			]
 		}
 	}],
