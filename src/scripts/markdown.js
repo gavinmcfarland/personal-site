@@ -2,6 +2,7 @@ var MarkdownIt = require("markdown-it")
 
 var md = new MarkdownIt({ html: true })
 md.use(require('markdown-it-attrs'));
+md.use(require('markdown-it-prism'));
 
 function removeIndentation(str) {
 	// remove the shortest leading indentation from each line (credit: https://github.com/declandewet/common-tags/blob/master/src/stripIndentTransformer/stripIndentTransformer.js)

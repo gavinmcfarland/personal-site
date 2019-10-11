@@ -219,7 +219,7 @@ marko_template.meta = {
 
 module.exports = {
   getBundleName: function(){return "Client"},
-  entries: {"404_78An":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.f6f48947.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js","404_78An.5d46f167.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js.map","404_78An.5d46f167.js.map"]}},"about_kzxx":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.f6f48947.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js","about_kzxx.88a4e604.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js.map","about_kzxx.88a4e604.js.map"]}},"cv_tq48":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.f6f48947.css","cv_tq48.a5edb52e.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js","cv_tq48.94efd6a3.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js.map","cv_tq48.94efd6a3.js.map"]}},"post_ffL2":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.f6f48947.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js","post_ffL2.97b9429a.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js.map","post_ffL2.97b9429a.js.map"]}},"projects_3eZ0":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.f6f48947.css","projects_3eZ0.bf10103b.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js","projects_3eZ0.d6d88969.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js.map","projects_3eZ0.d6d88969.js.map"]}},"templates_IwU3":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.f6f48947.css","templates_IwU3.04724a37.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js","templates_IwU3.c1361b81.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js.map","templates_IwU3.c1361b81.js.map"]}}}
+  entries: {"404_78An":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.f6f48947.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js","404_78An.5d46f167.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js.map","404_78An.5d46f167.js.map"]}},"about_kzxx":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.f6f48947.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js","about_kzxx.67245d8d.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js.map","about_kzxx.67245d8d.js.map"]}},"cv_tq48":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.f6f48947.css","cv_tq48.fa8ff04f.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js","cv_tq48.fd37a2ed.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js.map","cv_tq48.fd37a2ed.js.map"]}},"post_ffL2":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.f6f48947.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js","post_ffL2.97b9429a.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js.map","post_ffL2.97b9429a.js.map"]}},"projects_3eZ0":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.f6f48947.css","projects_3eZ0.bf10103b.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js","projects_3eZ0.65e40997.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js.map","projects_3eZ0.65e40997.js.map"]}},"templates_IwU3":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.f6f48947.css","templates_IwU3.04724a37.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js","templates_IwU3.c1361b81.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js.map","templates_IwU3.c1361b81.js.map"]}}}
 }
 
 /***/ }),
@@ -230,6 +230,7 @@ var MarkdownIt = __webpack_require__(30)
 
 var md = new MarkdownIt({ html: true })
 md.use(__webpack_require__(31));
+md.use(__webpack_require__(32));
 
 function removeIndentation(str) {
 	// remove the shortest leading indentation from each line (credit: https://github.com/declandewet/common-tags/blob/master/src/stripIndentTransformer/stripIndentTransformer.js)
@@ -607,7 +608,7 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     module_components_module = __webpack_require__(4),
     components_module = module_components_module.default || module_components_module,
     writeInitComponentsCode = module_components_module.writeInitComponentsCode,
-    template = __webpack_require__(32),
+    template = __webpack_require__(33),
     module_MARKOWEBPACKMANIFEST_module = __webpack_require__(6),
     MARKOWEBPACKMANIFEST_module = module_MARKOWEBPACKMANIFEST_module.default || module_MARKOWEBPACKMANIFEST_module,
     getBundleName = module_MARKOWEBPACKMANIFEST_module.getBundleName,
@@ -710,7 +711,7 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     module_components_module = __webpack_require__(4),
     components_module = module_components_module.default || module_components_module,
     writeInitComponentsCode = module_components_module.writeInitComponentsCode,
-    template = __webpack_require__(33),
+    template = __webpack_require__(34),
     module_MARKOWEBPACKMANIFEST_module = __webpack_require__(6),
     MARKOWEBPACKMANIFEST_module = module_MARKOWEBPACKMANIFEST_module.default || module_MARKOWEBPACKMANIFEST_module,
     getBundleName = module_MARKOWEBPACKMANIFEST_module.getBundleName,
@@ -813,7 +814,7 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     module_components_module = __webpack_require__(4),
     components_module = module_components_module.default || module_components_module,
     writeInitComponentsCode = module_components_module.writeInitComponentsCode,
-    template = __webpack_require__(34),
+    template = __webpack_require__(35),
     module_MARKOWEBPACKMANIFEST_module = __webpack_require__(6),
     MARKOWEBPACKMANIFEST_module = module_MARKOWEBPACKMANIFEST_module.default || module_MARKOWEBPACKMANIFEST_module,
     getBundleName = module_MARKOWEBPACKMANIFEST_module.getBundleName,
@@ -916,7 +917,7 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     module_components_module = __webpack_require__(4),
     components_module = module_components_module.default || module_components_module,
     writeInitComponentsCode = module_components_module.writeInitComponentsCode,
-    template = __webpack_require__(35),
+    template = __webpack_require__(36),
     module_MARKOWEBPACKMANIFEST_module = __webpack_require__(6),
     MARKOWEBPACKMANIFEST_module = module_MARKOWEBPACKMANIFEST_module.default || module_MARKOWEBPACKMANIFEST_module,
     getBundleName = module_MARKOWEBPACKMANIFEST_module.getBundleName,
@@ -1271,6 +1272,12 @@ module.exports = require("markdown-it-attrs");
 
 /***/ }),
 /* 32 */
+/***/ (function(module, exports) {
+
+module.exports = require("markdown-it-prism");
+
+/***/ }),
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1321,7 +1328,7 @@ marko_template.meta = {
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1380,7 +1387,7 @@ marko_template.meta = {
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1447,7 +1454,7 @@ marko_template.meta = {
     deps: [
       {
           type: "css",
-          code: "@import \"../styles\";\n\n\t.page__cv {\n\t\t& h2 {\n\t\t\t@extend .f-caps, .f-0, .md\\:w-200;\n\t\t}\n\t\t& section {\n\t\t\t@extend .md\\:flex;\n\t\t}\n\t}",
+          code: "@import \"../styles\";\n\n\t.page__cv {\n\t\t& h2 {\n\t\t\t@extend .f-caps, .f-1, .md\\:w-200;\n\t\t}\n\t\t& section {\n\t\t\t@extend .md\\:flex;\n\t\t}\n\t}",
           virtualPath: "./cv.marko.css",
           path: "./cv.marko"
         }
@@ -1462,7 +1469,7 @@ marko_template.meta = {
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
