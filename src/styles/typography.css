@@ -7,3 +7,21 @@ h1, h2 {
 a:hover {
 	background-color: #DDDDDD;
 }
+
+ul li  {
+	margin-bottom: 16px;
+}
+
+.icon-list {
+	margin-left: 28px;
+}
+
+.icon-list li::before {
+	content: "";
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-right: 16px;
+	margin-left: -28px;
+	background-image: url(./bullet-triangle.svg);
+}

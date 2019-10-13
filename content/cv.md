@@ -19,6 +19,7 @@ sections:
         - Cras efficitur egestas quam ut vestibulum. Nullam sit amet velit lectus. Quisque viverra convallis mi, id elementum nulla interdum nec. Praesent varius varius tortor
         - Cras efficitur egestas quam ut vestibulum. Nullam sit amet velit lectus. Quisque viverra convallis mi, id elementum nulla interdum nec. Praesent varius varius tortor
         - Nunc tincidunt at nisi id tristique. Cras lobortis ultrices nibh, et fermentum nibh interdum sed. Integer facilisis convallis metus. Curabitur eu vulputate nisl. Maecenas tempus, orci sed efficitur egestas, turpis ligula pretium sapien.
+        {.icon-list}
     background: |
         2004 - 2005
         
