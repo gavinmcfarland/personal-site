@@ -4,12 +4,12 @@ import markdown from '../scripts/markdown'
 	<@title>Gavin McFarland - Portfolio of Product Designer, Interaction Designer and Software Engineer</@title>
 	<@body>
 		<Section>
-			<h1 style="max-width: 720px">${input.intro}</h1>
+			<h1 style="max-width: 600px">$!{input.intro}</h1>
 		</Section>
 		<Section.thing.md:flex.remove-margin>
 			<h2.f-5.md:w-300>Articles</h2>
 			<div>
-				<ul.f-4.links>
+				<ul.f-4.links.no-icons.compact>
 					<for|post, index| of=input.posts>
 						<li>
 							<a href=post.url>${post.title}</a>

@@ -1,0 +1,45 @@
+class {
+	onCreate() {
+		this.state = {
+			showingIndex: 0
+		};
+	}
+	onMount() {
+		this.showNextSectionAfterDelay();
+	}
+	showNextSectionAfterDelay() {
+		this.showTimeout = setTimeout(() => {
+			this.state.showingIndex++;
+			if (this.state.showingIndex < this.input.sections.length) {
+				this.showNextSectionAfterDelay();
+			}
+		}, 3000);
+	}
+	onDestroy() {
+		clearTimeout(this.showTimeout);
+	}
+}
+
+<for|section, index| of=input.sections>
+	<span data-key=index class=(state.showingIndex > index ? "show" : "hide")>
+		<${section}/>
+	</span>
+</for>
+style {
+	span {
+		display: none;
+	}
+
+	.show {
+		display: block;
+	}
+}
+
+<!--
+Example
+<Ticker>
+<@section>Designer</@section>
+<@section>Maker</@section>
+<@section>Engineer</@section>
+</Ticker>
+-->

@@ -8,15 +8,15 @@ a:hover {
 	background-color: #DDDDDD;
 }
 
+ul {
+	margin-left: 28px;
+}
+
 ul li  {
 	margin-bottom: 16px;
 }
 
-.icon-list {
-	margin-left: 28px;
-}
-
-.icon-list li::before {
+ul li::before {
 	content: "";
 	display: inline-block;
 	width: 12px;
@@ -24,4 +24,50 @@ ul li  {
 	margin-right: 16px;
 	margin-left: -28px;
 	background-image: url(./bullet-triangle.svg);
+}
+
+.no-icons {
+	margin-left: 0;
+}
+
+.no-icons li::before {
+	display: none;
+}
+
+.compact li {
+	margin: 0;
+}
+
+th {
+	text-align: left;
+}
+
+tr {
+	border-bottom: 1px solid black;
+}
+
+td {
+	padding-top: 24px;
+	padding-bottom: 24px;
+	vertical-align: top;
+	padding-right: 24px;
+}
+
+table {
+	display: block;
+	overflow: scroll;
+}
+
+tbody > tr:last-child {
+	border-bottom: none;
+}
+
+
+thead, tbody {
+	min-width: 500px;
+	display: block;
+}
+
+div > table:first-child {
+	margin-top: 0;
 }

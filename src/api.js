@@ -2,7 +2,7 @@ const jdown = require('jdown');
 const v = require('voca');
 
 async function getContent() {
-	return await jdown(process.cwd() + '/content/', { parseMd: false }).then(content => {
+	return await jdown(process.cwd() + '/content/', { parseMd: false, fileInfo: true }).then(content => {
 		for (let index in content.posts) {
 			// If the slug isn't specified in the file then create it using the title
 			if (!content.posts[index].slug) {
@@ -14,12 +14,13 @@ async function getContent() {
 			post.url = '/posts/' + post.slug
 		})
 
-
 		if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'test') {
 
 			content.posts = content.posts.filter(post => post.status === 'publish')
 
 		}
+
+		content.posts = content.posts.sort((a, b) => new Date(b.fileInfo.createdAt) > new Date(a.createdAt))
 		// createDb('api/db.json', content)
 
 		return content

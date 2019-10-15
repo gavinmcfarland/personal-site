@@ -9,6 +9,7 @@ import markdown from '../scripts/markdown'
 				<div>$!{markdown(content)}</div>
 			</Section>
 		</for>
+		<Section>${input.contents}</Section>
 	</@body>
 </Wrap>
 style {
@@ -21,5 +22,9 @@ style {
 		& section {
 			@extend .md\:flex;
 		}
+	}
+
+	.page__cv table th {
+		display: none;
 	}
 }
