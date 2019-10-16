@@ -26,6 +26,14 @@ ul li::before {
 	background-image: url(./bullet-triangle.svg);
 }
 
+.icons-dash li::before {
+	background-image: url(./bullet-dash-large.svg);
+}
+
+.icons-dash-small li::before {
+	background-image: url(./bullet-dash-small.svg);
+}
+
 .no-icons {
 	margin-left: 0;
 }
@@ -36,6 +44,7 @@ ul li::before {
 
 .compact li {
 	margin: 0;
+	margin-bottom: 2px;
 }
 
 th {
@@ -70,4 +79,8 @@ thead, tbody {
 
 div > table:first-child {
 	margin-top: 0;
+}
+
+h5 {
+	font-weight: bold;
 }

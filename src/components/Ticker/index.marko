@@ -13,11 +13,11 @@ class {
 				this.showNextSectionAfterDelay();
 				this.state.showingIndex++;
 
-				if (this.state.showingIndex === this.input.sections.length - 1) {
+				if (this.state.showingIndex === this.input.sections.length) {
 					this.state.showingIndex = 0;
 				}
 			}
-		}, 3000);
+		}, 6000);
 	}
 	onDestroy() {
 		clearTimeout(this.showTimeout);
@@ -25,17 +25,17 @@ class {
 }
 
 <for|section, index| of=input.sections>
-	<span data-key=index class=(state.showingIndex === index ? "show" : "hide")>
+	<span.Ticker data-key=index class=(state.showingIndex === index ? "show" : "hide")>
 		<${section}/>
 	</span>
 </for>
 style {
-	span {
+	.Ticker {
 		display: none;
 	}
 
-	.show {
-		display: block;
+	.Ticker.show {
+		display: inline;
 	}
 }
 

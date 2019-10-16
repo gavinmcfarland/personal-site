@@ -1,25 +1,21 @@
 ---
 sections:
     profile: |
-        An astute and versatile designer with a proven track record of creating successful services and products. I have a strong commitment to delivering intuitive designs for mobile applications and websites, using the most appropriate methods to validate choices where necessary.
+        A versatile designer with a proven track record of creating successful services and products. I have a good mix of experience in frontend development, interaction design and user research. I'm committed to delivering intuitive designs for mobile apps and websites, using the most appropriate method to validate decisions. And I enjoy solving problems whatever the medium.
     core skills: |
         - Visual design {.test}
         - Interaction design
         - Prototyping
-        - Frontend coding (HTML, CSS, JS)
+        - Front and backend coding (HTML, CSS, JS)
         - Facilitating user research
-        - Workshops
         - Agile best practices
         - Figma, Sketch, Illustrator, Photoshop
         - Invision, Marvel, Axure
-        {.no-icons .compact}
+        {.icons-dash-small .compact}
     highlights: |
-        - Aliquam magna tortor, pellentesque eget ullamcorper a, feugiat nec justo. Morbi erat sapien, tempor egestas eros vel.
-        - Nunc efficitur semper lorem, nec sodales dolor pharetra a. Quisque aliquam sed lacus non aliquet. Fusce facilisis gravida gravida leo hendrerit quis.
-        - Vestibulum sapien dolor, porttitor at nulla nec, viverra porta risus. Donec pharetra est nec vehicula eleifend. Vestibulum non sodales est.
-        - Cras efficitur egestas quam ut vestibulum. Nullam sit amet velit lectus. Quisque viverra convallis mi, id elementum nulla interdum nec. Praesent varius varius tortor
-        - Cras efficitur egestas quam ut vestibulum. Nullam sit amet velit lectus. Quisque viverra convallis mi, id elementum nulla interdum nec. Praesent varius varius tortor
-        - Nunc tincidunt at nisi id tristique. Cras lobortis ultrices nibh, et fermentum nibh interdum sed. Integer facilisis convallis metus. Curabitur eu vulputate nisl. Maecenas tempus, orci sed efficitur egestas, turpis ligula pretium sapien.
+        - Working with the Department for International Trade I created a Design System which allowed them to develop and maintain their services during a digital transformation for customers importing and exporting goods in relation to the UK. The Design System enabled the team to create features quickly in a consistent manner while meeting customers needs across a broad range of persona types.
+        - Research of the John Lewis iPad App showed that customers’ browsing habits were not fully supported. I organised workshops and tested new designs with customers. We succeeded in driving changes to the navigation and browsing of content which substantially increased sales and downloads. The iPad App gained a 4.5 rating on the App store.
+        - Working with Venntro I helped to increase the number of complete profiles on their dating platform. To start only a small percentage of customers completed their profile. I interviewed customers to understand their dating habits and assessed usability pain points. By introducing users to the profile creation process earlier on we increased completed profiles by 4 times of what it was before.
         {.icon-list}
     experience: |
         | Company                                | Description                                                                                    | Sector        |

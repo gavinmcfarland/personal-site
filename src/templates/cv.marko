@@ -1,6 +1,6 @@
 import markdown from '../scripts/markdown'
 
-<Wrap class="page__cv">
+<Layout class="page__cv">
 	<@title>CV</@title>
 	<@body>
 		<for|heading, content| in=input.sections>
@@ -11,7 +11,7 @@ import markdown from '../scripts/markdown'
 		</for>
 		<Section>${input.contents}</Section>
 	</@body>
-</Wrap>
+</Layout>
 style {
 	@import "../styles";
 

@@ -1,20 +1,34 @@
 import markdown from '../scripts/markdown'
 
-<Wrap>
+<Layout>
 	<@title>Gavin McFarland - Portfolio of Product Designer, Interaction Designer and Software Engineer</@title>
 	<@body>
 		<Section>
-			<Ticker>
-				<@section>Designer</@section>
-				<@section>Maker</@section>
-				<@section>Engineer</@section>
-			</Ticker>
-			<h1 style="max-width: 600px">$!{input.intro}</h1>
+			<h1 style="max-width: 600px">
+				$!{input.intro}<Ticker>
+					<@section>using good old fasioned problem-solving.</@section>
+					<@section>using the right methods and techniques.</@section>
+					<@section>using common sense.</@section>
+				</Ticker>
+			</h1>
+		</Section>
+		<Section.thing.md:flex.remove-margin>
+			<h2.f-5.md:w-300>Work</h2>
+			<div>
+				<ul.f-4.links.no-icons>
+					<for|project, index| of=input.work>
+						<li>
+							<a href=project.url>${project.title}</a>
+							<div.f-2.mt-3>${project.client}</div>
+						</li>
+					</for>
+				</ul>
+			</div>
 		</Section>
 		<Section.thing.md:flex.remove-margin>
 			<h2.f-5.md:w-300>Articles</h2>
 			<div>
-				<ul.f-4.links.no-icons.compact>
+				<ul.f-4.links.no-icons>
 					<for|post, index| of=input.posts>
 						<li>
 							<a href=post.url>${post.title}</a>
@@ -30,7 +44,7 @@ import markdown from '../scripts/markdown'
 			</Section>
 		</for>
 	</@body>
-</Wrap>
+</Layout>
 style {
 	.links li {
 		margin-bottom: 16px;

@@ -1,0 +1,15 @@
+import markdown from '../scripts/markdown'
+
+<Layout class="page__project">
+	<@title>${input.title}</@title>
+	<@body class="max-w-3xl">
+		<Section>
+			<h1>${input.title}</h1>
+			<p>${input.client}</p>
+		</Section>
+		<Section>
+			<p.f-4.mb-10>${input.excerpt}</p>
+			$!{markdown(input.contents)}
+		</Section>
+	</@body>
+</Layout>

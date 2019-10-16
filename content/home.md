@@ -1,6 +1,6 @@
 ---
 intro: |
-    I help companies improve their digital products and services using good old fashioned problem-solving.
+    I help companies improve their digital products and services
 sections:
     projects: |
         #### [Mole](https://github.com/limitlessloop/mole)

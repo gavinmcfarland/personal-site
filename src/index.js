@@ -9,6 +9,7 @@ import serveStatic from "serve-static";
 
 import Error404 from "./templates/404.marko";
 import Post from "./templates/post.marko";
+import Project from "./templates/project.marko";
 import About from "./templates/about.marko";
 import Projects from "./templates/projects.marko";
 import Cv from "./templates/cv.marko";
@@ -25,7 +26,7 @@ app.use("/static", serveStatic("dist/client"));
 api.then(content => {
 
 	app.get("/", (req, res) => {
-		Home.render({ posts: content.posts, ...content.home }, res);
+		Home.render({ posts: content.posts, ...content.home, work: content.work }, res);
 	});
 
 	app.get("/cv", (req, res) => {
@@ -53,6 +54,27 @@ api.then(content => {
 			// If page exists then render page
 			if (req.params.post === post.slug) {
 				Post.render(post, res);
+				err = false
+			}
+		}
+
+		// If page doesn't exist then render 404
+		if (err) {
+			Error404.render({}, res.status(404));
+		}
+
+	});
+
+	app.get("/work/:post", (req, res) => {
+		res.setHeader("Content-Type", "text/html; charset=utf-8");
+
+		let err = true;
+
+		for (let post of content.work) {
+
+			// If page exists then render page
+			if (req.params.post === post.slug) {
+				Project.render(post, res);
 				err = false
 			}
 		}

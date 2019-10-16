@@ -83,7 +83,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 22);
+/******/ 	return __webpack_require__(__webpack_require__.s = 23);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -127,21 +127,21 @@ module.exports = require("marko/components");
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_helpers = __webpack_require__(2),
     marko_classList = marko_helpers.cl,
-    marko_componentType = "/marko-webpack$1.0.0/src/components/Wrap/index.marko",
+    marko_componentType = "/marko-webpack$1.0.0/src/components/Layout/index.marko",
     components_helpers = __webpack_require__(1),
     marko_renderer = components_helpers.r,
     marko_defineComponent = components_helpers.c,
-    module_logo = __webpack_require__(25),
+    module_logo = __webpack_require__(26),
     logo = module_logo.default || module_logo,
-    module_favicon = __webpack_require__(26),
+    module_favicon = __webpack_require__(27),
     favicon = module_favicon.default || module_favicon,
     marko_attr = marko_helpers.a,
     marko_dynamicTag = marko_helpers.d,
     marko_loadTag = marko_helpers.t,
-    component_globals_tag = marko_loadTag(__webpack_require__(27)),
+    component_globals_tag = marko_loadTag(__webpack_require__(28)),
+    marko_classAttr = marko_helpers.ca,
     init_components_tag = marko_loadTag(__webpack_require__(3)),
-    await_reorderer_tag = marko_loadTag(__webpack_require__(28)),
-    marko_classAttr = marko_helpers.ca;
+    await_reorderer_tag = marko_loadTag(__webpack_require__(29));
 
 function render(input, out, __component, component, state) {
   var data = input;
@@ -167,7 +167,12 @@ function render(input, out, __component, component, state) {
 
   out.w("<header class=\"p-10 w-viewport\"><a href=\"/\" class=\"w-shrink\"><img" +
     marko_attr("src", logo) +
-    "></a></header><main class=\"w-viewport\"><div class=\"wrapper mx-auto max-w-5xl\">");
+    "></a></header><main class=\"w-viewport\"><div" +
+    marko_classAttr(marko_classList([
+    "wrapper mx-auto",
+    input.body.class ? input.body.class : "max-w-5xl"
+  ])) +
+    ">");
 
   marko_dynamicTag(out, input.body, null, null, null, null, __component, "15");
 
@@ -203,7 +208,7 @@ marko_template.meta = {
           path: "./index.marko"
         }
     ],
-    id: "/marko-webpack$1.0.0/src/components/Wrap/index.marko",
+    id: "/marko-webpack$1.0.0/src/components/Layout/index.marko",
     tags: [
       "marko/dist/core-tags/components/component-globals-tag",
       "marko/dist/core-tags/components/init-components-tag",
@@ -219,17 +224,17 @@ marko_template.meta = {
 
 module.exports = {
   getBundleName: function(){return "Client"},
-  entries: {"404_78An":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.42745bc2.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js","404_78An.c6247857.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js.map","404_78An.c6247857.js.map"]}},"about_kzxx":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.42745bc2.css","about_kzxx.0e433876.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js","about_kzxx.fde99258.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js.map","about_kzxx.fde99258.js.map"]}},"cv_tq48":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.42745bc2.css","cv_tq48.6e7371ce.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js","cv_tq48.dd4b7d6c.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js.map","cv_tq48.dd4b7d6c.js.map"]}},"post_ffL2":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.42745bc2.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js","post_ffL2.c93501e6.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js.map","post_ffL2.c93501e6.js.map"]}},"projects_3eZ0":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.42745bc2.css","projects_3eZ0.bf10103b.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js","projects_3eZ0.65e40997.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js.map","projects_3eZ0.65e40997.js.map"]}},"templates_IwU3":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.42745bc2.css","templates_IwU3.04724a37.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js","templates_IwU3.c1361b81.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~projects_3eZ0~templates_IwU3.2d92cbc4.js.map","templates_IwU3.c1361b81.js.map"]}}}
+  entries: {"404_78An":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","404_78An.0d1ee17d.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","404_78An.0d1ee17d.js.map"]}},"about_kzxx":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css","about_kzxx.0e433876.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","about_kzxx.02f70598.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","about_kzxx.02f70598.js.map"]}},"cv_tq48":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css","cv_tq48.33f847f8.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","cv_tq48.6bb8755b.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","cv_tq48.6bb8755b.js.map"]}},"post_ffL2":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","post_ffL2.081b7b78.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","post_ffL2.081b7b78.js.map"]}},"project_Qgdo":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css","project_Qgdo.0e433876.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","project_Qgdo.a91c1103.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","project_Qgdo.a91c1103.js.map"]}},"projects_3eZ0":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css","projects_3eZ0.bf10103b.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","projects_3eZ0.ad4fd9a5.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","projects_3eZ0.ad4fd9a5.js.map"]}},"templates_IwU3":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css","templates_IwU3.572b18e2.css"],"js":["vendors~templates_IwU3.eb79da5b.js","404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","templates_IwU3.c50f34f9.js"],"map":["vendors~templates_IwU3.eb79da5b.js.map","404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","templates_IwU3.c50f34f9.js.map"]}}}
 }
 
 /***/ }),
 /* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var MarkdownIt = __webpack_require__(30)
+var MarkdownIt = __webpack_require__(31)
 
 var md = new MarkdownIt({ html: true })
-md.use(__webpack_require__(31));
+md.use(__webpack_require__(32));
 
 function removeIndentation(str) {
 	// remove the shortest leading indentation from each line (credit: https://github.com/declandewet/common-tags/blob/master/src/stripIndentTransformer/stripIndentTransformer.js)
@@ -315,7 +320,7 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     module_components_module = __webpack_require__(4),
     components_module = module_components_module.default || module_components_module,
     writeInitComponentsCode = module_components_module.writeInitComponentsCode,
-    template = __webpack_require__(24),
+    template = __webpack_require__(25),
     module_MARKOWEBPACKMANIFEST_module = __webpack_require__(6),
     MARKOWEBPACKMANIFEST_module = module_MARKOWEBPACKMANIFEST_module.default || module_MARKOWEBPACKMANIFEST_module,
     getBundleName = module_MARKOWEBPACKMANIFEST_module.getBundleName,
@@ -431,7 +436,7 @@ module.exports = require("express-slash");
 /***/ (function(module, exports, __webpack_require__) {
 
 const jdown = __webpack_require__(10);
-const v = __webpack_require__(23);
+const v = __webpack_require__(24);
 
 async function getContent() {
 	return await jdown(process.cwd() + '/content/', { parseMd: false, fileInfo: true }).then(content => {
@@ -442,8 +447,19 @@ async function getContent() {
 			}
 		}
 
+		for (let index in content.work) {
+			// If the slug isn't specified in the file then create it using the title
+			if (!content.work[index].slug) {
+				content.work[index].slug = v.kebabCase(content.work[index].title)
+			}
+		}
+
 		content.posts.map(function(post) {
 			post.url = '/posts/' + post.slug
+		})
+
+		content.work.map(function(post) {
+			post.url = '/work/' + post.slug
 		})
 
 		if (true) {
@@ -505,7 +521,7 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     module_components_module = __webpack_require__(4),
     components_module = module_components_module.default || module_components_module,
     writeInitComponentsCode = module_components_module.writeInitComponentsCode,
-    template = __webpack_require__(29),
+    template = __webpack_require__(30),
     module_MARKOWEBPACKMANIFEST_module = __webpack_require__(6),
     MARKOWEBPACKMANIFEST_module = module_MARKOWEBPACKMANIFEST_module.default || module_MARKOWEBPACKMANIFEST_module,
     getBundleName = module_MARKOWEBPACKMANIFEST_module.getBundleName,
@@ -601,6 +617,109 @@ marko_template.meta = {
 
 
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
+    marko_componentType = "/marko-webpack$1.0.0/src/templates/project.marko",
+    components_helpers = __webpack_require__(1),
+    marko_renderer = components_helpers.r,
+    marko_defineComponent = components_helpers.c,
+    module_components_module = __webpack_require__(4),
+    components_module = module_components_module.default || module_components_module,
+    writeInitComponentsCode = module_components_module.writeInitComponentsCode,
+    template = __webpack_require__(33),
+    module_MARKOWEBPACKMANIFEST_module = __webpack_require__(6),
+    MARKOWEBPACKMANIFEST_module = module_MARKOWEBPACKMANIFEST_module.default || module_MARKOWEBPACKMANIFEST_module,
+    getBundleName = module_MARKOWEBPACKMANIFEST_module.getBundleName,
+    entries = module_MARKOWEBPACKMANIFEST_module.entries,
+    marko_helpers = __webpack_require__(2),
+    marko_dynamicTag = marko_helpers.d,
+    marko_loadTag = marko_helpers.t,
+    init_components_tag = marko_loadTag(__webpack_require__(3));
+
+function renderAssets(out) {
+  const assets = entries["project_Qgdo"][getBundleName(out.global)];
+  const target = out.stream || out;
+  
+  
+  if (assets) {
+    target.write(`<script>window.__mwp__=${JSON.stringify(__webpack_require__.p)}`)
+
+    if (assets.js) {
+      target.write(
+        `;(function(b,h){var e=[],c=0;h.forEach(function(d,f){var a=b.createElement("link");a.relList&&a.relList.supports&&a.relList.supports("preload")?(a.href=d,a.rel="preload",a.as="script",a.addEventListener("load",function(){e[f]=d;if(c===f)for(var a;a=e[c];c++){var g=b.createElement("script");g.src=a;b.head.appendChild(g)}}),b.head.appendChild(a)):(a=b.createElement("script"),a.src=d,a.defer=!0,b.head.appendChild(a))})})(document,${
+          JSON.stringify(assets.js.map(js => __webpack_require__.p+js))
+        })`
+      );
+    }
+
+    target.write("</script>")
+
+    if (assets.css) {
+      assets.css.forEach(css => {
+        target.write(
+          `<link rel="stylesheet" href=${JSON.stringify(__webpack_require__.p+css)}>`
+        );
+      });
+    }
+  }
+};
+
+function outFlushOverride() {
+  renderAssets(this);
+  this.end = this.___end;
+  this.flush = this.___flush;
+  this.flush();
+};
+
+function outEndOverride(data, encoding, callback) {
+  renderAssets(this);
+  this.end = this.___end;
+  this.flush = this.___flush;
+  this.end(data, encoding, callback);
+};
+
+function render(input, out, __component, component, state) {
+  var data = input;
+
+  out.___flush = out.flush;
+
+  out.___end = out.end;
+
+  out.flush = outFlushOverride;
+
+  out.end = outEndOverride;
+
+  marko_dynamicTag(out, template, function() {
+    return input;
+  }, null, null, null, __component, "0");
+
+  init_components_tag({}, out);
+}
+
+marko_template._ = marko_renderer(render, {
+    e_: true,
+    f_: marko_componentType
+  });
+
+marko_template.Component = marko_defineComponent({}, marko_template._);
+
+marko_template.meta = {
+    id: "/marko-webpack$1.0.0/src/templates/project.marko",
+    tags: [
+      "./project.marko",
+      "marko/dist/core-tags/components/init-components-tag"
+    ]
+  };
+
+/* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.10 - DO NOT EDIT
+
+
+var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_componentType = "/marko-webpack$1.0.0/src/templates/about.marko",
     components_helpers = __webpack_require__(1),
     marko_renderer = components_helpers.r,
@@ -608,7 +727,7 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     module_components_module = __webpack_require__(4),
     components_module = module_components_module.default || module_components_module,
     writeInitComponentsCode = module_components_module.writeInitComponentsCode,
-    template = __webpack_require__(32),
+    template = __webpack_require__(34),
     module_MARKOWEBPACKMANIFEST_module = __webpack_require__(6),
     MARKOWEBPACKMANIFEST_module = module_MARKOWEBPACKMANIFEST_module.default || module_MARKOWEBPACKMANIFEST_module,
     getBundleName = module_MARKOWEBPACKMANIFEST_module.getBundleName,
@@ -696,7 +815,7 @@ marko_template.meta = {
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -711,7 +830,7 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     module_components_module = __webpack_require__(4),
     components_module = module_components_module.default || module_components_module,
     writeInitComponentsCode = module_components_module.writeInitComponentsCode,
-    template = __webpack_require__(33),
+    template = __webpack_require__(35),
     module_MARKOWEBPACKMANIFEST_module = __webpack_require__(6),
     MARKOWEBPACKMANIFEST_module = module_MARKOWEBPACKMANIFEST_module.default || module_MARKOWEBPACKMANIFEST_module,
     getBundleName = module_MARKOWEBPACKMANIFEST_module.getBundleName,
@@ -799,7 +918,7 @@ marko_template.meta = {
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -814,7 +933,7 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     module_components_module = __webpack_require__(4),
     components_module = module_components_module.default || module_components_module,
     writeInitComponentsCode = module_components_module.writeInitComponentsCode,
-    template = __webpack_require__(34),
+    template = __webpack_require__(36),
     module_MARKOWEBPACKMANIFEST_module = __webpack_require__(6),
     MARKOWEBPACKMANIFEST_module = module_MARKOWEBPACKMANIFEST_module.default || module_MARKOWEBPACKMANIFEST_module,
     getBundleName = module_MARKOWEBPACKMANIFEST_module.getBundleName,
@@ -902,7 +1021,7 @@ marko_template.meta = {
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -917,7 +1036,7 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     module_components_module = __webpack_require__(4),
     components_module = module_components_module.default || module_components_module,
     writeInitComponentsCode = module_components_module.writeInitComponentsCode,
-    template = __webpack_require__(35),
+    template = __webpack_require__(37),
     module_MARKOWEBPACKMANIFEST_module = __webpack_require__(6),
     MARKOWEBPACKMANIFEST_module = module_MARKOWEBPACKMANIFEST_module.default || module_MARKOWEBPACKMANIFEST_module,
     getBundleName = module_MARKOWEBPACKMANIFEST_module.getBundleName,
@@ -1005,7 +1124,7 @@ marko_template.meta = {
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1026,14 +1145,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _templates_404_marko__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_templates_404_marko__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _templates_post_marko__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(17);
 /* harmony import */ var _templates_post_marko__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_templates_post_marko__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _templates_about_marko__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(18);
-/* harmony import */ var _templates_about_marko__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_templates_about_marko__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _templates_projects_marko__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(19);
-/* harmony import */ var _templates_projects_marko__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_templates_projects_marko__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _templates_cv_marko__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(20);
-/* harmony import */ var _templates_cv_marko__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_templates_cv_marko__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _templates_index_marko__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(21);
-/* harmony import */ var _templates_index_marko__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_templates_index_marko__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _templates_project_marko__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(18);
+/* harmony import */ var _templates_project_marko__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_templates_project_marko__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _templates_about_marko__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(19);
+/* harmony import */ var _templates_about_marko__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_templates_about_marko__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _templates_projects_marko__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(20);
+/* harmony import */ var _templates_projects_marko__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_templates_projects_marko__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _templates_cv_marko__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(21);
+/* harmony import */ var _templates_cv_marko__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_templates_cv_marko__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _templates_index_marko__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(22);
+/* harmony import */ var _templates_index_marko__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_templates_index_marko__WEBPACK_IMPORTED_MODULE_12__);
 
 
 
@@ -1041,6 +1162,7 @@ __webpack_require__.r(__webpack_exports__);
 // Enable gzip compression for all HTTP responses
 
 // Allow all of the generated files to be served up by Express
+
 
 
 
@@ -1061,22 +1183,22 @@ app.use("/static", serve_static__WEBPACK_IMPORTED_MODULE_5___default()("dist/cli
 _api__WEBPACK_IMPORTED_MODULE_3___default.a.then(content => {
 
 	app.get("/", (req, res) => {
-		_templates_index_marko__WEBPACK_IMPORTED_MODULE_11___default.a.render({ posts: content.posts, ...content.home }, res);
+		_templates_index_marko__WEBPACK_IMPORTED_MODULE_12___default.a.render({ posts: content.posts, ...content.home, work: content.work }, res);
 	});
 
 	app.get("/cv", (req, res) => {
 		res.setHeader("Content-Type", "text/html; charset=utf-8");
-		_templates_cv_marko__WEBPACK_IMPORTED_MODULE_10___default.a.render({ ...content.cv }, res);
+		_templates_cv_marko__WEBPACK_IMPORTED_MODULE_11___default.a.render({ ...content.cv }, res);
 	});
 
 	app.get("/projects", (req, res) => {
 		res.setHeader("Content-Type", "text/html; charset=utf-8");
-		_templates_projects_marko__WEBPACK_IMPORTED_MODULE_9___default.a.render({}, res);
+		_templates_projects_marko__WEBPACK_IMPORTED_MODULE_10___default.a.render({}, res);
 	});
 
 	app.get("/about", (req, res) => {
 		res.setHeader("Content-Type", "text/html; charset=utf-8");
-		_templates_about_marko__WEBPACK_IMPORTED_MODULE_8___default.a.render({}, res);
+		_templates_about_marko__WEBPACK_IMPORTED_MODULE_9___default.a.render({}, res);
 	});
 
 	app.get("/posts/:post", (req, res) => {
@@ -1089,6 +1211,27 @@ _api__WEBPACK_IMPORTED_MODULE_3___default.a.then(content => {
 			// If page exists then render page
 			if (req.params.post === post.slug) {
 				_templates_post_marko__WEBPACK_IMPORTED_MODULE_7___default.a.render(post, res);
+				err = false
+			}
+		}
+
+		// If page doesn't exist then render 404
+		if (err) {
+			_templates_404_marko__WEBPACK_IMPORTED_MODULE_6___default.a.render({}, res.status(404));
+		}
+
+	});
+
+	app.get("/work/:post", (req, res) => {
+		res.setHeader("Content-Type", "text/html; charset=utf-8");
+
+		let err = true;
+
+		for (let post of content.work) {
+
+			// If page exists then render page
+			if (req.params.post === post.slug) {
+				_templates_project_marko__WEBPACK_IMPORTED_MODULE_8___default.a.render(post, res);
 				err = false
 			}
 		}
@@ -1119,13 +1262,13 @@ _api__WEBPACK_IMPORTED_MODULE_3___default.a.then(content => {
 
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports) {
 
 module.exports = require("voca");
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1137,15 +1280,15 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     components_helpers = __webpack_require__(1),
     marko_renderer = components_helpers.r,
     marko_defineComponent = components_helpers.c,
-    Wrap_template = __webpack_require__(5),
+    Layout_template = __webpack_require__(5),
     marko_helpers = __webpack_require__(2),
     marko_loadTag = marko_helpers.t,
-    Wrap_tag = marko_loadTag(Wrap_template);
+    Layout_tag = marko_loadTag(Layout_template);
 
 function render(input, out, __component, component, state) {
   var data = input;
 
-  Wrap_tag({
+  Layout_tag({
       title: {
           renderBody: function(out) {
             out.w("404");
@@ -1169,38 +1312,38 @@ marko_template.Component = marko_defineComponent({}, marko_template._);
 marko_template.meta = {
     id: "/marko-webpack$1.0.0/src/templates/404.marko",
     tags: [
-      "../components/Wrap/index.marko"
+      "../components/Layout/index.marko"
     ]
   };
 
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports) {
 
 module.exports = "/static/a3f5d7cb1fa8c5bbcb388788ea403caa.svg";
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports) {
 
 module.exports = "/static/7802fe086ea089aaedd33ac4d9710dae.png";
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports) {
 
 module.exports = require("marko/dist/core-tags/components/component-globals-tag");
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports) {
 
 module.exports = require("marko/dist/core-tags/core/await/reorderer-renderer");
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1217,14 +1360,14 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_helpers = __webpack_require__(2),
     marko_escapeXml = marko_helpers.x,
     marko_str = marko_helpers.s,
-    Wrap_template = __webpack_require__(5),
+    Layout_template = __webpack_require__(5),
     marko_loadTag = marko_helpers.t,
-    Wrap_tag = marko_loadTag(Wrap_template);
+    Layout_tag = marko_loadTag(Layout_template);
 
 function render(input, out, __component, component, state) {
   var data = input;
 
-  Wrap_tag({
+  Layout_tag({
       class: "page__cv",
       title: {
           renderBody: function(out) {
@@ -1252,26 +1395,103 @@ marko_template.Component = marko_defineComponent({}, marko_template._);
 marko_template.meta = {
     id: "/marko-webpack$1.0.0/src/templates/post.marko",
     tags: [
-      "../components/Wrap/index.marko"
+      "../components/Layout/index.marko"
     ]
   };
 
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports) {
 
 module.exports = require("markdown-it");
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports) {
 
 module.exports = require("markdown-it-attrs");
 
 /***/ }),
-/* 32 */
+/* 33 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.10 - DO NOT EDIT
+
+
+var marko_template = module.exports = __webpack_require__(0).t(__filename),
+    marko_componentType = "/marko-webpack$1.0.0/src/templates/project.marko",
+    components_helpers = __webpack_require__(1),
+    marko_renderer = components_helpers.r,
+    marko_defineComponent = components_helpers.c,
+    module_markdown = __webpack_require__(7),
+    markdown = module_markdown.default || module_markdown,
+    marko_helpers = __webpack_require__(2),
+    marko_escapeXml = marko_helpers.x,
+    Section_template = __webpack_require__(8),
+    marko_loadTag = marko_helpers.t,
+    Section_tag = marko_loadTag(Section_template),
+    marko_str = marko_helpers.s,
+    Layout_template = __webpack_require__(5),
+    Layout_tag = marko_loadTag(Layout_template);
+
+function render(input, out, __component, component, state) {
+  var data = input;
+
+  Layout_tag({
+      class: "page__project",
+      title: {
+          renderBody: function(out) {
+            out.w(marko_escapeXml(input.title));
+          }
+        },
+      body: {
+          class: "max-w-3xl",
+          renderBody: function(out) {
+            Section_tag({
+                renderBody: function(out) {
+                  out.w("<h1>" +
+                    marko_escapeXml(input.title) +
+                    "</h1><p>" +
+                    marko_escapeXml(input.client) +
+                    "</p>");
+                }
+              }, out, __component, "3");
+
+            Section_tag({
+                renderBody: function(out) {
+                  out.w("<p class=\"f-4 mb-10\">" +
+                    marko_escapeXml(input.excerpt) +
+                    "</p>" +
+                    marko_str(markdown(input.contents)));
+                }
+              }, out, __component, "6");
+          }
+        }
+    }, out, __component, "0");
+}
+
+marko_template._ = marko_renderer(render, {
+    e_: true,
+    f_: marko_componentType
+  });
+
+marko_template.Component = marko_defineComponent({}, marko_template._);
+
+marko_template.meta = {
+    id: "/marko-webpack$1.0.0/src/templates/project.marko",
+    tags: [
+      "../components/Section/index.marko",
+      "../components/Layout/index.marko"
+    ]
+  };
+
+/* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
+
+/***/ }),
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1287,13 +1507,13 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_helpers = __webpack_require__(2),
     marko_loadTag = marko_helpers.t,
     Section_tag = marko_loadTag(Section_template),
-    Wrap_template = __webpack_require__(5),
-    Wrap_tag = marko_loadTag(Wrap_template);
+    Layout_template = __webpack_require__(5),
+    Layout_tag = marko_loadTag(Layout_template);
 
 function render(input, out, __component, component, state) {
   var data = input;
 
-  Wrap_tag({
+  Layout_tag({
       title: {
           renderBody: function(out) {
             out.w("About me");
@@ -1322,14 +1542,14 @@ marko_template.meta = {
     id: "/marko-webpack$1.0.0/src/templates/about.marko",
     tags: [
       "../components/Section/index.marko",
-      "../components/Wrap/index.marko"
+      "../components/Layout/index.marko"
     ]
   };
 
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 33 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1341,15 +1561,15 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     components_helpers = __webpack_require__(1),
     marko_renderer = components_helpers.r,
     marko_defineComponent = components_helpers.c,
-    Wrap_template = __webpack_require__(5),
+    Layout_template = __webpack_require__(5),
     marko_helpers = __webpack_require__(2),
     marko_loadTag = marko_helpers.t,
-    Wrap_tag = marko_loadTag(Wrap_template);
+    Layout_tag = marko_loadTag(Layout_template);
 
 function render(input, out, __component, component, state) {
   var data = input;
 
-  Wrap_tag({
+  Layout_tag({
       title: {
           renderBody: function(out) {
             out.w("Projects");
@@ -1381,14 +1601,14 @@ marko_template.meta = {
     ],
     id: "/marko-webpack$1.0.0/src/templates/projects.marko",
     tags: [
-      "../components/Wrap/index.marko"
+      "../components/Layout/index.marko"
     ]
   };
 
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 34 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1409,13 +1629,13 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     Section_template = __webpack_require__(8),
     marko_loadTag = marko_helpers.t,
     Section_tag = marko_loadTag(Section_template),
-    Wrap_template = __webpack_require__(5),
-    Wrap_tag = marko_loadTag(Wrap_template);
+    Layout_template = __webpack_require__(5),
+    Layout_tag = marko_loadTag(Layout_template);
 
 function render(input, out, __component, component, state) {
   var data = input;
 
-  Wrap_tag({
+  Layout_tag({
       class: "page__cv",
       title: {
           renderBody: function(out) {
@@ -1469,14 +1689,14 @@ marko_template.meta = {
     id: "/marko-webpack$1.0.0/src/templates/cv.marko",
     tags: [
       "../components/Section/index.marko",
-      "../components/Wrap/index.marko"
+      "../components/Layout/index.marko"
     ]
   };
 
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 35 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1492,20 +1712,22 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     markdown = module_markdown.default || module_markdown,
     marko_helpers = __webpack_require__(2),
     marko_str = marko_helpers.s,
-    Section_template = __webpack_require__(8),
+    Ticker_template = __webpack_require__(38),
     marko_loadTag = marko_helpers.t,
+    Ticker_tag = marko_loadTag(Ticker_template),
+    Section_template = __webpack_require__(8),
     Section_tag = marko_loadTag(Section_template),
     marko_forEach = marko_helpers.f,
     marko_escapeXml = marko_helpers.x,
     marko_attr = marko_helpers.a,
     marko_forEachProp = __webpack_require__(11),
-    Wrap_template = __webpack_require__(5),
-    Wrap_tag = marko_loadTag(Wrap_template);
+    Layout_template = __webpack_require__(5),
+    Layout_tag = marko_loadTag(Layout_template);
 
 function render(input, out, __component, component, state) {
   var data = input;
 
-  Wrap_tag({
+  Layout_tag({
       title: {
           renderBody: function(out) {
             out.w("Gavin McFarland - Portfolio of Product Designer, Interaction Designer and Software Engineer");
@@ -1516,20 +1738,64 @@ function render(input, out, __component, component, state) {
             Section_tag({
                 renderBody: function(out) {
                   out.w("<h1 style=\"max-width: 600px\">" +
-                    marko_str(input.intro) +
-                    "</h1>");
+                    marko_str(input.intro));
+
+                  Ticker_tag({
+                      sections: [
+                          {
+                              renderBody: function(out) {
+                                out.w("using good old fasioned problem-solving.");
+                              }
+                            },
+                          {
+                              renderBody: function(out) {
+                                out.w("using the right methods and techniques.");
+                              }
+                            },
+                          {
+                              renderBody: function(out) {
+                                out.w("using common sense.");
+                              }
+                            }
+                        ]
+                    }, out, __component, "5");
+
+                  out.w("</h1>");
                 }
               }, out, __component, "3");
 
             Section_tag({
                 class: "thing md:flex remove-margin",
                 renderBody: function(out) {
-                  out.w("<h2 class=\"f-5 md:w-300\">Articles</h2><div><ul class=\"f-4 links no-icons compact\">");
+                  out.w("<h2 class=\"f-5 md:w-300\">Work</h2><div><ul class=\"f-4 links no-icons\">");
 
                   var $for$0 = 0;
 
-                  marko_forEach(input.posts, function(post, index) {
+                  marko_forEach(input.work, function(project, index) {
                     var $keyScope$0 = "[" + (($for$0++) + "]");
+
+                    out.w("<li><a" +
+                      marko_attr("href", project.url) +
+                      ">" +
+                      marko_escapeXml(project.title) +
+                      "</a><div class=\"f-2 mt-3\">" +
+                      marko_escapeXml(project.client) +
+                      "</div></li>");
+                  });
+
+                  out.w("</ul></div>");
+                }
+              }, out, __component, "9");
+
+            Section_tag({
+                class: "thing md:flex remove-margin",
+                renderBody: function(out) {
+                  out.w("<h2 class=\"f-5 md:w-300\">Articles</h2><div><ul class=\"f-4 links no-icons\">");
+
+                  var $for$1 = 0;
+
+                  marko_forEach(input.posts, function(post, index) {
+                    var $keyScope$1 = "[" + (($for$1++) + "]");
 
                     out.w("<li><a" +
                       marko_attr("href", post.url) +
@@ -1540,12 +1806,12 @@ function render(input, out, __component, component, state) {
 
                   out.w("</ul></div>");
                 }
-              }, out, __component, "5");
+              }, out, __component, "16");
 
-            var $for$1 = 0;
+            var $for$2 = 0;
 
             marko_forEachProp(input.sections, function(heading, content) {
-              var $keyScope$1 = "[" + (($for$1++) + "]");
+              var $keyScope$2 = "[" + (($for$2++) + "]");
 
               Section_tag({
                   class: "thing md:flex remove-margin",
@@ -1556,7 +1822,7 @@ function render(input, out, __component, component, state) {
                       marko_str(markdown(content)) +
                       "</div>");
                   }
-                }, out, __component, "11" + $keyScope$1);
+                }, out, __component, "22" + $keyScope$2);
             });
           }
         }
@@ -1581,9 +1847,95 @@ marko_template.meta = {
     ],
     id: "/marko-webpack$1.0.0/src/templates/index.marko",
     tags: [
+      "../components/Ticker/index.marko",
       "../components/Section/index.marko",
-      "../components/Wrap/index.marko"
+      "../components/Layout/index.marko"
     ]
+  };
+
+/* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
+
+/***/ }),
+/* 38 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.10 - DO NOT EDIT
+
+
+var marko_template = module.exports = __webpack_require__(0).t(__filename),
+    marko_helpers = __webpack_require__(2),
+    marko_classList = marko_helpers.cl,
+    marko_component = {
+    onCreate: function () {
+        this.state = { showingIndex: 0 };
+    },
+    onMount: function () {
+        this.showNextSectionAfterDelay();
+    },
+    showNextSectionAfterDelay: function () {
+        this.showTimeout = setTimeout(() => {
+            if (this.state.showingIndex < this.input.sections.length) {
+                this.showNextSectionAfterDelay();
+                this.state.showingIndex++;
+                if (this.state.showingIndex === this.input.sections.length) {
+                    this.state.showingIndex = 0;
+                }
+            }
+        }, 6000);
+    },
+    onDestroy: function () {
+        clearTimeout(this.showTimeout);
+    }
+},
+    marko_componentType = "/marko-webpack$1.0.0/src/components/Ticker/index.marko",
+    components_helpers = __webpack_require__(1),
+    marko_renderer = components_helpers.r,
+    marko_defineComponent = components_helpers.c,
+    marko_forEach = marko_helpers.f,
+    marko_dynamicTag = marko_helpers.d,
+    marko_attr = marko_helpers.a,
+    marko_classAttr = marko_helpers.ca;
+
+function render(input, out, __component, component, state) {
+  var data = input;
+
+  var $for$0 = 0;
+
+  marko_forEach(input.sections, function(section, index) {
+    var $keyScope$0 = "[" + (($for$0++) + "]");
+
+    out.w("<span" +
+      marko_attr("data-key", index) +
+      marko_classAttr(marko_classList([
+      "Ticker",
+      state.showingIndex === index ? "show" : "hide"
+    ])) +
+      ">");
+
+    marko_dynamicTag(out, section, null, null, null, null, __component, "1" + $keyScope$0);
+
+    out.w("</span>");
+  });
+}
+
+marko_template._ = marko_renderer(render, {
+    f_: marko_componentType
+  }, marko_component);
+
+marko_template.Component = marko_defineComponent(marko_component, marko_template._);
+
+marko_template.meta = {
+    deps: [
+      {
+          type: "css",
+          code: ".Ticker {\n\t\tdisplay: none;\n\t}\n\n\t.Ticker.show {\n\t\tdisplay: inline;\n\t}",
+          virtualPath: "./index.marko.css",
+          path: "./index.marko"
+        }
+    ],
+    id: "/marko-webpack$1.0.0/src/components/Ticker/index.marko",
+    component: "./index.marko"
   };
 
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))

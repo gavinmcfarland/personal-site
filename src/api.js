@@ -10,8 +10,19 @@ async function getContent() {
 			}
 		}
 
+		for (let index in content.work) {
+			// If the slug isn't specified in the file then create it using the title
+			if (!content.work[index].slug) {
+				content.work[index].slug = v.kebabCase(content.work[index].title)
+			}
+		}
+
 		content.posts.map(function(post) {
 			post.url = '/posts/' + post.slug
+		})
+
+		content.work.map(function(post) {
+			post.url = '/work/' + post.slug
 		})
 
 		if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'test') {
