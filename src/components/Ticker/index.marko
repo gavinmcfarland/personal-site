@@ -9,9 +9,13 @@ class {
 	}
 	showNextSectionAfterDelay() {
 		this.showTimeout = setTimeout(() => {
-			this.state.showingIndex++;
 			if (this.state.showingIndex < this.input.sections.length) {
 				this.showNextSectionAfterDelay();
+				this.state.showingIndex++;
+
+				if (this.state.showingIndex === this.input.sections.length - 1) {
+					this.state.showingIndex = 0;
+				}
 			}
 		}, 3000);
 	}
@@ -21,7 +25,7 @@ class {
 }
 
 <for|section, index| of=input.sections>
-	<span data-key=index class=(state.showingIndex > index ? "show" : "hide")>
+	<span data-key=index class=(state.showingIndex === index ? "show" : "hide")>
 		<${section}/>
 	</span>
 </for>
