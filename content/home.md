@@ -14,4 +14,6 @@ sections:
     about: |
         I’m Gavin. A versatile designer with a background in web development working in London. I provide consultancy, strategic and tactical help where needed. I've worked in a variety of sectors including private, public, retail and finance. I focus on product design and user research.
 
+        This site was designed and built by myself using [Figma](https://figma.com), [Marko](http://markojs.com) and [PostCSS](https://postcss.org). Bundled with [Webpack](https://webpack.js.org/) and hosted on [Now](https://zeit.co).
+
 ---
