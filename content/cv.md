@@ -1,7 +1,7 @@
 ---
 sections:
     profile: |
-        A versatile designer with a proven track record of creating successful services and products. I have a good mix of experience in frontend development, interaction design and user research. I'm committed to delivering intuitive designs for mobile apps and websites, using the most appropriate method to validate decisions. And I enjoy solving problems whatever the medium.
+        A versatile designer with a proven track record of creating successful services and products. I have a good mix of experience in frontend development, interaction design and user research. I'm committed to delivering intuitive designs for mobile apps and websites, using the most appropriate method to validate decisions. I enjoy solving problems whatever the medium.
     core skills: |
         - Visual design {.test}
         - Interaction design
@@ -10,7 +10,7 @@ sections:
         - Facilitating user research
         - Agile best practices
         - Figma, Sketch, Illustrator, Photoshop
-        - Invision, Marvel, Axure
+        - InVision, Marvel, Axure
         {.icons-dash-small .compact}
     highlights: |
         - Working with the Department for International Trade I created a Design System which allowed them to develop and maintain their services during a digital transformation for customers importing and exporting goods in relation to the UK. The Design System enabled the team to create features quickly in a consistent manner while meeting customers needs across a broad range of persona types.
@@ -21,7 +21,7 @@ sections:
         | Company                                | Description                                                                                    | Sector        |
         | -------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------- |
         | Dept for International Trade           | Case management system to help caseworkers process applications for export licenses.           | Public        |
-        | Home Office                            | Redesign government service providing support to refugees seeking aslyum                       | Public        |
+        | Home Office                            | Redesign government service providing support to refugees seeking asylum                       | Public        |
         | 10Lord                                 | New service to help provide a better renting experience between tenants, landlords and agents. | Startup       |
         | Dept for Business, Innovation & Skills | Grant funding platform used by research academics.                                             | Public        |
         | AIMIA                                  | Evaluate customers feedback and opinion of Nectar app to mitigate bad reviews.                 | Loyalty cards |
@@ -29,11 +29,11 @@ sections:
     background: |
         2004 - 2005
         
-        Rolls Royce Derby, Web Designer Year In Industry Student Placement
+        Rolls Royce, Web Designer Year In Industry Student Placement
         
         2000 - 2004
         
-        Graphic Design, Art, Maths (A levels), Queen Elizabeth’s Grammar School Ashbourne
+        Graphic Design, Art, Maths (A levels), Queen Elizabeth’s Grammar School
 
 ---
 
