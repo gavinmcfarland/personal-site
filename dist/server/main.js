@@ -224,7 +224,7 @@ marko_template.meta = {
 
 module.exports = {
   getBundleName: function(){return "Client"},
-  entries: {"404_78An":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","404_78An.0d1ee17d.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","404_78An.0d1ee17d.js.map"]}},"about_kzxx":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css","about_kzxx.0e433876.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","about_kzxx.f3e7889d.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","about_kzxx.f3e7889d.js.map"]}},"cv_tq48":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css","cv_tq48.33f847f8.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","cv_tq48.6bb8755b.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","cv_tq48.6bb8755b.js.map"]}},"post_ffL2":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","post_ffL2.ececd083.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","post_ffL2.ececd083.js.map"]}},"project_Qgdo":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css","project_Qgdo.0e433876.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","project_Qgdo.e06e90ee.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","project_Qgdo.e06e90ee.js.map"]}},"projects_3eZ0":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css","projects_3eZ0.bf10103b.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","projects_3eZ0.ad4fd9a5.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","projects_3eZ0.ad4fd9a5.js.map"]}},"templates_IwU3":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css","templates_IwU3.572b18e2.css"],"js":["vendors~templates_IwU3.eb79da5b.js","404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","templates_IwU3.c50f34f9.js"],"map":["vendors~templates_IwU3.eb79da5b.js.map","404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","templates_IwU3.c50f34f9.js.map"]}}}
+  entries: {"404_78An":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","404_78An.6bae88ac.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","404_78An.6bae88ac.js.map"]}},"about_kzxx":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css","about_kzxx.0e433876.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","about_kzxx.02f70598.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","about_kzxx.02f70598.js.map"]}},"cv_tq48":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css","cv_tq48.33f847f8.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","cv_tq48.6bb8755b.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","cv_tq48.6bb8755b.js.map"]}},"post_ffL2":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","post_ffL2.9f5d457b.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","post_ffL2.9f5d457b.js.map"]}},"project_Qgdo":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css","project_Qgdo.0e433876.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","project_Qgdo.a91c1103.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","project_Qgdo.a91c1103.js.map"]}},"projects_3eZ0":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css","projects_3eZ0.bf10103b.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","projects_3eZ0.ad4fd9a5.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","projects_3eZ0.ad4fd9a5.js.map"]}},"templates_IwU3":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css","templates_IwU3.572b18e2.css"],"js":["vendors~templates_IwU3.eb79da5b.js","404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","templates_IwU3.c50f34f9.js"],"map":["vendors~templates_IwU3.eb79da5b.js.map","404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","templates_IwU3.c50f34f9.js.map"]}}}
 }
 
 /***/ }),
@@ -1717,10 +1717,8 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     Ticker_tag = marko_loadTag(Ticker_template),
     Section_template = __webpack_require__(8),
     Section_tag = marko_loadTag(Section_template),
-    marko_forEach = marko_helpers.f,
-    marko_escapeXml = marko_helpers.x,
-    marko_attr = marko_helpers.a,
     marko_forEachProp = __webpack_require__(11),
+    marko_escapeXml = marko_helpers.x,
     Layout_template = __webpack_require__(5),
     Layout_tag = marko_loadTag(Layout_template);
 
@@ -1730,7 +1728,7 @@ function render(input, out, __component, component, state) {
   Layout_tag({
       title: {
           renderBody: function(out) {
-            out.w("Gavin McFarland - Portfolio of Product Designer, Interaction Designer and Software Engineer");
+            out.w("Portfolio of Product Designer, Interaction Designer and Software Engineer");
           }
         },
       body: {
@@ -1744,7 +1742,7 @@ function render(input, out, __component, component, state) {
                       sections: [
                           {
                               renderBody: function(out) {
-                                out.w("using good old fasioned problem-solving.");
+                                out.w("using good old fashioned problem-solving.");
                               }
                             },
                           {
@@ -1754,7 +1752,7 @@ function render(input, out, __component, component, state) {
                             },
                           {
                               renderBody: function(out) {
-                                out.w("using common sense.");
+                                out.w("by not settling for anything less.");
                               }
                             }
                         ]
@@ -1764,54 +1762,10 @@ function render(input, out, __component, component, state) {
                 }
               }, out, __component, "3");
 
-            Section_tag({
-                class: "thing md:flex remove-margin",
-                renderBody: function(out) {
-                  out.w("<h2 class=\"f-5 md:w-300\">Work</h2><div><ul class=\"f-4 links no-icons\">");
-
-                  var $for$0 = 0;
-
-                  marko_forEach(input.work, function(project, index) {
-                    var $keyScope$0 = "[" + (($for$0++) + "]");
-
-                    out.w("<li><a" +
-                      marko_attr("href", project.url) +
-                      ">" +
-                      marko_escapeXml(project.title) +
-                      "</a><div class=\"f-2 mt-3\">" +
-                      marko_escapeXml(project.client) +
-                      "</div></li>");
-                  });
-
-                  out.w("</ul></div>");
-                }
-              }, out, __component, "9");
-
-            Section_tag({
-                class: "thing md:flex remove-margin",
-                renderBody: function(out) {
-                  out.w("<h2 class=\"f-5 md:w-300\">Articles</h2><div><ul class=\"f-4 links no-icons\">");
-
-                  var $for$1 = 0;
-
-                  marko_forEach(input.posts, function(post, index) {
-                    var $keyScope$1 = "[" + (($for$1++) + "]");
-
-                    out.w("<li><a" +
-                      marko_attr("href", post.url) +
-                      ">" +
-                      marko_escapeXml(post.title) +
-                      "</a></li>");
-                  });
-
-                  out.w("</ul></div>");
-                }
-              }, out, __component, "16");
-
-            var $for$2 = 0;
+            var $for$0 = 0;
 
             marko_forEachProp(input.sections, function(heading, content) {
-              var $keyScope$2 = "[" + (($for$2++) + "]");
+              var $keyScope$0 = "[" + (($for$0++) + "]");
 
               Section_tag({
                   class: "thing md:flex remove-margin",
@@ -1822,7 +1776,7 @@ function render(input, out, __component, component, state) {
                       marko_str(markdown(content)) +
                       "</div>");
                   }
-                }, out, __component, "22" + $keyScope$2);
+                }, out, __component, "9" + $keyScope$0);
             });
           }
         }
