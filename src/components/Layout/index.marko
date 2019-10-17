@@ -8,8 +8,11 @@ import favicon from "./favicon.png"
 		<meta name="viewport" content="width=device-width"/>
 		<link rel="icon" href=favicon/>
 		<title>
-			<${input.title}/>
-			— Gavin McFarland
+			<if(input.title)>
+				<${input.title}/>
+				| Gavin McFarland
+			</if>
+			<else>Gavin McFarland</else>
 		</title>
 		<!-- <link> tags to include optimized CSS URLs will be included below: -->
 		<${input.styles}/>
