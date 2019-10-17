@@ -12,6 +12,7 @@
 			]
 		}
 	}],
+	"alias": ["www.gavinmcfarland.co.uk"],
 	"routes": [{
 			"src": "/static/(.*)",
 			"dest": "dist/client/$1",
@@ -21,6 +22,11 @@
 			"src": "/(.*)",
 			"dest": "dist/server/main.js",
 			"methods": ["GET"]
+		},
+		{
+			"src": "/(.*)",
+			"status": 301,
+			"headers": { "Location": "https://gavinmcfarland.co.uk/$1" }
 		}
 	]
 }
