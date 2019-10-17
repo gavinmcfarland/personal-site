@@ -156,7 +156,7 @@ function render(input, out, __component, component, state) {
 
   marko_dynamicTag(out, input.styles, null, null, null, null, __component, "7");
 
-  out.w("<link rel=\"stylesheet\" href=\"//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css\"></head><body" +
+  out.w("<link href=\"https://fonts.googleapis.com/css?family=Miriam+Libre|Roboto|Roboto+Condensed|Roboto+Mono&amp;display=swap\" rel=\"stylesheet\"><link rel=\"stylesheet\" href=\"//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css\"></head><body" +
     marko_classAttr(marko_classList([
     "px-10",
     input.class
@@ -174,19 +174,19 @@ function render(input, out, __component, component, state) {
   ])) +
     ">");
 
-  marko_dynamicTag(out, input.body, null, null, null, null, __component, "15");
+  marko_dynamicTag(out, input.body, null, null, null, null, __component, "16");
 
   out.w("</div></main><footer class=\"p-10 remove-margin w-viewport f-1\"><p>Limitless Loop &copy; 2019</p><nav><a href=\"https://github.com/limitlessloop\" class=\"ml-8\">Github</a><a href=\"https://dribbble.com/limitlessloop\" class=\"ml-8\">Dribbble</a><a href=\"https://twitter.com/gavinmcfarland\" class=\"ml-8\">Twitter</a></nav>");
 
-  marko_dynamicTag(out, input.footer, null, null, null, null, __component, "22");
+  marko_dynamicTag(out, input.footer, null, null, null, null, __component, "23");
 
   out.w("</footer>");
 
-  marko_dynamicTag(out, input.scripts, null, null, null, null, __component, "23");
+  marko_dynamicTag(out, input.scripts, null, null, null, null, __component, "24");
 
   init_components_tag({}, out);
 
-  await_reorderer_tag({}, out, __component, "24");
+  await_reorderer_tag({}, out, __component, "25");
 
   out.w("</body></html>");
 }
@@ -224,7 +224,7 @@ marko_template.meta = {
 
 module.exports = {
   getBundleName: function(){return "Client"},
-  entries: {"404_78An":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","404_78An.2c385616.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","404_78An.2c385616.js.map"]}},"about_kzxx":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css","about_kzxx.0e433876.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","about_kzxx.f3e7889d.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","about_kzxx.f3e7889d.js.map"]}},"cv_tq48":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css","cv_tq48.33f847f8.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","cv_tq48.6bb8755b.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","cv_tq48.6bb8755b.js.map"]}},"post_ffL2":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","post_ffL2.9f5d457b.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","post_ffL2.9f5d457b.js.map"]}},"project_Qgdo":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css","project_Qgdo.0e433876.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","project_Qgdo.e06e90ee.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","project_Qgdo.e06e90ee.js.map"]}},"projects_3eZ0":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css","projects_3eZ0.bf10103b.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","projects_3eZ0.ad4fd9a5.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","projects_3eZ0.ad4fd9a5.js.map"]}},"templates_IwU3":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css","templates_IwU3.572b18e2.css"],"js":["vendors~templates_IwU3.eb79da5b.js","404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","templates_IwU3.c50f34f9.js"],"map":["vendors~templates_IwU3.eb79da5b.js.map","404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","templates_IwU3.c50f34f9.js.map"]}}}
+  entries: {"404_78An":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","404_78An.0d1ee17d.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","404_78An.0d1ee17d.js.map"]}},"about_kzxx":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css","about_kzxx.0e433876.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","about_kzxx.f3e7889d.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","about_kzxx.f3e7889d.js.map"]}},"cv_tq48":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css","cv_tq48.33f847f8.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","cv_tq48.6bb8755b.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","cv_tq48.6bb8755b.js.map"]}},"post_ffL2":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","post_ffL2.081b7b78.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","post_ffL2.081b7b78.js.map"]}},"project_Qgdo":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css","project_Qgdo.0e433876.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","project_Qgdo.2d5186c6.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","project_Qgdo.2d5186c6.js.map"]}},"projects_3eZ0":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css","projects_3eZ0.bf10103b.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","projects_3eZ0.ad4fd9a5.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","projects_3eZ0.ad4fd9a5.js.map"]}},"templates_IwU3":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.e237162e.css","templates_IwU3.572b18e2.css"],"js":["vendors~templates_IwU3.eb79da5b.js","404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js","templates_IwU3.c50f34f9.js"],"map":["vendors~templates_IwU3.eb79da5b.js.map","404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.4d15f77a.js.map","templates_IwU3.c50f34f9.js.map"]}}}
 }
 
 /***/ }),
