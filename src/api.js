@@ -28,6 +28,7 @@ async function getContent() {
 		if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'test') {
 
 			content.posts = content.posts.filter(post => post.status === 'publish')
+			content.work = content.work.filter(post => post.status === 'publish')
 
 		}
 

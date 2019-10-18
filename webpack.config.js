@@ -1,5 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const {
 	CleanWebpackPlugin
 } = require("clean-webpack-plugin");
@@ -43,6 +44,10 @@ module.exports = [
 			new CSSExtractPlugin({
 				filename: "[name].[contenthash:8].css"
 			}),
+			new CopyWebpackPlugin([{
+				from: path.join(__dirname, "content/assets"), //Will resolve to RepoDir/src/assets
+				to: "../client" //Copies all files from above dest to dist/assets
+			}, ]),
 			isProd && new OptimizeCssAssetsPlugin(),
 			markoPlugin.browser
 		]
@@ -70,6 +75,10 @@ module.exports = [
 			new CSSExtractPlugin({
 				filename: "[name].[contenthash:8].css"
 			}),
+			new CopyWebpackPlugin([{
+				from: path.join(__dirname, "content/assets"), //Will resolve to RepoDir/src/assets
+				to: "../client" //Copies all files from above dest to dist/assets
+			}, ]),
 			isDev && spawnedServer,
 			markoPlugin.server
 		]

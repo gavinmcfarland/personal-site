@@ -3,7 +3,7 @@ import markdown from '../scripts/markdown'
 <Layout>
 	<@body>
 		<Section>
-			<h1 style="max-width: 600px">
+			<h1.mt-2 style="max-width: 600px">
 				$!{input.intro}<Ticker>
 					<@section>using good old fashioned problem-solving.</@section>
 					<@section>using the right methods and techniques.</@section>
@@ -11,7 +11,7 @@ import markdown from '../scripts/markdown'
 				</Ticker>
 			</h1>
 		</Section>
-		<!-- <Section.thing.md:flex.remove-margin>
+		<Section.thing.md:flex.remove-margin>
 			<h2.f-5.md:w-300>Work</h2>
 			<div>
 				<ul.f-4.links.no-icons>
@@ -23,7 +23,7 @@ import markdown from '../scripts/markdown'
 					</for>
 				</ul>
 			</div>
-		</Section> -->
+		</Section>
 		<!-- <Section.thing.md:flex.remove-margin>
 			<h2.f-5.md:w-300>Articles</h2>
 			<div>
@@ -47,6 +47,11 @@ import markdown from '../scripts/markdown'
 style {
 	.links li {
 		margin-bottom: 16px;
+
+		div {
+			display: inline;
+			margin-left: 16px;
+		}
 	}
 	.Section h5 {
 		font-weight: bold;

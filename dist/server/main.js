@@ -230,7 +230,7 @@ marko_template.meta = {
 
 module.exports = {
   getBundleName: function(){return "Client"},
-  entries: {"404_78An":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.2882de48.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.819ade0f.js","404_78An.0d1ee17d.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.819ade0f.js.map","404_78An.0d1ee17d.js.map"]}},"about_kzxx":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.2882de48.css","about_kzxx.0e433876.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.819ade0f.js","about_kzxx.f3e7889d.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.819ade0f.js.map","about_kzxx.f3e7889d.js.map"]}},"cv_tq48":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.2882de48.css","cv_tq48.33f847f8.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.819ade0f.js","cv_tq48.6bb8755b.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.819ade0f.js.map","cv_tq48.6bb8755b.js.map"]}},"post_ffL2":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.2882de48.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.819ade0f.js","post_ffL2.081b7b78.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.819ade0f.js.map","post_ffL2.081b7b78.js.map"]}},"project_Qgdo":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.2882de48.css","project_Qgdo.0e433876.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.819ade0f.js","project_Qgdo.2d5186c6.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.819ade0f.js.map","project_Qgdo.2d5186c6.js.map"]}},"projects_3eZ0":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.2882de48.css","projects_3eZ0.bf10103b.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.819ade0f.js","projects_3eZ0.ad4fd9a5.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.819ade0f.js.map","projects_3eZ0.ad4fd9a5.js.map"]}},"templates_IwU3":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.2882de48.css","templates_IwU3.572b18e2.css"],"js":["vendors~templates_IwU3.eb79da5b.js","404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.819ade0f.js","templates_IwU3.c50f34f9.js"],"map":["vendors~templates_IwU3.eb79da5b.js.map","404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.819ade0f.js.map","templates_IwU3.c50f34f9.js.map"]}}}
+  entries: {"404_78An":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.370bf8e5.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.819ade0f.js","404_78An.0d1ee17d.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.819ade0f.js.map","404_78An.0d1ee17d.js.map"]}},"about_kzxx":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.370bf8e5.css","about_kzxx.0e433876.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.819ade0f.js","about_kzxx.52548747.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.819ade0f.js.map","about_kzxx.52548747.js.map"]}},"cv_tq48":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.370bf8e5.css","cv_tq48.1b79a825.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.819ade0f.js","cv_tq48.7b0935f4.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.819ade0f.js.map","cv_tq48.7b0935f4.js.map"]}},"post_ffL2":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.370bf8e5.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.819ade0f.js","post_ffL2.081b7b78.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.819ade0f.js.map","post_ffL2.081b7b78.js.map"]}},"project_Qgdo":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.370bf8e5.css","project_Qgdo.321b0644.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.819ade0f.js","project_Qgdo.8615cd9a.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.819ade0f.js.map","project_Qgdo.8615cd9a.js.map"]}},"projects_3eZ0":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.370bf8e5.css","projects_3eZ0.bf10103b.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.819ade0f.js","projects_3eZ0.93b2a6e5.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.819ade0f.js.map","projects_3eZ0.93b2a6e5.js.map"]}},"templates_IwU3":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.370bf8e5.css","templates_IwU3.5268ff65.css"],"js":["vendors~templates_IwU3.42d7debd.js","404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.819ade0f.js","templates_IwU3.2a1aafbf.js"],"map":["vendors~templates_IwU3.42d7debd.js.map","404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.819ade0f.js.map","templates_IwU3.2a1aafbf.js.map"]}}}
 }
 
 /***/ }),
@@ -417,13 +417,13 @@ marko_template.meta = {
 /* 10 */
 /***/ (function(module, exports) {
 
-module.exports = require("jdown");
+module.exports = require("marko/dist/runtime/helper-forEachProperty");
 
 /***/ }),
 /* 11 */
 /***/ (function(module, exports) {
 
-module.exports = require("marko/dist/runtime/helper-forEachProperty");
+module.exports = require("jdown");
 
 /***/ }),
 /* 12 */
@@ -441,7 +441,7 @@ module.exports = require("express-slash");
 /* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const jdown = __webpack_require__(10);
+const jdown = __webpack_require__(11);
 const v = __webpack_require__(24);
 
 async function getContent() {
@@ -471,6 +471,7 @@ async function getContent() {
 		if (true) {
 
 			content.posts = content.posts.filter(post => post.status === 'publish')
+			content.work = content.work.filter(post => post.status === 'publish')
 
 		}
 
@@ -1139,7 +1140,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var express__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(express__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var express_slash__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(13);
 /* harmony import */ var express_slash__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(express_slash__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var jdown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(10);
+/* harmony import */ var jdown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(11);
 /* harmony import */ var jdown__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jdown__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(14);
 /* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_api__WEBPACK_IMPORTED_MODULE_3__);
@@ -1439,6 +1440,8 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     Section_template = __webpack_require__(8),
     marko_loadTag = marko_helpers.t,
     Section_tag = marko_loadTag(Section_template),
+    marko_escapeXmlAttr = marko_helpers.xa,
+    marko_forEachProp = __webpack_require__(10),
     marko_str = marko_helpers.s,
     Layout_template = __webpack_require__(5),
     Layout_tag = marko_loadTag(Layout_template);
@@ -1447,33 +1450,47 @@ function render(input, out, __component, component, state) {
   var data = input;
 
   Layout_tag({
-      class: "page__project",
-      title: {
-          renderBody: function(out) {
-            out.w(marko_escapeXml(input.title));
-          }
-        },
+      class: "page__cv",
       body: {
-          class: "max-w-3xl",
           renderBody: function(out) {
             Section_tag({
                 renderBody: function(out) {
-                  out.w("<h1>" +
+                  out.w("<h1 class=\"md:w-400 mb-8 mt-0 pr-8\">" +
                     marko_escapeXml(input.title) +
-                    "</h1><p>" +
-                    marko_escapeXml(input.client) +
-                    "</p>");
-                }
-              }, out, __component, "3");
-
-            Section_tag({
-                renderBody: function(out) {
-                  out.w("<p class=\"f-4 mb-10\">" +
+                    "</h1><div><p>" +
                     marko_escapeXml(input.excerpt) +
-                    "</p>" +
-                    marko_str(markdown(input.contents)));
+                    "</p></div>");
                 }
-              }, out, __component, "6");
+              }, out, __component, "2");
+
+            if (input.image) {
+              Section_tag({
+                  class: "test w-viewport",
+                  renderBody: function(out) {
+                    out.w("<img src=\"/static" +
+                      marko_escapeXmlAttr(input.image.small) +
+                      "\" class=\"small\"><img src=\"/static" +
+                      marko_escapeXmlAttr(input.image.medium) +
+                      "\" class=\"medium\">");
+                  }
+                }, out, __component, "6");
+            }
+
+            var $for$0 = 0;
+
+            marko_forEachProp(input.sections, function(heading, content) {
+              var $keyScope$0 = "[" + (($for$0++) + "]");
+
+              Section_tag({
+                  renderBody: function(out) {
+                    out.w("<h2>" +
+                      marko_escapeXml(heading) +
+                      "</h2><div>" +
+                      marko_str(markdown(content)) +
+                      "</div>");
+                  }
+                }, out, __component, "9" + $keyScope$0);
+            });
           }
         }
     }, out, __component, "0");
@@ -1487,6 +1504,14 @@ marko_template._ = marko_renderer(render, {
 marko_template.Component = marko_defineComponent({}, marko_template._);
 
 marko_template.meta = {
+    deps: [
+      {
+          type: "css",
+          code: "@import \"../styles\";\n\n\t.page__cv {\n\t\t& h2 {\n\t\t\t@extend .f-caps, .f-1, .md\\:w-300, .mb-9;\n\t\t}\n\t\t& section {\n\t\t\t@extend .md\\:flex;\n\t\t}\n\t}\n\n\t.test {\n\t\tborder: 0;\n\t\tmargin-bottom: 4em;\n\t\tpadding: 0;\n\t\t> * {\n\t\t\tflex-grow: 0 !important;\n\t\t}\n\t\t> img {\n\t\t\twidth: 100%;\n\t\t\tdisplay: none;\n\n\t\t\t@media (max-width: 900px) {\n\t\t\t\t&.small {\n\t\t\t\t\tdisplay: block;\n\t\t\t\t}\n\t\t\t}\n\n\t\t\t@media (min-width: 901px) {\n\t\t\t\t&.medium {\n\t\t\t\t\tdisplay: block;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\n\t.page__cv table th {\n\t\tdisplay: none;\n\t}",
+          virtualPath: "./project.marko.css",
+          path: "./project.marko"
+        }
+    ],
     id: "/marko-webpack$1.0.0/src/templates/project.marko",
     tags: [
       "../components/Section/index.marko",
@@ -1628,7 +1653,7 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_defineComponent = components_helpers.c,
     module_markdown = __webpack_require__(7),
     markdown = module_markdown.default || module_markdown,
-    marko_forEachProp = __webpack_require__(11),
+    marko_forEachProp = __webpack_require__(10),
     marko_helpers = __webpack_require__(2),
     marko_escapeXml = marko_helpers.x,
     marko_str = marko_helpers.s,
@@ -1723,8 +1748,10 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     Ticker_tag = marko_loadTag(Ticker_template),
     Section_template = __webpack_require__(8),
     Section_tag = marko_loadTag(Section_template),
-    marko_forEachProp = __webpack_require__(11),
+    marko_forEach = marko_helpers.f,
     marko_escapeXml = marko_helpers.x,
+    marko_attr = marko_helpers.a,
+    marko_forEachProp = __webpack_require__(10),
     Layout_template = __webpack_require__(5),
     Layout_tag = marko_loadTag(Layout_template);
 
@@ -1736,7 +1763,7 @@ function render(input, out, __component, component, state) {
           renderBody: function(out) {
             Section_tag({
                 renderBody: function(out) {
-                  out.w("<h1 style=\"max-width: 600px\">" +
+                  out.w("<h1 style=\"max-width: 600px\" class=\"mt-2\">" +
                     marko_str(input.intro));
 
                   Ticker_tag({
@@ -1763,10 +1790,33 @@ function render(input, out, __component, component, state) {
                 }
               }, out, __component, "2");
 
-            var $for$0 = 0;
+            Section_tag({
+                class: "thing md:flex remove-margin",
+                renderBody: function(out) {
+                  out.w("<h2 class=\"f-5 md:w-300\">Work</h2><div><ul class=\"f-4 links no-icons\">");
+
+                  var $for$0 = 0;
+
+                  marko_forEach(input.work, function(project, index) {
+                    var $keyScope$0 = "[" + (($for$0++) + "]");
+
+                    out.w("<li><a" +
+                      marko_attr("href", project.url) +
+                      ">" +
+                      marko_escapeXml(project.title) +
+                      "</a><div class=\"f-2 mt-3\">" +
+                      marko_escapeXml(project.client) +
+                      "</div></li>");
+                  });
+
+                  out.w("</ul></div>");
+                }
+              }, out, __component, "8");
+
+            var $for$1 = 0;
 
             marko_forEachProp(input.sections, function(heading, content) {
-              var $keyScope$0 = "[" + (($for$0++) + "]");
+              var $keyScope$1 = "[" + (($for$1++) + "]");
 
               Section_tag({
                   class: "thing md:flex remove-margin",
@@ -1777,7 +1827,7 @@ function render(input, out, __component, component, state) {
                       marko_str(markdown(content)) +
                       "</div>");
                   }
-                }, out, __component, "8" + $keyScope$0);
+                }, out, __component, "15" + $keyScope$1);
             });
           }
         }
@@ -1795,7 +1845,7 @@ marko_template.meta = {
     deps: [
       {
           type: "css",
-          code: ".links li {\n\t\tmargin-bottom: 16px;\n\t}\n\t.Section h5 {\n\t\tfont-weight: bold;\n\t}\n\t.Section h2 {\n\t\ttext-transform: capitalize;\n\t}",
+          code: ".links li {\n\t\tmargin-bottom: 16px;\n\n\t\tdiv {\n\t\t\tdisplay: inline;\n\t\t\tmargin-left: 16px;\n\t\t}\n\t}\n\t.Section h5 {\n\t\tfont-weight: bold;\n\t}\n\t.Section h2 {\n\t\ttext-transform: capitalize;\n\t}",
           virtualPath: "./index.marko.css",
           path: "./index.marko"
         }

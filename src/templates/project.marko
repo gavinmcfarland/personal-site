@@ -1,15 +1,73 @@
 import markdown from '../scripts/markdown'
 
-<Layout class="page__project">
-	<@title>${input.title}</@title>
-	<@body class="max-w-3xl">
+<Layout class="page__cv">
+	<@body>
 		<Section>
-			<h1>${input.title}</h1>
-			<p>${input.client}</p>
+			<h1.md:w-400.mb-8.mt-0.pr-8>${input.title}</h1>
+			<div>
+				<p>${input.excerpt}</p>
+			</div>
 		</Section>
-		<Section>
-			<p.f-4.mb-10>${input.excerpt}</p>
-			$!{markdown(input.contents)}
-		</Section>
+		<if(input.image)>
+			<Section.test.w-viewport>
+				<img.small src=("/static" + input.image.small)/>
+				<img.medium src=("/static" + input.image.medium)/>
+			</Section>
+		</if>
+		<!-- <Section>
+			<div>
+				<h5>Goals</h5>
+				<p>Explore how the service might work and establish a proof of concept which can be used to help pitch the service to potential users and investors.</p>
+				<h5>Role</h5>
+				<p>Investigate existing process, discover user pain points, conduct user interviews, information architecture, conceptual prototype.</p>
+			</div>
+		</Section> -->
+		<for|heading, content| in=input.sections>
+			<Section>
+				<h2>${heading}</h2>
+				<div>$!{markdown(content)}</div>
+			</Section>
+		</for>
 	</@body>
 </Layout>
+style {
+	@import "../styles";
+
+	.page__cv {
+		& h2 {
+			@extend .f-caps, .f-1, .md\:w-300, .mb-9;
+		}
+		& section {
+			@extend .md\:flex;
+		}
+	}
+
+	.test {
+		border: 0;
+		margin-bottom: 4em;
+		padding: 0;
+		> * {
+			flex-grow: 0 !important;
+		}
+		> img {
+			width: 100%;
+			display: none;
+
+			@media (max-width: 900px) {
+				&.small {
+					display: block;
+				}
+			}
+
+			@media (min-width: 901px) {
+				&.medium {
+					display: block;
+				}
+			}
+		}
+	}
+
+	.page__cv table th {
+		display: none;
+	}
+}

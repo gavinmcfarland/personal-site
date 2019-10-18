@@ -38,7 +38,13 @@
 		flex-shrink: 0;
 	}
 	.w-300 {
-		width: 300px;
+		width: 280px;
+		flex-grow: 0 !important;
+		flex-shrink: 0;
+	}
+
+	.w-400 {
+		width: 400px;
 		flex-grow: 0 !important;
 		flex-shrink: 0;
 	}

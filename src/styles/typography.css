@@ -8,7 +8,7 @@ a:hover {
 	background-color: #DDDDDD;
 }
 
-ul {
+ul, ol {
 	margin-left: 28px;
 }
 
@@ -24,6 +24,25 @@ ul li::before {
 	margin-right: 16px;
 	margin-left: -28px;
 	background-image: url(./bullet-triangle.svg);
+}
+
+ol {
+	list-style: none;
+    counter-reset: number;
+}
+
+ol li {
+	margin-bottom: 2px;
+}
+
+ol li:before {
+    counter-increment: number;
+	content: counter(number) ". ";
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-right: 16px;
+	margin-left: -28px;
 }
 
 .icons-dash li::before {
@@ -82,5 +101,20 @@ div > table:first-child {
 }
 
 h5 {
+	margin-top: 2em;
 	font-weight: bold;
+}
+
+h1 {
+	margin-bottom: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+hr {
+	margin-top: 80px;
+	border-bottom: 1px solid black;
+	margin-bottom: 80px;
 }
