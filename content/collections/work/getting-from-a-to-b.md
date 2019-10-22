@@ -18,6 +18,8 @@ sections:
         I sketched the different screens thinking about the different stages of the user’s journey. As I went, I wrote down questions that came to mind as a result of wondering how to user might cope with the user interface on Android.
         
         Knowing that the user journey would largely be the same I was able to estimate for my time with a rough guide. This allowed us to agree a budget to work towards for creating a prototype for the purpose of demonstrating the application to investors.
+
+        ![](/static/caution-your-blast/sketches.png)
     conclusion: |
         I completed a fidelity prototype within the timeframe we agreed, updating the client on my progress so they could manage expectations with their team and investors. Given more time I would liked to have seen changes being made to both the Android version of the app and the iPhone app for a more consistent and universal experience across both devices.
 
