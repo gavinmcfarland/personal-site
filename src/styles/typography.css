@@ -16,6 +16,11 @@ ul li  {
 	margin-bottom: 16px;
 }
 
+p > img {
+	margin-top: 2.875em;
+	margin-bottom: 2.875em;
+}
+
 ul li::before {
 	content: "";
 	display: inline-block;
@@ -117,4 +122,8 @@ hr {
 	margin-top: 80px;
 	border-bottom: 1px solid black;
 	margin-bottom: 80px;
+}
+
+.f-center {
+	text-align: center;
 }

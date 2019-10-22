@@ -11,7 +11,10 @@ sections:
     goal: |
         Explore how the service might work and establish a proof of concept which can be used to help pitch the service to potential users and investors.
     current process: |
-        To get a better understanding of the details and events of the rental process I created a flow diagram. It shows a typical rental process in London. I’ve written hypothetical dates next to certain sections to get an understanding of the time frames between events while thinking about the thoughts and feelings a renter might be having during this process.
+        To get a better understanding of the details and events of the rental process I created a flow diagram. It shows a typical rental process in London. I recorded hypothetical dates next to certain sections to get an understanding of the time frames between events while thinking about the thoughts and feelings a renter might be having during this process. With the team I also created a created a persona matrix of tenants' needs, habits and motivations. I used this to create a storyboard to help visualise the founders ideas in context.
+
+        ![](/static/10lord/current-process.png)
+        From right to left: flow diagram of existing journey, persona matrix for tenants, storyboard for new service{.f-1 .f-center}
     conception: |
         We identified a lot of needs and created a lot of ideas about what would meet those needs, but nothing about how they might physically be met or what the cost of those ideas were. We needed a way to think about how we might solve these problems without pigeonholing ourselves. A technique I sometimes use is to create placeholders which represent a typical activity, like logging in, on boarding, viewing a list of properties, or viewing a profile. These can then be printed, rearranged and used in discussions. They don’t contain any content but help remind people of the type of activity that takes place in the holistic journey, without being bogged down in the detail.
     flow: |
