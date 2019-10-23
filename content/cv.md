@@ -18,13 +18,15 @@ sections:
         - Working with Venntro I helped to increase the number of complete profiles on their dating platform. To start only a small percentage of customers completed their profile. I interviewed customers to understand their dating habits and assessed usability pain points. By introducing users to the profile creation process earlier on we increased completed profiles by 4 times of what it was before.
         {.icon-list}
     experience: |
-        | Company                                | Description                                                                                    | Sector        |
-        | -------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------- |
-        | Dept for International Trade           | Case management system to help caseworkers process applications for export licenses.           | Public        |
-        | Home Office                            | Redesign government service providing support to refugees seeking asylum                       | Public        |
-        | 10Lord                                 | New service to help provide a better renting experience between tenants, landlords and agents. | Startup       |
-        | Dept for Business, Innovation & Skills | Grant funding platform used by research academics.                                             | Public        |
-        | AIMIA                                  | Evaluate customers feedback and opinion of Nectar app to mitigate bad reviews.                 | Loyalty cards |
+        | Company                                | Description                                                                                       | Sector  |
+        | -------------------------------------- | ------------------------------------------------------------------------------------------------- | ------- |
+        | American Express                       | Create Design system for online portal for choosing a card.                                       | Finance |
+        | Dept for International Trade           | New case management system to help caseworkers process applications for export licenses.          | Public  |
+        | Home Office                            | Redesign government service providing support to refugees seeking asylum.                         | Public  |
+        | 10Lord                                 | New service to help provide a better renting experience between tenants, landlords and agents.    | Startup |
+        | Dept for Business, Innovation & Skills | Digital transfromation of Grant funding platform used by research academics.                      | Public  |
+        | AIMIA                                  | Evaluate customers feedback and opinion of Nectar iPhone and Android app to mitigate bad reviews. | Retail  |
+        | John Lewis                             | Omni-channel experience for iPad, iPhone, Android and Web.                                        | Retail  |
 
     background: |
         2004 - 2005
