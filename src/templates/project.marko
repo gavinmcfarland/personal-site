@@ -3,25 +3,33 @@ import markdown from '../scripts/markdown'
 <Layout class="page__cv">
 	<@body>
 		<Section>
-			<h1.md:w-400.mb-8.mt-0.pr-8>${input.title}</h1>
-			<div>
+			<h1.mb-8.mt-0>${input.title}</h1>
+			<div.excerpt.f-4>
 				<p>$!{markdown(input.excerpt)}</p>
 			</div>
 		</Section>
 		<if(input.image)>
-			<Section.test.w-viewport>
+			<Section.hero.w-viewport>
 				<img.small src=("/static" + input.image.small)/>
 				<img.medium src=("/static" + input.image.medium)/>
 			</Section>
 		</if>
-		<!-- <Section>
-			<div>
-				<h5>Goals</h5>
-				<p>Explore how the service might work and establish a proof of concept which can be used to help pitch the service to potential users and investors.</p>
-				<h5>Role</h5>
-				<p>Investigate existing process, discover user pain points, conduct user interviews, information architecture, conceptual prototype.</p>
-			</div>
-		</Section> -->
+		<if(input.goal || input.role)>
+			<Section.details>
+				<if(input.goal)>
+					<div.span-4>
+						<h5>Goals</h5>
+						$!{markdown(input.goal)}
+					</div>
+				</if>
+				<if(input.role)>
+					<div.span-4>
+						<h5>My Role</h5>
+						$!{markdown(input.role)}
+					</div>
+				</if>
+			</Section>
+		</if>
 		<for|heading, content| in=input.sections>
 			<Section>
 				<h2>${heading}</h2>
@@ -33,25 +41,37 @@ import markdown from '../scripts/markdown'
 style {
 	@import "../styles";
 
-	.page__cv {
+	.w-viewport.w-viewport {
+		grid-column: 1 / -1;
+	}
+
+	section {
 		& h2 {
-			@extend .f-caps, .f-1, .md\:w-300, .mb-9;
-		}
-		& section {
-			@extend .md\:flex;
+			grid-column: span 3;
 		}
 	}
 
-	.test {
+	.span-4 {
+		grid-column: span 4 !important;
+	}
+
+	.details {
+	}
+	.hero {
 		border: 0;
+		display: none !important;
 		margin-bottom: 4em;
-		padding: 0;
+		padding: 0 !important;
+		margin-top: -2em;
+		background: #f0f0f0;
 		> * {
 			flex-grow: 0 !important;
 		}
 		> img {
 			width: 100%;
+			max-width: 1400px;
 			display: none;
+			margin: 0 auto;
 
 			@media (max-width: 900px) {
 				&.small {

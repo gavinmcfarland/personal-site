@@ -115,7 +115,8 @@ h1 {
 }
 
 h2 {
-	font-size: 1.5em;
+	font-size: 1.4em;
+	@extend .f-text;
 }
 
 hr {

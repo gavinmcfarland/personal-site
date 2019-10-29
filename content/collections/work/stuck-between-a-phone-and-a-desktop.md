@@ -3,7 +3,14 @@ title: Stuck Between a Phone and a Desktop
 tags: work
 status: draft
 client: John Lewis
-excerpt: Finding your identity as an iPad app is difficult. For John Lewis this meant being somewhere between your popular iPhone app, and your trusty, long–standing, fully–featured desktop site. We set to understand our customers using the the iPad app and to give it a purpose tailored to their needs.
+image: 
+    small: /john-lewis/hero-image-sm.png
+    medium: /john-lewis/hero-image-md.png
+excerpt: Finding your identity as an iPad app is difficult. For _John Lewis_ this meant being somewhere between your popular iPhone app, and your trusty, long–standing, fully–featured desktop site. We set to understand our customers using the the iPad app, and to give it a purpose tailored to their needs.
+goal: |
+    To increase sales, encourage more browsing during the evening and more positive app store reviews.
+role: |
+    Lead the product design, writing user stories, user testing facilitator and note taker, wireframing features, interaction design.
 sections:
     navigation: |
         The main challenges user’s were having was difficulty navigating between departments and wanted more from their experience. In addition, the standard they were expecting was being pushed higher by other, smaller, independent apps. I worked with the business to understand the cause of these challenges, and offered advice for prioritising these issues. After understanding what the business wanted to achieve and what its customers wanted, work began within an agile team of 8-10 people to deliver changes over 6 months.

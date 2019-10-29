@@ -1,3 +1,93 @@
-<section.bt.pt-10.pb-11.Section class=input.class>
+<section.bt.pt-11.pb-11.Section class=input.class>
 	<${input}/>
 </section>
+style {
+	@import "../../styles";
+
+	.Section {
+		@media (min-width: 800px) {
+			display: grid;
+			gap: 40px;
+			grid-template-columns: repeat(12, 1fr);
+		}
+	}
+	.Section {
+		> * {
+			grid-column: 1 / -1;
+		}
+		& h1 {
+			grid-column: span 4;
+		}
+		& .excerpt {
+			grid-column: 6 / -1;
+		}
+		& h2 {
+			@extend .mb-9;
+			grid-column: span 3;
+			text-transform: capitalize;
+			margin-top: 0.3em;
+		}
+		& figure {
+			margin-top: 4em;
+			@media (min-width: 900px) {
+				margin-top: 8em;
+				margin-bottom: 6em;
+			}
+
+			.max-width {
+				max-width: 84rem;
+				box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);
+				border-radius: 2px;
+			}
+		}
+		& figure.w-viewportssss {
+			--column: calc(((-100% - 40px) / 9));
+			--column-vw: calc(((-100vw - 40px) / 9));
+			--width: calc(100% - (var(--column) * 3));
+			@media (min-width: 800px) {
+				margin-left: calc(((-100% - 40px) / 6));
+			}
+
+			padding-left: 2.5rem;
+			padding-right: 2.5rem;
+
+			img {
+				margin: 0 auto;
+			}
+		}
+
+		& figure.w-viewport {
+			--column: calc(((-100% - 40px) / 9));
+			--column-vw: calc(((-100vw - 40px) / 9));
+			--width: calc(100% - (var(--column) * 3));
+			@media (min-width: 800px) {
+				margin-left: calc(((-100% - 40px) / 6));
+			}
+
+			padding-left: 2.5rem;
+			padding-right: 2.5rem;
+
+			img {
+				margin: 0 auto;
+			}
+		}
+		& figcaption {
+			text-align: center;
+			@extend .f-1, .mt-10;
+			max-width: 64rem;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		& div {
+			grid-column: 4 / -1;
+			/* Fix for firefox because for some reason div expands to size of it's children */
+			width: 100%;
+			& > * {
+				grid-column: 4 / -1;
+			}
+		}
+		& img {
+			width: 100%;
+		}
+	}
+}

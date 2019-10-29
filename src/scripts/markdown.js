@@ -2,6 +2,9 @@ var MarkdownIt = require("markdown-it")
 
 var md = new MarkdownIt({ html: true })
 md.use(require('markdown-it-attrs'));
+// md.use(require('markdown-it-implicit-figures'), {
+// 	figcaption: true, // <figcaption>alternative text</figcaption>, default: false
+// });
 
 function removeIndentation(str) {
 	// remove the shortest leading indentation from each line (credit: https://github.com/declandewet/common-tags/blob/master/src/stripIndentTransformer/stripIndentTransformer.js)
