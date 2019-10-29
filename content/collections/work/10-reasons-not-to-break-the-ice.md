@@ -3,7 +3,7 @@ title: 10 Reasons Not to Break the Ice
 tags: work
 status: publish
 client: Venntro
-excerpt: As part of an audit to look for opportunities to improve the a large white label dating company, one thing I noticed was the number of steps required for a user to send an Ice Breaker. Ice Breakers are used to encourage members to message each other. Once I decided to create a site map of the existing functionality and I found there were 10 opportunities where a member could decide to give up.
+excerpt: As part of an audit to look for opportunities to improve a large white label dating company, one thing I noticed was the number of steps required for a user to send an Ice Breaker. Ice Breakers are used to encourage members to message each other. I decided to create a site map of the existing functionality and found there were 10 opportunities where a member could decide to give up.
 
 sections:
     research: |
