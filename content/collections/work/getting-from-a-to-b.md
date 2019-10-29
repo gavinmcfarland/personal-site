@@ -10,6 +10,8 @@ excerpt: |
     _Commuter_ is an iPhone app that lets you plan your journey using public transport without sharing any user data with third parties. CYB wanted me to help them demonstrate how their existing iPhone app might work on Android so they may approach interested investors.
 role: |
     Provide consultation on the best approach for demoing interaction. Deliver a clickable prototype with finished visual designs. Document thought process so knowledge could be shared.
+goal: |
+    Understand the complexities and opportunities of how the app will work for Android.
 sections:
     sketching: |
         I was given an invite to a current dev build of the existing iPhone application and started by exploring the app and the different journeys, taking screenshots as I went.

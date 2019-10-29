@@ -121,7 +121,7 @@ module.exports = require("marko/components");
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.10 - DO NOT EDIT
+/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.19 - DO NOT EDIT
 
 
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
@@ -230,7 +230,7 @@ marko_template.meta = {
 
 module.exports = {
   getBundleName: function(){return "Client"},
-  entries: {"404_78An":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.836c2b72.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js","404_78An.a22ae359.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js.map","404_78An.a22ae359.js.map"]}},"about_kzxx":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.836c2b72.css","about_kzxx~cv_tq48~project_Qgdo.af791d79.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js","about_kzxx~cv_tq48~project_Qgdo.9aa5b3a3.js","about_kzxx.bfe4e472.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js.map","about_kzxx~cv_tq48~project_Qgdo.9aa5b3a3.js.map","about_kzxx.bfe4e472.js.map"]}},"cv_tq48":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.836c2b72.css","about_kzxx~cv_tq48~project_Qgdo.af791d79.css","cv_tq48.77f803d7.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js","about_kzxx~cv_tq48~project_Qgdo.9aa5b3a3.js","cv_tq48.275585cd.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js.map","about_kzxx~cv_tq48~project_Qgdo.9aa5b3a3.js.map","cv_tq48.275585cd.js.map"]}},"post_ffL2":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.836c2b72.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js","post_ffL2.5236fc7d.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js.map","post_ffL2.5236fc7d.js.map"]}},"project_Qgdo":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.836c2b72.css","about_kzxx~cv_tq48~project_Qgdo.af791d79.css","project_Qgdo.d0017dda.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js","about_kzxx~cv_tq48~project_Qgdo.9aa5b3a3.js","project_Qgdo.d6b92394.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js.map","about_kzxx~cv_tq48~project_Qgdo.9aa5b3a3.js.map","project_Qgdo.d6b92394.js.map"]}},"projects_3eZ0":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.836c2b72.css","projects_3eZ0.bf10103b.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js","projects_3eZ0.09271c1e.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js.map","projects_3eZ0.09271c1e.js.map"]}},"templates_IwU3":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.836c2b72.css","templates_IwU3.ddc1d04b.css"],"js":["vendors~templates_IwU3.7d4f0893.js","404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js","templates_IwU3.f063f786.js"],"map":["vendors~templates_IwU3.7d4f0893.js.map","404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js.map","templates_IwU3.f063f786.js.map"]}}}
+  entries: {"404_78An":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.836c2b72.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js","404_78An.a22ae359.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js.map","404_78An.a22ae359.js.map"]}},"about_kzxx":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.836c2b72.css","about_kzxx~cv_tq48~project_Qgdo.ae4a6552.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js","about_kzxx~cv_tq48~project_Qgdo.66c5a626.js","about_kzxx.bfe4e472.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js.map","about_kzxx~cv_tq48~project_Qgdo.66c5a626.js.map","about_kzxx.bfe4e472.js.map"]}},"cv_tq48":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.836c2b72.css","about_kzxx~cv_tq48~project_Qgdo.ae4a6552.css","cv_tq48.77f803d7.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js","about_kzxx~cv_tq48~project_Qgdo.66c5a626.js","cv_tq48.275585cd.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js.map","about_kzxx~cv_tq48~project_Qgdo.66c5a626.js.map","cv_tq48.275585cd.js.map"]}},"post_ffL2":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.836c2b72.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js","post_ffL2.5236fc7d.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js.map","post_ffL2.5236fc7d.js.map"]}},"project_Qgdo":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.836c2b72.css","about_kzxx~cv_tq48~project_Qgdo.ae4a6552.css","project_Qgdo.d0017dda.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js","about_kzxx~cv_tq48~project_Qgdo.66c5a626.js","project_Qgdo.d6b92394.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js.map","about_kzxx~cv_tq48~project_Qgdo.66c5a626.js.map","project_Qgdo.d6b92394.js.map"]}},"projects_3eZ0":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.836c2b72.css","projects_3eZ0.bf10103b.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js","projects_3eZ0.09271c1e.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js.map","projects_3eZ0.09271c1e.js.map"]}},"templates_IwU3":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.836c2b72.css","templates_IwU3.6ac1fe41.css"],"js":["vendors~templates_IwU3.21a6f64d.js","404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js","templates_IwU3.3560c9c2.js"],"map":["vendors~templates_IwU3.21a6f64d.js.map","404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js.map","templates_IwU3.3560c9c2.js.map"]}}}
 }
 
 /***/ }),
@@ -269,7 +269,7 @@ module.exports = function(string) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.10 - DO NOT EDIT
+/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.19 - DO NOT EDIT
 
 
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
@@ -309,7 +309,7 @@ marko_template.meta = {
       "./style.css",
       {
           type: "css",
-          code: "@import \"../../styles\";\n\n\t.Section {\n\t\t@media (min-width: 800px) {\n\t\t\tdisplay: grid;\n\t\t\tgap: 40px;\n\t\t\tgrid-template-columns: repeat(12, 1fr);\n\t\t}\n\t}\n\t.Section {\n\t\t> * {\n\t\t\tgrid-column: 1 / -1;\n\t\t}\n\t\t& h1 {\n\t\t\tgrid-column: span 4;\n\t\t}\n\t\t& .excerpt {\n\t\t\tgrid-column: 6 / -1;\n\t\t}\n\t\t& h2 {\n\t\t\t@extend .mb-9;\n\t\t\tgrid-column: span 3;\n\t\t\ttext-transform: capitalize;\n\t\t\tmargin-top: 0.3em;\n\t\t}\n\t\t& figure {\n\t\t\tmargin-top: 4em;\n\t\t\t@media (min-width: 900px) {\n\t\t\t\tmargin-top: 8em;\n\t\t\t\tmargin-bottom: 6em;\n\t\t\t}\n\n\t\t\t.max-width {\n\t\t\t\tmax-width: 84rem;\n\t\t\t\tbox-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);\n\t\t\t\tborder-radius: 2px;\n\t\t\t}\n\t\t}\n\t\t& figure.w-viewportssss {\n\t\t\t--column: calc(((-100% - 40px) / 9));\n\t\t\t--column-vw: calc(((-100vw - 40px) / 9));\n\t\t\t--width: calc(100% - (var(--column) * 3));\n\t\t\t@media (min-width: 800px) {\n\t\t\t\tmargin-left: calc(((-100% - 40px) / 6));\n\t\t\t}\n\n\t\t\tpadding-left: 2.5rem;\n\t\t\tpadding-right: 2.5rem;\n\n\t\t\timg {\n\t\t\t\tmargin: 0 auto;\n\t\t\t}\n\t\t}\n\n\t\t& figure.w-viewport {\n\t\t\t--column: calc(((-100% - 40px) / 9));\n\t\t\t--column-vw: calc(((-100vw - 40px) / 9));\n\t\t\t--width: calc(100% - (var(--column) * 3));\n\t\t\t@media (min-width: 800px) {\n\t\t\t\tmargin-left: calc(((-100% - 40px) / 6));\n\t\t\t}\n\n\t\t\tpadding-left: 2.5rem;\n\t\t\tpadding-right: 2.5rem;\n\n\t\t\timg {\n\t\t\t\tmargin: 0 auto;\n\t\t\t}\n\t\t}\n\t\t& figcaption {\n\t\t\ttext-align: center;\n\t\t\t@extend .f-1, .mt-10;\n\t\t\tmax-width: 64rem;\n\t\t\tmargin-left: auto;\n\t\t\tmargin-right: auto;\n\t\t}\n\t\t& div {\n\t\t\tgrid-column: 4 / -1;\n\t\t\t/* Fix for firefox because for some reason div expands to size of it's children */\n\t\t\twidth: 100%;\n\t\t\t& > * {\n\t\t\t\tgrid-column: 4 / -1;\n\t\t\t}\n\t\t}\n\t\t& img {\n\t\t\twidth: 100%;\n\t\t}\n\t}",
+          code: "@import \"../../styles\";\n\n\t.Section {\n\t\t@media (min-width: 800px) {\n\t\t\tdisplay: grid;\n\t\t\tgap: 40px;\n\t\t\tgrid-template-columns: repeat(12, 1fr);\n\t\t}\n\t}\n\t.Section {\n\t\t> * {\n\t\t\tgrid-column: 1 / -1;\n\t\t}\n\t\t& h1 {\n\t\t\tgrid-column: span 4;\n\t\t}\n\t\t& .excerpt {\n\t\t\tgrid-column: 6 / -1;\n\t\t}\n\t\t& h2 {\n\t\t\t@extend .mb-9;\n\t\t\tgrid-column: span 3;\n\t\t\ttext-transform: capitalize;\n\t\t\tmargin-top: 0.3em;\n\t\t}\n\t\t& figure {\n\t\t\tmargin-top: 4em;\n\t\t\t@media (min-width: 900px) {\n\t\t\t\tmargin-top: 8em;\n\t\t\t\tmargin-bottom: 6em;\n\t\t\t}\n\n\t\t\t.max-width {\n\t\t\t\tmax-width: 84rem;\n\t\t\t\tbox-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);\n\t\t\t\tborder-radius: 2px;\n\t\t\t}\n\t\t}\n\t\t& figure.w-viewportssss {\n\t\t\t--column: calc(((-100% - 40px) / 9));\n\t\t\t--column-vw: calc(((-100vw - 40px) / 9));\n\t\t\t--width: calc(100% - (var(--column) * 3));\n\t\t\t@media (min-width: 800px) {\n\t\t\t\tmargin-left: calc(((-100% - 40px) / 6));\n\t\t\t}\n\n\t\t\tmargin-left: calc((-100% / 12 - 200px) / 2);\n\n\t\t\tpadding-left: 2.5rem;\n\t\t\tpadding-right: 2.5rem;\n\n\t\t\timg {\n\t\t\t\tmargin: 0 auto;\n\t\t\t}\n\t\t}\n\n\t\t& figure.w-viewport {\n\t\t\t--column: calc(((-100% - 40px) / 9));\n\t\t\t--column-vw: calc(((-100vw - 40px) / 9));\n\t\t\t--width: calc(100% - (var(--column) * 3));\n\t\t\t@media (min-width: 800px) {\n\t\t\t\tmargin-left: calc(((-100% - 40px) / 6));\n\t\t\t}\n\n\t\t\tpadding-left: 2.5rem;\n\t\t\tpadding-right: 2.5rem;\n\n\t\t\timg {\n\t\t\t\tmargin: 0 auto;\n\t\t\t}\n\t\t}\n\t\t& figcaption {\n\t\t\ttext-align: center;\n\t\t\t@extend .f-1, .mt-10;\n\t\t\tmax-width: 64rem;\n\t\t\tmargin-left: auto;\n\t\t\tmargin-right: auto;\n\t\t}\n\t\t& div {\n\t\t\tgrid-column: 4 / -1;\n\t\t\t/* Fix for firefox because for some reason div expands to size of it's children */\n\t\t\twidth: 100%;\n\t\t\t& > * {\n\t\t\t\tgrid-column: 4 / -1;\n\t\t\t}\n\t\t}\n\t\t& img {\n\t\t\twidth: 100%;\n\t\t}\n\t}",
           virtualPath: "./index.marko.css",
           path: "./index.marko"
         }
@@ -324,7 +324,7 @@ marko_template.meta = {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.10 - DO NOT EDIT
+/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.19 - DO NOT EDIT
 
 
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
@@ -526,7 +526,7 @@ module.exports = require("serve-static");
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.10 - DO NOT EDIT
+/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.19 - DO NOT EDIT
 
 
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
@@ -629,7 +629,7 @@ marko_template.meta = {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.10 - DO NOT EDIT
+/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.19 - DO NOT EDIT
 
 
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
@@ -732,7 +732,7 @@ marko_template.meta = {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.10 - DO NOT EDIT
+/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.19 - DO NOT EDIT
 
 
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
@@ -835,7 +835,7 @@ marko_template.meta = {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.10 - DO NOT EDIT
+/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.19 - DO NOT EDIT
 
 
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
@@ -938,7 +938,7 @@ marko_template.meta = {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.10 - DO NOT EDIT
+/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.19 - DO NOT EDIT
 
 
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
@@ -1041,7 +1041,7 @@ marko_template.meta = {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.10 - DO NOT EDIT
+/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.19 - DO NOT EDIT
 
 
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
@@ -1288,7 +1288,7 @@ module.exports = require("voca");
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.10 - DO NOT EDIT
+/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.19 - DO NOT EDIT
 
 
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
@@ -1363,7 +1363,7 @@ module.exports = require("marko/dist/core-tags/core/await/reorderer-renderer");
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.10 - DO NOT EDIT
+/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.19 - DO NOT EDIT
 
 
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
@@ -1434,7 +1434,7 @@ module.exports = require("markdown-it-attrs");
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.10 - DO NOT EDIT
+/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.19 - DO NOT EDIT
 
 
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
@@ -1554,7 +1554,7 @@ marko_template.meta = {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.10 - DO NOT EDIT
+/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.19 - DO NOT EDIT
 
 
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
@@ -1612,7 +1612,7 @@ marko_template.meta = {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.10 - DO NOT EDIT
+/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.19 - DO NOT EDIT
 
 
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
@@ -1671,7 +1671,7 @@ marko_template.meta = {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.10 - DO NOT EDIT
+/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.19 - DO NOT EDIT
 
 
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
@@ -1759,7 +1759,7 @@ marko_template.meta = {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.10 - DO NOT EDIT
+/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.19 - DO NOT EDIT
 
 
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
@@ -1893,7 +1893,7 @@ marko_template.meta = {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.10 - DO NOT EDIT
+/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.18.19 - DO NOT EDIT
 
 
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
