@@ -1,18 +1,15 @@
 @import './aliases';
 
-hr {
-	margin-inline: var(--margin-6);
-	border-bottom: var(--border-width) var(--border-style) var(--border-color);
-}
-
 :--body {
-    font-size: var(--font-size-2);
-    font-family: var(--font-family);
-    color: var(--font-size-2);
+    font-size: var(--font-size-4);
+	font-family: var(--font-family);
+	line-height: var(--line-height);
+	color: var(--font-size-2);
+	padding-inline: var(--padding-10);
 }
 
 :--text {
-	margin: var(--margin-2) *;
+	margin-block: var(--margin-2);
 
     :--link & {
         text-decoration: underline;
@@ -21,36 +18,8 @@ hr {
 
 :--heading {
     font-weight: bold;
-    margin: var(--margin-4) *;
+    margin-block: var(--margin-4);
 	color: var(--black);
-}
-
-h1 {
-	/* font-family: display; */
-	font-size: var(--font-size-7);
-	margin: var(--margin-8) *;
-}
-
-h2 {
-	/* font-family: display; */
-	font-size: var(--font-size-6);
-	margin: var(--margin-8) *;
-}
-
-h3 {
-	font-size: var(--font-size-5);
-}
-
-h4 {
-	font-size: var(--font-size-4);
-}
-
-h5 {
-	font-size: var(--font-size-3);
-}
-
-h6 {
-	font-size: var(--font-size-2);
 }
 
 :--link {
@@ -76,7 +45,7 @@ h6 {
         /* border: ; */
         border-radius: 2px;
         padding: var(--padding-8);
-        font-family: code; /* relies on some font-face wizardary */
+        font-family: code;
     }
 }
 
@@ -85,46 +54,6 @@ h6 {
 
 	li {
 		margin-bottom: var(--margin-1);
-	}
-}
-
-:--unordered li {
-	margin-bottom: 16px;
-}
-
-:--ordered li {
-	content: counter(number) ". ";
-	size: 12px;
-	margin-inline: var(--margin-1);
-}
-
-:--icon li::before {
-	content: "";
-	width: 12px;
-	height: 12px;
-	margin-right: 16px;
-	margin-left: -28px;
-	background-image: url(./bullet-triangle.svg);
-
-	&-dash li::before {
-		background-image: url(./bullet-dash-large.svg);
-	}
-
-	&-dash-small li::before {
-		background-image: url(./bullet-dash-small.svg);
-	}
-
-	.no-icons {
-		margin-left: 0;
-	}
-
-	.no-icons li::before {
-		display: none;
-	}
-
-	.compact li {
-		margin: 0;
-		margin-bottom: 2px;
 	}
 }
 
@@ -160,32 +89,35 @@ h6 {
 	}
 }
 
-
-/* ? */
-
-h5 {
-	margin-top: 2em;
-	font-weight: bold;
-}
-
 h1 {
-	margin-bottom: 2em;
+	font-family: Fira Code;
+	font-size: var(--font-size-7);
+	margin-block: var(--margin-8);
 }
 
 h2 {
-	font-size: 1.4em;
-	@extend .f-text;
+	/* font-family: display; */
+	font-size: var(--font-size-6);
+	margin: var(--margin-8) *;
 }
 
-.f-center {
-	text-align: center;
+h3 {
+	font-size: var(--font-size-5);
 }
 
-div > table:first-child {
-	margin-top: 0;
+h4 {
+	font-size: var(--font-size-4);
 }
 
-p > img {
-	margin-top: 2.875em;
-	margin-bottom: 2.875em;
+h5 {
+	font-size: var(--font-size-3);
+}
+
+h6 {
+	font-size: var(--font-size-2);
+}
+
+hr {
+	margin-inline: var(--margin-6);
+	border-bottom: var(--border-width) var(--border-style) var(--border-color);
 }

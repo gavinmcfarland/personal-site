@@ -6,107 +6,91 @@ style {
 
 	.Section {
 		border-top: var(--border-width) var(--border-style) var(--border-color);
-		padding: var(--padding-5) * var(--padding-4);
-	}
+		padding: var(--padding-11) * var(--padding-12);
 
-	/* Remove margins */
-	.Section > div {
-		& > :first-child {
-			margin-top: unset;
-		}
-
-		& > :last-child {
-			margin-bottom: unset;
-		}
-	}
-
-	.Section {
 		@media (min-width: 800px) {
 			display: grid;
-			gap: 40px;
+			gap: var(--spacing-2);
 			grid-template-columns: repeat(12, 1fr);
-		}
-	}
-	.Section {
-		> * {
-			grid-column: 1 / -1;
 		}
 
 		& .excerpt {
 			grid-column: 6 / -1;
 		}
-		& h2 {
-			@extend .mb-9;
-			grid-column: span 3;
-			text-transform: capitalize;
-		}
-		& > h1,
-		& > h2 {
-			margin: unset *;
-		}
+
 		& figure {
-			margin-top: 4em;
+			margin-top: var(--margin-4);
+			padding-inline: var(--padding-2);
+
 			@media (min-width: 900px) {
-				margin-top: 8em;
-				margin-bottom: 6em;
-			}
-
-			.max-width {
-				max-width: 84rem;
-				box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);
-				border-radius: 2px;
-			}
-		}
-		& figure.w-viewportssss {
-			--column: calc(((-100% - 40px) / 9));
-			--column-vw: calc(((-100vw - 40px) / 9));
-			--width: calc(100% - (var(--column) * 3));
-			@media (min-width: 800px) {
-				margin-left: calc(((-100% - 40px) / 6));
-			}
-
-			margin-left: calc((-100% / 12 - 200px) / 2);
-
-			padding-left: 2.5rem;
-			padding-right: 2.5rem;
-
-			img {
-				margin: 0 auto;
+				margin-block: var(--margin-8);
 			}
 		}
 
-		& figure.w-viewport {
-			--column: calc(((-100% - 40px) / 9));
-			--column-vw: calc(((-100vw - 40px) / 9));
-			--width: calc(100% - (var(--column) * 3));
-			@media (min-width: 800px) {
-				margin-left: calc(((-100% - 40px) / 6));
-			}
-
-			padding-left: 2.5rem;
-			padding-right: 2.5rem;
-
-			img {
-				margin: 0 auto;
-			}
-		}
 		& figcaption {
 			text-align: center;
-			@extend .f-1, .mt-10;
+			font-size: var(--font-size-1);
+			margin-top: var(--margin-10);
 			max-width: 64rem;
 			margin-left: auto;
 			margin-right: auto;
 		}
+	}
+
+	/* Layout settings */
+	.Section {
+		> * {
+			grid-column: 1 / -1;
+		}
+
+		& h2 {
+			grid-column: span 3;
+		}
+
 		& div {
 			grid-column: 4 / -1;
+
 			/* Fix for firefox because for some reason div expands to size of it's children */
 			width: 100%;
+
 			& > * {
 				grid-column: 4 / -1;
 			}
 		}
+
 		& img {
 			width: 100%;
+		}
+	}
+
+	/* Remove margins */
+	.Section {
+		& > div {
+			& > :first-child {
+				margin-top: unset;
+			}
+
+			& > :last-child {
+				margin-bottom: unset;
+			}
+		}
+
+		& h1,
+		& h2 {
+			margin-block: unset;
+		}
+	}
+
+	/* Viewport width ? */
+	.Section figure {
+		@extend %width-viewport;
+
+		@media (min-width: 800px) {
+			margin-left: calc(((-100% - var(--spacing-2)) / 6));
+		}
+
+		img {
+			margin: 0 auto;
 		}
 	}
 }

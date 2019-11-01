@@ -16,7 +16,7 @@ import favicon from "./favicon.png"
 		</title>
 		<!-- <link> tags to include optimized CSS URLs will be included below: -->
 		<${input.styles}/>
-		<link href="https://fonts.googleapis.com/css?family=Miriam+Libre|Roboto|Roboto+Condensed|Roboto+Mono&display=swap" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css?family=Miriam+Libre|Roboto|Fira+Code|Roboto+Condensed|Roboto+Mono&display=swap" rel="stylesheet"/>
 		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css"/>
 	</head>
 	<body class=input.class>
@@ -58,50 +58,52 @@ style {
 	body {
 		min-height: 100%;
 		display: flex;
-		padding: * var(--padding-4);
 
 		flex-direction: column;
+	}
 
-		& > main {
-			@extend .w-grow;
+	body > main {
+		@extend .w-grow;
+		padding-left: inherit;
+		padding-right: inherit;
+
+		display: flex;
+		justify-content: center;
+
+		& .wrapper {
+			box-sizing: content-box;
 			padding-left: inherit;
 			padding-right: inherit;
-
-			display: flex;
-			justify-content: center;
-
-			& .wrapper {
-				box-sizing: content-box;
-				padding-left: inherit;
-				padding-right: inherit;
-				flex-basis: 100%;
-				flex-shrink: 0;
-			}
-		}
-		& > header,
-		& > footer {
-			padding: inherit;
-			@extend .w-shrink, .flex;
-			justify-content: space-between;
-
-			align-items: center;
-
-			& > * {
-				margin-top: unset;
-				margin-bottom: unset;
-			}
-		}
-		& > footer {
-			font-size: var(--font-size-1);
-		}
-		& > :matches(header, footer) > nav {
-			display: flex;
-			@extend .w-shrink;
+			flex-basis: 100%;
+			flex-shrink: 0;
 		}
 	}
 
+	body > header,
+	body > footer {
+		padding: inherit;
+		@extend .w-shrink, .flex;
+		justify-content: space-between;
+
+		align-items: center;
+
+		& > * {
+			margin-top: unset;
+			margin-bottom: unset;
+		}
+	}
+
+	body > footer {
+		font-size: var(--font-size-1);
+	}
+
+	body > :matches(header, footer) > nav {
+		display: flex;
+		@extend .w-shrink;
+	}
+
 	body > header {
-		padding-block: var(--padding-4);
+		padding-block: var(--padding-10);
 	}
 
 	body > header,

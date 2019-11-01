@@ -5,7 +5,6 @@
 @import 'karamel/normalize';
 @import './reset';
 @import './variables';
-@import './typography';
 @import './elements';
 
 /* Custom properties
