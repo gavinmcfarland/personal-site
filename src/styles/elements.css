@@ -1,11 +1,10 @@
 @import './aliases';
 
-:--body {
+:root {
     font-size: var(--font-size-4);
 	font-family: var(--font-family);
 	line-height: var(--line-height);
 	color: var(--font-size-2);
-	padding-inline: var(--padding-10);
 }
 
 :--text {

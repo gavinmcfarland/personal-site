@@ -1,4 +1,6 @@
 body {
+	padding-inline: var(--padding-10);
+
 	> main {
 		padding-left: inherit;
 		padding-right: inherit;
