@@ -96,7 +96,7 @@ h1 {
 
 h2 {
 	font-size: var(--font-size-6);
-	margin: var(--margin-8) *;
+	margin-block: var(--margin-8);
 }
 
 h3 {
