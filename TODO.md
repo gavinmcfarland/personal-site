@@ -1,0 +1,3 @@
+- Implement some way of removing top and bottom margins of certain containers with various layout types and breakpoints
+- Implement some way of applying grids
+- Implement some way of abstracting fonts/headings

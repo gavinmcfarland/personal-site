@@ -41,22 +41,14 @@ import markdown from '../scripts/markdown'
 style {
 	@import "../styles";
 
-	.w-viewport.w-viewport {
-		grid-column: 1 / -1;
-	}
-
-	section {
-		& h2 {
-			grid-column: span 3;
-		}
+	section h2 {
+		grid-column: span 3;
 	}
 
 	.span-4 {
 		grid-column: span 4 !important;
 	}
 
-	.details {
-	}
 	.hero {
 		border: 0;
 		display: none !important;
@@ -85,9 +77,5 @@ style {
 				}
 			}
 		}
-	}
-
-	.page__cv table th {
-		display: none;
 	}
 }

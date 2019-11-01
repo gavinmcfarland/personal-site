@@ -17,7 +17,6 @@
 }
 
 :--heading {
-    font-weight: bold;
     margin-block: var(--margin-4);
 	color: var(--black);
 }
@@ -90,13 +89,13 @@
 }
 
 h1 {
-	font-family: Fira Code;
-	font-size: var(--font-size-7);
+	font-family: Miriam Libre;
+	font-size: var(--font-size-8);
 	margin-block: var(--margin-8);
+	line-height: 2;
 }
 
 h2 {
-	/* font-family: display; */
 	font-size: var(--font-size-6);
 	margin: var(--margin-8) *;
 }

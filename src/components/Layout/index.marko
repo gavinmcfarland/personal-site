@@ -20,14 +20,14 @@ import favicon from "./favicon.png"
 		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css"/>
 	</head>
 	<body class=input.class>
-		<header.Header>
-			<a.w-shrink href="/">
+		<header>
+			<a href="/">
 				<img src=logo/>
 			</a>
-			<!-- Hide for now until worked into design -->
-			<!-- <h1><${input.title}/></h1> -->
-			<!-- <nav>
-				<a.ml-8.f-0.f-caps href="/about">About</a>
+			<!-- Hide for now until worked into design
+			<h1><${input.title}/></h1>
+			<nav>
+				<a href="/about">About</a>
 			</nav> -->
 		</header>
 		<main>
@@ -38,9 +38,9 @@ import favicon from "./favicon.png"
 		<footer>
 			<p>Limitless Loop &copy; 2019</p>
 			<nav>
-				<a.ml-8 href="https://github.com/limitlessloop">Github</a>
-				<a.ml-8 href="https://dribbble.com/limitlessloop">Dribbble</a>
-				<a.ml-8 href="https://twitter.com/gavinmcfarland">Twitter</a>
+				<a href="https://github.com/limitlessloop">Github</a>
+				<a href="https://dribbble.com/limitlessloop">Dribbble</a>
+				<a href="https://twitter.com/gavinmcfarland">Twitter</a>
 			</nav>
 			<${input.footer}/>
 		</footer>
@@ -48,67 +48,3 @@ import favicon from "./favicon.png"
 		<${input.scripts}/>
 	</body>
 </html>
-style {
-	@import "../../styles";
-
-	html {
-		min-height: 100%;
-	}
-
-	body {
-		min-height: 100%;
-		display: flex;
-
-		flex-direction: column;
-	}
-
-	body > main {
-		@extend .w-grow;
-		padding-left: inherit;
-		padding-right: inherit;
-
-		display: flex;
-		justify-content: center;
-
-		& .wrapper {
-			box-sizing: content-box;
-			padding-left: inherit;
-			padding-right: inherit;
-			flex-basis: 100%;
-			flex-shrink: 0;
-		}
-	}
-
-	body > header,
-	body > footer {
-		padding: inherit;
-		@extend .w-shrink, .flex;
-		justify-content: space-between;
-
-		align-items: center;
-
-		& > * {
-			margin-top: unset;
-			margin-bottom: unset;
-		}
-	}
-
-	body > footer {
-		font-size: var(--font-size-1);
-	}
-
-	body > :matches(header, footer) > nav {
-		display: flex;
-		@extend .w-shrink;
-	}
-
-	body > header {
-		padding-block: var(--padding-10);
-	}
-
-	body > header,
-	body > main,
-	body > footer {
-		@extend %width-viewport;
-	}
-}
