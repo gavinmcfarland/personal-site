@@ -19,8 +19,8 @@ import favicon from "./favicon.png"
 		<link href="https://fonts.googleapis.com/css?family=Miriam+Libre|Roboto|Roboto+Condensed|Roboto+Mono&display=swap" rel="stylesheet"/>
 		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css"/>
 	</head>
-	<body.px-10 class=input.class>
-		<header.p-10.w-viewport>
+	<body class=input.class>
+		<header.Header>
 			<a.w-shrink href="/">
 				<img src=logo/>
 			</a>
@@ -30,12 +30,12 @@ import favicon from "./favicon.png"
 				<a.ml-8.f-0.f-caps href="/about">About</a>
 			</nav> -->
 		</header>
-		<main.w-viewport>
-			<div.wrapper.mx-auto class=(input.body.class ? input.body.class : "max-w-6xl")>
+		<main>
+			<div.wrapper class=(input.body.class ? input.body.class : "max-w-6xl")>
 				<${input.body}/>
 			</div>
 		</main>
-		<footer.p-10.remove-margin.w-viewport.f-1>
+		<footer>
 			<p>Limitless Loop &copy; 2019</p>
 			<nav>
 				<a.ml-8 href="https://github.com/limitlessloop">Github</a>
@@ -58,8 +58,10 @@ style {
 	body {
 		min-height: 100%;
 		display: flex;
+		padding: * var(--padding-4);
 
 		flex-direction: column;
+
 		& > main {
 			@extend .w-grow;
 			padding-left: inherit;
@@ -78,6 +80,7 @@ style {
 		}
 		& > header,
 		& > footer {
+			padding: inherit;
 			@extend .w-shrink, .flex;
 			justify-content: space-between;
 
@@ -88,9 +91,22 @@ style {
 				margin-bottom: unset;
 			}
 		}
+		& > footer {
+			font-size: var(--font-size-1);
+		}
 		& > :matches(header, footer) > nav {
 			display: flex;
 			@extend .w-shrink;
 		}
+	}
+
+	body > header {
+		padding-block: var(--padding-4);
+	}
+
+	body > header,
+	body > main,
+	body > footer {
+		@extend %width-viewport;
 	}
 }

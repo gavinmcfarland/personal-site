@@ -1,9 +1,10 @@
 module.exports = {
 	plugins: {
 		'postcss-import': {},
-		'tailwindcss': {},
-		'postcss-preset-env': {},
+		'postcss-custom-selectors': {},
+		'postcss-short': {},
 		'postcss-nested': {},
+		'postcss-logical': {},
 		'postcss-extend-rule': {},
 		'autoprefixer': {}
 	}

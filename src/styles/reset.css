@@ -1,0 +1,22 @@
+ul, ol {
+	padding-left: unset;
+}
+
+ol {
+	list-style: none;
+    counter-reset: number;
+}
+
+ol li::before {
+	counter-increment: number;
+}
+
+ol li::before, ul li::after {
+	display: inline-block;
+}
+
+
+table {
+	border-collapse: collapse;
+	font-size: unset;
+}

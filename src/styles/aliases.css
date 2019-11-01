@@ -1,0 +1,13 @@
+@custom-selector :--body body;
+@custom-selector :--text p, blockquote, :--list, :--heading; /* should text exclude :heading? */
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+@custom-selector :--caps h6;
+@custom-selector :--link a;
+@custom-selector :--list ul, ol;
+@custom-selector :--unordered ul;
+@custom-selector :--ordered ol;
+@custom-selector :--icon ol.icon li;
+@custom-selector :--code code;
+@custom-selector :--block blockquote, table, div, section;
+@custom-selector :--inline p, li, td;
+@custom-selector :--table table;

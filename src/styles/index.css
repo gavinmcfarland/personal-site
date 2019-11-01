@@ -1,17 +1,20 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-@import 'karamel';
+/* @import 'tailwindcss/base'; */
+/* @import 'tailwindcss/components'; */
+/* @import 'tailwindcss/utilities'; */
+/* @import 'karamel'; */
 @import 'karamel/normalize';
+@import './reset';
+@import './variables';
 @import './typography';
+@import './elements';
 
-/* Custom properties */
+/* Custom properties
 
 :root {
 	--flex-grow: 1;
 }
 
-/* Utilities */
+Utilities
 
 @responsive {
 	.max-w-6xl {
@@ -83,4 +86,13 @@
 		padding-left: inherit;
 		padding-right: inherit;
 	}
+} */
+
+%width-viewport {
+	max-width: none !important;
+	width: 100vw;
+	box-sizing: border-box;
+	position: relative;
+	left: 50%;
+	transform: translate(-50vw);
 }
