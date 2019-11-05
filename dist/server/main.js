@@ -162,7 +162,7 @@ function render(input, out, __component, component, state) {
 
   marko_dynamicTag(out, input.styles, null, null, null, null, __component, "7");
 
-  out.w("<link href=\"https://fonts.googleapis.com/css?family=Miriam+Libre|Roboto|Fira+Code|Roboto+Condensed|Roboto+Mono&amp;display=swap\" rel=\"stylesheet\"><link rel=\"stylesheet\" href=\"//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css\"></head><body" +
+  out.w("<link href=\"https://fonts.googleapis.com/css?family=Fira+Code|Fira+Mono|Fira+Sans&amp;display=swap\" rel=\"stylesheet\"><link rel=\"stylesheet\" href=\"//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css\"></head><body" +
     marko_classAttr(input.class) +
     ">");
 
@@ -221,7 +221,7 @@ marko_template.meta = {
 
 module.exports = {
   getBundleName: function(){return "Client"},
-  entries: {"404_78An":{"Client":{"css":["404_78An.c1a3bbf1.css"],"js":["404_78An.726b6b94.js"],"map":["404_78An.726b6b94.js.map"]}},"about_kzxx":{"Client":{"css":["about_kzxx.d78182c5.css"],"js":["about_kzxx.43e4969d.js"],"map":["about_kzxx.43e4969d.js.map"]}},"cv_tq48":{"Client":{"css":["cv_tq48.c6693740.css"],"js":["cv_tq48.9006d506.js"],"map":["cv_tq48.9006d506.js.map"]}},"post_ffL2":{"Client":{"css":["post_ffL2.c1a3bbf1.css"],"js":["post_ffL2.784dba9d.js"],"map":["post_ffL2.784dba9d.js.map"]}},"project_Qgdo":{"Client":{"css":["project_Qgdo.96c31005.css"],"js":["project_Qgdo.3b988b35.js"],"map":["project_Qgdo.3b988b35.js.map"]}},"projects_3eZ0":{"Client":{"css":["projects_3eZ0.a245c87a.css"],"js":["projects_3eZ0.a50565f4.js"],"map":["projects_3eZ0.a50565f4.js.map"]}},"templates_IwU3":{"Client":{"css":["templates_IwU3.c4ac44a7.css"],"js":["vendors~templates_IwU3.d1548f22.js","templates_IwU3.95a40aab.js"],"map":["vendors~templates_IwU3.d1548f22.js.map","templates_IwU3.95a40aab.js.map"]}}}
+  entries: {"404_78An":{"Client":{"css":["404_78An.b9003c7c.css"],"js":["404_78An.726b6b94.js"],"map":["404_78An.726b6b94.js.map"]}},"about_kzxx":{"Client":{"css":["about_kzxx.ec93633b.css"],"js":["about_kzxx.4103eb6a.js"],"map":["about_kzxx.4103eb6a.js.map"]}},"cv_tq48":{"Client":{"css":["cv_tq48.1bea934c.css"],"js":["cv_tq48.9006d506.js"],"map":["cv_tq48.9006d506.js.map"]}},"post_ffL2":{"Client":{"css":["post_ffL2.b9003c7c.css"],"js":["post_ffL2.784dba9d.js"],"map":["post_ffL2.784dba9d.js.map"]}},"project_Qgdo":{"Client":{"css":["project_Qgdo.c8b229f5.css"],"js":["project_Qgdo.9836da0b.js"],"map":["project_Qgdo.9836da0b.js.map"]}},"projects_3eZ0":{"Client":{"css":["projects_3eZ0.a88896c1.css"],"js":["projects_3eZ0.a50565f4.js"],"map":["projects_3eZ0.a50565f4.js.map"]}},"templates_IwU3":{"Client":{"css":["templates_IwU3.2fac5cab.css"],"js":["vendors~templates_IwU3.d1548f22.js","templates_IwU3.95a40aab.js"],"map":["vendors~templates_IwU3.d1548f22.js.map","templates_IwU3.95a40aab.js.map"]}}}
 }
 
 /***/ }),

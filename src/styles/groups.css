@@ -11,21 +11,16 @@
 %remove-margin {
 	> :first-child {
 		margin-top: unset;
-	}
-
-	> :last-child {
-		margin-bottom: unset;
-	}
-
-	> * {
-
 		> :first-child {
 			margin-top: unset;
 			> :first-child {
 				margin-top: unset;
 			}
 		}
+	}
 
+	> :last-child {
+		margin-bottom: unset;
 		> :last-child {
 			margin-bottom: unset;
 			> :last-child {

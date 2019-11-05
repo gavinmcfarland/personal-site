@@ -48,6 +48,29 @@
 	--spacing-19: 64em;
 	--spacing-20: 90.5625em;
 
+	@media (max-width: 900px) {
+		--spacing-1: 0.125em;
+		--spacing-2: 0.1875em;
+		--spacing-3: 0.25em;
+		--spacing-4: 0.375em;
+		--spacing-5: 0.5em;
+		--spacing-6: 0.75em;
+		--spacing-7: 1em;
+		--spacing-8: 0.4375em;
+		--spacing-9: 1em;
+		--spacing-10: 1.875em;
+		--spacing-11: 2.5em;
+		--spacing-12: 4.6875em;
+		--spacing-13: 7em;
+		--spacing-14: 10.375em;
+		--spacing-15: 16em;
+		--spacing-16: 22.6875em;
+		--spacing-17: 32em;
+		--spacing-18: 45.3125em;
+		--spacing-19: 64em;
+		--spacing-20: 90.5625em;
+	}
+
 	--margin-1: var(--spacing-1);
 	--margin-2: var(--spacing-2);
 	--margin-3: var(--spacing-3);

@@ -8,6 +8,10 @@ body {
 		padding-right: inherit;
 	}
 
+	> header a {
+		display: inline-block;
+	}
+
 	.wrapper {
 		box-sizing: content-box;
 		padding-inline: inherit;

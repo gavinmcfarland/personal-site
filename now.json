@@ -1,5 +1,8 @@
 {
 	"version": 2,
+	"github": {
+		"silent": true
+	},
 	"builds": [{
 		"src": "dist/client/**",
 		"use": "@now/static"
