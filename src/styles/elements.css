@@ -125,3 +125,7 @@ hr {
 	margin-inline: var(--margin-6);
 	border-bottom: var(--border-width) var(--border-style) var(--border-color);
 }
+
+figure {
+	margin-block: var(--margin-6);
+}

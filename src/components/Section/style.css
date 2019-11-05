@@ -24,11 +24,12 @@
 	padding-block: var(--padding-11) var(--padding-12);
 
 	figure {
-		margin-top: var(--margin-4);
-		padding-inline: var(--padding-2);
 
 		@media (min-width: 900px) {
-			margin-block: var(--margin-8);
+			margin-block: var(--margin-10);
+			figcaption {
+				text-align: center;
+			}
 		}
 		img {
 			width: 100%;
@@ -36,7 +37,6 @@
 	}
 
 	figcaption {
-		text-align: center;
 		font-size: var(--font-size-1);
 		margin-top: var(--margin-10);
 		max-width: 64rem;
