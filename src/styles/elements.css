@@ -1,24 +1,31 @@
 @import './aliases';
 
 :root {
-    font-size: var(--font-size-4);
+	font-size: var(--font-size-4);
+	font-weight: normal;
 	font-family: var(--font-family);
 	line-height: var(--line-height);
 	color: var(--font-size-2);
+	-webkit-font-smoothing: antialiased;
 }
 
 :--text {
-	margin-block: var(--margin-2);
+	letter-spacing: 0;
+	font-size: var(--font-size-5);
+	margin-block: var(--margin-6);
 
     :--link {
 		text-decoration: underline;
 		text-decoration-thickness: 2px;
+		text-underline-position: under;
 		text-decoration-color: var(--grey);
     }
 }
 
 :--heading {
-    margin-block: var(--margin-4);
+	letter-spacing: -1.5px;
+	font-family: Fira Code;
+    margin-block: var(--margin-6);
 	color: var(--purple);
 }
 
@@ -90,14 +97,13 @@
 }
 
 h1 {
-	font-family: Miriam Libre;
-	font-size: var(--font-size-8);
+	font-size: var(--font-size-7);
 	margin-block: var(--margin-8);
 	line-height: 2;
 }
 
 h2 {
-	font-size: var(--font-size-6);
+	font-size: var(--font-size-5);
 	margin-block: var(--margin-8);
 }
 

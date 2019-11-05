@@ -8,27 +8,6 @@
 @import './elements';
 
 
-%width-viewport {
-	max-width: none !important;
-	width: 100vw;
-	box-sizing: border-box;
-	position: relative;
-	left: 50%;
-	transform: translate(-50vw);
-	grid-column: 1 / -1;
-}
-
-%remove-margin {
-	> :first-child {
-		margin-top: unset;
-	}
-
-	> :last-child {
-		margin-bottom: unset;
-	}
-}
-
-
 [layout=grid] {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);

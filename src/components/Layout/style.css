@@ -11,7 +11,7 @@ body {
 	.wrapper {
 		box-sizing: content-box;
 		padding-inline: inherit;
-		max-width: 900px;
+		max-width: 1200px;
 	}
 
 	/* fullwidth */
@@ -29,7 +29,12 @@ body {
 	}
 
 	> footer {
+		display: flex;
+	}
+
+	> footer > * {
 		font-size: var(--font-size-2);
+		margin: unset;
 	}
 
 	> header,
