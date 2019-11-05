@@ -1,6 +1,6 @@
 import markdown from '../scripts/markdown'
 
-<Layout>
+<Layout.page_home>
 	<@body>
 		<Section>
 			<h1>
@@ -47,5 +47,16 @@ import markdown from '../scripts/markdown'
 style {
 	.client-name {
 		margin-left: var(--margin-2);
+	}
+
+	.page_home .Section[layout^="grid"] {
+		h2 {
+			grid-column: span 3;
+			text-transform: capitalize;
+		}
+
+		div {
+			grid-column: 4 / -1;
+		}
 	}
 }

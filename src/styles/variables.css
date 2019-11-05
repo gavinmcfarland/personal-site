@@ -12,6 +12,9 @@
 	--blue: blue;
 	--red: red;
 	--black: black;
+	--purple: #680097;
+	--brown: #A28570;
+	--grey: #C4C4C4;
 
 	--font-size-1:  0.75rem;
 	--font-size-2:  0.875rem;
@@ -88,12 +91,12 @@
 	--padding-20: var(--spacing-20);
 
 
-	--border-color: var(--black);
+	--border-color: var(--brown);
     --border-width: 1px;
 	--border-style: solid;
 
 	--font-size: 1;
-	--font-family: Roboto;
+	--font-family: Fira Code;
 	--line-height: 1.5;
 
 	--color: black;
@@ -101,6 +104,8 @@
 
 	--box-shadow: none;
 	--box-shadow-color: var(--black);
+
+	--gap: var(--spacing-7)
 }
 
 

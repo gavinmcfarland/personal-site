@@ -13,6 +13,8 @@
 } */
 
 .Section {
+	@extend %remove-margin;
+
 	border-top: var(--border-width) var(--border-style) var(--border-color);
 	padding-block: var(--padding-11) var(--padding-12);
 
@@ -36,30 +38,7 @@
 }
 
 /* Layout settings */
-.Section {
-	>* {
-		grid-column: 1 / -1;
-	}
 
-	h2 {
-		grid-column: span 3;
-	}
-
-	div {
-		grid-column: 4 / -1;
-
-		/* Fix for firefox because for some reason div expands to size of it's children */
-		width: 100%;
-
-		>* {
-			grid-column: 4 / -1;
-		}
-	}
-
-	img {
-		width: 100%;
-	}
-}
 
 /* Remove margins */
 %remove {

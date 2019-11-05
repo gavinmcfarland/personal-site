@@ -221,7 +221,7 @@ marko_template.meta = {
 
 module.exports = {
   getBundleName: function(){return "Client"},
-  entries: {"404_78An":{"Client":{"css":["404_78An.1631e8dc.css"],"js":["404_78An.726b6b94.js"],"map":["404_78An.726b6b94.js.map"]}},"about_kzxx":{"Client":{"css":["about_kzxx.4347e0e8.css"],"js":["about_kzxx.4103eb6a.js"],"map":["about_kzxx.4103eb6a.js.map"]}},"cv_tq48":{"Client":{"css":["cv_tq48.ee1349fa.css"],"js":["cv_tq48.9006d506.js"],"map":["cv_tq48.9006d506.js.map"]}},"post_ffL2":{"Client":{"css":["post_ffL2.1631e8dc.css"],"js":["post_ffL2.784dba9d.js"],"map":["post_ffL2.784dba9d.js.map"]}},"project_Qgdo":{"Client":{"css":["project_Qgdo.657cf32f.css"],"js":["project_Qgdo.9836da0b.js"],"map":["project_Qgdo.9836da0b.js.map"]}},"projects_3eZ0":{"Client":{"css":["projects_3eZ0.28d721fc.css"],"js":["projects_3eZ0.a50565f4.js"],"map":["projects_3eZ0.a50565f4.js.map"]}},"templates_IwU3":{"Client":{"css":["templates_IwU3.4f71db3f.css"],"js":["vendors~templates_IwU3.d1548f22.js","templates_IwU3.cdb5ad7d.js"],"map":["vendors~templates_IwU3.d1548f22.js.map","templates_IwU3.cdb5ad7d.js.map"]}}}
+  entries: {"404_78An":{"Client":{"css":["404_78An.785087a0.css"],"js":["404_78An.726b6b94.js"],"map":["404_78An.726b6b94.js.map"]}},"about_kzxx":{"Client":{"css":["about_kzxx.93f50bd8.css"],"js":["about_kzxx.4103eb6a.js"],"map":["about_kzxx.4103eb6a.js.map"]}},"cv_tq48":{"Client":{"css":["cv_tq48.5a008d56.css"],"js":["cv_tq48.9006d506.js"],"map":["cv_tq48.9006d506.js.map"]}},"post_ffL2":{"Client":{"css":["post_ffL2.785087a0.css"],"js":["post_ffL2.784dba9d.js"],"map":["post_ffL2.784dba9d.js.map"]}},"project_Qgdo":{"Client":{"css":["project_Qgdo.654a1f44.css"],"js":["project_Qgdo.9836da0b.js"],"map":["project_Qgdo.9836da0b.js.map"]}},"projects_3eZ0":{"Client":{"css":["projects_3eZ0.6dc99fe1.css"],"js":["projects_3eZ0.a50565f4.js"],"map":["projects_3eZ0.a50565f4.js.map"]}},"templates_IwU3":{"Client":{"css":["templates_IwU3.81e64beb.css"],"js":["vendors~templates_IwU3.d1548f22.js","templates_IwU3.557d5f68.js"],"map":["vendors~templates_IwU3.d1548f22.js.map","templates_IwU3.557d5f68.js.map"]}}}
 }
 
 /***/ }),
@@ -276,9 +276,9 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
 function render(input, out, __component, component, state) {
   var data = input;
 
-  out.w("<section" +
+  out.w("<section layout=\"grid^1\"" +
     marko_classAttr(marko_classList([
-    "bt pt-11 pb-11 Section",
+    "Section",
     input.class
   ])) +
     ">");
@@ -1772,6 +1772,7 @@ function render(input, out, __component, component, state) {
   var data = input;
 
   Layout_tag({
+      class: "page_home",
       body: {
           renderBody: function(out) {
             Section_tag({
@@ -1856,7 +1857,7 @@ marko_template.meta = {
     deps: [
       {
           type: "css",
-          code: ".client-name {\n\t\tmargin-left: var(--margin-2);\n\t}",
+          code: ".client-name {\n\t\tmargin-left: var(--margin-2);\n\t}\n\n\t.page_home .Section[layout^=\"grid\"] {\n\t\th2 {\n\t\t\tgrid-column: span 3;\n\t\t\ttext-transform: capitalize;\n\t\t}\n\n\t\tdiv {\n\t\t\tgrid-column: 4 / -1;\n\t\t}\n\t}",
           virtualPath: "./index.marko.css",
           path: "./index.marko"
         }

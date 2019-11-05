@@ -1,3 +1,5 @@
+@import "../../styles/groups";
+
 body {
 	padding-inline: var(--padding-10);
 
@@ -9,6 +11,21 @@ body {
 	.wrapper {
 		box-sizing: content-box;
 		padding-inline: inherit;
+		max-width: 900px;
+	}
+
+	/* fullwidth */
+
+	> main {
+		display: flex;
+		justify-content: center;
+		@extend %width-viewport;
+	}
+
+	.wrapper {
+		flex-basis: 100%;
+		flex-shrink: 0;
+		width: 100%
 	}
 
 	> footer {

@@ -10,14 +10,16 @@
 :--text {
 	margin-block: var(--margin-2);
 
-    :--link & {
-        text-decoration: underline;
+    :--link {
+		text-decoration: underline;
+		text-decoration-thickness: 2px;
+		text-decoration-color: var(--grey);
     }
 }
 
 :--heading {
     margin-block: var(--margin-4);
-	color: var(--black);
+	color: var(--purple);
 }
 
 :--link {
