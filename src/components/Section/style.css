@@ -13,6 +13,10 @@
 	}
 } */
 
+.Section > h2 {
+	text-transform: capitalize;
+}
+
 .Section {
 	@extend %remove-margin;
 
@@ -25,6 +29,9 @@
 
 		@media (min-width: 900px) {
 			margin-block: var(--margin-8);
+		}
+		img {
+			width: 100%;
 		}
 	}
 
@@ -40,7 +47,7 @@
 
 /* Layout settings */
 
-/* Viewport width ? */
+/* Viewport width ?
 .Section figure {
 	@extend %width-viewport;
 
@@ -51,4 +58,4 @@
 	img {
 		margin: 0 auto;
 	}
-}
+} */

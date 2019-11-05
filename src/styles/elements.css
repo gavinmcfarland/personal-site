@@ -7,6 +7,7 @@
 	line-height: var(--line-height);
 	color: var(--font-size-2);
 	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 :--text {
@@ -18,6 +19,7 @@
 		text-decoration: underline;
 		text-decoration-thickness: 2px;
 		text-underline-position: under;
+		text-underline-offset: 6px;
 		text-decoration-color: var(--grey);
     }
 }
@@ -69,17 +71,13 @@
 	overflow: scroll;
 	margin-block: var(--margin-6);
 
-	td {
-		padding: var(--padding-2) var(--padding-2) var(--padding-2) *;
+	td, th {
+		padding: var(--padding-7) var(--padding-7) var(--padding-7) *;
 		vertical-align: top;
 	}
 
 	th {
 		text-align: left;
-	}
-
-    td, th {
-        padding-block: var(--padding-1);
 	}
 
 	tr {

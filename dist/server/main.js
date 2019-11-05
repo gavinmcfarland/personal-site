@@ -179,7 +179,7 @@ function render(input, out, __component, component, state) {
 
   marko_dynamicTag(out, input.body, null, null, null, null, __component, "16");
 
-  out.w("</div></main><footer><p>Limitless Loop &copy; 2019</p><nav><a href=\"https://github.com/limitlessloop\">Github</a><a href=\"https://dribbble.com/limitlessloop\">Dribbble</a><a href=\"https://twitter.com/gavinmcfarland\">Twitter</a></nav>");
+  out.w("</div></main><footer layout=\"flex\"><p>Limitless Loop &copy; 2019</p><nav width=\"shrink\"><a href=\"https://github.com/limitlessloop\">Github</a><a href=\"https://dribbble.com/limitlessloop\">Dribbble</a><a href=\"https://twitter.com/gavinmcfarland\">Twitter</a></nav>");
 
   marko_dynamicTag(out, input.footer, null, null, null, null, __component, "23");
 
@@ -221,7 +221,7 @@ marko_template.meta = {
 
 module.exports = {
   getBundleName: function(){return "Client"},
-  entries: {"404_78An":{"Client":{"css":["404_78An.3ab217be.css"],"js":["404_78An.726b6b94.js"],"map":["404_78An.726b6b94.js.map"]}},"about_kzxx":{"Client":{"css":["about_kzxx.78276b0d.css"],"js":["about_kzxx.43e4969d.js"],"map":["about_kzxx.43e4969d.js.map"]}},"cv_tq48":{"Client":{"css":["cv_tq48.9cc05dc6.css"],"js":["cv_tq48.9006d506.js"],"map":["cv_tq48.9006d506.js.map"]}},"post_ffL2":{"Client":{"css":["post_ffL2.3ab217be.css"],"js":["post_ffL2.784dba9d.js"],"map":["post_ffL2.784dba9d.js.map"]}},"project_Qgdo":{"Client":{"css":["project_Qgdo.bfa2b885.css"],"js":["project_Qgdo.3b988b35.js"],"map":["project_Qgdo.3b988b35.js.map"]}},"projects_3eZ0":{"Client":{"css":["projects_3eZ0.2e0424d9.css"],"js":["projects_3eZ0.a50565f4.js"],"map":["projects_3eZ0.a50565f4.js.map"]}},"templates_IwU3":{"Client":{"css":["templates_IwU3.a5835c78.css"],"js":["vendors~templates_IwU3.d1548f22.js","templates_IwU3.557d5f68.js"],"map":["vendors~templates_IwU3.d1548f22.js.map","templates_IwU3.557d5f68.js.map"]}}}
+  entries: {"404_78An":{"Client":{"css":["404_78An.c1a3bbf1.css"],"js":["404_78An.726b6b94.js"],"map":["404_78An.726b6b94.js.map"]}},"about_kzxx":{"Client":{"css":["about_kzxx.d78182c5.css"],"js":["about_kzxx.43e4969d.js"],"map":["about_kzxx.43e4969d.js.map"]}},"cv_tq48":{"Client":{"css":["cv_tq48.c6693740.css"],"js":["cv_tq48.9006d506.js"],"map":["cv_tq48.9006d506.js.map"]}},"post_ffL2":{"Client":{"css":["post_ffL2.c1a3bbf1.css"],"js":["post_ffL2.784dba9d.js"],"map":["post_ffL2.784dba9d.js.map"]}},"project_Qgdo":{"Client":{"css":["project_Qgdo.96c31005.css"],"js":["project_Qgdo.3b988b35.js"],"map":["project_Qgdo.3b988b35.js.map"]}},"projects_3eZ0":{"Client":{"css":["projects_3eZ0.a245c87a.css"],"js":["projects_3eZ0.a50565f4.js"],"map":["projects_3eZ0.a50565f4.js.map"]}},"templates_IwU3":{"Client":{"css":["templates_IwU3.c4ac44a7.css"],"js":["vendors~templates_IwU3.d1548f22.js","templates_IwU3.95a40aab.js"],"map":["vendors~templates_IwU3.d1548f22.js.map","templates_IwU3.95a40aab.js.map"]}}}
 }
 
 /***/ }),
@@ -1857,7 +1857,7 @@ marko_template.meta = {
     deps: [
       {
           type: "css",
-          code: ".client-name {\n\t\tmargin-left: var(--margin-2);\n\t}\n\n\t.page_home .Section[layout^=\"grid\"] {\n\t\th2 {\n\t\t\tgrid-column: span 3;\n\t\t\ttext-transform: capitalize;\n\t\t}\n\n\t\tdiv {\n\t\t\tgrid-column: 4 / -1;\n\t\t}\n\t}",
+          code: ".client-name {\n\t\tmargin-left: var(--margin-6);\n\t\tcolor: #808080;\n\t}\n\n\t.page_home .Section[layout^=\"grid\"] {\n\t\th2 {\n\t\t\tgrid-column: span 3;\n\t\t\ttext-transform: capitalize;\n\t\t}\n\n\t\tdiv {\n\t\t\tgrid-column: 4 / -1;\n\t\t}\n\t}",
           virtualPath: "./index.marko.css",
           path: "./index.marko"
         }

@@ -37,6 +37,10 @@ body {
 		margin: unset;
 	}
 
+	> footer nav a {
+		margin-left: var(--margin-6);
+	}
+
 	> header,
 	> footer {
 		padding-block: var(--padding-10);

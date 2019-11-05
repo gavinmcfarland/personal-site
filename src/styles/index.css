@@ -33,11 +33,25 @@
 	}
 }
 
+[layout=flex] {
+	display: flex;
+
+	> * {
+		flex-grow: 1;
+	}
+}
+
+[width=shrink] {
+	flex-grow: 0;
+}
+
 @media (min-width: 900px) {
 	[layout=grid\^1] {
 		@extend [layout=grid]
 	}
 }
+
+
 
 [cols="12"] {
 	grid-template-columns: repeat(12, 1fr);

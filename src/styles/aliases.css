@@ -1,5 +1,5 @@
 @custom-selector :--body body;
-@custom-selector :--text p, blockquote, :--list, li, :--heading; /* should text exclude :heading? */
+@custom-selector :--text p, blockquote, :--list, li, :--heading, :--table; /* should text exclude :heading? */
 @custom-selector :--heading h1, h2, h3, h4, h5, h6;
 @custom-selector :--caps h6;
 @custom-selector :--link a;
