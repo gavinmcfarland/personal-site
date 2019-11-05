@@ -1,0 +1,34 @@
+html, body {
+	min-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
+ul, ol {
+	padding-left: unset;
+}
+
+ol {
+	list-style: none;
+    counter-reset: number;
+}
+
+ol li::before {
+	counter-increment: number;
+}
+
+ol li::before, ul li::after {
+	display: inline-block;
+}
+
+
+table {
+	border-collapse: collapse;
+	font-size: unset;
+}

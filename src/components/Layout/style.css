@@ -1,0 +1,52 @@
+@import "../../styles/groups";
+
+body {
+	padding-inline: var(--padding-10);
+
+	> main {
+		padding-left: inherit;
+		padding-right: inherit;
+	}
+
+	> header a {
+		display: inline-block;
+	}
+
+	.wrapper {
+		box-sizing: content-box;
+		padding-inline: inherit;
+		max-width: 1200px;
+	}
+
+	/* fullwidth */
+
+	> main {
+		display: flex;
+		justify-content: center;
+		@extend %width-viewport;
+	}
+
+	.wrapper {
+		flex-basis: 100%;
+		flex-shrink: 0;
+		width: 100%
+	}
+
+	> footer {
+		display: flex;
+	}
+
+	> footer > * {
+		font-size: var(--font-size-2);
+		margin: unset;
+	}
+
+	> footer nav a {
+		margin-left: var(--margin-6);
+	}
+
+	> header,
+	> footer {
+		padding-block: var(--padding-10);
+	}
+}

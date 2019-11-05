@@ -162,27 +162,24 @@ function render(input, out, __component, component, state) {
 
   marko_dynamicTag(out, input.styles, null, null, null, null, __component, "7");
 
-  out.w("<link href=\"https://fonts.googleapis.com/css?family=Miriam+Libre|Roboto|Roboto+Condensed|Roboto+Mono&amp;display=swap\" rel=\"stylesheet\"><link rel=\"stylesheet\" href=\"//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css\"></head><body" +
-    marko_classAttr(marko_classList([
-    "px-10",
-    input.class
-  ])) +
+  out.w("<link href=\"https://fonts.googleapis.com/css?family=Fira+Code|Fira+Mono|Fira+Sans&amp;display=swap\" rel=\"stylesheet\"><link rel=\"stylesheet\" href=\"//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css\"></head><body" +
+    marko_classAttr(input.class) +
     ">");
 
   component_globals_tag({}, out);
 
-  out.w("<header class=\"p-10 w-viewport\"><a href=\"/\" class=\"w-shrink\"><img" +
+  out.w("<header><a href=\"/\"><img" +
     marko_attr("src", logo) +
-    "></a></header><main class=\"w-viewport\"><div" +
+    "></a></header><main><div" +
     marko_classAttr(marko_classList([
-    "wrapper mx-auto",
+    "wrapper",
     input.body.class ? input.body.class : "max-w-6xl"
   ])) +
     ">");
 
   marko_dynamicTag(out, input.body, null, null, null, null, __component, "16");
 
-  out.w("</div></main><footer class=\"p-10 remove-margin w-viewport f-1\"><p>Limitless Loop &copy; 2019</p><nav><a href=\"https://github.com/limitlessloop\" class=\"ml-8\">Github</a><a href=\"https://dribbble.com/limitlessloop\" class=\"ml-8\">Dribbble</a><a href=\"https://twitter.com/gavinmcfarland\" class=\"ml-8\">Twitter</a></nav>");
+  out.w("</div></main><footer layout=\"flex\"><p>Limitless Loop &copy; 2019</p><nav width=\"shrink\"><a href=\"https://github.com/limitlessloop\">Github</a><a href=\"https://dribbble.com/limitlessloop\">Dribbble</a><a href=\"https://twitter.com/gavinmcfarland\">Twitter</a></nav>");
 
   marko_dynamicTag(out, input.footer, null, null, null, null, __component, "23");
 
@@ -206,13 +203,7 @@ marko_template.Component = marko_defineComponent({}, marko_template._);
 
 marko_template.meta = {
     deps: [
-      "./style.css",
-      {
-          type: "css",
-          code: "@import \"../../styles\";\n\n\thtml {\n\t\tmin-height: 100%;\n\t}\n\n\tbody {\n\t\tmin-height: 100%;\n\t\tdisplay: flex;\n\n\t\tflex-direction: column;\n\t\t& > main {\n\t\t\t@extend .w-grow;\n\t\t\tpadding-left: inherit;\n\t\t\tpadding-right: inherit;\n\n\t\t\tdisplay: flex;\n\t\t\tjustify-content: center;\n\n\t\t\t& .wrapper {\n\t\t\t\tbox-sizing: content-box;\n\t\t\t\tpadding-left: inherit;\n\t\t\t\tpadding-right: inherit;\n\t\t\t\tflex-basis: 100%;\n\t\t\t\tflex-shrink: 0;\n\t\t\t}\n\t\t}\n\t\t& > header,\n\t\t& > footer {\n\t\t\t@extend .w-shrink, .flex;\n\t\t\tjustify-content: space-between;\n\n\t\t\talign-items: center;\n\n\t\t\t& > * {\n\t\t\t\tmargin-top: unset;\n\t\t\t\tmargin-bottom: unset;\n\t\t\t}\n\t\t}\n\t\t& > :matches(header, footer) > nav {\n\t\t\tdisplay: flex;\n\t\t\t@extend .w-shrink;\n\t\t}\n\t}",
-          virtualPath: "./index.marko.css",
-          path: "./index.marko"
-        }
+      "./style.css"
     ],
     id: "/marko-webpack$1.0.0/src/components/Layout/index.marko",
     tags: [
@@ -230,7 +221,7 @@ marko_template.meta = {
 
 module.exports = {
   getBundleName: function(){return "Client"},
-  entries: {"404_78An":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.836c2b72.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js","404_78An.a22ae359.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js.map","404_78An.a22ae359.js.map"]}},"about_kzxx":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.836c2b72.css","about_kzxx~cv_tq48~project_Qgdo.ae4a6552.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js","about_kzxx~cv_tq48~project_Qgdo.66c5a626.js","about_kzxx.bfe4e472.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js.map","about_kzxx~cv_tq48~project_Qgdo.66c5a626.js.map","about_kzxx.bfe4e472.js.map"]}},"cv_tq48":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.836c2b72.css","about_kzxx~cv_tq48~project_Qgdo.ae4a6552.css","cv_tq48.77f803d7.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js","about_kzxx~cv_tq48~project_Qgdo.66c5a626.js","cv_tq48.275585cd.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js.map","about_kzxx~cv_tq48~project_Qgdo.66c5a626.js.map","cv_tq48.275585cd.js.map"]}},"post_ffL2":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.836c2b72.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js","post_ffL2.5236fc7d.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js.map","post_ffL2.5236fc7d.js.map"]}},"project_Qgdo":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.836c2b72.css","about_kzxx~cv_tq48~project_Qgdo.ae4a6552.css","project_Qgdo.d0017dda.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js","about_kzxx~cv_tq48~project_Qgdo.66c5a626.js","project_Qgdo.d6b92394.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js.map","about_kzxx~cv_tq48~project_Qgdo.66c5a626.js.map","project_Qgdo.d6b92394.js.map"]}},"projects_3eZ0":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.836c2b72.css","projects_3eZ0.bf10103b.css"],"js":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js","projects_3eZ0.09271c1e.js"],"map":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js.map","projects_3eZ0.09271c1e.js.map"]}},"templates_IwU3":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.836c2b72.css","templates_IwU3.6ac1fe41.css"],"js":["vendors~templates_IwU3.21a6f64d.js","404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js","templates_IwU3.3560c9c2.js"],"map":["vendors~templates_IwU3.21a6f64d.js.map","404_78An~about_kzxx~cv_tq48~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.3fa6b29b.js.map","templates_IwU3.3560c9c2.js.map"]}}}
+  entries: {"404_78An":{"Client":{"css":["404_78An.b9003c7c.css"],"js":["404_78An.726b6b94.js"],"map":["404_78An.726b6b94.js.map"]}},"about_kzxx":{"Client":{"css":["about_kzxx.ec93633b.css"],"js":["about_kzxx.4103eb6a.js"],"map":["about_kzxx.4103eb6a.js.map"]}},"cv_tq48":{"Client":{"css":["cv_tq48.1bea934c.css"],"js":["cv_tq48.93d771ae.js"],"map":["cv_tq48.93d771ae.js.map"]}},"post_ffL2":{"Client":{"css":["post_ffL2.b9003c7c.css"],"js":["post_ffL2.784dba9d.js"],"map":["post_ffL2.784dba9d.js.map"]}},"project_Qgdo":{"Client":{"css":["project_Qgdo.c8b229f5.css"],"js":["project_Qgdo.9836da0b.js"],"map":["project_Qgdo.9836da0b.js.map"]}},"projects_3eZ0":{"Client":{"css":["projects_3eZ0.a88896c1.css"],"js":["projects_3eZ0.a50565f4.js"],"map":["projects_3eZ0.a50565f4.js.map"]}},"templates_IwU3":{"Client":{"css":["templates_IwU3.2fac5cab.css"],"js":["vendors~templates_IwU3.a7191966.js","templates_IwU3.e9d98c05.js"],"map":["vendors~templates_IwU3.a7191966.js.map","templates_IwU3.e9d98c05.js.map"]}}}
 }
 
 /***/ }),
@@ -285,9 +276,9 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
 function render(input, out, __component, component, state) {
   var data = input;
 
-  out.w("<section" +
+  out.w("<section layout=\"grid^1\"" +
     marko_classAttr(marko_classList([
-    "bt pt-11 pb-11 Section",
+    "Section",
     input.class
   ])) +
     ">");
@@ -306,13 +297,7 @@ marko_template.Component = marko_defineComponent({}, marko_template._);
 
 marko_template.meta = {
     deps: [
-      "./style.css",
-      {
-          type: "css",
-          code: "@import \"../../styles\";\n\n\t.Section {\n\t\t@media (min-width: 800px) {\n\t\t\tdisplay: grid;\n\t\t\tgap: 40px;\n\t\t\tgrid-template-columns: repeat(12, 1fr);\n\t\t}\n\t}\n\t.Section {\n\t\t> * {\n\t\t\tgrid-column: 1 / -1;\n\t\t}\n\t\t& h1 {\n\t\t\tgrid-column: span 4;\n\t\t}\n\t\t& .excerpt {\n\t\t\tgrid-column: 6 / -1;\n\t\t}\n\t\t& h2 {\n\t\t\t@extend .mb-9;\n\t\t\tgrid-column: span 3;\n\t\t\ttext-transform: capitalize;\n\t\t\tmargin-top: 0.3em;\n\t\t}\n\t\t& figure {\n\t\t\tmargin-top: 4em;\n\t\t\t@media (min-width: 900px) {\n\t\t\t\tmargin-top: 8em;\n\t\t\t\tmargin-bottom: 6em;\n\t\t\t}\n\n\t\t\t.max-width {\n\t\t\t\tmax-width: 84rem;\n\t\t\t\tbox-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);\n\t\t\t\tborder-radius: 2px;\n\t\t\t}\n\t\t}\n\t\t& figure.w-viewportssss {\n\t\t\t--column: calc(((-100% - 40px) / 9));\n\t\t\t--column-vw: calc(((-100vw - 40px) / 9));\n\t\t\t--width: calc(100% - (var(--column) * 3));\n\t\t\t@media (min-width: 800px) {\n\t\t\t\tmargin-left: calc(((-100% - 40px) / 6));\n\t\t\t}\n\n\t\t\tmargin-left: calc((-100% / 12 - 200px) / 2);\n\n\t\t\tpadding-left: 2.5rem;\n\t\t\tpadding-right: 2.5rem;\n\n\t\t\timg {\n\t\t\t\tmargin: 0 auto;\n\t\t\t}\n\t\t}\n\n\t\t& figure.w-viewport {\n\t\t\t--column: calc(((-100% - 40px) / 9));\n\t\t\t--column-vw: calc(((-100vw - 40px) / 9));\n\t\t\t--width: calc(100% - (var(--column) * 3));\n\t\t\t@media (min-width: 800px) {\n\t\t\t\tmargin-left: calc(((-100% - 40px) / 6));\n\t\t\t}\n\n\t\t\tpadding-left: 2.5rem;\n\t\t\tpadding-right: 2.5rem;\n\n\t\t\timg {\n\t\t\t\tmargin: 0 auto;\n\t\t\t}\n\t\t}\n\t\t& figcaption {\n\t\t\ttext-align: center;\n\t\t\t@extend .f-1, .mt-10;\n\t\t\tmax-width: 64rem;\n\t\t\tmargin-left: auto;\n\t\t\tmargin-right: auto;\n\t\t}\n\t\t& div {\n\t\t\tgrid-column: 4 / -1;\n\t\t\t/* Fix for firefox because for some reason div expands to size of it's children */\n\t\t\twidth: 100%;\n\t\t\t& > * {\n\t\t\t\tgrid-column: 4 / -1;\n\t\t\t}\n\t\t}\n\t\t& img {\n\t\t\twidth: 100%;\n\t\t}\n\t}",
-          virtualPath: "./index.marko.css",
-          path: "./index.marko"
-        }
+      "./style.css"
     ],
     id: "/marko-webpack$1.0.0/src/components/Section/index.marko"
   };
@@ -1338,13 +1323,13 @@ marko_template.meta = {
 /* 26 */
 /***/ (function(module, exports) {
 
-module.exports = "/static/a3f5d7cb1fa8c5bbcb388788ea403caa.svg";
+module.exports = "/static/82b22a8115fd8c5bdb93cdb78e081c34.svg";
 
 /***/ }),
 /* 27 */
 /***/ (function(module, exports) {
 
-module.exports = "/static/7802fe086ea089aaedd33ac4d9710dae.png";
+module.exports = "/static/878a3ba1dc79cbe5e83e8d367d49fabe.png";
 
 /***/ }),
 /* 28 */
@@ -1535,7 +1520,7 @@ marko_template.meta = {
     deps: [
       {
           type: "css",
-          code: "@import \"../styles\";\n\n\t.w-viewport.w-viewport {\n\t\tgrid-column: 1 / -1;\n\t}\n\n\tsection {\n\t\t& h2 {\n\t\t\tgrid-column: span 3;\n\t\t}\n\t}\n\n\t.span-4 {\n\t\tgrid-column: span 4 !important;\n\t}\n\n\t.details {\n\t}\n\t.hero {\n\t\tborder: 0;\n\t\tdisplay: none !important;\n\t\tmargin-bottom: 4em;\n\t\tpadding: 0 !important;\n\t\tmargin-top: -2em;\n\t\tbackground: #f0f0f0;\n\t\t> * {\n\t\t\tflex-grow: 0 !important;\n\t\t}\n\t\t> img {\n\t\t\twidth: 100%;\n\t\t\tmax-width: 1400px;\n\t\t\tdisplay: none;\n\t\t\tmargin: 0 auto;\n\n\t\t\t@media (max-width: 900px) {\n\t\t\t\t&.small {\n\t\t\t\t\tdisplay: block;\n\t\t\t\t}\n\t\t\t}\n\n\t\t\t@media (min-width: 901px) {\n\t\t\t\t&.medium {\n\t\t\t\t\tdisplay: block;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\n\t.page__cv table th {\n\t\tdisplay: none;\n\t}",
+          code: "@import \"../styles\";\n\n\tsection h2 {\n\t\tgrid-column: span 3;\n\t}\n\n\t.span-4 {\n\t\tgrid-column: span 4 !important;\n\t}\n\n\t.hero {\n\t\tborder: 0;\n\t\tdisplay: none !important;\n\t\tmargin-bottom: 4em;\n\t\tpadding: 0 !important;\n\t\tmargin-top: -2em;\n\t\tbackground: #f0f0f0;\n\t\t> * {\n\t\t\tflex-grow: 0 !important;\n\t\t}\n\t\t> img {\n\t\t\twidth: 100%;\n\t\t\tmax-width: 1400px;\n\t\t\tdisplay: none;\n\t\t\tmargin: 0 auto;\n\n\t\t\t@media (max-width: 900px) {\n\t\t\t\t&.small {\n\t\t\t\t\tdisplay: block;\n\t\t\t\t}\n\t\t\t}\n\n\t\t\t@media (min-width: 901px) {\n\t\t\t\t&.medium {\n\t\t\t\t\tdisplay: block;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}",
           virtualPath: "./project.marko.css",
           path: "./project.marko"
         }
@@ -1787,11 +1772,12 @@ function render(input, out, __component, component, state) {
   var data = input;
 
   Layout_tag({
+      class: "page_home",
       body: {
           renderBody: function(out) {
             Section_tag({
                 renderBody: function(out) {
-                  out.w("<h1 style=\"max-width: 600px\" class=\"mt-2 heading\">" +
+                  out.w("<h1>" +
                     marko_str(input.intro));
 
                   Ticker_tag({
@@ -1819,9 +1805,8 @@ function render(input, out, __component, component, state) {
               }, out, __component, "2");
 
             Section_tag({
-                class: "thing remove-margin",
                 renderBody: function(out) {
-                  out.w("<h2 class=\"f-5 md:w-300\">Work</h2><div><ul class=\"f-4 links no-icons\">");
+                  out.w("<h2>Work</h2><div><ul>");
 
                   var $for$0 = 0;
 
@@ -1832,9 +1817,9 @@ function render(input, out, __component, component, state) {
                       marko_attr("href", project.url) +
                       ">" +
                       marko_escapeXml(project.title) +
-                      "</a><div class=\"f-2 mt-3\">" +
+                      "</a><span class=\"client-name\">" +
                       marko_escapeXml(project.client) +
-                      "</div></li>");
+                      "</span></li>");
                   });
 
                   out.w("</ul></div>");
@@ -1847,9 +1832,8 @@ function render(input, out, __component, component, state) {
               var $keyScope$1 = "[" + (($for$1++) + "]");
 
               Section_tag({
-                  class: "thing remove-margin",
                   renderBody: function(out) {
-                    out.w("<h2 class=\"f-5 md:w-300\">" +
+                    out.w("<h2>" +
                       marko_escapeXml(heading) +
                       "</h2><div>" +
                       marko_str(markdown(content)) +
@@ -1873,7 +1857,7 @@ marko_template.meta = {
     deps: [
       {
           type: "css",
-          code: ".heading {\n\t\tgrid-column: span 12 !important;\n\t}\n\t.links li {\n\t\tmargin-bottom: 16px;\n\n\t\tdiv {\n\t\t\tdisplay: inline;\n\t\t\tmargin-left: 16px;\n\t\t}\n\t}\n\t.Section h5 {\n\t\tfont-weight: bold;\n\t}\n\t.Section h2 {\n\t\ttext-transform: capitalize;\n\t}",
+          code: ".client-name {\n\t\tmargin-left: var(--margin-6);\n\t\tcolor: #808080;\n\t}\n\n\t.page_home .Section[layout^=\"grid\"] {\n\t\th2 {\n\t\t\tgrid-column: span 3;\n\t\t\ttext-transform: capitalize;\n\t\t}\n\n\t\tdiv {\n\t\t\tgrid-column: 4 / -1;\n\t\t}\n\t}",
           virtualPath: "./index.marko.css",
           path: "./index.marko"
         }

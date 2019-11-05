@@ -1,9 +1,9 @@
 import markdown from '../scripts/markdown'
 
-<Layout>
+<Layout.page_home>
 	<@body>
 		<Section>
-			<h1.mt-2.heading style="max-width: 600px">
+			<h1>
 				$!{input.intro}<Ticker>
 					<@section>using good old fashioned problem-solving.</@section>
 					<@section>using the right methods and techniques.</@section>
@@ -11,14 +11,14 @@ import markdown from '../scripts/markdown'
 				</Ticker>
 			</h1>
 		</Section>
-		<Section.thing.remove-margin>
-			<h2.f-5.md:w-300>Work</h2>
+		<Section>
+			<h2>Work</h2>
 			<div>
-				<ul.f-4.links.no-icons>
+				<ul>
 					<for|project, index| of=input.work>
 						<li>
 							<a href=project.url>${project.title}</a>
-							<div.f-2.mt-3>${project.client}</div>
+							<span.client-name>${project.client}</span>
 						</li>
 					</for>
 				</ul>
@@ -37,29 +37,27 @@ import markdown from '../scripts/markdown'
 			</div>
 		</Section> -->
 		<for|heading, content| in=input.sections>
-			<Section.thing.remove-margin>
-				<h2.f-5.md:w-300>${heading}</h2>
+			<Section>
+				<h2>${heading}</h2>
 				<div>$!{markdown(content)}</div>
 			</Section>
 		</for>
 	</@body>
 </Layout>
 style {
-	.heading {
-		grid-column: span 12 !important;
+	.client-name {
+		margin-left: var(--margin-6);
+		color: #808080;
 	}
-	.links li {
-		margin-bottom: 16px;
+
+	.page_home .Section[layout^="grid"] {
+		h2 {
+			grid-column: span 3;
+			text-transform: capitalize;
+		}
 
 		div {
-			display: inline;
-			margin-left: 16px;
+			grid-column: 4 / -1;
 		}
-	}
-	.Section h5 {
-		font-weight: bold;
-	}
-	.Section h2 {
-		text-transform: capitalize;
 	}
 }

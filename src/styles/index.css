@@ -1,86 +1,62 @@
 @import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-@import 'karamel';
+/* @import 'tailwindcss/components'; */
+/* @import 'tailwindcss/utilities'; */
+/* @import 'karamel'; */
 @import 'karamel/normalize';
-@import './typography';
+@import './reset';
+@import './variables';
+@import './elements';
 
-/* Custom properties */
 
-:root {
-	--flex-grow: 1;
-}
+[layout=grid] {
 
-/* Utilities */
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: var(--gap);
 
-@responsive {
-	.max-w-6xl {
+	@extend %remove-margin;
+
+	> * {
+		grid-column: 1 / -1;
+
+	}
+
+
+	div {
+		@extend %remove-margin;
+
+		/* Fix for firefox because for some reason div expands to size of it's children */
 		width: 100%;
 	}
-	.flex {
-		display: flex;
-	}
-	.flex > * {
-		flex-grow: 1;
-	}
-	.flex-o > * {
-		flex-basis: auto;
-	}
-	.w-shrink {
-		flex-grow: 0 !important;
-	}
-	.w-grow {
-		flex-grow: 1 !important;
-	}
-	.w-200 {
-		width: 200px;
-		flex-grow: 0 !important;
-		flex-shrink: 0;
-	}
-	.w-300 {
-		width: 280px;
-		flex-grow: 0 !important;
-		flex-shrink: 0;
-	}
 
-	.w-400 {
-		width: 400px;
-		flex-grow: 0 !important;
-		flex-shrink: 0;
-	}
-	.cols-2 {
-		column-count: 2;
-	}
-	.gap-2 > * {
-		margin-bottom: 20px;
-	}
-	.remove-margin > * {
-
-	}
-	.remove-margin > :first-child {
-		margin-top: unset;
-	}
-
-	.remove-margin > :last-child {
-		margin-bottom: unset;
-	}
-	.bt {
-		border-top-width: 1px;
-	}
-	.br {
-		border-right-width: 1px;
-	}
-	.bb {
-		border-bottom-width: 1px;
-	}
-	.bl {
-		border-left-width: 1px;
-	}
-	.flex-shrink > * {
-		flex-shrink: 0;
-	}
-	.w-viewport {
-		padding-left: inherit;
-		padding-right: inherit;
+	img {
+		width: 100%;
 	}
 }
+
+[layout=flex] {
+	display: flex;
+
+	> * {
+		flex-grow: 1;
+	}
+}
+
+[width=shrink] {
+	flex-grow: 0;
+}
+
+@media (min-width: 900px) {
+	[layout=grid\^1] {
+		@extend [layout=grid]
+	}
+}
+
+
+
+[cols="12"] {
+	grid-template-columns: repeat(12, 1fr);
+}
+
+
+

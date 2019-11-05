@@ -1,0 +1,127 @@
+@import './aliases';
+
+:root {
+	font-size: var(--font-size-4);
+	font-weight: normal;
+	font-family: var(--font-family);
+	line-height: var(--line-height);
+	color: var(--font-size-2);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+:--text {
+	letter-spacing: 0;
+	font-size: var(--font-size-5);
+	margin-block: var(--margin-6);
+
+    :--link {
+		text-decoration: underline;
+		text-decoration-thickness: 2px;
+		text-underline-position: under;
+		text-underline-offset: 6px;
+		text-decoration-color: var(--grey);
+    }
+}
+
+:--heading {
+	letter-spacing: -1.5px;
+	font-family: Fira Code;
+    margin-block: var(--margin-6);
+	color: var(--purple);
+}
+
+:--link {
+    color: var(--black);
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--grey);
+    }
+}
+
+:--code {
+    cursor: text;
+
+    :--inline & {
+        display: inline-block;
+        background-color: var(--black);
+        padding: var(--padding-1);
+    }
+
+    :--block & {
+        display: block;
+        /* border: ; */
+        border-radius: 2px;
+        padding: var(--padding-8);
+        font-family: code;
+    }
+}
+
+:--list {
+	list-style: none;
+
+	li {
+		margin-bottom: var(--margin-1);
+	}
+}
+
+:--table {
+	display: block;
+	overflow: scroll;
+	margin-block: var(--margin-6);
+
+	td, th {
+		padding: var(--padding-7) var(--padding-7) var(--padding-7) *;
+		vertical-align: top;
+	}
+
+	th {
+		text-align: left;
+	}
+
+	tr {
+		border-bottom: var(--border-width) var(--border-style) var(--border-color);
+
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+
+	thead, tbody {
+		min-width: 500px;
+		display: block;
+	}
+}
+
+h1 {
+	font-size: var(--font-size-7);
+	margin-block: var(--margin-8);
+	line-height: 2;
+}
+
+h2 {
+	font-size: var(--font-size-5);
+	margin-block: var(--margin-9);
+}
+
+h3 {
+	font-size: var(--font-size-5);
+}
+
+h4 {
+	font-size: var(--font-size-4);
+}
+
+h5 {
+	font-size: var(--font-size-3);
+}
+
+h6 {
+	font-size: var(--font-size-2);
+}
+
+hr {
+	margin-inline: var(--margin-6);
+	border-bottom: var(--border-width) var(--border-style) var(--border-color);
+}
