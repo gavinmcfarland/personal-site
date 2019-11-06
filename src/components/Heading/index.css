@@ -1,0 +1,35 @@
+@import '../../styles/aliases';
+
+:--heading {
+	letter-spacing: -1.5px;
+	font-family: Fira Code;
+    margin-block: var(--margin-6);
+	color: var(--purple);
+}
+
+h1 {
+	font-size: var(--font-size-7);
+	margin-block: var(--margin-8);
+	line-height: 2;
+}
+
+h2 {
+	font-size: var(--font-size-5);
+	margin-block: var(--margin-9);
+}
+
+h3 {
+	font-size: var(--font-size-5);
+}
+
+h4 {
+	font-size: var(--font-size-4);
+}
+
+h5 {
+	font-size: var(--font-size-3);
+}
+
+h6 {
+	font-size: var(--font-size-2);
+}

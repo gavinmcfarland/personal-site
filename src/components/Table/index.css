@@ -1,0 +1,29 @@
+@import '../../styles/aliases';
+
+:--table {
+	display: block;
+	overflow: scroll;
+	margin-block: var(--margin-6);
+
+	td, th {
+		padding: var(--padding-7) var(--padding-7) var(--padding-7) *;
+		vertical-align: top;
+	}
+
+	th {
+		text-align: left;
+	}
+
+	tr {
+		border-bottom: var(--border-width) var(--border-style) var(--border-color);
+
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+
+	thead, tbody {
+		min-width: 500px;
+		display: block;
+	}
+}

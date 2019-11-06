@@ -1,0 +1,19 @@
+@import '../../styles/aliases';
+
+:--code {
+    cursor: text;
+
+    :--inline & {
+        display: inline-block;
+        background-color: var(--black);
+        padding: var(--padding-1);
+    }
+
+    :--block & {
+        display: block;
+        /* border: ; */
+        border-radius: 2px;
+        padding: var(--padding-8);
+        font-family: code;
+    }
+}

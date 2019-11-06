@@ -1,0 +1,9 @@
+@import '../../styles/aliases';
+
+:--list {
+	list-style: none;
+
+	li {
+		margin-bottom: var(--margin-1);
+	}
+}
