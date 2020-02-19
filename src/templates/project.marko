@@ -10,8 +10,8 @@ import markdown from '../scripts/markdown'
 		</Section>
 		<if(input.image)>
 			<Section.hero.w-viewport>
-				<img.small src=("/static" + input.image.small)/>
-				<img.medium src=("/static" + input.image.medium)/>
+				<!-- <img.small src=("/static" + input.image.small)/> -->
+				<!-- <img.medium src=("/static" + input.image.medium)/> -->
 			</Section>
 		</if>
 		<if(input.goal || input.role)>
@@ -30,12 +30,17 @@ import markdown from '../scripts/markdown'
 				</if>
 			</Section>
 		</if>
-		<for|heading, content| in=input.sections>
+		<if(input.sections)>
+		<for|section| of=input.sections>
 			<Section>
-				<h2>${heading}</h2>
-				<div>$!{markdown(content)}</div>
+				<h2>${section.value}</h2>
+				<div>$!{markdown(section.content)}</div>
 			</Section>
 		</for>
+		</if>
+		<Section>
+			<div>$!{markdown(input.body)}</div>
+		</Section>
 	</@body>
 </Layout>
 style {

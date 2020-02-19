@@ -1,11 +1,27 @@
 import express from "express";
 import slash from 'express-slash';
-import jdown from 'jdown';
 import api from './api';
 // Enable gzip compression for all HTTP responses
 import compression from "compression";
 // Allow all of the generated files to be served up by Express
 import serveStatic from "serve-static";
+
+// const sanity = require("./sanity");
+
+// const sanityClient = require('@sanity/client')
+// const client = sanityClient({
+//   projectId: 'kvqmg9w0',
+//   dataset: 'production',
+//   useCdn: false // `false` if you want to ensure fresh data
+// })
+
+// const query = '*[_type == "post"]'
+
+// client.fetch(query).then(posts => {
+//   posts.forEach(post => {
+//     console.log(`${post.title}`)
+//   })
+// })
 
 import Error404 from "./templates/404.marko";
 import Post from "./templates/post.marko";
@@ -26,12 +42,12 @@ app.use("/static", serveStatic("dist/client"));
 api.then(content => {
 
 	app.get("/", (req, res) => {
-		Home.render({ posts: content.posts, ...content.home, work: content.work }, res);
+		Home.render({ posts: content.posts, ...content.home, work: content.posts }, res);
 	});
 
 	app.get("/cv", (req, res) => {
 		res.setHeader("Content-Type", "text/html; charset=utf-8");
-		Cv.render({ ...content.cv }, res);
+		Cv.render({ ...content.resume }, res);
 	});
 
 	app.get("/projects", (req, res) => {
@@ -70,10 +86,9 @@ api.then(content => {
 
 		let err = true;
 
-		for (let post of content.work) {
-
+		for (let post of content.posts) {
 			// If page exists then render page
-			if (req.params.post === post.slug) {
+			if (req.params.post === post.slug.current) {
 				Project.render(post, res);
 				err = false
 			}

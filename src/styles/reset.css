@@ -36,3 +36,7 @@ table {
 figure {
 	margin: unset;
 }
+
+img {
+	width: 100%;
+}

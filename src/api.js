@@ -1,43 +1,70 @@
-const jdown = require('jdown');
 const v = require('voca');
 
+// const sanity = require("./sanity");
+
+const toMarkdown = require('@sanity/block-content-to-markdown')
+
+// const imageUrlBuilder = require('@sanity/image-url')
+// const builder = imageUrlBuilder(myConfiguredSanityClient)
+
+const sanityClient = require('@sanity/client')
+const client = sanityClient({
+  projectId: 'kvqmg9w0',
+  dataset: 'production',
+  useCdn: true // `false` if you want to ensure fresh data
+})
+
+const serializers = {
+	types: {
+	  code: props => '```' + props.node.language + '\n' + props.node.code + '\n```'
+	}
+  }
+
 async function getContent() {
-	return await jdown(process.cwd() + '/content/', { parseMd: false, fileInfo: true }).then(content => {
-		for (let index in content.posts) {
-			// If the slug isn't specified in the file then create it using the title
-			if (!content.posts[index].slug) {
-				content.posts[index].slug = v.kebabCase(content.posts[index].title)
-			}
-		}
+	var content = {}
+	content.home = {}
+	content.resume = {}
+	content.resume.sections = {}
+	content.home.intro = {}
+	content.home.sections = {}
+		
+	await client.fetch('*[_type == "post"]').then(posts => {
 
-		for (let index in content.work) {
-			// If the slug isn't specified in the file then create it using the title
-			if (!content.work[index].slug) {
-				content.work[index].slug = v.kebabCase(content.work[index].title)
-			}
-		}
-
-		content.posts.map(function(post) {
-			post.url = '/posts/' + post.slug
+		posts.forEach(post => {
+			post.body = toMarkdown(post.body, {
+				serializers,
+				projectId: 'kvqmg9w0',
+				dataset: 'production'
+			  })
+			post.url = '/work/' + post.slug.current
 		})
 
-		content.work.map(function(post) {
-			post.url = '/work/' + post.slug
+		return content.posts = posts
+	})
+
+	await client.fetch(`*[_type == "page" && title == "Site"][0].sections`).then(sections => {
+		sections.forEach(section => {
+			var name = v.lowerCase(section.value)
+			content.home.sections[name] = section.content
 		})
 
-		if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'test') {
+	})
 
-			content.posts = content.posts.filter(post => post.status === 'publish')
-			content.work = content.work.filter(post => post.status === 'publish')
+	await client.fetch(`*[_type == "page" && title == "Resume"][0].sections`).then(sections => {
+		sections.forEach(section => {
+			var name = v.kebabCase(section.value)
+			content.resume.sections[name] = section.content
+		})
 
-		}
+	})
 
-		content.posts = content.posts.sort((a, b) => new Date(b.fileInfo.createdAt) > new Date(a.createdAt))
-		// createDb('api/db.json', content)
+	await client.fetch(`*[_type == "page" && title == "Site"][0].intro`).then(intro => {
+		content.home.intro = intro
+	})
 
-		return content
-	});
 
+
+	return content
 }
 
 const api = getContent()
