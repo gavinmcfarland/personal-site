@@ -2,7 +2,7 @@
 
 :--heading {
 	letter-spacing: -1.5px;
-	font-family: Fira Code;
+	font-family: var(--heading-font-family);
     margin-block: var(--margin-6);
 	color: var(--purple);
 }
