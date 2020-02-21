@@ -3,7 +3,7 @@ Read Me
 
 Personal site of Gavin McFarland
 
-The site uses [Marko](https://markojs.com/) for the frontend framework and [jdown](https://github.com/DanWebb/jdown) to generate an object/api from markdown files for the content.
+The site uses [Marko](https://markojs.com/) for the frontend framework and [Sanity](https://www.sanity.io/) for the content management system.
 
 It's published using [Now](https://zeit.co/) for convenience as a serverless function. The now configuration could probably be simplified a lot. It was made from the [marko-webpack](https://github.com/marko-js-samples/marko-webpack) repo.
 
