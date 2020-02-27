@@ -114,16 +114,16 @@
 	--padding-20: var(--spacing-20);
 
 
-	--border-color: var(--brown);
+	--font-size: 1;
+	--font-family: Inter, sans-serif;
+	--heading-font-family: var(--font-family);
+	--line-height: 1.5;
+
+	--border-color: var(--black);
     --border-width: 1px;
 	--border-style: solid;
 
-	--font-size: 1;
-	--heading-font-family: Fira Code;
-	--font-family: Fira Sans;
-	--line-height: 1.75;
-
-	--color: black;
+	--color: var(--black);
 	--background-color: ;
 
 	--box-shadow: none;

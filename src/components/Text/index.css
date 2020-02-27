@@ -1,8 +1,11 @@
 @import '../../styles/aliases';
 
+body {
+	font-size: var(--font-size-3);
+}
+
 :--text {
-	letter-spacing: 0;
-	font-size: var(--font-size-5);
+	/* letter-spacing: 0; */
 	margin-block: var(--margin-6);
 
     :--link {
