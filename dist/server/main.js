@@ -159,7 +159,7 @@ function render(input, out, __component, component, state) {
 
   marko_dynamicTag(out, input.styles, null, null, null, null, __component, "7");
 
-  out.w("<link href=\"https://fonts.googleapis.com/css?family=Fira+Code|Fira+Mono|Fira+Sans&amp;display=swap\" rel=\"stylesheet\"><link rel=\"stylesheet\" href=\"//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css\">");
+  out.w("<link href=\"https://fonts.googleapis.com/css?family=Fira+Code|Fira+Mono|Fira+Sans&amp;display=swap\" rel=\"stylesheet\"><link rel=\"stylesheet\" href=\"//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css\"><script async defer data-domain=\"gavinmcfarland.co.uk\" src=\"https://plausible.io/js/plausible.js\"></script>");
 
   out.___renderAssets && out.___renderAssets()
 
@@ -220,7 +220,7 @@ marko_template.meta = {
 
 module.exports = {
   getBundleName: function(){return "Client"},
-  entries: {"404_78An":{"Client":{"css":["404_78An.b9003c7c.css"],"js":["404_78An.a8418dfd.js"],"map":["404_78An.a8418dfd.js.map"]}},"about_kzxx":{"Client":{"css":["about_kzxx.bb09322f.css"],"js":["about_kzxx.2f4dd259.js"],"map":["about_kzxx.2f4dd259.js.map"]}},"cv_tq48":{"Client":{"css":["cv_tq48.dd5a16d3.css"],"js":["cv_tq48.a4fb997d.js"],"map":["cv_tq48.a4fb997d.js.map"]}},"post_ffL2":{"Client":{"css":["post_ffL2.b9003c7c.css"],"js":["post_ffL2.d2359392.js"],"map":["post_ffL2.d2359392.js.map"]}},"project_Qgdo":{"Client":{"css":["project_Qgdo.0f17abbc.css"],"js":["project_Qgdo.fd59905a.js"],"map":["project_Qgdo.fd59905a.js.map"]}},"projects_3eZ0":{"Client":{"css":["projects_3eZ0.a88896c1.css"],"js":["projects_3eZ0.82ef4eee.js"],"map":["projects_3eZ0.82ef4eee.js.map"]}},"templates_IwU3":{"Client":{"css":["templates_IwU3.a382a9ae.css"],"js":["vendors~templates_IwU3.476f2e24.js","templates_IwU3.b9804db9.js"],"map":["vendors~templates_IwU3.476f2e24.js.map","templates_IwU3.b9804db9.js.map"]}}}
+  entries: {"404_78An":{"Client":{"css":["404_78An.b9003c7c.css"],"js":["404_78An.2c5bfb45.js"],"map":["404_78An.2c5bfb45.js.map"]}},"about_kzxx":{"Client":{"css":["about_kzxx.14e6a495.css"],"js":["about_kzxx.2f4dd259.js"],"map":["about_kzxx.2f4dd259.js.map"]}},"cv_tq48":{"Client":{"css":["cv_tq48.2fe28eb5.css"],"js":["cv_tq48.a4fb997d.js"],"map":["cv_tq48.a4fb997d.js.map"]}},"post_ffL2":{"Client":{"css":["post_ffL2.b9003c7c.css"],"js":["post_ffL2.b9d3844e.js"],"map":["post_ffL2.b9d3844e.js.map"]}},"project_Qgdo":{"Client":{"css":["project_Qgdo.b330ad3c.css"],"js":["project_Qgdo.fd59905a.js"],"map":["project_Qgdo.fd59905a.js.map"]}},"projects_3eZ0":{"Client":{"css":["projects_3eZ0.a88896c1.css"],"js":["projects_3eZ0.82ef4eee.js"],"map":["projects_3eZ0.82ef4eee.js.map"]}},"templates_IwU3":{"Client":{"css":["templates_IwU3.f7b67e5b.css"],"js":["vendors~templates_IwU3.476f2e24.js","templates_IwU3.b9804db9.js"],"map":["vendors~templates_IwU3.476f2e24.js.map","templates_IwU3.b9804db9.js.map"]}}}
 }
 
 /***/ }),
