@@ -7,8 +7,8 @@
 	--number-octave: 2;
 	--number-scale: var(--number-minor-third);
 
-	@media (min-width: 762px) {
-		--number-base: 18px;
+	@media (min-width: 900px) {
+		--number-base: calc(16px * 1.25);
 		--number-scale: var(--number-perfect-forth);
 	}
 }
