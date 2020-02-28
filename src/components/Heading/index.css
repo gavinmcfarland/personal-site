@@ -8,18 +8,18 @@
 }
 
 h1 {
-	font-size: var(--font-size-7);
+	font-size: var(--font-size-3);
 	margin-block: var(--margin-8);
 	line-height: 2;
 }
 
 h2 {
-	font-size: var(--font-size-5);
+	font-size: var(--font-size-1);
 	margin-block: var(--margin-9);
 }
 
 h3 {
-	font-size: var(--font-size-5);
+	font-size: var(--font-size-1);
 }
 
 h4 {

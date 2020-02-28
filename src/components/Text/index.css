@@ -2,7 +2,7 @@
 
 :--text {
 	letter-spacing: 0;
-	font-size: var(--font-size-5);
+	font-size: var(--font-size-0);
 	margin-block: var(--margin-6);
 
     :--link {

@@ -1,7 +1,16 @@
 :root {
-    --number-base: 8px;
-    --number-golden-ratio: 1.168;
-    --number-octave: 2;
+    --number-base: 16px;
+	--number-golden-ratio: 1.618;
+	--number-minor-third: 1.2;
+	--number-major-third: 1.25;
+	--number-perfect-forth: 1.333;
+	--number-octave: 2;
+	--number-scale: var(--number-minor-third);
+
+	@media (min-width: 762px) {
+		--number-base: 18px;
+		--number-scale: var(--number-perfect-forth);
+	}
 
     /* breakpoints: (600px, 900px, 1200px, 1800px); */
 
@@ -16,17 +25,22 @@
 	--brown: #A28570;
 	--grey: #C4C4C4;
 
-	--font-size-1:  0.75rem;
-	--font-size-2:  0.875rem;
-	--font-size-3:  1rem;
-	--font-size-4:  1.125rem;
-	--font-size-5:  1.25rem;
-	--font-size-6:  1.5rem;
-	--font-size-7:  1.875rem;
-	--font-size-8:  2.25rem;
-	--font-size-9:  3rem;
-	--font-size-10: 4rem;
+	--font-size--3:  calc(var(--number-base) * (1 / var(--number-scale)) * (1 / var(--number-scale)) * (1 / var(--number-scale)) );
+	--font-size--2:  calc(var(--number-base) * (1 / var(--number-scale)) * (1 / var(--number-scale)) );
+	--font-size--1:  calc(var(--number-base) * (1 / var(--number-scale)) );
+	--font-size-0:  calc(var(--font-size));
+	--font-size-1:  calc(var(--number-base) * pow(var(--number-scale), 1) );
+	--font-size-2:  calc(var(--number-base) * pow(var(--number-scale), 2) );
+	--font-size-3:  calc(var(--number-base) * pow(var(--number-scale), 3) );
+	--font-size-4:  calc(var(--number-base) * pow(var(--number-scale), 4) );
+	--font-size-5:  calc(var(--number-base) * pow(var(--number-scale), 5) );
+	--font-size-6:  calc(var(--number-base) * pow(var(--number-scale), 6) );
+	--font-size-7:  calc(var(--number-base) * pow(var(--number-scale), 6) );
+	--font-size-8:  calc(var(--number-base) * pow(var(--number-scale), 8) );
+	--font-size-9:  calc(var(--number-base) * pow(var(--number-scale), 9) );
+	--font-size-10: calc(var(--number-base) * pow(var(--number-scale), 10) );
 
+	/* calc(8px + calc(2vw + 2vh) + calc(2vw + 2vh) + calc(2vw + 2vh) + calc(2vw + 2vh) + calc(2vw + 2vh) + calc(2vw + 2vh) + calc(2vw + 2vh)); */
 	--spacing-1: 0.125em;
 	--spacing-2: 0.1875em;
 	--spacing-3: 0.25em;
@@ -118,9 +132,9 @@
     --border-width: 1px;
 	--border-style: solid;
 
-	--font-size: 1;
-	--heading-font-family: Fira Code;
-	--font-family: Fira Sans;
+	--font-size: var(--number-base);
+	/* --heading-font-family: Inter; */
+	--font-family: Fira Mono, sans-serif;
 	--line-height: 1.75;
 
 	--color: black;
