@@ -8,11 +8,7 @@
 
 
 :root {
-<<<<<<< HEAD
-	font-size: var(--font-size);
-=======
 	font-size: 100%;
->>>>>>> master
 	font-weight: normal;
 	font-family: var(--font-family);
 	line-height: var(--line-height);
