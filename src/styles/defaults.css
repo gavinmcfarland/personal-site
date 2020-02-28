@@ -1,0 +1,19 @@
+:root {
+
+    /* breakpoints: (600px, 900px, 1200px, 1800px); */
+
+    /* sides: (/top/, /right|start/, /bottom/, /left|end/); */
+
+	--font-family: Fira Code, sans-serif;
+	--line-height: 1.5;
+
+    --border-width: 1px;
+	--border-style: solid;
+
+	--box-shadow: none;
+	--box-shadow-color: var(--black);
+
+	
+}
+
+

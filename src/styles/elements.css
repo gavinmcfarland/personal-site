@@ -1,32 +1,8 @@
 @import './aliases';
 @import '../components/Text';
+@import '../components/Link';
 @import '../components/Heading';
 @import '../components/List';
 @import '../components/Code';
 @import '../components/Figure';
 @import '../components/Table';
-
-
-:root {
-	font-size: 100%;
-	font-weight: normal;
-	font-family: var(--font-family);
-	line-height: var(--line-height);
-	color: var(--font-size-2);
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-:--link {
-    color: var(--black);
-
-    &:hover {
-        cursor: pointer;
-        background-color: var(--grey);
-    }
-}
-
-hr {
-	margin-inline: var(--margin-6);
-	border-bottom: var(--border-width) var(--border-style) var(--border-color);
-}

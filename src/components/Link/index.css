@@ -1,0 +1,10 @@
+@import '../../styles/aliases';
+
+:--link {
+    color: var(--black);
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--grey);
+    }
+}

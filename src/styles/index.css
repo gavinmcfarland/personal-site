@@ -4,7 +4,12 @@
 /* @import 'karamel'; */
 @import 'karamel/normalize';
 @import './reset';
-@import './variables';
+@import './numbers';
+@import './colors';
+@import './font-sizes';
+@import './spacing';
+@import './defaults';
+
 @import './elements';
 
 

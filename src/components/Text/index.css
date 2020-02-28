@@ -1,5 +1,18 @@
 @import '../../styles/aliases';
 
+:root {
+	font-size: 100%;
+
+	--font-size: var(--number-base);
+	--font-family: Fira Sans, sans-serif;
+	--line-height: 1.75;
+	
+	font-family: var(--font-family);
+	line-height: var(--line-height);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 body {
 	font-size: var(--font-size-0);
 }
@@ -16,4 +29,39 @@ body {
 		text-underline-offset: 6px;
 		text-decoration-color: var(--grey);
     }
+}
+
+hr {
+	margin-inline: var(--margin-6);
+	border-bottom: var(--border-width) var(--border-style) var(--border-color);
+}
+
+:--heading {
+	font-family: Fira Code, sans-serif;
+}
+
+h1 {
+	font-size: var(--font-size-3);
+
+}
+
+h2 {
+	font-size: var(--font-size-1);
+
+}
+
+h3 {
+	font-size: var(--font-size-1);
+}
+
+h4 {
+	font-size: var(--font-size-4);
+}
+
+h5 {
+	font-size: var(--font-size-3);
+}
+
+h6 {
+	font-size: var(--font-size-2);
 }

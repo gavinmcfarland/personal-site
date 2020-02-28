@@ -1,0 +1,16 @@
+:root {
+	--font-size--3:  calc(var(--number-base) * (1 / var(--number-scale)) * (1 / var(--number-scale)) * (1 / var(--number-scale)) );
+	--font-size--2:  calc(var(--number-base) * (1 / var(--number-scale)) * (1 / var(--number-scale)) );
+	--font-size--1:  calc(var(--number-base) * (1 / var(--number-scale)) );
+	--font-size-0:  calc(var(--font-size));
+	--font-size-1:  calc(var(--number-base) * pow(var(--number-scale), 1) );
+	--font-size-2:  calc(var(--number-base) * pow(var(--number-scale), 2) );
+	--font-size-3:  calc(var(--number-base) * pow(var(--number-scale), 3) );
+	--font-size-4:  calc(var(--number-base) * pow(var(--number-scale), 4) );
+	--font-size-5:  calc(var(--number-base) * pow(var(--number-scale), 5) );
+	--font-size-6:  calc(var(--number-base) * pow(var(--number-scale), 6) );
+	--font-size-7:  calc(var(--number-base) * pow(var(--number-scale), 6) );
+	--font-size-8:  calc(var(--number-base) * pow(var(--number-scale), 8) );
+	--font-size-9:  calc(var(--number-base) * pow(var(--number-scale), 9) );
+	--font-size-10: calc(var(--number-base) * pow(var(--number-scale), 10) );
+}

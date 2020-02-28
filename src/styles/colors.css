@@ -1,0 +1,20 @@
+@import 'aliases';
+
+:root {
+	--silver: silver;
+	--green: green;
+	--blue: blue;
+	--red: red;
+	--black: black;
+	--purple: #680097;
+	--brown: #A28570;
+	--grey: #C4C4C4;
+
+	--color: var(--black);
+	--background-color: var(--white);
+	--border-color: var(--black);
+}
+
+:--heading {
+	color: var(--purple);
+}
