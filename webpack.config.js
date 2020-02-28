@@ -29,7 +29,7 @@ module.exports = [
 		},
 		output: {
 			filename: "[name].[contenthash:8].js",
-			path: path.join(__dirname, "dist/client")
+			path: path.join(__dirname, "public/client")
 		},
 		devServer: isDev ? {
 			overlay: true,
@@ -46,7 +46,7 @@ module.exports = [
 			}),
 			new CopyWebpackPlugin([{
 				from: path.join(__dirname, "content/assets"), //Will resolve to RepoDir/src/assets
-				to: "../client" //Copies all files from above dest to dist/assets
+				to: "../client" //Copies all files from above dest to public/assets
 			}, ]),
 			isProd && new OptimizeCssAssetsPlugin(),
 			markoPlugin.browser
@@ -61,7 +61,7 @@ module.exports = [
 		},
 		output: {
 			libraryTarget: "commonjs2",
-			path: path.join(__dirname, "dist/server")
+			path: path.join(__dirname, "public/server")
 		},
 		plugins: [
 			new webpack.DefinePlugin({
@@ -77,7 +77,7 @@ module.exports = [
 			}),
 			new CopyWebpackPlugin([{
 				from: path.join(__dirname, "content/assets"), //Will resolve to RepoDir/src/assets
-				to: "../client" //Copies all files from above dest to dist/assets
+				to: "../client" //Copies all files from above dest to public/assets
 			}, ]),
 			isDev && spawnedServer,
 			markoPlugin.server

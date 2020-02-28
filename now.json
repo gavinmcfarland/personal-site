@@ -4,26 +4,21 @@
 		"silent": true
 	},
 	"builds": [{
-		"src": "dist/client/**",
+		"src": "public/client/**",
 		"use": "@now/static"
 	}, {
-		"src": "dist/server/main.js",
-		"use": "@now/node",
-		"config": {
-			"includeFiles": [
-				"content/**"
-			]
-		}
+		"src": "public/server/main.js",
+		"use": "@now/node"
 	}],
 	"alias": ["www.gavinmcfarland.co.uk"],
 	"routes": [{
 			"src": "/static/(.*)",
-			"dest": "dist/client/$1",
+			"dest": "public/client/$1",
 			"methods": ["GET"]
 		},
 		{
 			"src": "/(.*)",
-			"dest": "dist/server/main.js",
+			"dest": "public/server/main.js",
 			"methods": ["GET"]
 		},
 		{
