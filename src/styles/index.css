@@ -1,8 +1,10 @@
-@import 'tailwindcss/base';
+
 /* @import 'tailwindcss/components'; */
 /* @import 'tailwindcss/utilities'; */
 /* @import 'karamel'; */
-@import 'karamel/normalize';
+/* @import 'karamel/normalize'; */
+@import './font-faces';
+@import './fonts';
 @import './reset';
 @import './numbers';
 @import './colors';

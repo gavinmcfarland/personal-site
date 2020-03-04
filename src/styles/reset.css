@@ -2,6 +2,10 @@ html, body {
 	min-height: 100%;
 }
 
+body {
+	margin: 0;
+}
+
 a {
 	text-decoration: none;
 }
@@ -24,7 +28,7 @@ ol li::before {
 }
 
 ol li::before, ul li::after {
-	display: inline-block;
+	/* display: inline-block; */
 }
 
 
@@ -39,4 +43,10 @@ figure {
 
 img {
 	width: 100%;
+}
+
+/* Fix text crop when elements don't have a container */
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+	display: table;
 }

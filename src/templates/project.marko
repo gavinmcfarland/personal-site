@@ -5,7 +5,7 @@ import markdown from '../scripts/markdown'
 		<Section>
 			<h1.mb-8.mt-0>${input.title}</h1>
 			<div.excerpt.f-4>
-				<p>$!{markdown(input.excerpt)}</p>
+				$!{markdown(input.excerpt)}
 			</div>
 		</Section>
 		<if(input.image)>

@@ -11,9 +11,9 @@
 
     :--block & {
         display: block;
-        /* border: ; */
         border-radius: 2px;
-        padding: var(--padding-8);
-        font-family: code;
+        /* padding: var(--padding-1); */
+        font-family: Fira Code;
+        margin-block: var(--margin-1);
     }
 }

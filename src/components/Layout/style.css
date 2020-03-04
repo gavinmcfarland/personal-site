@@ -1,7 +1,9 @@
+@import "../../styles";
 @import "../../styles/groups";
 
 body {
-	padding-inline: var(--padding-10);
+	padding-inline: var(--padding-4);
+	padding-top: var(--margin-2);
 
 	> main {
 		padding-left: inherit;
@@ -10,6 +12,12 @@ body {
 
 	> header a {
 		display: inline-block;
+	}
+
+	> header .logo {
+		color: var(--green);
+		font-family: var(--heading-font-family);
+		font-weight: bold;
 	}
 
 	.wrapper {
@@ -34,6 +42,8 @@ body {
 
 	> footer {
 		display: flex;
+		margin-top: var(--margin-8);
+		padding-bottom: var(--margin-2);
 	}
 
 	> footer > * {
@@ -42,11 +52,6 @@ body {
 	}
 
 	> footer nav a {
-		margin-left: var(--margin-6);
-	}
-
-	> header,
-	> footer {
-		padding-block: var(--padding-10);
+		margin-left: var(--margin-4);
 	}
 }

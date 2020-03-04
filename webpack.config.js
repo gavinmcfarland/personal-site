@@ -96,7 +96,7 @@ function compiler(config) {
 			...config.output
 		},
 		resolve: {
-			extensions: [".js", ".json", ".marko"]
+			extensions: [".js", ".json", ".marko", ".css"]
 		},
 		module: {
 			rules: [{
@@ -112,7 +112,7 @@ function compiler(config) {
 				//   loader: "svg-url-loader"
 				// },
 				{
-					test: /\.(jpg|jpeg|gif|png|svg)$/,
+					test: /\.(jpg|jpeg|gif|png|woff|woff2|svg)$/,
 					loader: "file-loader",
 					options: {
 						// File assets from server & browser compiler output to client folder.

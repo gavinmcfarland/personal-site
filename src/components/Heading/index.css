@@ -1,13 +1,1 @@
 @import '../../styles/aliases';
-
-:--heading {
-	margin-block: var(--margin-6);
-}
-
-h1 {
-	margin-block: var(--margin-8);
-}
-
-h2 {
-	margin-block: var(--margin-9);
-}

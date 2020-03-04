@@ -1,0 +1,287 @@
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/e813db59e1967d2c617ae3d2228cdf26.woff2') format('woff2'),
+        url('./fonts/e813db59e1967d2c617ae3d2228cdf26.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/ad096c2708d66cc1bf42ea799258833a.woff2') format('woff2'),
+        url('./fonts/ad096c2708d66cc1bf42ea799258833a.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/8e2811788f72d2e4ede8e296b064bdff.woff2') format('woff2'),
+        url('./fonts/8e2811788f72d2e4ede8e296b064bdff.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/fd06a32c0c0dc0137cfa66e63fe45f51.woff2') format('woff2'),
+        url('./fonts/fd06a32c0c0dc0137cfa66e63fe45f51.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/d4fb14722d958c5b8b8cae87cec47f5f.woff2') format('woff2'),
+        url('./fonts/d4fb14722d958c5b8b8cae87cec47f5f.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/9baba76a4ff5db8669d3e088ce185261.woff2') format('woff2'),
+        url('./fonts/9baba76a4ff5db8669d3e088ce185261.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/9a94d7a817e73cb5bf0544d5345af46f.woff2') format('woff2'),
+        url('./fonts/9a94d7a817e73cb5bf0544d5345af46f.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/9289ede17a7b9704131a73f1bccf7997.woff2') format('woff2'),
+        url('./fonts/9289ede17a7b9704131a73f1bccf7997.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/ed65a99d48edd96f61ac53694ae0bb80.woff2') format('woff2'),
+        url('./fonts/ed65a99d48edd96f61ac53694ae0bb80.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/7ea21680705cb1ef27c3c5a9a957528f.woff2') format('woff2'),
+        url('./fonts/7ea21680705cb1ef27c3c5a9a957528f.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/6572d5ef2d9322f414ccf8d9d4d57461.woff2') format('woff2'),
+        url('./fonts/6572d5ef2d9322f414ccf8d9d4d57461.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/4f40ffa871f979ace4fc260f8b940149.woff2') format('woff2'),
+        url('./fonts/4f40ffa871f979ace4fc260f8b940149.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/3ae0c4c4a7da9ce3d6de8646d0e2d946.woff2') format('woff2'),
+        url('./fonts/3ae0c4c4a7da9ce3d6de8646d0e2d946.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/ff326aef5b561b7b1ce230d274aa7dba.woff2') format('woff2'),
+        url('./fonts/ff326aef5b561b7b1ce230d274aa7dba.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/069c9cb2fe7ee774ab51a15adb116be5.woff2') format('woff2'),
+        url('./fonts/069c9cb2fe7ee774ab51a15adb116be5.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/f092ffeaa104d6e41b5db8a6363a4ab8.woff2') format('woff2'),
+        url('./fonts/f092ffeaa104d6e41b5db8a6363a4ab8.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/c18088cf6728f46ca8ada063a22d2e38.woff2') format('woff2'),
+        url('./fonts/c18088cf6728f46ca8ada063a22d2e38.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/f0ae358b84680f5ab6bc21dd14931f4a.woff2') format('woff2'),
+        url('./fonts/f0ae358b84680f5ab6bc21dd14931f4a.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/6b6943d7447a3263074ab1d10fc8b4fd.woff2') format('woff2'),
+        url('./fonts/6b6943d7447a3263074ab1d10fc8b4fd.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/b32a4761e42a3934012ae03d93e83e96.woff2') format('woff2'),
+        url('./fonts/b32a4761e42a3934012ae03d93e83e96.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/309e1c950a858688dff26f0607308318.woff2') format('woff2'),
+        url('./fonts/309e1c950a858688dff26f0607308318.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/703381f27cca8d184e4eb16a33a845e7.woff2') format('woff2'),
+        url('./fonts/703381f27cca8d184e4eb16a33a845e7.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/23c2b28b5bde41a825676a431492a825.woff2') format('woff2'),
+        url('./fonts/23c2b28b5bde41a825676a431492a825.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/2ce5a81c93fab06d3d7d62376b5d2d62.woff2') format('woff2'),
+        url('./fonts/2ce5a81c93fab06d3d7d62376b5d2d62.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/6123bc848fcee68b897b0c490c62e5ad.woff2') format('woff2'),
+        url('./fonts/6123bc848fcee68b897b0c490c62e5ad.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/470c1e4049ac9103238488f96a8db57d.woff2') format('woff2'),
+        url('./fonts/470c1e4049ac9103238488f96a8db57d.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/53df0e2058dfac5960ff1de65dbbcd6a.woff2') format('woff2'),
+        url('./fonts/53df0e2058dfac5960ff1de65dbbcd6a.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/f720c7cb5ccf317827e76acd4d548b8e.woff2') format('woff2'),
+        url('./fonts/f720c7cb5ccf317827e76acd4d548b8e.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/b4c592121406041c1903d800e0176ea9.woff2') format('woff2'),
+        url('./fonts/b4c592121406041c1903d800e0176ea9.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/7d0588c078c8636c7556804548f52523.woff2') format('woff2'),
+        url('./fonts/7d0588c078c8636c7556804548f52523.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/0dfe81eaaad0c96c7d57bb2703df4156.woff2') format('woff2'),
+        url('./fonts/0dfe81eaaad0c96c7d57bb2703df4156.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby';
+    src: local('ø'), local(''),
+        url('./fonts/32f9dc0b3a9ad214d8a83f07b70567cb.woff2') format('woff2'),
+        url('./fonts/32f9dc0b3a9ad214d8a83f07b70567cb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -3,10 +3,10 @@
 :--table {
 	display: block;
 	overflow: scroll;
-	margin-block: var(--margin-6);
+	margin-block: var(--margin-4);
 
 	td, th {
-		padding: var(--padding-7) var(--padding-7) var(--padding-7) *;
+		padding: var(--padding-2) var(--padding-2) var(--padding-2) *;
 		vertical-align: top;
 	}
 

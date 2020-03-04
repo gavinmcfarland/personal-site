@@ -1,14 +1,7 @@
 :root {
-    --number-base: 16px;
 	--number-golden-ratio: 1.618;
 	--number-minor-third: 1.2;
 	--number-major-third: 1.25;
 	--number-perfect-forth: 1.333;
 	--number-octave: 2;
-	--number-scale: var(--number-minor-third);
-
-	@media (min-width: 900px) {
-		--number-base: calc(16px * 1.25);
-		--number-scale: var(--number-perfect-forth);
-	}
 }

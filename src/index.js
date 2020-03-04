@@ -29,6 +29,7 @@ import Project from "./templates/project.marko";
 import About from "./templates/about.marko";
 import Projects from "./templates/projects.marko";
 import Cv from "./templates/cv.marko";
+import Playground from "./templates/playground.marko";
 import Home from "./templates/index.marko";
 
 const app = express();
@@ -48,6 +49,11 @@ api.then(content => {
 	app.get("/cv", (req, res) => {
 		res.setHeader("Content-Type", "text/html; charset=utf-8");
 		Cv.render({ ...content.resume }, res);
+	});
+
+	app.get("/playground", (req, res) => {
+		res.setHeader("Content-Type", "text/html; charset=utf-8");
+		Playground.render({ ...content.resume }, res);
 	});
 
 	app.get("/projects", (req, res) => {

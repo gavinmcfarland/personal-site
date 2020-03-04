@@ -1,14 +1,24 @@
 @import '../../styles/aliases';
 
 :root {
-	font-size: 100%;
-
+	--number-base: 12px;
+	--number-font-scale-factor: var(--number-minor-third);
+	--number-spacing-scale-factor: var(--number-minor-third);
 	--font-size: var(--number-base);
-	--font-family: Fira Sans, sans-serif;
-	--line-height: 1.75;
-	
+	--line-height: calc(1 * var(--number-spacing-scale-factor));
+
+	@media (min-width: 900px) {
+		--number-base: calc(12px * 1.25);
+		--number-font-scale-factor: var(--number-perfect-forth);
+		--number-spacing-scale-factor: var(--number-perfect-forth);
+	}
+}
+
+:root {
+	font-size: 100%; /* equals 16px */
 	font-family: var(--font-family);
 	line-height: var(--line-height);
+	font-weight: 500;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -20,48 +30,92 @@ body {
 :--text {
 	letter-spacing: 0;
 	font-size: var(--font-size-0);
-	margin-block: var(--margin-6);
+	margin-block: var(--margin-1);
 
     :--link {
-		text-decoration: underline;
-		text-decoration-thickness: 2px;
-		text-underline-position: under;
-		text-underline-offset: 6px;
-		text-decoration-color: var(--grey);
+		border-bottom: 1px solid;
     }
 }
 
-hr {
-	margin-inline: var(--margin-6);
-	border-bottom: var(--border-width) var(--border-style) var(--border-color);
+ul, ol {
+	margin-block: var(--padding-1);
+	li:not(:last-child) {
+		margin-bottom: var(--padding-1);
+	}
+}
+
+ol {
+	counter-reset: counter;
+	li {
+		counter-increment: counter;
+	}
+
+	li::before {
+		/* content: counter(counter) ". "; */
+    	font-weight: 500;
+    	font-variant-numeric: tabular-nums;
+		/* position: absolute; */
+		text-align: left;
+		padding-right: var(--padding-1);
+	}
 }
 
 :--heading {
-	font-family: Fira Code, sans-serif;
+	font-family: var(--heading-font-family);
+	font-weight: bold;
 }
 
 h1 {
-	font-size: var(--font-size-3);
+	font-size: var(--font-size-4);
 
 }
 
 h2 {
-	font-size: var(--font-size-2);
+	font-size: var(--font-size-3);
 
 }
 
 h3 {
-	font-size: var(--font-size-1);
+	font-size: var(--font-size-2);
 }
 
 h4 {
-	font-size: var(--font-size-4);
+	font-size: var(--font-size-1);
 }
 
 h5 {
-	font-size: var(--font-size-3);
+	font-size: var(--font-size-0);
 }
 
 h6 {
-	font-size: var(--font-size-2);
+	font-size: var(--font-size--1);
+}
+
+hr {
+	margin-inline: var(--margin-4);
+	border-bottom: var(--border-width) var(--border-style) var(--border-color);
+}
+
+
+/* Text crop */
+/* Using this method
+https://medium.com/codyhouse/line-height-crop-a-simple-css-formula-to-remove-top-space-from-your-text-9c3de06d7c6f
+*/
+:--text, nav, li {
+
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+        height: 0;
+        width: 0;
+    }
+
+    &::before {
+        margin-bottom: calc((0.75 - var(--line-height, 1)) * 0.5em);
+    }
+
+    &::after {
+        margin-top: calc((0.75 - var(--line-height, 1)) * 0.5em);
+    }
 }
