@@ -7,14 +7,15 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		background-color: var(--white);
-		color: white;
+		background-color: var(--black);
+		color: var(--white);
 	}
 }
 
 @media (prefers-color-scheme: light) {
 	:root {
 		background-color: var(--white);
+		color: var(--black);
 	}
 }
 
