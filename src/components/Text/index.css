@@ -1,21 +1,20 @@
 @import '../../styles/aliases';
 
 :root {
-	--number-base: 12px;
+	--number-base: 16px;
 	--number-font-scale-factor: var(--number-minor-third);
-	--number-spacing-scale-factor: var(--number-minor-third);
 	--font-size: var(--number-base);
 	--line-height: calc(1 * var(--number-spacing-scale-factor));
 
 	@media (min-width: 900px) {
-		--number-base: calc(12px * 1.25);
+		--number-base: calc(16px * 1.25);
 		--number-font-scale-factor: var(--number-perfect-forth);
-		--number-spacing-scale-factor: var(--number-perfect-forth);
 	}
 }
 
 :root {
-	font-size: 100%; /* equals 16px */
+	font-size: var(--font-size-0);
+	
 	font-family: var(--font-family);
 	line-height: var(--line-height);
 	font-weight: 500;
@@ -23,25 +22,17 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-body {
-	font-size: var(--font-size-0);
+html {
+	font-size: 100%; /* equals 16px */
 }
 
-:--text {
-	letter-spacing: 0;
-	font-size: var(--font-size-0);
-	margin-block: var(--margin-1);
-
+:--text, code {
+	letter-spacing: -0.05em;
+	margin-left: -0.09ex; /* adjustment for text alignment on left */
+	/* font-size: var(--font-size-0); */
     :--link {
-		border-bottom: 1px solid;
+		border-bottom: 0.09em solid;
     }
-}
-
-ul, ol {
-	margin-block: var(--padding-1);
-	li:not(:last-child) {
-		margin-bottom: var(--padding-1);
-	}
 }
 
 ol {
@@ -92,30 +83,6 @@ h6 {
 }
 
 hr {
-	margin-inline: var(--margin-4);
 	border-bottom: var(--border-width) var(--border-style) var(--border-color);
 }
 
-
-/* Text crop */
-/* Using this method
-https://medium.com/codyhouse/line-height-crop-a-simple-css-formula-to-remove-top-space-from-your-text-9c3de06d7c6f
-*/
-:--text, nav, li {
-
-    &::before,
-    &::after {
-        content: '';
-        display: block;
-        height: 0;
-        width: 0;
-    }
-
-    &::before {
-        margin-bottom: calc((0.75 - var(--line-height, 1)) * 0.5em);
-    }
-
-    &::after {
-        margin-top: calc((0.75 - var(--line-height, 1)) * 0.5em);
-    }
-}

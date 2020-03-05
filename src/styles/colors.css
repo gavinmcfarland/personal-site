@@ -1,6 +1,24 @@
 @import 'aliases';
 
 :root {
+	background-color: var(--white);
+}
+
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		background-color: #000000;
+		color: white;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		background-color: #F3F3F3;
+	}
+}
+
+:root {
 	--silver: silver;
 	--green: #00B031;
 	--blue: #0094FF;
@@ -17,13 +35,6 @@
 	--color: var(--black);
 	--background-color: var(--dark);
 	--border-color: var(--green);
-}
-
-
-
-
-:root {
-	background-color: var(--white);
 }
 
 :--text {

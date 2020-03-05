@@ -1,10 +1,6 @@
 :root {
-	--font-size--3:  calc(var(--number-base) * (1 / var(--number-font-scale-factor)) * (1 / var(--number-font-scale-factor)) * (1 / var(--number-scale)) );
-	--font-size--2:  calc(var(--number-base) * (1 / var(--number-font-scale-factor)) * (1 / var(--number-font-scale-factor)) );
-	--font-size--1:  calc(var(--number-base) * (1 / var(--number-font-scale-factor)) );
-	--font-size-0:  var(--number-base);
 
-	@for $i from 1 to 10 {
+	@for $i from -3 to 10 {
 		--font-size-$(i):  calc(var(--number-base) * pow(var(--number-font-scale-factor), $(i)) );
 	}
 }

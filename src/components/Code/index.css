@@ -10,10 +10,8 @@
     }
 
     :--block & {
-        display: block;
         border-radius: 2px;
         /* padding: var(--padding-1); */
         font-family: Fira Code;
-        margin-block: var(--margin-1);
     }
 }

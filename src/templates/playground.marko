@@ -3,6 +3,8 @@ import markdown from '../scripts/markdown'
 <Layout class="page__cv">
 	<@title>Playground</@title>
 	<@body>
+		<hr/>
+		<h4>Headers</h4>
 		<h1>Heading on <br/>
 		two lines1</h1>
 		<h2>Heading 2</h2>
@@ -10,7 +12,9 @@ import markdown from '../scripts/markdown'
 		<h4>Heading 4</h4>
 		<h5>Heading 5</h5>
 
-		<p>Donec scelerisque sagittis congue. Vestibulum pellentesque aliquam dapibus. Nunc orci ipsum, sagittis a odio ut, posuere placerat sapien. Aliquam consectetur in purus ut aliquam. Duis ut elit varius, feugiat eros vitae, condimentum orci. Vestibulum libero urna, lacinia sit amet tellus eget, venenatis commodo ipsum. Fusce et luctus turpis, ut euismod neque. Pellentesque molestie neque fermentum nibh convallis aliquam. Mauris sollicitudin elementum facilisis. Ut vitae sapien eu odio placerat elementum ac sed nulla. Ut tincidunt elementum metus eget mollis.</p>
+		<hr/>
+		<h4>Lists</h4>
+		
 		<ul>
 			<li>Unordered list item<br/>
 			with two lines</li>
@@ -30,17 +34,33 @@ import markdown from '../scripts/markdown'
 			<li>Ordered list item</li>
 		</ol>
 
+		<hr/>
+
+		<h4>Code</h4>
+
 		<code><pre>
-<b>func</b> CopyN(dst Writer, src Reader, n int64) (written int64, err error) {
-  written, err = Copy(dst, LimitReader(src, n))
-  <b>if</b> written == n {
-    <b>return</b> n, nil
-  }
-  <b>if</b> written &lt; n &amp;&amp; err == nil {
-    // src stopped early; must have been EOF.
-    err = EOF
-  }
-  <b>return</b>
+<b>function</b> getProperties(values) {
+    <b>for</b> (let a = 0; a < values.length; a++) {
+        <b>if</b> (values[a].match(NUMBER)) {
+            <b>return</b> true
+        }
+    }
 }</pre></code>
+
+		<hr/>
+		<h4>PostCSS Plugins</h4>
+		<p>A list of PostCSS plugins which I have created</p>
+		<ul>
+			<li><a href="/">postcss-sqrt</a></li>
+			<li><a href="/">postcss-pow</a></li>
+			<li><a href="/">postcss-gap-polyfill</a></li>
+			<li><a href="/">postcss-border-align</a></li>
+			<li><a href="/">postcss-exact-width</a></li>
+			<li><a href="/">postcss-negative-padding</a></li>
+			<li><a href="/">postcss-proportional-spacing</a></li>
+			<li><a href="/">postcss-escape</a></li>
+		</ul>
+
+		<img src="https://cdn.sanity.io/images/kvqmg9w0/production/d5d6c530ef45c5e18eea5511daf5d44dd7e97f9a-4958x3504.jpg" width="4958" height="3504">
 	</@body>
 </Layout>

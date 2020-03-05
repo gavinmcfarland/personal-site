@@ -1,10 +1,72 @@
-:root {
+@import 'aliases';
 
+:root {
+	--number-spacing-scale-factor: var(--number-minor-third);
+
+	@media (min-width: 900px) {
+		--number-spacing-scale-factor: var(--number-perfect-forth);
+	}
+}
+
+:root {
 	@for $i from 1 to 20 {
-		--spacing-$(i): calc(1em * pow(var(--number-spacing-scale-factor), $(i)));
-		--margin-$(i): calc(1em * pow(var(--number-spacing-scale-factor), $(i)));
-		--padding-$(i): calc(1em * pow(var(--number-spacing-scale-factor), $(i)));
+		--spacing-$(i): calc(1rem * pow(var(--number-spacing-scale-factor), $(i)));
+		--margin-$(i): calc(1rem * pow(var(--number-spacing-scale-factor), $(i)));
+		--padding-$(i): calc(1rem * pow(var(--number-spacing-scale-factor), $(i)));
 	}
 
 	--gap: var(--spacing-4)
 }
+
+
+
+
+
+
+h1, h2, h3, h4, h5, h6, p, blockquote, table, ul, ol, li, code, hr {
+	margin-block: var(--margin-2);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: var(--margin-4);
+	margin-bottom: var(--margin-3);
+}
+
+hr {
+	margin-top: var(--margin-4);
+}
+
+div > code {
+    margin-block: var(--margin-1);
+}
+
+
+
+
+
+/* Text crop */
+/* Using this method
+https://medium.com/codyhouse/line-height-crop-a-simple-css-formula-to-remove-top-space-from-your-text-9c3de06d7c6f
+*/
+
+blockquote, p, li, h1, h2, h3, h4, h5, h6, nav, div > code{
+
+	display: table;
+
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+        height: 0;
+        width: 0;
+    }
+
+    &::before {
+        margin-bottom: calc((0.75 - var(--line-height, 1)) * 0.5em);
+    }
+
+    &::after {
+        margin-top: calc((0.75 - var(--line-height, 1)) * 0.5em);
+    }
+}
+
