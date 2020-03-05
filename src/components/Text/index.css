@@ -26,11 +26,15 @@ html {
 	font-size: 100%; /* equals 16px */
 }
 
-:--text, code {
+h1, h2, h3, h4, h5, h6, p, blockquote, table, ul, ol, li, code, a {
 	letter-spacing: -0.05em;
-	margin-left: -0.09ex; /* adjustment for text alignment on left */
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, table, ul, ol, li, code {
+	/* margin-left: -0.09ex; adjustment for text alignment on left */
 	/* font-size: var(--font-size-0); */
     :--link {
+		padding-bottom: 0.25rem;
 		border-bottom: 0.09em solid;
     }
 }
