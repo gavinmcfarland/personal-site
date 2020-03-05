@@ -4,7 +4,7 @@
 	--number-base: 16px;
 	--number-font-scale-factor: var(--number-minor-third);
 	--font-size: var(--number-base);
-	--line-height: calc(1 * var(--number-spacing-scale-factor));
+	--line-height: calc(1.1 * var(--number-spacing-scale-factor));
 
 	@media (min-width: 900px) {
 		--number-base: calc(16px * 1.25);

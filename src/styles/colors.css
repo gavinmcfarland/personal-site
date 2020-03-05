@@ -7,14 +7,14 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		background-color: #000000;
+		background-color: var(--white);
 		color: white;
 	}
 }
 
 @media (prefers-color-scheme: light) {
 	:root {
-		background-color: #F3F3F3;
+		background-color: var(--white);
 	}
 }
 
@@ -55,7 +55,7 @@
 }
 
 :--heading {
-	/* color: var(--pink); */
+	/* color: var(--purple); */
 }
 
 h2 {
