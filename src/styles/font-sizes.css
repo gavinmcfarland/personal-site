@@ -3,4 +3,11 @@
 	@for $i from -3 to 10 {
 		--font-size-$(i):  calc(var(--number-base) * pow(var(--number-font-scale-factor), $(i)) );
 	}
+
+	@for $i from -3 to 10 {
+		.font-size-$(i) {
+			font-size: var(--font-size-$(i));
+		}
+		
+	}
 }

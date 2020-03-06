@@ -1,18 +1,20 @@
 @import 'aliases';
 
 :root {
-	--number-spacing-scale-factor: var(--number-minor-third);
+    --spacing-base: 16px;
+	--number-spacing-scale-factor: var(--number-major-third);
 
 	@media (min-width: 900px) {
+        --spacing-base: 24px;
 		--number-spacing-scale-factor: var(--number-perfect-forth);
 	}
 }
 
 :root {
 	@for $i from 1 to 20 {
-		--spacing-$(i): calc(1rem * pow(var(--number-spacing-scale-factor), $(i)));
-		--margin-$(i): calc(1rem * pow(var(--number-spacing-scale-factor), $(i)));
-		--padding-$(i): calc(1rem * pow(var(--number-spacing-scale-factor), $(i)));
+		--spacing-$(i): calc(var(--spacing-base) * pow(var(--number-spacing-scale-factor), $(i)));
+		--margin-$(i): calc(var(--spacing-base) * pow(var(--number-spacing-scale-factor), $(i)));
+		--padding-$(i): calc(var(--spacing-base) * pow(var(--number-spacing-scale-factor), $(i)));
 	}
 
 	--gap: var(--spacing-4)
@@ -23,13 +25,17 @@
 
 
 
-h1, h2, h3, h4, h5, h6, p, blockquote, table, ul, ol, li, code, hr {
-	margin-block: var(--margin-2);
+h, h1, h2, h3, h4, h5, h6, p, blockquote, table, ul, ol, li, code, hr {
+	margin-block: var(--margin-1);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h, h1, h2, h3, h4, h5, h6 {
 	margin-top: var(--margin-4);
-	margin-bottom: var(--margin-3);
+	margin-bottom: var(--margin-2);
+}
+
+h5 {
+    margin-bottom: var(--margin-1); 
 }
 
 hr {

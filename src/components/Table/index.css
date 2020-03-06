@@ -1,12 +1,15 @@
 @import '../../styles/aliases';
 
 :--table {
-	display: block;
+	/* display: block; */
+	width: 100%;
 	overflow: scroll;
-	margin-block: var(--margin-4);
+	border-spacing: 0;
+	margin-block: var(--margin-2);
+	border-top: var(--border-width) var(--border-style) var(--border-color);
 
 	td, th {
-		padding: var(--padding-2) var(--padding-2) var(--padding-2) *;
+		padding: var(--padding-1) var(--padding-1) var(--padding-1) *;
 		vertical-align: top;
 	}
 
@@ -16,14 +19,14 @@
 
 	tr {
 		border-bottom: var(--border-width) var(--border-style) var(--border-color);
-
+		/* display: table-row; */
 		&:last-child {
-			border-bottom: none;
+			/* border-bottom: none; */
 		}
 	}
 
 	thead, tbody {
-		min-width: 500px;
-		display: block;
+		/* min-width: 500px; */
+		/* display: block; */
 	}
 }

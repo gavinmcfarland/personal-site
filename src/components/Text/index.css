@@ -4,11 +4,10 @@
 	--number-base: 16px;
 	--number-font-scale-factor: var(--number-minor-third);
 	--font-size: var(--number-base);
-	--line-height: calc(1.1 * var(--number-spacing-scale-factor));
+	--line-height: calc(1.5);
 
 	@media (min-width: 900px) {
-		--number-base: calc(16px * 1.25);
-		--number-font-scale-factor: var(--number-perfect-forth);
+		--number-font-scale-factor: var(--number-dim-forth);
 	}
 }
 
@@ -34,28 +33,32 @@ h1, h2, h3, h4, h5, h6, p, blockquote, table, ul, ol, li, code {
 	/* margin-left: -0.09ex; adjustment for text alignment on left */
 	/* font-size: var(--font-size-0); */
     :--link {
-		padding-bottom: 0.25rem;
+		padding-bottom: 0.125rem;
 		border-bottom: 0.09em solid;
     }
 }
 
 ol {
 	counter-reset: counter;
+	position: relative;
+
 	li {
 		counter-increment: counter;
+		padding-left: var(--padding-3);
 	}
 
 	li::before {
-		/* content: counter(counter) ". "; */
+		content: counter(counter) ". ";
     	font-weight: 500;
     	font-variant-numeric: tabular-nums;
-		/* position: absolute; */
+		position: absolute;
+		left: 0;
 		text-align: left;
-		padding-right: var(--padding-1);
+		
 	}
 }
 
-:--heading {
+h1, h2, h3, h4, h5, h6 {
 	font-family: var(--heading-font-family);
 	font-weight: bold;
 }
