@@ -15,7 +15,13 @@
 @import './elements';
 
 
-[layout=grids] {
+@media (min-width: 900px) {
+	[layout=grid\^1] {
+		@extend [layout=grid]
+	}
+}
+
+[layout=grid] {
 
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
@@ -25,12 +31,13 @@
 
 	> * {
 		grid-column: 1 / -1;
+		margin-top: unset;
+		margin-bottom: unset;
 
 	}
 
 
 	div {
-		@extend %remove-margin;
 
 		/* Fix for firefox because for some reason div expands to size of it's children */
 		width: 100%;
@@ -41,7 +48,13 @@
 	}
 }
 
-[layout=flex] {
+@for $i from 1 to 12 {
+	[span="$(i)"] {
+		grid-column: span $(i);
+	}
+}
+
+[layout=flexs] {
 	display: flex;
 
 	> * {
@@ -51,12 +64,6 @@
 
 [width=shrink] {
 	flex-grow: 0;
-}
-
-@media (min-width: 900px) {
-	[layout=grid\^1] {
-		@extend [layout=grid]
-	}
 }
 
 

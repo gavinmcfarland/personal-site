@@ -9,6 +9,9 @@ body {
 		padding-left: inherit;
 		padding-right: inherit;
 	}
+	> header {
+		padding-bottom: var(--spacing-1);
+	}
 
 	> header a {
 		display: inline-block;
@@ -41,17 +44,17 @@ body {
 	}
 
 	> footer {
-		display: flex;
-		margin-top: var(--margin-8);
+		/* display: flex; */
+		/* margin-top: var(--margin-8); */
 		padding-bottom: var(--margin-2);
 	}
 
 	> footer > * {
 		font-size: var(--font-size--1);
-		margin: unset;
+		/* margin: unset; */
 	}
 
 	> footer nav a {
-		margin-left: var(--margin-4);
+		margin-right: var(--margin-2);
 	}
 }

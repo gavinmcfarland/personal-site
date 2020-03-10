@@ -2,6 +2,7 @@
 
 :--code {
     cursor: text;
+    display: block;
 
     :--inline & {
         display: inline-block;

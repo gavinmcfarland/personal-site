@@ -125,20 +125,19 @@ module.exports = require("marko/dist/core-tags/components/init-components-tag");
 
 
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
-    marko_classValue = __webpack_require__(8),
     marko_componentType = "/marko-webpack$1.0.0/src/components/Layout/index.marko",
     marko_renderer = __webpack_require__(1),
     module_logo = __webpack_require__(35),
     logo = module_logo.default || module_logo,
     module_favicon = __webpack_require__(36),
     favicon = module_favicon.default || module_favicon,
-    marko_attr = __webpack_require__(14),
+    marko_attr = __webpack_require__(13),
     marko_dynamicTag = __webpack_require__(3),
     marko_loadTag = __webpack_require__(2),
     component_globals_tag = marko_loadTag(__webpack_require__(37)),
-    marko_classAttr = __webpack_require__(9),
     init_components_tag = marko_loadTag(__webpack_require__(4)),
-    await_reorderer_tag = marko_loadTag(__webpack_require__(38));
+    await_reorderer_tag = marko_loadTag(__webpack_require__(38)),
+    marko_classAttr = __webpack_require__(8);
 
 function render(input, out, __component, component, state) {
   var data = input;
@@ -169,16 +168,11 @@ function render(input, out, __component, component, state) {
 
   component_globals_tag({}, out);
 
-  out.w("<header><a href=\"/\"><span class=\"logo\">GM</span></a></header><main><div" +
-    marko_classAttr(marko_classValue([
-    "wrapper",
-    input.body.class ? input.body.class : "max-w-6xl"
-  ])) +
-    ">");
+  out.w("<header><a href=\"/\"><span class=\"logo\">GM</span></a></header><main><div class=\"wrapper\">");
 
   marko_dynamicTag(out, input.body, null, null, null, null, __component, "16");
 
-  out.w("</div></main><footer layout=\"flex\"><p>Limitless Loop &copy; 2019</p><nav width=\"shrink\"><a href=\"https://twitter.com/gavinmcfarland\">Twitter</a><a href=\"https://dribbble.com/limitlessloop\">Dribbble</a><a href=\"https://www.figma.com/@limitlessloop\">Figma</a><a href=\"https://github.com/limitlessloop\">Github</a></nav>");
+  out.w("</div></main><footer><p>Limitless Loop &copy; 2019</p><nav><a href=\"https://twitter.com/gavinmcfarland\">Twitter</a><a href=\"https://dribbble.com/limitlessloop\">Dribbble</a><a href=\"https://www.figma.com/@limitlessloop\">Figma</a><a href=\"https://github.com/limitlessloop\">Github</a></nav>");
 
   marko_dynamicTag(out, input.footer, null, null, null, null, __component, "24");
 
@@ -218,7 +212,7 @@ marko_template.meta = {
 
 module.exports = {
   getBundleName: function(){return "Client"},
-  entries: {"404_78An":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.40d923f8.css"],"js":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js","404_78An.55a690d7.js"],"map":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js.map","404_78An.55a690d7.js.map"]}},"about_kzxx":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.40d923f8.css","about_kzxx.2ec13eab.css"],"js":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js","about_kzxx.56a312ce.js"],"map":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js.map","about_kzxx.56a312ce.js.map"]}},"cv_tq48":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.40d923f8.css","cv_tq48.56c5e5bb.css"],"js":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js","cv_tq48.19385b25.js"],"map":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js.map","cv_tq48.19385b25.js.map"]}},"demo_o92b":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.40d923f8.css"],"js":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js","demo_o92b.3d204413.js"],"map":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js.map","demo_o92b.3d204413.js.map"]}},"playground_WjPn":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.40d923f8.css","playground_WjPn.26945399.css"],"js":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js","playground_WjPn.9b4960de.js"],"map":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js.map","playground_WjPn.9b4960de.js.map"]}},"post_ffL2":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.40d923f8.css"],"js":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js","post_ffL2.c5a09073.js"],"map":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js.map","post_ffL2.c5a09073.js.map"]}},"project_Qgdo":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.40d923f8.css","project_Qgdo.0c605a61.css"],"js":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js","project_Qgdo.2fe28b6a.js"],"map":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js.map","project_Qgdo.2fe28b6a.js.map"]}},"projects_3eZ0":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.40d923f8.css","projects_3eZ0.d5af1041.css"],"js":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js","projects_3eZ0.353b4711.js"],"map":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js.map","projects_3eZ0.353b4711.js.map"]}},"templates_IwU3":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.40d923f8.css","templates_IwU3.cf30d91b.css"],"js":["vendors~templates_IwU3.47b2ff33.js","404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js","templates_IwU3.1c993567.js"],"map":["vendors~templates_IwU3.47b2ff33.js.map","404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js.map","templates_IwU3.1c993567.js.map"]}}}
+  entries: {"404_78An":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.8f149762.css"],"js":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js","404_78An.1608679b.js"],"map":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js.map","404_78An.1608679b.js.map"]}},"about_kzxx":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.8f149762.css","about_kzxx.2ec13eab.css"],"js":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js","about_kzxx.56a312ce.js"],"map":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js.map","about_kzxx.56a312ce.js.map"]}},"cv_tq48":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.8f149762.css","cv_tq48.c8ef72f6.css"],"js":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js","cv_tq48.bac169c0.js"],"map":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js.map","cv_tq48.bac169c0.js.map"]}},"demo_o92b":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.8f149762.css"],"js":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js","demo_o92b.3d204413.js"],"map":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js.map","demo_o92b.3d204413.js.map"]}},"playground_WjPn":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.8f149762.css","playground_WjPn.26945399.css"],"js":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js","playground_WjPn.9b4960de.js"],"map":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js.map","playground_WjPn.9b4960de.js.map"]}},"post_ffL2":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.8f149762.css"],"js":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js","post_ffL2.de89eaaa.js"],"map":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js.map","post_ffL2.de89eaaa.js.map"]}},"project_Qgdo":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.8f149762.css","project_Qgdo.17d8495f.css"],"js":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js","project_Qgdo.2fe28b6a.js"],"map":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js.map","project_Qgdo.2fe28b6a.js.map"]}},"projects_3eZ0":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.8f149762.css","projects_3eZ0.d5af1041.css"],"js":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js","projects_3eZ0.b782d098.js"],"map":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js.map","projects_3eZ0.b782d098.js.map"]}},"templates_IwU3":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.8f149762.css","templates_IwU3.cf30d91b.css"],"js":["vendors~templates_IwU3.47b2ff33.js","404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js","templates_IwU3.1c993567.js"],"map":["vendors~templates_IwU3.47b2ff33.js.map","404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js.map","templates_IwU3.1c993567.js.map"]}}}
 }
 
 /***/ }),
@@ -256,28 +250,22 @@ module.exports = function(string) {
 /* 8 */
 /***/ (function(module, exports) {
 
-module.exports = require("marko/dist/runtime/helpers/class-value");
+module.exports = require("marko/dist/runtime/html/helpers/class-attr");
 
 /***/ }),
 /* 9 */
 /***/ (function(module, exports) {
 
-module.exports = require("marko/dist/runtime/html/helpers/class-attr");
+module.exports = require("marko/dist/runtime/html/helpers/escape-xml");
 
 /***/ }),
 /* 10 */
 /***/ (function(module, exports) {
 
-module.exports = require("marko/dist/runtime/html/helpers/escape-xml");
-
-/***/ }),
-/* 11 */
-/***/ (function(module, exports) {
-
 module.exports = require("marko/dist/runtime/helpers/to-string");
 
 /***/ }),
-/* 12 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -285,11 +273,11 @@ module.exports = require("marko/dist/runtime/helpers/to-string");
 
 
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
-    marko_classValue = __webpack_require__(8),
+    marko_classValue = __webpack_require__(14),
     marko_componentType = "/marko-webpack$1.0.0/src/components/Section/index.marko",
     marko_renderer = __webpack_require__(1),
     marko_dynamicTag = __webpack_require__(3),
-    marko_classAttr = __webpack_require__(9);
+    marko_classAttr = __webpack_require__(8);
 
 function render(input, out, __component, component, state) {
   var data = input;
@@ -321,7 +309,7 @@ marko_template.meta = {
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 13 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -417,10 +405,16 @@ marko_template.meta = {
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 14 */
+/* 13 */
 /***/ (function(module, exports) {
 
 module.exports = require("marko/dist/runtime/html/helpers/attr");
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports) {
+
+module.exports = require("marko/dist/runtime/helpers/class-value");
 
 /***/ }),
 /* 15 */
@@ -1332,7 +1326,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var compression__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(compression__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var serve_static__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(21);
 /* harmony import */ var serve_static__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(serve_static__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _templates_404_marko__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(13);
+/* harmony import */ var _templates_404_marko__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(12);
 /* harmony import */ var _templates_404_marko__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_templates_404_marko__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _templates_post_marko__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(22);
 /* harmony import */ var _templates_post_marko__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_templates_post_marko__WEBPACK_IMPORTED_MODULE_6__);
@@ -1584,9 +1578,9 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_renderer = __webpack_require__(1),
     module_markdown = __webpack_require__(7),
     markdown = module_markdown.default || module_markdown,
-    helpers_escape_xml = __webpack_require__(10),
+    helpers_escape_xml = __webpack_require__(9),
     marko_escapeXml = helpers_escape_xml.x,
-    marko_str = __webpack_require__(11),
+    marko_str = __webpack_require__(10),
     Layout_template = __webpack_require__(5),
     marko_loadTag = __webpack_require__(2),
     Layout_tag = marko_loadTag(Layout_template);
@@ -1651,10 +1645,10 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_renderer = __webpack_require__(1),
     module_markdown = __webpack_require__(7),
     markdown = module_markdown.default || module_markdown,
-    helpers_escape_xml = __webpack_require__(10),
+    helpers_escape_xml = __webpack_require__(9),
     marko_escapeXml = helpers_escape_xml.x,
-    marko_str = __webpack_require__(11),
-    Section_template = __webpack_require__(12),
+    marko_str = __webpack_require__(10),
+    Section_template = __webpack_require__(11),
     marko_loadTag = __webpack_require__(2),
     Section_tag = marko_loadTag(Section_template),
     marko_forOf = __webpack_require__(15),
@@ -1767,7 +1761,7 @@ marko_template.meta = {
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_componentType = "/marko-webpack$1.0.0/src/templates/about.marko",
     marko_renderer = __webpack_require__(1),
-    Section_template = __webpack_require__(12),
+    Section_template = __webpack_require__(11),
     marko_loadTag = __webpack_require__(2),
     Section_tag = marko_loadTag(Section_template),
     Layout_template = __webpack_require__(5),
@@ -1877,10 +1871,10 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     module_markdown = __webpack_require__(7),
     markdown = module_markdown.default || module_markdown,
     marko_forIn = __webpack_require__(16),
-    helpers_escape_xml = __webpack_require__(10),
+    helpers_escape_xml = __webpack_require__(9),
     marko_escapeXml = helpers_escape_xml.x,
-    marko_str = __webpack_require__(11),
-    Section_template = __webpack_require__(12),
+    marko_str = __webpack_require__(10),
+    Section_template = __webpack_require__(11),
     marko_loadTag = __webpack_require__(2),
     Section_tag = marko_loadTag(Section_template),
     Layout_template = __webpack_require__(5),
@@ -1978,7 +1972,7 @@ function render(input, out, __component, component, state) {
         },
       body: {
           renderBody: function(out) {
-            out.w("<hr><h4>Headers</h4><h1>Heading on <br> two lines1</h1><h2>Heading 2</h2><h3>Heading 3</h3><h4>Heading 4</h4><h5>Heading 5</h5><hr><h4>Lists</h4><ul><li>Unordered list item<br> with two lines</li><li>Unordered list item</li><li>Unordered list item</li><li>Unordered list item</li><li>Unordered list item</li><li>Unordered list item</li></ul><ol><li>Ordered list item</li><li>Ordered list item</li><li>Ordered list item</li><li>Ordered list item</li><li>Ordered list item</li><li>Ordered list item</li></ol><hr><h4>Paragraphs</h4><p>Cras luctus elementum felis, ut <b>vestibulum</b> est placerat nec. Sed feugiat dolor id <a href=\"/\">vulputate</a> scelerisque. Vestibulum dignissim ligula ut metus consectetur dignissim. Nullam bibendum, massa eget varius malesuada, est turpis ullamcorper libero, quis laoreet libero ligula eget sapien. Pellentesque tempus augue non gravida tempus. Praesent laoreet ex condimentum dui malesuada ornare. Vestibulum vitae quam augue. Suspendisse accumsan tortor non enim porttitor, sed vestibulum purus ultricies. Fusce a sem ac elit luctus malesuada. Sed a consectetur mi. Nullam a lacus quis sem finibus suscipit in id justo. Nulla eget nisi quam. Mauris vitae congue libero. Integer porttitor urna magna, a maximus ipsum sagittis nec.</p><p>Proin ac turpis ornare <i>velit pretium</i> vulputate eget vel leo. Aliquam viverra condimentum dictum. Fusce blandit lectus at nunc fermentum semper. Sed posuere dictum metus, id tincidunt magna vulputate non. Pellentesque vestibulum, erat et elementum malesuada, quam arcu scelerisque eros, eu volutpat ipsum lorem vel sem. Praesent auctor vehicula nibh, at dignissim felis venenatis et. Vestibulum erat dui, sollicitudin non lorem venenatis, dictum aliquam nisi. Nullam ornare eros sed purus varius interdum. Vivamus molestie tellus vel lobortis auctor. Fusce a orci quis nisl volutpat ultricies vel id nibh.</p><hr><h4>Code</h4><code><pre>\n<b>function</b> getProperties(values) {\n    <b>for</b> (let a = 0; a < values.length; a++) {\n        <b>if</b> (values[a].match(NUMBER)) {\n            <b>return</b> true\n        }\n    }\n}</pre></code><hr><h4>PostCSS Plugins</h4><p>A list of <a>PostCSS</a> plugins which I have created</p><ul><li><a href=\"/\">postcss-sqrt</a></li><li><a href=\"/\">postcss-pow</a></li><li><a href=\"/\">postcss-gap-polyfill</a></li><li><a href=\"/\">postcss-border-align</a></li><li><a href=\"/\">postcss-exact-width</a></li><li><a href=\"/\">postcss-negative-padding</a></li><li><a href=\"/\">postcss-proportional-spacing</a></li><li><a href=\"/\">postcss-escape</a></li></ul><hr><h4>Tables</h4><table><thead><tr><th>Company</th><th>Description</th><th>Sector</th></tr></thead><tbody><tr><td>American Express</td><td>Create Design system for online portal for choosing a card.</td><td>Finance</td></tr><tr><td>Dept for International Trade</td><td>New case management system to help caseworkers process applications for export licenses.</td><td>Public</td></tr><tr><td>Home Office</td><td>Redesign government service providing support to refugees seeking asylum.</td><td>Public</td></tr><tr><td>10Lord</td><td>New service to help provide a better renting experience between tenants, landlords and agents.</td><td>Startup</td></tr><tr><td>Dept for Business, Innovation &amp; Skills</td><td>Digital transfromation of Grant funding platform used by research academics.</td><td>Public</td></tr><tr><td>AIMIA</td><td>Evaluate customers feedback and opinion of Nectar iPhone and Android app to mitigate bad reviews.</td><td>Retail</td></tr><tr><td>John Lewis</td><td>Omni-channel experience for iPad, iPhone, Android and Web.</td><td>Retail</td></tr></tbody></table><p>");
+            out.w("<hr><h4>Headers</h4><h1>Give it a <br>Good Going</h1><h2>Heading 2</h2><h3>Heading 3</h3><h4>Heading 4</h4><h5>Heading 5</h5><hr><h4>Lists</h4><ul><li>Unordered list item<br> with two lines</li><li>Unordered list item</li><li>Unordered list item</li><li>Unordered list item</li><li>Unordered list item</li><li>Unordered list item</li></ul><ol><li>Ordered list item</li><li>Ordered list item</li><li>Ordered list item</li><li>Ordered list item</li><li>Ordered list item</li><li>Ordered list item</li></ol><hr><h4>Paragraphs</h4><p>Cras luctus elementum felis, ut <b>vestibulum</b> est placerat nec. Sed feugiat dolor id <a href=\"/\">vulputate</a> scelerisque. Vestibulum dignissim ligula ut metus consectetur dignissim. Nullam bibendum, massa eget varius malesuada, est turpis ullamcorper libero, quis laoreet libero ligula eget sapien. Pellentesque tempus augue non gravida tempus. Praesent laoreet ex condimentum dui malesuada ornare. Vestibulum vitae quam augue. Suspendisse accumsan tortor non enim porttitor, sed vestibulum purus ultricies. Fusce a sem ac elit luctus malesuada. Sed a consectetur mi. Nullam a lacus quis sem finibus suscipit in id justo. Nulla eget nisi quam. Mauris vitae congue libero. Integer porttitor urna magna, a maximus ipsum sagittis nec.</p><p>Proin ac turpis ornare <i>velit pretium</i> vulputate eget vel leo. Aliquam viverra condimentum dictum. Fusce blandit lectus at nunc fermentum semper. Sed posuere dictum metus, id tincidunt magna vulputate non. Pellentesque vestibulum, erat et elementum malesuada, quam arcu scelerisque eros, eu volutpat ipsum lorem vel sem. Praesent auctor vehicula nibh, at dignissim felis venenatis et. Vestibulum erat dui, sollicitudin non lorem venenatis, dictum aliquam nisi. Nullam ornare eros sed purus varius interdum. Vivamus molestie tellus vel lobortis auctor. Fusce a orci quis nisl volutpat ultricies vel id nibh.</p><hr><h4>Code</h4><code><pre>\n<b>function</b> getProperties(values) {\n    <b>for</b> (let a = 0; a < values.length; a++) {\n        <b>if</b> (values[a].match(NUMBER)) {\n            <b>return</b> true\n        }\n    }\n}</pre></code><hr><h4>PostCSS Plugins</h4><p>A list of <a>PostCSS</a> plugins which I have created</p><ul><li><a href=\"/\">postcss-sqrt</a></li><li><a href=\"/\">postcss-pow</a></li><li><a href=\"/\">postcss-gap-polyfill</a></li><li><a href=\"/\">postcss-border-align</a></li><li><a href=\"/\">postcss-exact-width</a></li><li><a href=\"/\">postcss-negative-padding</a></li><li><a href=\"/\">postcss-proportional-spacing</a></li><li><a href=\"/\">postcss-escape</a></li></ul><hr><h4>Tables</h4><table><thead><tr><th>Company</th><th>Description</th><th>Sector</th></tr></thead><tbody><tr><td>American Express</td><td>Create Design system for online portal for choosing a card.</td><td>Finance</td></tr><tr><td>Dept for International Trade</td><td>New case management system to help caseworkers process applications for export licenses.</td><td>Public</td></tr><tr><td>Home Office</td><td>Redesign government service providing support to refugees seeking asylum.</td><td>Public</td></tr><tr><td>10Lord</td><td>New service to help provide a better renting experience between tenants, landlords and agents.</td><td>Startup</td></tr><tr><td>Dept for Business, Innovation &amp; Skills</td><td>Digital transfromation of Grant funding platform used by research academics.</td><td>Public</td></tr><tr><td>AIMIA</td><td>Evaluate customers feedback and opinion of Nectar iPhone and Android app to mitigate bad reviews.</td><td>Retail</td></tr><tr><td>John Lewis</td><td>Omni-channel experience for iPad, iPhone, Android and Web.</td><td>Retail</td></tr></tbody></table><p>");
 
             Button_tag({
                 class: "Button",
@@ -2018,11 +2012,11 @@ marko_template.meta = {
 
 
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
-    marko_classValue = __webpack_require__(8),
+    marko_classValue = __webpack_require__(14),
     marko_componentType = "/marko-webpack$1.0.0/src/components/Button/index.marko",
     marko_renderer = __webpack_require__(1),
     marko_dynamicTag = __webpack_require__(3),
-    marko_classAttr = __webpack_require__(9);
+    marko_classAttr = __webpack_require__(8);
 
 function render(input, out, __component, component, state) {
   var data = input;
@@ -2082,7 +2076,7 @@ function render(input, out, __component, component, state) {
         },
       body: {
           renderBody: function(out) {
-            out.w("<hr><h1>Conceptualising a New Rental Service</h1><p class=\"font-size-1\">Renting is a process that many people will experience in their lifetime and it can be a scary, stressful and overwhelming process. Having been a renter myself I was ecstatic when I was asked to collaborate with a small startup to help them conceptualise a new, more intuitive rental service.</p><h5>My Responsibilities</h5><p>Investigate existing process, discover user pain points, conduct user interviews, information architecture, conceptual prototype.</p><h5>Goals</h5><p>Explore how the service might work and establish a proof of concept which can be used to help pitch the service to potential users and investors.</p><hr><h2>The Renter, Landlord, Agent Triangle</h2><p>Originally the service was intended as a way to helping landlords and estate agents to spot bad tenants. Through meetings with expert matter holders, customer interviews and surveys we gathered research and insight about Tenants, Landlords and Estate Agents to learn about their habits, goals, motivations, lifestyles and needs. But this quickly pivoted the purpose of the product to reward good tenants and help them through the rental process.</p><h3>The Process</h3><ol><li><b>Exploration</b> <br>Understand the current process and relationship between tenant, landlord and agent.</li><li><b>Ideation</b> <br>Explore business models and what elicits trust with tenants and landlords.</li><li><b>Research</b> <br>Tenant and landlord surveys and interviews, value proposition engagement, meetings with estate agents.</li><li><b>Content Analysis</b> <br>Content analysis for tenant data. Competitor analysis of profile data. Explore existing services.</li><li><b>User Flows</b> <br>Sketch user flows for each Tenant, Landlord and Agent.</li><li><b>Wireframe</b> <br>Create detailed wireframes of pages with layout and information architecture.</li><li><b>Prototype</b> <br>Create a prototype to demonstrate key journeys of service.</li></ol><h3>Renting in London</h3><p>I thought it would be useful to get a better understanding of the details and events of the rental process. The flow diagram on the left is an early draft of a typical rental process in London. I’ve written hypothetical dates to get an understanding of the timeframe between events while thinking about the thoughts and feelings a renter might be having during this process.</p><h3>Rapid Prototyping</h3><p>It’s important to have a good understanding how the prototype will behave which is why I created this flow diagram of the Agent flow which shows the order and interactions of each screens. The act of creating this diagram was more important the actual output as it allows me to challenge my thoughts about what information should be asked for and when. I did the same for the Tenant flow.</p><h3>Finished Screens</h3><p>At such a high level of thinking, the solution for the service went through so many possible outcomes. But without a way to visualise the service, it was difficult to quantify it’s value. Creating a prototype helped demonstrate the problem they were solving for and how it could be achieved. We used this prototype to present to, users, stakeholders and potential investors.</p>");
+            out.w("<hr><h1>Conceptualising a <br>New Rental Service</h1><p class=\"text-1\">Renting is a process that many people will experience in their lifetime and it can be a scary, stressful and overwhelming process. Having been a renter myself I was ecstatic when I was asked to collaborate with a small startup to help them conceptualise a new, more intuitive rental service.</p><div layout=\"grid^1\" cols=\"12\"><div span=\"3\"><h5>My Responsibilities</h5><p>Investigate existing process, discover user pain points, conduct user interviews, information architecture, conceptual prototype.</p></div><div span=\"3\"><h5>Goals</h5><p>Explore how the service might work and establish a proof of concept which can be used to help pitch the service to potential users and investors.</p></div></div><hr><h2>The Renter, Landlord, Agent Triangle</h2><p>Originally the service was intended as a way to helping landlords and estate agents to spot bad tenants. Through meetings with expert matter holders, customer interviews and surveys we gathered research and insight about Tenants, Landlords and Estate Agents to learn about their habits, goals, motivations, lifestyles and needs. But this quickly pivoted the purpose of the product to reward good tenants and help them through the rental process.</p><h3>The Process</h3><ol><li><b>Exploration</b> <br>Understand the current process and relationship between tenant, landlord and agent.</li><li><b>Ideation</b> <br>Explore business models and what elicits trust with tenants and landlords.</li><li><b>Research</b> <br>Tenant and landlord surveys and interviews, value proposition engagement, meetings with estate agents.</li><li><b>Content Analysis</b> <br>Content analysis for tenant data. Competitor analysis of profile data. Explore existing services.</li><li><b>User Flows</b> <br>Sketch user flows for each Tenant, Landlord and Agent.</li><li><b>Wireframe</b> <br>Create detailed wireframes of pages with layout and information architecture.</li><li><b>Prototype</b> <br>Create a prototype to demonstrate key journeys of service.</li></ol><h3>Renting in London</h3><p>I thought it would be useful to get a better understanding of the details and events of the rental process. The flow diagram on the left is an early draft of a typical rental process in London. I’ve written hypothetical dates to get an understanding of the timeframe between events while thinking about the thoughts and feelings a renter might be having during this process.</p><h3>Rapid Prototyping</h3><p>It’s important to have a good understanding how the prototype will behave which is why I created this flow diagram of the Agent flow which shows the order and interactions of each screens. The act of creating this diagram was more important the actual output as it allows me to challenge my thoughts about what information should be asked for and when. I did the same for the Tenant flow.</p><h3>Finished Screens</h3><p>At such a high level of thinking, the solution for the service went through so many possible outcomes. But without a way to visualise the service, it was difficult to quantify it’s value. Creating a prototype helped demonstrate the problem they were solving for and how it could be achieved. We used this prototype to present to, users, stakeholders and potential investors.</p>");
           }
         }
     }, out, __component, "0");
@@ -2115,16 +2109,16 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_renderer = __webpack_require__(1),
     module_markdown = __webpack_require__(7),
     markdown = module_markdown.default || module_markdown,
-    marko_str = __webpack_require__(11),
+    marko_str = __webpack_require__(10),
     Ticker_template = __webpack_require__(50),
     marko_loadTag = __webpack_require__(2),
     Ticker_tag = marko_loadTag(Ticker_template),
-    Section_template = __webpack_require__(12),
+    Section_template = __webpack_require__(11),
     Section_tag = marko_loadTag(Section_template),
     marko_forOf = __webpack_require__(15),
-    helpers_escape_xml = __webpack_require__(10),
+    helpers_escape_xml = __webpack_require__(9),
     marko_escapeXml = helpers_escape_xml.x,
-    marko_attr = __webpack_require__(14),
+    marko_attr = __webpack_require__(13),
     marko_forIn = __webpack_require__(16),
     Layout_template = __webpack_require__(5),
     Layout_tag = marko_loadTag(Layout_template);
@@ -2240,7 +2234,7 @@ marko_template.meta = {
 
 
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
-    marko_classValue = __webpack_require__(8),
+    marko_classValue = __webpack_require__(14),
     marko_component = {
     onCreate: function () {
         this.state = { showingIndex: 0 };
@@ -2267,8 +2261,8 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_renderer = __webpack_require__(1),
     marko_forOf = __webpack_require__(15),
     marko_dynamicTag = __webpack_require__(3),
-    marko_attr = __webpack_require__(14),
-    marko_classAttr = __webpack_require__(9);
+    marko_attr = __webpack_require__(13),
+    marko_classAttr = __webpack_require__(8);
 
 function render(input, out, __component, component, state) {
   var data = input;
