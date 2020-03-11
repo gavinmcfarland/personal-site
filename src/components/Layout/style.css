@@ -18,7 +18,6 @@ body {
 	}
 
 	> header .logo {
-		color: var(--green);
 		font-family: var(--heading-font-family);
 		font-weight: bold;
 	}
@@ -45,16 +44,22 @@ body {
 
 	> footer {
 		/* display: flex; */
-		/* margin-top: var(--margin-8); */
+		margin-top: var(--margin-4);
 		padding-bottom: var(--margin-2);
+	}
+
+	> footer p {
+		padding-right: var(--margin-1);
+		margin-bottom: unset;
 	}
 
 	> footer > * {
 		font-size: var(--font-size--1);
+		gap: var(--margin-1);
 		/* margin: unset; */
 	}
 
 	> footer nav a {
-		margin-right: var(--margin-2);
+		margin-right: var(--margin-1);
 	}
 }

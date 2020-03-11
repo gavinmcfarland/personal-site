@@ -30,7 +30,8 @@ import About from "./templates/about.marko";
 import Projects from "./templates/projects.marko";
 import Cv from "./templates/cv.marko";
 import Playground from "./templates/playground.marko";
-import Demo from "./templates/demo.marko";
+import CaseStudy from "./templates/case-study.marko";
+import HomeDemo from "./templates/home.marko";
 import Home from "./templates/index.marko";
 
 const app = express();
@@ -62,9 +63,14 @@ api.then(content => {
 		Projects.render({}, res);
 	});
 
-	app.get("/demo", (req, res) => {
+	app.get("/case-study", (req, res) => {
 		res.setHeader("Content-Type", "text/html; charset=utf-8");
-		Demo.render({}, res);
+		CaseStudy.render({}, res);
+	});
+
+	app.get("/home", (req, res) => {
+		res.setHeader("Content-Type", "text/html; charset=utf-8");
+		HomeDemo.render({}, res);
 	});
 
 	app.get("/about", (req, res) => {

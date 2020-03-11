@@ -27,6 +27,7 @@
 		"marked": "^0.7.0",
 		"marko": "^4.19.1",
 		"postcss-comment": "^2.0.0",
+		"postcss-gutters": "git+https://github.com/limitlessloop/postcss-gutters.git",
 		"postcss-pow": "^1.0.1",
 		"postcss-preset-env": "^6.7.0",
 		"prerender-spa-plugin": "^3.4.0",

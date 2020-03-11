@@ -39,11 +39,15 @@ h3 {
 }
 
 h5 {
-    margin-bottom: var(--margin-1); 
+    margin-bottom: var(--margin--1); 
+}
+
+h5 + p {
+	margin-top: 0;
 }
 
 hr {
-	margin-block: var(--margin-4);
+	margin-block: var(--margin-3) !important;
 }
 
 div > code {
@@ -81,7 +85,7 @@ https://medium.com/codyhouse/line-height-crop-a-simple-css-formula-to-remove-top
 
 blockquote, p, ul, ol, h1, h2, h3, h4, h5, h6, nav, div > code, div > a, .Button {
 
-    display: table;
+    /* display: table; */
     /* background: rgba(20,230,245,0.1); */
 
     &::before,

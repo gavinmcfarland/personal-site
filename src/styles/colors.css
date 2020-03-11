@@ -4,21 +4,6 @@
 	background-color: var(--white);
 }
 
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		background-color: var(--black);
-		color: var(--white);
-	}
-}
-
-@media (prefers-color-scheme: light) {
-	:root {
-		background-color: var(--white);
-		color: var(--black);
-	}
-}
-
 :root {
 	--silver: silver;
 	--green: #00B031;
@@ -27,7 +12,7 @@
 	--black: black;
 	--purple: #7642B9;
 	--brown: #A28570;
-	--grey: #F3F3F3;
+	--grey: grey;
 	--pink: #FD6086;
 	--dark: #0E0614;
 	--white: #FFFFFF;
@@ -35,19 +20,41 @@
 
 	--color: var(--black);
 	--background-color: var(--dark);
-	--border-color: var(--green);
+	--border-color: var(--black);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		background-color: var(--black);
+		color: var(--white);
+		--border-color: var(--white);
+	}
+	a {
+		color: white;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		background-color: var(--white);
+		color: var(--black);
+		--border-color: var(--black);
+	}
+	a {
+		color: black;
+	}
 }
 
 :--text {
 	/* color: var(--white); */
 
 	:--link {
-		border-color: var(--green);
+		/* border-color: var(--grey); */
 	}
 }
 
 :--link {
-	color: var(--green);
+	/* color: var(--black); */
 
     &:hover {
         cursor: pointer;

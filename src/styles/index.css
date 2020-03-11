@@ -19,21 +19,26 @@
 	[layout=grid\^1] {
 		@extend [layout=grid]
 	}
+	[cols="12^1"] {
+		@extend [cols="12"]
+	}
 }
+
 
 [layout=grid] {
 
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	gap: var(--gap);
-
-	@extend %remove-margin;
+	gap: var(--spacing-1);
 
 	> * {
 		grid-column: 1 / -1;
+
+	}
+
+	> div {
 		margin-top: unset;
 		margin-bottom: unset;
-
 	}
 
 
@@ -46,6 +51,14 @@
 	img {
 		width: 100%;
 	}
+}
+
+[cols="12"] {
+	grid-template-columns: repeat(12, 1fr);
+}
+
+[cols="6"] {
+	grid-template-columns: repeat(6, 1fr);
 }
 
 @for $i from 1 to 12 {
@@ -68,9 +81,25 @@
 
 
 
-[cols="12"] {
-	grid-template-columns: repeat(12, 1fr);
-}
 
+.with-sidebar {
+	overflow: hidden;
+  }
 
+  .with-sidebar > * {
+	display: flex;
+	flex-wrap: wrap;
+	/* margin: calc(var(--s1) / 2 * -1); */
+  }
+  
+  .with-sidebar > * > * {
+	/* margin: calc(var(--s1) / 2); */
+	flex-grow: 1;
+  }
+  
+  .with-sidebar > * > :first-child {
+	flex-basis: 0;
+	flex-grow: 999;
+	min-width: calc(50% - var(--spacing-1));
+  }
 

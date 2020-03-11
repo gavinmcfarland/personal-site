@@ -83,7 +83,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 30);
+/******/ 	return __webpack_require__(__webpack_require__.s = 31);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -127,16 +127,16 @@ module.exports = require("marko/dist/core-tags/components/init-components-tag");
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_componentType = "/marko-webpack$1.0.0/src/components/Layout/index.marko",
     marko_renderer = __webpack_require__(1),
-    module_logo = __webpack_require__(35),
+    module_logo = __webpack_require__(36),
     logo = module_logo.default || module_logo,
-    module_favicon = __webpack_require__(36),
+    module_favicon = __webpack_require__(37),
     favicon = module_favicon.default || module_favicon,
     marko_attr = __webpack_require__(13),
     marko_dynamicTag = __webpack_require__(3),
     marko_loadTag = __webpack_require__(2),
-    component_globals_tag = marko_loadTag(__webpack_require__(37)),
+    component_globals_tag = marko_loadTag(__webpack_require__(38)),
     init_components_tag = marko_loadTag(__webpack_require__(4)),
-    await_reorderer_tag = marko_loadTag(__webpack_require__(38)),
+    await_reorderer_tag = marko_loadTag(__webpack_require__(39)),
     marko_classAttr = __webpack_require__(8);
 
 function render(input, out, __component, component, state) {
@@ -172,17 +172,17 @@ function render(input, out, __component, component, state) {
 
   marko_dynamicTag(out, input.body, null, null, null, null, __component, "16");
 
-  out.w("</div></main><footer><p>Limitless Loop &copy; 2019</p><nav><a href=\"https://twitter.com/gavinmcfarland\">Twitter</a><a href=\"https://dribbble.com/limitlessloop\">Dribbble</a><a href=\"https://www.figma.com/@limitlessloop\">Figma</a><a href=\"https://github.com/limitlessloop\">Github</a></nav>");
+  out.w("</div></main><footer class=\"with-sidebar\"><div><p>Limitless Loop &copy; 2019</p><nav><a href=\"https://twitter.com/gavinmcfarland\">Twitter</a><a href=\"https://dribbble.com/limitlessloop\">Dribbble</a><a href=\"https://www.figma.com/@limitlessloop\">Figma</a><a href=\"https://github.com/limitlessloop\">Github</a></nav>");
 
-  marko_dynamicTag(out, input.footer, null, null, null, null, __component, "24");
+  marko_dynamicTag(out, input.footer, null, null, null, null, __component, "25");
 
-  out.w("</footer>");
+  out.w("</div></footer>");
 
-  marko_dynamicTag(out, input.scripts, null, null, null, null, __component, "25");
+  marko_dynamicTag(out, input.scripts, null, null, null, null, __component, "26");
 
   init_components_tag({}, out);
 
-  await_reorderer_tag({}, out, __component, "26");
+  await_reorderer_tag({}, out, __component, "27");
 
   out.w("</body></html>");
 }
@@ -212,17 +212,17 @@ marko_template.meta = {
 
 module.exports = {
   getBundleName: function(){return "Client"},
-  entries: {"404_78An":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.8f149762.css"],"js":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js","404_78An.1608679b.js"],"map":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js.map","404_78An.1608679b.js.map"]}},"about_kzxx":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.8f149762.css","about_kzxx.2ec13eab.css"],"js":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js","about_kzxx.56a312ce.js"],"map":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js.map","about_kzxx.56a312ce.js.map"]}},"cv_tq48":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.8f149762.css","cv_tq48.c8ef72f6.css"],"js":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js","cv_tq48.bac169c0.js"],"map":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js.map","cv_tq48.bac169c0.js.map"]}},"demo_o92b":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.8f149762.css"],"js":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js","demo_o92b.3d204413.js"],"map":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js.map","demo_o92b.3d204413.js.map"]}},"playground_WjPn":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.8f149762.css","playground_WjPn.26945399.css"],"js":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js","playground_WjPn.9b4960de.js"],"map":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js.map","playground_WjPn.9b4960de.js.map"]}},"post_ffL2":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.8f149762.css"],"js":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js","post_ffL2.de89eaaa.js"],"map":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js.map","post_ffL2.de89eaaa.js.map"]}},"project_Qgdo":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.8f149762.css","project_Qgdo.17d8495f.css"],"js":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js","project_Qgdo.2fe28b6a.js"],"map":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js.map","project_Qgdo.2fe28b6a.js.map"]}},"projects_3eZ0":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.8f149762.css","projects_3eZ0.d5af1041.css"],"js":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js","projects_3eZ0.b782d098.js"],"map":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js.map","projects_3eZ0.b782d098.js.map"]}},"templates_IwU3":{"Client":{"css":["404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.8f149762.css","templates_IwU3.cf30d91b.css"],"js":["vendors~templates_IwU3.47b2ff33.js","404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js","templates_IwU3.1c993567.js"],"map":["vendors~templates_IwU3.47b2ff33.js.map","404_78An~about_kzxx~cv_tq48~demo_o92b~playground_WjPn~post_ffL2~project_Qgdo~projects_3eZ0~templates_IwU3.974097a5.js.map","templates_IwU3.1c993567.js.map"]}}}
+  entries: {"404_78An":{"Client":{"css":["404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.b525390b.css"],"js":["404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.974097a5.js","404_78An.55a690d7.js"],"map":["404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.974097a5.js.map","404_78An.55a690d7.js.map"]}},"about_kzxx":{"Client":{"css":["404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.b525390b.css","about_kzxx.2ec13eab.css"],"js":["404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.974097a5.js","about_kzxx.b0d7a81e.js"],"map":["404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.974097a5.js.map","about_kzxx.b0d7a81e.js.map"]}},"case-study_gysU":{"Client":{"css":["404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.b525390b.css"],"js":["404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.974097a5.js","case-study_gysU.8df095bc.js"],"map":["404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.974097a5.js.map","case-study_gysU.8df095bc.js.map"]}},"cv_tq48":{"Client":{"css":["404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.b525390b.css","cv_tq48.05c40148.css"],"js":["404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.974097a5.js","cv_tq48.94a20707.js"],"map":["404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.974097a5.js.map","cv_tq48.94a20707.js.map"]}},"home_fzHP":{"Client":{"css":["404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.b525390b.css"],"js":["404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.974097a5.js","home_fzHP.a02ac427.js"],"map":["404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.974097a5.js.map","home_fzHP.a02ac427.js.map"]}},"playground_WjPn":{"Client":{"css":["404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.b525390b.css","playground_WjPn.26945399.css"],"js":["404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.974097a5.js","playground_WjPn.fce17806.js"],"map":["404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.974097a5.js.map","playground_WjPn.fce17806.js.map"]}},"post_ffL2":{"Client":{"css":["404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.b525390b.css"],"js":["404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.974097a5.js","post_ffL2.e8a127fc.js"],"map":["404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.974097a5.js.map","post_ffL2.e8a127fc.js.map"]}},"project_Qgdo":{"Client":{"css":["404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.b525390b.css","project_Qgdo.404ff064.css"],"js":["404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.974097a5.js","project_Qgdo.4f5a9072.js"],"map":["404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.974097a5.js.map","project_Qgdo.4f5a9072.js.map"]}},"projects_3eZ0":{"Client":{"css":["404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.b525390b.css","projects_3eZ0.d5af1041.css"],"js":["404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.974097a5.js","projects_3eZ0.10e14446.js"],"map":["404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.974097a5.js.map","projects_3eZ0.10e14446.js.map"]}},"templates_IwU3":{"Client":{"css":["404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.b525390b.css","templates_IwU3.cf30d91b.css"],"js":["vendors~templates_IwU3.a2df4cc5.js","404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.974097a5.js","templates_IwU3.e02fcd4e.js"],"map":["vendors~templates_IwU3.a2df4cc5.js.map","404_78An~about_kzxx~case-study_gysU~cv_tq48~home_fzHP~playground_WjPn~post_ffL2~project_Qgdo~project~ddc9c9c2.974097a5.js.map","templates_IwU3.e02fcd4e.js.map"]}}}
 }
 
 /***/ }),
 /* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var MarkdownIt = __webpack_require__(40)
+var MarkdownIt = __webpack_require__(41)
 
 var md = new MarkdownIt({ html: true })
-md.use(__webpack_require__(41));
+md.use(__webpack_require__(42));
 // md.use(require('markdown-it-implicit-figures'), {
 // 	figcaption: true, // <figcaption>alternative text</figcaption>, default: false
 // });
@@ -319,7 +319,7 @@ marko_template.meta = {
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_componentType = "/marko-webpack$1.0.0/src/templates/404.marko",
     marko_renderer = __webpack_require__(1),
-    template = __webpack_require__(34),
+    template = __webpack_require__(35),
     module_MARKOWEBPACKMANIFEST_module = __webpack_require__(6),
     MARKOWEBPACKMANIFEST_module = module_MARKOWEBPACKMANIFEST_module.default || module_MARKOWEBPACKMANIFEST_module,
     getBundleName = module_MARKOWEBPACKMANIFEST_module.getBundleName,
@@ -444,16 +444,16 @@ module.exports = require("express-slash");
 /* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const v = __webpack_require__(31);
+const v = __webpack_require__(32);
 
 // const sanity = require("./sanity");
 
-const toMarkdown = __webpack_require__(32)
+const toMarkdown = __webpack_require__(33)
 
 // const imageUrlBuilder = require('@sanity/image-url')
 // const builder = imageUrlBuilder(myConfiguredSanityClient)
 
-const sanityClient = __webpack_require__(33)
+const sanityClient = __webpack_require__(34)
 const client = sanityClient({
   projectId: 'kvqmg9w0',
   dataset: 'production',
@@ -553,7 +553,7 @@ module.exports = require("serve-static");
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_componentType = "/marko-webpack$1.0.0/src/templates/post.marko",
     marko_renderer = __webpack_require__(1),
-    template = __webpack_require__(39),
+    template = __webpack_require__(40),
     module_MARKOWEBPACKMANIFEST_module = __webpack_require__(6),
     MARKOWEBPACKMANIFEST_module = module_MARKOWEBPACKMANIFEST_module.default || module_MARKOWEBPACKMANIFEST_module,
     getBundleName = module_MARKOWEBPACKMANIFEST_module.getBundleName,
@@ -649,7 +649,7 @@ marko_template.meta = {
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_componentType = "/marko-webpack$1.0.0/src/templates/project.marko",
     marko_renderer = __webpack_require__(1),
-    template = __webpack_require__(42),
+    template = __webpack_require__(43),
     module_MARKOWEBPACKMANIFEST_module = __webpack_require__(6),
     MARKOWEBPACKMANIFEST_module = module_MARKOWEBPACKMANIFEST_module.default || module_MARKOWEBPACKMANIFEST_module,
     getBundleName = module_MARKOWEBPACKMANIFEST_module.getBundleName,
@@ -745,7 +745,7 @@ marko_template.meta = {
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_componentType = "/marko-webpack$1.0.0/src/templates/about.marko",
     marko_renderer = __webpack_require__(1),
-    template = __webpack_require__(43),
+    template = __webpack_require__(44),
     module_MARKOWEBPACKMANIFEST_module = __webpack_require__(6),
     MARKOWEBPACKMANIFEST_module = module_MARKOWEBPACKMANIFEST_module.default || module_MARKOWEBPACKMANIFEST_module,
     getBundleName = module_MARKOWEBPACKMANIFEST_module.getBundleName,
@@ -841,7 +841,7 @@ marko_template.meta = {
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_componentType = "/marko-webpack$1.0.0/src/templates/projects.marko",
     marko_renderer = __webpack_require__(1),
-    template = __webpack_require__(44),
+    template = __webpack_require__(45),
     module_MARKOWEBPACKMANIFEST_module = __webpack_require__(6),
     MARKOWEBPACKMANIFEST_module = module_MARKOWEBPACKMANIFEST_module.default || module_MARKOWEBPACKMANIFEST_module,
     getBundleName = module_MARKOWEBPACKMANIFEST_module.getBundleName,
@@ -937,7 +937,7 @@ marko_template.meta = {
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_componentType = "/marko-webpack$1.0.0/src/templates/cv.marko",
     marko_renderer = __webpack_require__(1),
-    template = __webpack_require__(45),
+    template = __webpack_require__(46),
     module_MARKOWEBPACKMANIFEST_module = __webpack_require__(6),
     MARKOWEBPACKMANIFEST_module = module_MARKOWEBPACKMANIFEST_module.default || module_MARKOWEBPACKMANIFEST_module,
     getBundleName = module_MARKOWEBPACKMANIFEST_module.getBundleName,
@@ -1033,7 +1033,7 @@ marko_template.meta = {
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_componentType = "/marko-webpack$1.0.0/src/templates/playground.marko",
     marko_renderer = __webpack_require__(1),
-    template = __webpack_require__(46),
+    template = __webpack_require__(47),
     module_MARKOWEBPACKMANIFEST_module = __webpack_require__(6),
     MARKOWEBPACKMANIFEST_module = module_MARKOWEBPACKMANIFEST_module.default || module_MARKOWEBPACKMANIFEST_module,
     getBundleName = module_MARKOWEBPACKMANIFEST_module.getBundleName,
@@ -1127,9 +1127,9 @@ marko_template.meta = {
 
 
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
-    marko_componentType = "/marko-webpack$1.0.0/src/templates/demo.marko",
+    marko_componentType = "/marko-webpack$1.0.0/src/templates/case-study.marko",
     marko_renderer = __webpack_require__(1),
-    template = __webpack_require__(48),
+    template = __webpack_require__(49),
     module_MARKOWEBPACKMANIFEST_module = __webpack_require__(6),
     MARKOWEBPACKMANIFEST_module = module_MARKOWEBPACKMANIFEST_module.default || module_MARKOWEBPACKMANIFEST_module,
     getBundleName = module_MARKOWEBPACKMANIFEST_module.getBundleName,
@@ -1186,7 +1186,7 @@ function render(input, out, __component, component, state) {
 
   out.___renderAssets = renderAssets;
 
-  out.___assets = entries["demo_o92b"][getBundleName(out.global)];
+  out.___assets = entries["case-study_gysU"][getBundleName(out.global)];
 
   out.flush = outFlushOverride;
 
@@ -1205,9 +1205,9 @@ marko_template._ = marko_renderer(render, {
   });
 
 marko_template.meta = {
-    id: "/marko-webpack$1.0.0/src/templates/demo.marko",
+    id: "/marko-webpack$1.0.0/src/templates/case-study.marko",
     tags: [
-      "./demo.marko",
+      "./case-study.marko",
       "marko/dist/core-tags/components/init-components-tag"
     ]
   };
@@ -1223,9 +1223,105 @@ marko_template.meta = {
 
 
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
+    marko_componentType = "/marko-webpack$1.0.0/src/templates/home.marko",
+    marko_renderer = __webpack_require__(1),
+    template = __webpack_require__(50),
+    module_MARKOWEBPACKMANIFEST_module = __webpack_require__(6),
+    MARKOWEBPACKMANIFEST_module = module_MARKOWEBPACKMANIFEST_module.default || module_MARKOWEBPACKMANIFEST_module,
+    getBundleName = module_MARKOWEBPACKMANIFEST_module.getBundleName,
+    entries = module_MARKOWEBPACKMANIFEST_module.entries,
+    marko_dynamicTag = __webpack_require__(3),
+    marko_loadTag = __webpack_require__(2),
+    init_components_tag = marko_loadTag(__webpack_require__(4));
+
+function renderAssets() {
+  const assets = this.___assets;
+  this.___renderAssets = this.___assets = undefined;
+  this.flush = this.___flush;
+  this.end = this.___end;
+
+  if (assets) {
+    this.write(`<script>window.$mwp=${JSON.stringify(__webpack_require__.p)}`)
+
+    if (assets.js) {
+      this.write(
+        `;(function(b,h){var e=[],c=0;h.forEach(function(d,f){var a=b.createElement("link");a.relList&&a.relList.supports&&a.relList.supports("preload")?(a.href=d,a.rel="preload",a.as="script",a.addEventListener("load",function(){e[f]=d;if(c===f)for(var a;a=e[c];c++){var g=b.createElement("script");g.src=a;b.head.appendChild(g)}}),b.head.appendChild(a)):(a=b.createElement("script"),a.src=d,a.defer=!0,b.head.appendChild(a))})})(document,${
+          JSON.stringify(assets.js.map(js => __webpack_require__.p+js))
+        })`
+      );
+    }
+
+    this.write("</script>")
+
+    if (assets.css) {
+      assets.css.forEach(css => {
+        this.write(
+          `<link rel="stylesheet" href=${JSON.stringify(__webpack_require__.p+css)}>`
+        );
+      });
+    }
+  }
+};
+
+function outFlushOverride() {
+  this.___renderAssets();
+  this.flush();
+};
+
+function outEndOverride(data, encoding, callback) {
+  this.___renderAssets();
+  this.end(data, encoding, callback);
+};
+
+function render(input, out, __component, component, state) {
+  var data = input;
+
+  out.___flush = out.flush;
+
+  out.___end = out.end;
+
+  out.___renderAssets = renderAssets;
+
+  out.___assets = entries["home_fzHP"][getBundleName(out.global)];
+
+  out.flush = outFlushOverride;
+
+  out.end = outEndOverride;
+
+  marko_dynamicTag(out, template, function() {
+    return input;
+  }, null, null, null, __component, "0");
+
+  init_components_tag({}, out);
+}
+
+marko_template._ = marko_renderer(render, {
+    d_: true,
+    e_: marko_componentType
+  });
+
+marko_template.meta = {
+    id: "/marko-webpack$1.0.0/src/templates/home.marko",
+    tags: [
+      "./home.marko",
+      "marko/dist/core-tags/components/init-components-tag"
+    ]
+  };
+
+/* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.19.1 - DO NOT EDIT
+
+
+var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_componentType = "/marko-webpack$1.0.0/src/templates/index.marko",
     marko_renderer = __webpack_require__(1),
-    template = __webpack_require__(49),
+    template = __webpack_require__(51),
     module_MARKOWEBPACKMANIFEST_module = __webpack_require__(6),
     MARKOWEBPACKMANIFEST_module = module_MARKOWEBPACKMANIFEST_module.default || module_MARKOWEBPACKMANIFEST_module,
     getBundleName = module_MARKOWEBPACKMANIFEST_module.getBundleName,
@@ -1311,7 +1407,7 @@ marko_template.meta = {
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1340,10 +1436,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _templates_cv_marko__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_templates_cv_marko__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var _templates_playground_marko__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(27);
 /* harmony import */ var _templates_playground_marko__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_templates_playground_marko__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _templates_demo_marko__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(28);
-/* harmony import */ var _templates_demo_marko__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_templates_demo_marko__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _templates_index_marko__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(29);
-/* harmony import */ var _templates_index_marko__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_templates_index_marko__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _templates_case_study_marko__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(28);
+/* harmony import */ var _templates_case_study_marko__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_templates_case_study_marko__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _templates_home_marko__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(29);
+/* harmony import */ var _templates_home_marko__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_templates_home_marko__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _templates_index_marko__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(30);
+/* harmony import */ var _templates_index_marko__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_templates_index_marko__WEBPACK_IMPORTED_MODULE_14__);
 
 
 
@@ -1379,6 +1477,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 const app = express__WEBPACK_IMPORTED_MODULE_0___default()();
 const port = process.env.PORT || 8080;
 
@@ -1390,7 +1489,7 @@ app.use("/static", serve_static__WEBPACK_IMPORTED_MODULE_4___default()("dist/cli
 _api__WEBPACK_IMPORTED_MODULE_2___default.a.then(content => {
 
 	app.get("/", (req, res) => {
-		_templates_index_marko__WEBPACK_IMPORTED_MODULE_13___default.a.render({ posts: content.posts, ...content.home, work: content.posts }, res);
+		_templates_index_marko__WEBPACK_IMPORTED_MODULE_14___default.a.render({ posts: content.posts, ...content.home, work: content.posts }, res);
 	});
 
 	app.get("/cv", (req, res) => {
@@ -1408,9 +1507,14 @@ _api__WEBPACK_IMPORTED_MODULE_2___default.a.then(content => {
 		_templates_projects_marko__WEBPACK_IMPORTED_MODULE_9___default.a.render({}, res);
 	});
 
-	app.get("/demo", (req, res) => {
+	app.get("/case-study", (req, res) => {
 		res.setHeader("Content-Type", "text/html; charset=utf-8");
-		_templates_demo_marko__WEBPACK_IMPORTED_MODULE_12___default.a.render({}, res);
+		_templates_case_study_marko__WEBPACK_IMPORTED_MODULE_12___default.a.render({}, res);
+	});
+
+	app.get("/home", (req, res) => {
+		res.setHeader("Content-Type", "text/html; charset=utf-8");
+		_templates_home_marko__WEBPACK_IMPORTED_MODULE_13___default.a.render({}, res);
 	});
 
 	app.get("/about", (req, res) => {
@@ -1478,25 +1582,25 @@ _api__WEBPACK_IMPORTED_MODULE_2___default.a.then(content => {
 
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports) {
 
 module.exports = require("voca");
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports) {
 
 module.exports = require("@sanity/block-content-to-markdown");
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports) {
 
 module.exports = require("@sanity/client");
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1542,31 +1646,31 @@ marko_template.meta = {
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports) {
 
 module.exports = "/static/82b22a8115fd8c5bdb93cdb78e081c34.svg";
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports) {
 
 module.exports = "/static/878a3ba1dc79cbe5e83e8d367d49fabe.png";
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports) {
 
 module.exports = require("marko/dist/core-tags/components/component-globals-tag");
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports) {
 
 module.exports = require("marko/dist/core-tags/core/await/reorderer-renderer");
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1621,19 +1725,19 @@ marko_template.meta = {
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports) {
 
 module.exports = require("markdown-it");
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports) {
 
 module.exports = require("markdown-it-attrs");
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1751,7 +1855,7 @@ marko_template.meta = {
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1804,7 +1908,7 @@ marko_template.meta = {
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1858,7 +1962,7 @@ marko_template.meta = {
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1942,7 +2046,7 @@ marko_template.meta = {
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1954,7 +2058,7 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_renderer = __webpack_require__(1),
     module_markdown = __webpack_require__(7),
     markdown = module_markdown.default || module_markdown,
-    Button_template = __webpack_require__(47),
+    Button_template = __webpack_require__(48),
     marko_loadTag = __webpack_require__(2),
     Button_tag = marko_loadTag(Button_template),
     Layout_template = __webpack_require__(5),
@@ -2004,7 +2108,7 @@ marko_template.meta = {
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 47 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2048,7 +2152,7 @@ marko_template.meta = {
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 48 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2056,7 +2160,7 @@ marko_template.meta = {
 
 
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
-    marko_componentType = "/marko-webpack$1.0.0/src/templates/demo.marko",
+    marko_componentType = "/marko-webpack$1.0.0/src/templates/case-study.marko",
     marko_renderer = __webpack_require__(1),
     module_markdown = __webpack_require__(7),
     markdown = module_markdown.default || module_markdown,
@@ -2076,7 +2180,7 @@ function render(input, out, __component, component, state) {
         },
       body: {
           renderBody: function(out) {
-            out.w("<hr><h1>Conceptualising a <br>New Rental Service</h1><p class=\"text-1\">Renting is a process that many people will experience in their lifetime and it can be a scary, stressful and overwhelming process. Having been a renter myself I was ecstatic when I was asked to collaborate with a small startup to help them conceptualise a new, more intuitive rental service.</p><div layout=\"grid^1\" cols=\"12\"><div span=\"3\"><h5>My Responsibilities</h5><p>Investigate existing process, discover user pain points, conduct user interviews, information architecture, conceptual prototype.</p></div><div span=\"3\"><h5>Goals</h5><p>Explore how the service might work and establish a proof of concept which can be used to help pitch the service to potential users and investors.</p></div></div><hr><h2>The Renter, Landlord, Agent Triangle</h2><p>Originally the service was intended as a way to helping landlords and estate agents to spot bad tenants. Through meetings with expert matter holders, customer interviews and surveys we gathered research and insight about Tenants, Landlords and Estate Agents to learn about their habits, goals, motivations, lifestyles and needs. But this quickly pivoted the purpose of the product to reward good tenants and help them through the rental process.</p><h3>The Process</h3><ol><li><b>Exploration</b> <br>Understand the current process and relationship between tenant, landlord and agent.</li><li><b>Ideation</b> <br>Explore business models and what elicits trust with tenants and landlords.</li><li><b>Research</b> <br>Tenant and landlord surveys and interviews, value proposition engagement, meetings with estate agents.</li><li><b>Content Analysis</b> <br>Content analysis for tenant data. Competitor analysis of profile data. Explore existing services.</li><li><b>User Flows</b> <br>Sketch user flows for each Tenant, Landlord and Agent.</li><li><b>Wireframe</b> <br>Create detailed wireframes of pages with layout and information architecture.</li><li><b>Prototype</b> <br>Create a prototype to demonstrate key journeys of service.</li></ol><h3>Renting in London</h3><p>I thought it would be useful to get a better understanding of the details and events of the rental process. The flow diagram on the left is an early draft of a typical rental process in London. I’ve written hypothetical dates to get an understanding of the timeframe between events while thinking about the thoughts and feelings a renter might be having during this process.</p><h3>Rapid Prototyping</h3><p>It’s important to have a good understanding how the prototype will behave which is why I created this flow diagram of the Agent flow which shows the order and interactions of each screens. The act of creating this diagram was more important the actual output as it allows me to challenge my thoughts about what information should be asked for and when. I did the same for the Tenant flow.</p><h3>Finished Screens</h3><p>At such a high level of thinking, the solution for the service went through so many possible outcomes. But without a way to visualise the service, it was difficult to quantify it’s value. Creating a prototype helped demonstrate the problem they were solving for and how it could be achieved. We used this prototype to present to, users, stakeholders and potential investors.</p>");
+            out.w("<div layout=\"grid^1\" cols=\"6\"><hr><div span=\"5\"><h1>Conceptualising a <br>New Rental Service</h1><p class=\"text-1\">Renting is a process that many people will experience in their lifetime and it can be a scary, stressful and overwhelming process. Having been a renter myself I was ecstatic when I was asked to collaborate with a small startup to help them conceptualise a new, more intuitive rental service.</p><div layout=\"grid^1\" cols=\"6\"><div span=\"2\"><h5>My Responsibilities</h5><p>Investigate existing process, discover user pain points, conduct user interviews, information architecture, conceptual prototype.</p></div><div span=\"2\"><h5>Goals</h5><p>Explore how the service might work and establish a proof of concept which can be used to help pitch the service to potential users and investors.</p></div></div></div><hr><div span=\"3\"><h2>The Renter, Landlord, <br>Agent Triangle</h2><p>Originally the service was intended as a way to helping landlords and estate agents to spot bad tenants. Through meetings with expert matter holders, customer interviews and surveys we gathered research and insight about Tenants, Landlords and Estate Agents to learn about their habits, goals, motivations, lifestyles and needs. But this quickly pivoted the purpose of the product to reward good tenants and help them through the rental process.</p><h3>The Process</h3><ol><li><h5>Exploration</h5><p>Understand the current process and relationship between tenant, landlord and agent.</p></li><li><h5>Ideation</h5><p>Explore business models and what elicits trust with tenants and landlords.</p></li><li><h5>Research</h5><p>Tenant and landlord surveys and interviews, value proposition engagement, meetings with estate agents.</p></li><li><h5>Content Analysis</h5><p>Content analysis for tenant data. Competitor analysis of profile data. Explore existing services.</p></li><li><h5>User Flows</h5><p>Sketch user flows for each Tenant, Landlord and Agent.</p></li><li><h5>Wireframe</h5><p>Create detailed wireframes of pages with layout and information architecture.</p></li><li><h5>Prototype</h5><p>Create a prototype to demonstrate key journeys of service.</p></li></ol><h3>Renting in London</h3><p>I thought it would be useful to get a better understanding of the details and events of the rental process. The flow diagram on the left is an early draft of a typical rental process in London. I’ve written hypothetical dates to get an understanding of the timeframe between events while thinking about the thoughts and feelings a renter might be having during this process.</p><h3>Rapid Prototyping</h3><p>It’s important to have a good understanding how the prototype will behave which is why I created this flow diagram of the Agent flow which shows the order and interactions of each screens. The act of creating this diagram was more important the actual output as it allows me to challenge my thoughts about what information should be asked for and when. I did the same for the Tenant flow.</p><h3>Finished Screens</h3><p>At such a high level of thinking, the solution for the service went through so many possible outcomes. But without a way to visualise the service, it was difficult to quantify it’s value. Creating a prototype helped demonstrate the problem they were solving for and how it could be achieved. We used this prototype to present to, users, stakeholders and potential investors.</p></div></div>");
           }
         }
     }, out, __component, "0");
@@ -2088,7 +2192,7 @@ marko_template._ = marko_renderer(render, {
   });
 
 marko_template.meta = {
-    id: "/marko-webpack$1.0.0/src/templates/demo.marko",
+    id: "/marko-webpack$1.0.0/src/templates/case-study.marko",
     tags: [
       "../components/Layout/index.marko"
     ]
@@ -2097,7 +2201,56 @@ marko_template.meta = {
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 49 */
+/* 50 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(__filename) {// Compiled using marko@4.19.1 - DO NOT EDIT
+
+
+var marko_template = module.exports = __webpack_require__(0).t(__filename),
+    marko_componentType = "/marko-webpack$1.0.0/src/templates/home.marko",
+    marko_renderer = __webpack_require__(1),
+    module_markdown = __webpack_require__(7),
+    markdown = module_markdown.default || module_markdown,
+    Layout_template = __webpack_require__(5),
+    marko_loadTag = __webpack_require__(2),
+    Layout_tag = marko_loadTag(Layout_template);
+
+function render(input, out, __component, component, state) {
+  var data = input;
+
+  Layout_tag({
+      class: "page__cv",
+      title: {
+          renderBody: function(out) {
+            out.w("Demo Case Study");
+          }
+        },
+      body: {
+          renderBody: function(out) {
+            out.w("<div layout=\"grid^1\" cols=\"6\"><hr><div span=\"6\"><h1>I help companies improve their digital products and services using the right methods and techniques.</h1><hr><div layout=\"grid^1\" cols=\"6\"><h3 span=\"2\">People I've Helped</h3><div span=\"2\"><ul><li><h5><a href=\"/work/10-reasons-not-to-break-the-ice\">10 Reasons Not to Break the Ice</a></h5><span class=\"client-name\">Venntro</span></li><li><h5><a href=\"/work/conceptualising-a-new-rental-service\">Conceptualising a New Rental Service</a></h5><span class=\"client-name\">10Lord</span></li><li><h5><a href=\"/work/getting-from-a-to-b\">Getting From A to B</a></h5><span class=\"client-name\">Caution Your Blast</span></li></ul></div></div><hr><div layout=\"grid^1\" cols=\"6\"><h3 span=\"2\">Things I've made</h3><div span=\"2\"><ul><li><h5><a href=\"/work/10-reasons-not-to-break-the-ice\">Typolize</a></h5><p>A style reset for managing modular scale in typography and spacing</p></li><li><h5><a href=\"/work/conceptualising-a-new-rental-service\">Mole</a></h5><p>A framework that allows you to create your own platform-agnostic design system.</p></li><li><h5><a href=\"/work/getting-from-a-to-b\">Stylup</a></h5><p>A preprocessor that makes writing class names for responsive designs easier.</p></li><li><h5><a href=\"/work/getting-from-a-to-b\">Redlines</a></h5><p>A Figma library with components to help you annotate your designs. Choose from keylines, markers, labels and more.</p></li></ul></div></div><hr><div layout=\"grid^1\" cols=\"6\"><h3 span=\"2\">About me</h3><div span=\"3\"><p>Hi, I’m Gavin. I like making things and working with people to solve problems. I enjoy exploring ideas around Design Systems and have created a few <a href=\"https://github.com/limitlessloop?tab=repositories&amp;amp;q=postcss&amp;amp;type=source&amp;amp;language=\">PostCSS plugins</a> which make managing them easier. If you want to get more formal, you can view an abridged version of my <a href=\"/cv\">CV</a>.</p><p>This site was designed and built by myself using <a href=\"https://figma.com\">Figma</a>, <a href=\"http://markojs.com\">Marko</a> and <a href=\"https://postcss.org\">PostCSS</a>. Bundled with <a href=\"https://webpack.js.org/\">Webpack</a> using <a href=\"https://www.sanity.io/\">Sanity</a> for a CMS and hosted on <a href=\"https://zeit.co\">Now</a>.</p></div></div></div></div>");
+          }
+        }
+    }, out, __component, "0");
+}
+
+marko_template._ = marko_renderer(render, {
+    d_: true,
+    e_: marko_componentType
+  });
+
+marko_template.meta = {
+    id: "/marko-webpack$1.0.0/src/templates/home.marko",
+    tags: [
+      "../components/Layout/index.marko"
+    ]
+  };
+
+/* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
+
+/***/ }),
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2110,7 +2263,7 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     module_markdown = __webpack_require__(7),
     markdown = module_markdown.default || module_markdown,
     marko_str = __webpack_require__(10),
-    Ticker_template = __webpack_require__(50),
+    Ticker_template = __webpack_require__(52),
     marko_loadTag = __webpack_require__(2),
     Ticker_tag = marko_loadTag(Ticker_template),
     Section_template = __webpack_require__(11),
@@ -2226,7 +2379,7 @@ marko_template.meta = {
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 50 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
