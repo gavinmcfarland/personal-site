@@ -18,36 +18,47 @@ import favicon from "./favicon.png"
 		<${input.styles}/>
 		<link href="https://fonts.googleapis.com/css?family=Fira+Code|Fira+Mono|Fira+Sans&display=swap" rel="stylesheet"/>
 		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css"/>
-		<script async defer data-domain="gavinmcfarland.co.uk" src="https://plausible.io/js/plausible.js"></script>
+		<script async defer data-domain="gavinmcfarland.co.uk" src="https://plausible.io/js/plausible.js"/>
 	</head>
 	<body class=input.class>
-		<header>
-			<a href="/">
-				<span.logo>GM</span>
-			</a>
-			<!-- Hide for now until worked into design
-			<h1><${input.title}/></h1>
-			<nav>
-				<a href="/about">About</a>
-			</nav> -->
-		</header>
-		<main>
-			<div.wrapper>
+		<div.App>
+			<header.Nav.fullwidth>
+				<span class="Logo fullwidth">
+					<a href="/">G</a>
+				</span>
+				<!-- <nav>
+					<a href="/work">Work</a>
+					<a href="/">Contact</a>
+					<a href="/">About</a>
+				</nav> -->
+			</header>
+			<main.Container>
 				<${input.body}/>
-			</div>
-		</main>
-		<footer class="with-sidebar">
-			<div>
-			<p>Limitless Loop &copy; 2019</p>
-			<nav>
-				<a href="https://twitter.com/gavinmcfarland">Twitter</a>
-				<a href="https://dribbble.com/limitlessloop">Dribbble</a>
-				<a href="https://www.figma.com/@limitlessloop">Figma</a>
-				<a href="https://github.com/limitlessloop">Github</a>
-			</nav>
-			<${input.footer}/>
-			</div>
-		</footer>
+			</main>
+			<footer.Footer.fullwidth>
+				<ul>
+					<li>Copyright 2020 &copy; Limitless Loop</li>
+					<li>
+						<a href="https://typolize.now.sh/">Built with Typolize</a>
+					</li>
+				</ul>
+				<ul class="Header_Link">
+					<li>
+						<a href="https://twitter.com/gavinmcfarland">Twitter</a>
+					</li>
+					<li>
+						<a href="https://github.com/limitlessloop">Github</a>
+					</li>
+					<li>
+						<a href="https://www.figma.com/@limitlessloop">Figma</a>
+					</li>
+					<li>
+						<a href="https://dribbble.com/limitlessloop">Dribbble</a>
+					</li>
+				</ul>
+				<${input.footer}/>
+			</footer>
+		</div>
 		<!-- <script> tags to include optimized JS URLs will be included below: -->
 		<${input.scripts}/>
 	</body>

@@ -1,0 +1,228 @@
+/* Elements */
+
+img {
+	margin-bottom: var(--em-0);
+}
+
+:not(div) > a {
+	text-decoration: none;
+	border-bottom: 1px solid;
+	/* background-image: linear-gradient(black, black);
+	background-size: 100% 1px;
+	background-position: left bottom;
+	background-repeat: no-repeat; */
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	border-bottom: none;
+}
+
+body {
+	padding-left: var(--rem-3);
+	padding-right: var(--rem-3);
+	margin: 0;
+}
+
+hr {
+	border-bottom: 1px solid;
+}
+
+code {
+	cursor: text;
+}
+
+p>code {
+	padding-left: var(--rem--2);
+	padding-right: var(--rem--2);
+	white-space: nowrap;
+}
+
+:not(p)>code {
+	border: 1px solid;
+	padding: var(--rem-1);
+	overflow-x: scroll;
+}
+
+/* Component spacing */
+
+.Section__Title {
+	/* margin-bottom: var(--rem-4); */
+	font-size: var(--font-size-h3);
+}
+
+.Section__Content {
+	margin-bottom: var(--rem-6);
+}
+
+.Section__Text {
+	margin-bottom: var(--rem-5);
+	text-align: center;
+}
+
+
+/* Components */
+
+.Section {
+	/* --spacing: var(--spacing-4); */
+}
+
+.Button {
+	display: inline-block;
+	border: 1px solid;
+	border-color: var(--border-color);
+	padding: var(--rem-1);
+	text-decoration: none;
+	background: none;
+}
+
+.Button:hover {
+	background-color: hsla(0, 0%, 50%, 0.5);;
+}
+
+.Header {
+	display: flex;
+
+	height: var(--rem-9);
+	/* padding: var(--rem-6) 0; */
+	border-bottom: 1px solid;
+	flex-wrap: wrap;
+	flex-direction: column;
+	place-content: center;
+}
+
+.Header > * {
+	/* flex-grow: 1; */
+	flex-basis: 0;
+	/* margin-top: 0; */
+	/* margin-bottom: 0; */
+}
+
+.Header .Header_Name {
+	margin-top: 0;
+	font-size: var(--font-size-5);
+	text-align: center;
+	margin-bottom: var(--rem-4);
+	margin-right: -0.15em
+}
+
+.Header .Button {
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.Header .Button {
+	margin-top: var(--rem-2);
+}
+
+.Header .Header_Tagline {
+	text-align: center;
+	margin-top: 0;
+}
+
+
+.Nav {
+	padding-top: var(--rem-1);
+	padding-bottom: var(--rem-1);
+	border-bottom: 1px solid;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.Logo {
+	font-weight: bold;
+}
+
+.Logo>a {
+	text-decoration: none;
+	font-size: var(--font-size-1);
+}
+
+.Nav nav {
+	margin-top: 0;
+}
+
+.Nav nav>*+* {
+	margin-left: var(--rem-1);
+	flex-shrink: 0;
+}
+
+.Nav nav a {
+	border-bottom: none;
+}
+
+.Container {
+	margin-top: var(--rem-5);
+}
+
+.Container>.Section:not(:last-child) {
+	/* border-bottom: 1px solid lightgrey; */
+	/* padding-left: var(--spacing-3); */
+	/* padding-right: var(--spacing-3); */
+	/* padding-bottom: var(--spacing-5); */
+	/* margin-left: calc(0px - var(--spacing-3)); */
+	/* margin-right: calc(0px - var(--spacing-3)); */
+}
+
+.Footer {
+	display: flex;
+	margin-bottom: var(--rem-3);
+	margin-top: var(--rem-6);
+
+}
+
+.Footer > * {
+	margin: 0;
+	font-size: smaller !important;
+}
+
+.Footer > *:first-child {
+	margin-right: var(--rem-1);
+}
+
+.Footer ul li {
+	margin-top: 0;
+	display: block;
+	float: left;
+}
+
+.Footer ul>*+* {
+	margin-left: var(--rem-2);
+}
+
+.Header_Link {
+	margin-left: auto;
+}
+
+.Card__Content {
+	/* margin-top: var(--rem-3); */
+}
+
+.Card__Image {
+	margin-bottom: var(--rem-3);
+}
+
+
+.List>*+* {
+	margin-top: var(--rem-5);
+}
+
+.Project__Content img {
+	margin-top: var(--rem-1);
+	margin-bottom: 0;
+}
+
+.Project__Content
+
+.text-crop-none {
+	display: block;
+}
+
+.text-crop-none::before {
+	display: none;
+}
+
+.text-crop-none::after {
+	display: none;
+}

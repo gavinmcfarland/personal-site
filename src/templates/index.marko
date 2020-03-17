@@ -1,63 +1,115 @@
 import markdown from '../scripts/markdown'
+import image from "./image-placeholder.png"
 
 <Layout.page_home>
 	<@body>
-		<Section>
-			<h1>
-				$!{input.intro}<Ticker>
-					<@section> using good old fashioned problem-solving.</@section>
-					<@section> using the right methods and techniques.</@section>
-					<@section> by not settling for anything less.</@section>
-				</Ticker>
-			</h1>
-		</Section>
-		<Section>
-			<h2>Work</h2>
+		<!-- <h2>$!{input.intro}</h2> -->
+		<h2>Product Designer Focused on Automated Design Systems and Design Tooling.</h2>
+		<div>
 			<div>
-				<ul>
+				<h4>People I've Helped</h4>
+				<div gap="5">
 					<for|project, index| of=input.work>
-						<li>
-							<a href=project.url>${project.title}</a>
-							<span.client-name>${project.client}</span>
-						</li>
+						<div.Card grid>
+							<a href=project.url span="4">
+								<img src=image class="Card__Image" width="543" height="305"/>
+							</a>
+							<div class="Card__Content" span="4">
+								<h5>
+									<a href=project.url>${project.title}</a>
+								</h5>
+								<p>
+									<span style="opacity: 0.6">${project.client}</span>
+								</p>
+								$!{markdown(project.excerpt)}<p>
+									<a href=project.url>Read More</a>
+								</p>
+							</div>
+						</div>
 					</for>
-				</ul>
+				</div>
+				<!-- <div style="text-align: right; margin-top: var(--rem-4);">
+					<a class="Button" href="/">More Work</a>
+				</div> -->
+				<!-- <hr class="fullwidth"/>
+				<h4>What I'm Thinking</h4>
+				<ul>
+					<li class="text-crop-none">
+						<h3>
+							<a href="/">Creating Your First Industry Standard NPM Package</a>
+						</h3>
+					</li>
+					<li class="text-crop-none">
+						<h3>
+							<a href="/">Creating a Flex Gap Polyfill</a>
+						</h3>
+					</li>
+					<li class="text-crop-none">
+						<h3>
+							<a href="/">Using Flexible Decision Making in Your Design</a>
+						</h3>
+					</li>
+				</ul> -->
 			</div>
-		</Section>
-		<!-- <Section.thing.md:flex.remove-margin>
-			<h2.f-5.md:w-300>Articles</h2>
-			<div>
-				<ul.f-4.links.no-icons>
-					<for|post, index| of=input.posts>
+		</div>
+		<hr class="fullwidth"/>
+		<div>
+			<div grid>
+				<h4 span="3">Things I've Made</h4>
+				<div style="margin-bottom: var(--em-3);" span="3">
+					<h6>PostCSS Plugins</h6>
+					<ul>
 						<li>
-							<a href=post.url>${post.title}</a>
+							<a href="https://github.com/limitlessloop/postcss-proportional-spacing">Proportional Spacing</a>
 						</li>
-					</for>
-				</ul>
+						<li>
+							<a href="https://github.com/limitlessloop/postcss-negative-padding">Negative Padding</a>
+						</li>
+						<li>
+							<a href="https://github.com/limitlessloop/postcss-border-align">Border Align</a>
+						</li>
+						<li>
+							<a href="https://github.com/limitlessloop/postcss-custom-values">Custom Values</a>
+						</li>
+						<li>
+							<a href="https://github.com/limitlessloop/postcss-sqrt">Sqrt and Pow Functions</a>
+						</li>
+						<li>
+							<a href="https://github.com/limitlessloop/flex-gap-polyfill">Flex Gap Polyfill</a>
+						</li>
+					</ul>
+				</div>
+				<div span="2">
+					<h6>Figma Resources</h6>
+					<ul>
+						<li>
+							<a href="https://www.figma.com/community/file/784773846783975923">Redlining Kit</a>
+						</li>
+						<li>
+							<a href="https://www.figma.com/community/file/776921648331857127">Device Frames</a>
+						</li>
+						<li>
+							<a href="https://www.figma.com/community/file/776917132627530982">Design Deliverable</a>
+						</li>
+						<li>
+							<a href="https://www.figma.com/community/file/776913337659021541">Icon Template</a>
+						</li>
+						<li>
+							<a href="https://www.figma.com/community/file/817057027097651580">Syntax Designer</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</Section> -->
-		<for|heading, content| in=input.sections>
+		</div>
+		<!-- <for|heading, content| in=input.sections>
 			<Section>
 				<h2>${heading}</h2>
 				<div>$!{markdown(content)}</div>
 			</Section>
-		</for>
+		</for> -->
 	</@body>
 </Layout>
 style {
-	.client-name {
-		margin-left: var(--margin-1);
-	}
-
-	.page_home .Section[layout^="grid"] {
-		h2 {
-			font-size: var(--font-size-1);
-			grid-column: span 3;
-			text-transform: capitalize;
-		}
-
-		div {
-			grid-column: 4 / -1;
-		}
+	.no-styles {
 	}
 }

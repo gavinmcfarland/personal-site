@@ -1,4 +1,81 @@
-html {
+/* Remove default border from hr */
+
+* {
+	margin: unset;
+	padding: unset;
+	box-sizing: border-box;
+}
+
+hr {
+	border: none;
+	margin-bottom: unset;
+}
+
+code {
+	/* Need a way to correct line-height. */
+	/* font-size: 0.9em; */
+	vertical-align: inherit;
+
+	/* Random bug where square appears in top right hand corner? */
+	-webkit-appearance: none;
+}
+
+code {
+	font-size: 0.9em;
+}
+
+pre {
+	font-family: inherit;
+	/* Tries to normalize size of font family */
+	font-size: 100%;
+	padding-top: 0.05em;
+	padding-bottom: 0.05em;
+}
+
+:not(p)>code {
+	display: block;
+}
+
+
+a {
+	display: inline;
+}
+
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+p {
+	font-size: inherit !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Old Styles */
+
+/* html {
 	height: 100%;
 }
 
@@ -36,7 +113,7 @@ ol li::before {
 }
 
 ol li::before, ul li::after {
-	/* display: inline-block; */
+	display: inline-block;
 }
 
 
@@ -57,4 +134,4 @@ img {
 hr {
 	height: 0;
 	border: none;
-}
+} */

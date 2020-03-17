@@ -3,7 +3,7 @@ module.exports = {
 		'postcss-import': {},
 		'postcss-for': {},
 		'postcss-custom-selectors': {},
-		'postcss-short': {},
+		// 'postcss-short': {},
 		'postcss-nested': {},
 		'postcss-logical': {},
 		'postcss-proportional-spacing': {},

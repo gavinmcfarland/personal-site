@@ -1,86 +1,29 @@
 import markdown from '../scripts/markdown'
+import image from "./image-placeholder.png"
 
 <Layout class="page__cv">
 	<@body>
-		<Section>
-			<h1.mb-8.mt-0>${input.title}</h1>
-			<div.excerpt.f-4>
-				$!{markdown(input.excerpt)}
+		<h2 style="max-width: 800px">${input.title}</h2>
+		<div grid>
+			<div span="5" style="margin-bottom: var(--rem-5);">
+				<h4>Overview</h4>
+				<div style="font-size: var(--font-size-2);">$!{markdown(input.excerpt)}</div>
 			</div>
-		</Section>
-		<if(input.image)>
-			<Section.hero.w-viewport>
-				<!-- <img.small src=("/static" + input.image.small)/> -->
-				<!-- <img.medium src=("/static" + input.image.medium)/> -->
-			</Section>
-		</if>
-		<if(input.goal || input.role)>
-			<Section.details>
-				<if(input.goal)>
-					<div.span-4>
-						<h5>Goals</h5>
+			<if(input.goal || input.role)>
+				<div span="3" style="margin-bottom: var(--rem-5);">
+					<if(input.goal)>
+						<h6>Goal</h6>
 						$!{markdown(input.goal)}
-					</div>
-				</if>
-				<if(input.role)>
-					<div.span-4>
-						<h5>My Role</h5>
+					</if>
+					<if(input.role)>
+						<h6>Role</h6>
 						$!{markdown(input.role)}
-					</div>
-				</if>
-			</Section>
-		</if>
-		<if(input.sections)>
-		<for|section| of=input.sections>
-			<Section>
-				<h2>${section.value}</h2>
-				<div>$!{markdown(section.content)}</div>
-			</Section>
-		</for>
-		</if>
-		<Section>
-			<div>$!{markdown(input.body)}</div>
-		</Section>
+					</if>
+				</div>
+			</if>
+			<!-- <img src=image width="543" height="305" style="margin-bottom: var(--rem-5)"/> -->
+			<!-- <div span="3">&nbsp;</div> -->
+			<div class="Project__Content" span="5">$!{markdown(input.body)}</div>
+		</div>
 	</@body>
 </Layout>
-style {
-	@import "../styles";
-
-	section h2 {
-		grid-column: span 3;
-	}
-
-	.span-4 {
-		grid-column: span 4 !important;
-	}
-
-	.hero {
-		border: 0;
-		display: none !important;
-		margin-bottom: 4em;
-		padding: 0 !important;
-		margin-top: -2em;
-		background: #f0f0f0;
-		> * {
-			flex-grow: 0 !important;
-		}
-		> img {
-			width: 100%;
-			max-width: 1400px;
-			display: none;
-			margin: 0 auto;
-
-			@media (max-width: 900px) {
-				&.small {
-					display: block;
-				}
-			}
-
-			@media (min-width: 901px) {
-				&.medium {
-					display: block;
-				}
-			}
-		}
-	}
-}

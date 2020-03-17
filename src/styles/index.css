@@ -1,105 +1,29 @@
 
-/* @import 'tailwindcss/components'; */
-/* @import 'tailwindcss/utilities'; */
-/* @import 'karamel'; */
-/* @import 'karamel/normalize'; */
-@import './font-faces';
-@import './fonts';
 @import './reset';
 @import './numbers';
+@import 'typolize';
 @import './colors';
-@import './font-sizes';
-@import './spacing';
-@import './defaults';
+@import './layout';
+@import './components';
 
-@import './elements';
-
-
-@media (min-width: 900px) {
-	[layout=grid\^1] {
-		@extend [layout=grid]
-	}
-	[cols="12^1"] {
-		@extend [cols="12"]
+@media (min-width: 1500px) {
+	:root {
+		--font-base: 18px;
 	}
 }
 
-
-[layout=grid] {
-
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	gap: var(--spacing-1);
-
-	> * {
-		grid-column: 1 / -1;
-
-	}
-
-	> div {
-		margin-top: unset;
-		margin-bottom: unset;
-	}
-
-
-	div {
-
-		/* Fix for firefox because for some reason div expands to size of it's children */
-		width: 100%;
-	}
-
-	img {
-		width: 100%;
+@media (max-width: 900px) {
+	:root {
+		--spacing-ratio: 0.666;
+		--font-ratio: 1.2;
 	}
 }
 
-[cols="12"] {
-	grid-template-columns: repeat(12, 1fr);
-}
-
-[cols="6"] {
-	grid-template-columns: repeat(6, 1fr);
-}
-
-@for $i from 1 to 12 {
-	[span="$(i)"] {
-		grid-column: span $(i);
+@media (max-width: 375px) {
+	:root {
+		--font-base: 14px;
+		--spacing-ratio: 0.5;
 	}
 }
 
-[layout=flexs] {
-	display: flex;
-
-	> * {
-		flex-grow: 1;
-	}
-}
-
-[width=shrink] {
-	flex-grow: 0;
-}
-
-
-
-
-.with-sidebar {
-	overflow: hidden;
-  }
-
-  .with-sidebar > * {
-	display: flex;
-	flex-wrap: wrap;
-	/* margin: calc(var(--s1) / 2 * -1); */
-  }
-  
-  .with-sidebar > * > * {
-	/* margin: calc(var(--s1) / 2); */
-	flex-grow: 1;
-  }
-  
-  .with-sidebar > * > :first-child {
-	flex-basis: 0;
-	flex-grow: 999;
-	min-width: calc(50% - var(--spacing-1));
-  }
 

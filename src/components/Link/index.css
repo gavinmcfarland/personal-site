@@ -1,7 +1,0 @@
-@import '../../styles/aliases';
-
-:--link {
-    &:hover {
-        cursor: pointer;
-    }
-}
