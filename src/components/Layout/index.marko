@@ -1,12 +1,17 @@
 import logo from "./logo.svg"
-import favicon from "./favicon.png"
+import favicon32 from "./favicon-32x32.png"
+import favicon16 from "./favicon-16x16.png"
+import faviconAppleTouch from "./apple-touch-icon.png"
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width"/>
-		<link rel="icon" href=favicon/>
+		<link rel="apple-touch-icon" sizes="180x180" href=faviconAppleTouch/>
+		<link rel="icon" type="image/png" sizes="32x32" href=favicon32/>
+		<link rel="icon" type="image/png" sizes="16x16" href=favicon16/>
+		<!-- <link rel="manifest" href="/site.webmanifest"/> -->
 		<title>
 			<if(input.title)>
 				<${input.title}/>

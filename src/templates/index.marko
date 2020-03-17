@@ -12,7 +12,9 @@ import image from "./image-placeholder.png"
 					<for|project, index| of=input.work>
 						<div.Card grid>
 							<a href=project.url span="4">
-								<img src=image class="Card__Image" width="543" height="305"/>
+								<if(project.image)>
+									<img src=project.image.url class="Card__Image" width="543" height="305"/>
+								</if>
 							</a>
 							<div class="Card__Content" span="4">
 								<h5>

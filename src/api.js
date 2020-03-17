@@ -1,5 +1,6 @@
 const v = require('voca');
 
+
 // const sanity = require("./sanity");
 
 const toMarkdown = require('@sanity/block-content-to-markdown')
@@ -8,17 +9,25 @@ const toMarkdown = require('@sanity/block-content-to-markdown')
 // const builder = imageUrlBuilder(myConfiguredSanityClient)
 
 const sanityClient = require('@sanity/client')
+const imageUrlBuilder = require('@sanity/image-url')
+
 const client = sanityClient({
-  projectId: 'kvqmg9w0',
-  dataset: 'production',
-  useCdn: true // `false` if you want to ensure fresh data
+	projectId: 'kvqmg9w0',
+	dataset: 'production',
+	useCdn: true // `false` if you want to ensure fresh data
 })
+
+const builder = imageUrlBuilder(client)
+
+function urlFor(source) {
+	return builder.image(source)
+}
 
 const serializers = {
 	types: {
-	  code: props => '```' + props.node.language + '\n' + props.node.code + '\n```'
+		code: props => '```' + props.node.language + '\n' + props.node.code + '\n```'
 	}
-  }
+}
 
 async function getContent() {
 	var content = {}
@@ -27,16 +36,21 @@ async function getContent() {
 	content.resume.sections = {}
 	content.home.intro = {}
 	content.home.sections = {}
-		
-	await client.fetch('*[_type == "post"]').then(posts => {
+
+	await client.fetch('*[_type == "post"] | order(_createdAt desc)').then(posts => {
 
 		posts.forEach(post => {
+			post.image = {}
 			post.body = toMarkdown(post.body, {
 				serializers,
 				projectId: 'kvqmg9w0',
 				dataset: 'production'
-			  })
+			})
 			post.url = '/work/' + post.slug.current
+			if (post.mainImage) {
+				post.image.url = urlFor(post.mainImage).width(543).url()
+			}
+
 		})
 
 		return content.posts = posts
@@ -79,6 +93,6 @@ const api = getContent()
 // }
 
 const myModule = module.exports = api;
-myModule.getContent = function() {
+myModule.getContent = function () {
 	return getContent()
 }
