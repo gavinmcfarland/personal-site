@@ -169,7 +169,8 @@ p>code {
 	display: flex;
 	margin-bottom: var(--rem-3);
 	margin-top: var(--rem-6);
-
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .Footer > * {
@@ -179,6 +180,8 @@ p>code {
 
 .Footer > *:first-child {
 	margin-right: var(--rem-1);
+	flex-grow: 0;
+    flex-shrink: 0;
 }
 
 .Footer ul li {
@@ -191,8 +194,21 @@ p>code {
 	margin-left: var(--rem-2);
 }
 
-.Header_Link {
-	margin-left: auto;
+.Footer_Link {
+	/* flex-basis: 50%; */
+    flex-grow: 0;
+    flex-shrink: 0;
+	/* margin-left: auto; */
+}
+
+@media (max-width: 612px) {
+	.Footer > *:first-child {
+		order: 1;
+	}
+
+	.Footer_Link {
+		margin-bottom: var(--rem-3);
+	}
 }
 
 .Card__Content {
