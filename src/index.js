@@ -30,8 +30,6 @@ import About from "./templates/about.marko";
 import Projects from "./templates/projects.marko";
 import Cv from "./templates/cv.marko";
 import Playground from "./templates/playground.marko";
-import CaseStudy from "./templates/case-study.marko";
-import HomeDemo from "./templates/home.marko";
 import Home from "./templates/index.marko";
 
 const app = express();
@@ -45,7 +43,7 @@ app.use("/static", serveStatic("dist/client"));
 api.then(content => {
 
 	app.get("/", (req, res) => {
-		Home.render({ posts: content.posts, ...content.home, work: content.posts }, res);
+		Home.render({ projects: content.projects, ...content.home, work: content.projects }, res);
 	});
 
 	app.get("/cv", (req, res) => {
@@ -63,16 +61,6 @@ api.then(content => {
 		Projects.render({}, res);
 	});
 
-	app.get("/case-study", (req, res) => {
-		res.setHeader("Content-Type", "text/html; charset=utf-8");
-		CaseStudy.render({}, res);
-	});
-
-	app.get("/home", (req, res) => {
-		res.setHeader("Content-Type", "text/html; charset=utf-8");
-		HomeDemo.render({}, res);
-	});
-
 	app.get("/about", (req, res) => {
 		res.setHeader("Content-Type", "text/html; charset=utf-8");
 		About.render({}, res);
@@ -83,10 +71,10 @@ api.then(content => {
 
 		let err = true;
 
-		for (let post of content.posts) {
+		for (let post of content.projects) {
 
 			// If page exists then render page
-			if (req.params.post === post.slug) {
+			if (req.params.post === post.slug.current) {
 				Post.render(post, res);
 				err = false
 			}
@@ -104,7 +92,7 @@ api.then(content => {
 
 		let err = true;
 
-		for (let post of content.posts) {
+		for (let post of content.projects) {
 			// If page exists then render page
 			if (req.params.post === post.slug.current) {
 				Project.render(post, res);
@@ -120,7 +108,7 @@ api.then(content => {
 	});
 
 	// Render 404 for any unkown routes
-	app.use(function(req, res) {
+	app.use(function (req, res) {
 		Error404.render({}, res.status(404));
 	});
 

@@ -37,23 +37,23 @@ async function getContent() {
 	content.home.intro = {}
 	content.home.sections = {}
 
-	await client.fetch('*[_type == "post"] | order(publishedAt desc)').then(posts => {
+	await client.fetch('*[_type == "project"] | order(publishedAt desc)').then(projects => {
 
-		posts.forEach(post => {
-			post.image = {}
-			post.body = toMarkdown(post.body, {
+		projects.forEach(project => {
+			project.image = {}
+			project.body = toMarkdown(project.body, {
 				serializers,
 				projectId: 'kvqmg9w0',
 				dataset: 'production'
 			})
-			post.url = '/work/' + post.slug.current
-			if (post.mainImage) {
-				post.image.url = urlFor(post.mainImage).width(543).url()
+			project.url = '/work/' + project.slug.current
+			if (project.mainImage) {
+				project.image.url = urlFor(project.mainImage).width(543).url()
 			}
 
 		})
 
-		return content.posts = posts
+		return content.projects = projects
 	})
 
 	await client.fetch(`*[_type == "page" && title == "Site"][0].sections`).then(sections => {

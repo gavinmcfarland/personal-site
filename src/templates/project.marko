@@ -21,6 +21,10 @@ import image from "./image-placeholder.png"
 						<h6>Role</h6>
 						$!{markdown(input.role)}
 					</if>
+					<if(input.duration)>
+						<h6>Duration</h6>
+						$!{markdown(input.duration)}
+					</if>
 				</div>
 			</if>
 			<!-- <img src=image width="543" height="305" style="margin-bottom: var(--rem-5)"/> -->
