@@ -176,12 +176,13 @@ p>code {
 .Footer > * {
 	margin: 0;
 	font-size: smaller !important;
+	flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
 }
 
 .Footer > *:first-child {
 	margin-right: var(--rem-1);
-	flex-grow: 0;
-    flex-shrink: 0;
 }
 
 .Footer ul li {
@@ -192,13 +193,6 @@ p>code {
 
 .Footer ul>*+* {
 	margin-left: var(--rem-2);
-}
-
-.Footer_Link {
-	/* flex-basis: 50%; */
-    flex-grow: 0;
-    flex-shrink: 0;
-	/* margin-left: auto; */
 }
 
 @media (max-width: 612px) {
