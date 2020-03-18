@@ -17,10 +17,10 @@ import image from "./image-placeholder.png"
 								</if>
 							</a>
 							<div class="Card__Content" span="4">
-								<h5>
+								<h5 style="margin-bottom: var(--rem-1)">
 									<a href=project.url>${project.title}</a>
 								</h5>
-								<p style="margin-top: calc(0px - var(--em-1)); opacity: 0.6">${project.client}</p>
+								<p style="margin-bottom: var(--em-2); opacity: 0.6">${project.client}</p>
 								$!{markdown(project.excerpt)}<p style="margin-top: var(--em-2);">
 									<a href=project.url>Read More &rarr;</a>
 								</p>
@@ -31,25 +31,17 @@ import image from "./image-placeholder.png"
 				<!-- <div style="text-align: right; margin-top: var(--rem-4);">
 					<a class="Button" href="/">More Work</a>
 				</div> -->
-				<!-- <hr class="fullwidth"/>
+				<hr class="fullwidth"/>
 				<h4>What I'm Thinking</h4>
 				<ul>
-					<li class="text-crop-none">
-						<h3>
-							<a href="/">Creating Your First Industry Standard NPM Package</a>
-						</h3>
-					</li>
-					<li class="text-crop-none">
-						<h3>
-							<a href="/">Creating a Flex Gap Polyfill</a>
-						</h3>
-					</li>
-					<li class="text-crop-none">
-						<h3>
-							<a href="/">Using Flexible Decision Making in Your Design</a>
-						</h3>
-					</li>
-				</ul> -->
+					<for|post, index| of=input.posts>
+						<li class="text-crop-none" style="display: inline;">
+							<h3>
+								<a href=post.url>${post.title}</a>
+							</h3>
+						</li>
+					</for>
+				</ul>
 			</div>
 		</div>
 		<hr class="fullwidth"/>

@@ -22,7 +22,8 @@ import faviconAppleTouch from "./apple-touch-icon.png"
 		<!-- <link> tags to include optimized CSS URLs will be included below: -->
 		<${input.styles}/>
 		<link href="https://fonts.googleapis.com/css?family=Fira+Code|Fira+Mono|Fira+Sans&display=swap" rel="stylesheet"/>
-		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css"/>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"/>
+		<script>hljs.initHighlightingOnLoad();</script>
 		<script async defer data-domain="gavinmcfarland.co.uk" src="https://plausible.io/js/plausible.js"/>
 	</head>
 	<body class=input.class>
@@ -33,7 +34,7 @@ import faviconAppleTouch from "./apple-touch-icon.png"
 				</span>
 				<nav>
 					<!-- <a href="/work">Work</a> -->
-					<!-- <a href="/">Contact</a> -->
+					<a href="/posts">Thoughts</a>
 					<a href="/about">About</a>
 				</nav>
 			</header>

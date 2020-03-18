@@ -3,7 +3,10 @@ import markdown from '../scripts/markdown'
 <Layout class="page__cv">
 	<@title>${input.title}</@title>
 	<@body>
-		<h1>${input.title}</h1>
-		$!{markdown(input.contents)}
+		<h2>${input.title}</h2>
+		<div grid>
+			<div span="5">$!{markdown(input.body)}</div>
+		</div>
+		<!-- $!{markdown(input.contents)} -->
 	</@body>
 </Layout>

@@ -56,6 +56,30 @@ async function getContent() {
 		return content.projects = projects
 	})
 
+	await client.fetch('*[_type == "post"] | order(publishedAt desc)').then(posts => {
+
+		posts.forEach(post => {
+			post.image = {}
+			post.body = toMarkdown(post.body, {
+				serializers,
+				projectId: 'kvqmg9w0',
+				dataset: 'production'
+			})
+			post.description = toMarkdown(post.description, {
+				serializers,
+				projectId: 'kvqmg9w0',
+				dataset: 'production'
+			})
+			post.url = '/posts/' + post.slug.current
+			if (post.mainImage) {
+				post.image.url = urlFor(post.mainImage).width(543).url()
+			}
+
+		})
+
+		return content.posts = posts
+	})
+
 	await client.fetch(`*[_type == "page" && title == "Site"][0].sections`).then(sections => {
 		sections.forEach(section => {
 			var name = v.lowerCase(section.value)

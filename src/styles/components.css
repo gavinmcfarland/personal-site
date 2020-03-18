@@ -43,6 +43,11 @@ p>code {
 	overflow-x: scroll;
 }
 
+pre {
+	margin-top: var(--em-1);
+	margin-bottom: var(--em-2);
+}
+
 /* Component spacing */
 
 .Section__Title {

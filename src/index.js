@@ -28,6 +28,7 @@ import Post from "./templates/post.marko";
 import Project from "./templates/project.marko";
 import About from "./templates/about.marko";
 import Projects from "./templates/projects.marko";
+import Posts from "./templates/posts.marko";
 import Cv from "./templates/cv.marko";
 import Playground from "./templates/playground.marko";
 import Home from "./templates/index.marko";
@@ -43,7 +44,7 @@ app.use("/static", serveStatic("dist/client"));
 api.then(content => {
 
 	app.get("/", (req, res) => {
-		Home.render({ projects: content.projects, ...content.home, work: content.projects }, res);
+		Home.render({ projects: content.projects, ...content.home, work: content.projects, posts: content.posts }, res);
 	});
 
 	app.get("/cv", (req, res) => {
@@ -61,6 +62,11 @@ api.then(content => {
 		Projects.render({}, res);
 	});
 
+	app.get("/posts", (req, res) => {
+		res.setHeader("Content-Type", "text/html; charset=utf-8");
+		Posts.render({ posts: content.posts }, res);
+	});
+
 	app.get("/about", (req, res) => {
 		res.setHeader("Content-Type", "text/html; charset=utf-8");
 		About.render({}, res);
@@ -71,7 +77,7 @@ api.then(content => {
 
 		let err = true;
 
-		for (let post of content.projects) {
+		for (let post of content.posts) {
 
 			// If page exists then render page
 			if (req.params.post === post.slug.current) {

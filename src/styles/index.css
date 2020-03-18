@@ -5,6 +5,7 @@
 @import './colors';
 @import './layout';
 @import './components';
+@import './syntax-colors';
 
 @media (min-width: 1500px) {
 	:root {
