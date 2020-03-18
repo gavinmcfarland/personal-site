@@ -37,7 +37,7 @@ async function getContent() {
 	content.home.intro = {}
 	content.home.sections = {}
 
-	await client.fetch('*[_type == "post"] | order(_createdAt desc)').then(posts => {
+	await client.fetch('*[_type == "post"] | order(publishedAt desc)').then(posts => {
 
 		posts.forEach(post => {
 			post.image = {}
