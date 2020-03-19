@@ -35,8 +35,10 @@ code {
 }
 
 code {
-	font-size: 0.9em;
+	font-size: 0.85em;
 }
+
+/* Overriding Typolize, need to update typolize */
 
 pre::after, pre::before {
 	display: none !important;

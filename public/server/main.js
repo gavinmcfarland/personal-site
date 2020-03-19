@@ -135,7 +135,7 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     favicon16 = module_favicon16.default || module_favicon16,
     module_faviconAppleTouch = __webpack_require__(38),
     faviconAppleTouch = module_faviconAppleTouch.default || module_faviconAppleTouch,
-    marko_attr = __webpack_require__(11),
+    marko_attr = __webpack_require__(9),
     marko_dynamicTag = __webpack_require__(3),
     marko_loadTag = __webpack_require__(2),
     component_globals_tag = marko_loadTag(__webpack_require__(39)),
@@ -220,7 +220,7 @@ marko_template.meta = {
 
 module.exports = {
   getBundleName: function(){return "Client"},
-  entries: {"404_78An":{"Client":{"css":["404_78An.35da35e0.css"],"js":["404_78An.f8827e7d.js"],"map":["404_78An.f8827e7d.js.map"]}},"about_kzxx":{"Client":{"css":["about_kzxx.35da35e0.css"],"js":["about_kzxx.b8ca2878.js"],"map":["about_kzxx.b8ca2878.js.map"]}},"cv_tq48":{"Client":{"css":["cv_tq48.abff6118.css"],"js":["cv_tq48.9a805b58.js"],"map":["cv_tq48.9a805b58.js.map"]}},"playground_WjPn":{"Client":{"css":["playground_WjPn.9b4eeb60.css"],"js":["playground_WjPn.4fd79644.js"],"map":["playground_WjPn.4fd79644.js.map"]}},"post_ffL2":{"Client":{"css":["post_ffL2.35da35e0.css"],"js":["post_ffL2.1295ca5e.js"],"map":["post_ffL2.1295ca5e.js.map"]}},"posts_SzJm":{"Client":{"css":["posts_SzJm.35da35e0.css"],"js":["posts_SzJm.b318b7f9.js"],"map":["posts_SzJm.b318b7f9.js.map"]}},"project_Qgdo":{"Client":{"css":["project_Qgdo.35da35e0.css"],"js":["project_Qgdo.cedefd37.js"],"map":["project_Qgdo.cedefd37.js.map"]}},"projects_3eZ0":{"Client":{"css":["projects_3eZ0.eb0e9875.css"],"js":["projects_3eZ0.78717430.js"],"map":["projects_3eZ0.78717430.js.map"]}},"templates_IwU3":{"Client":{"css":["templates_IwU3.922bd831.css"],"js":["templates_IwU3.4b1d92a4.js"],"map":["templates_IwU3.4b1d92a4.js.map"]}}}
+  entries: {"404_78An":{"Client":{"css":["404_78An.0c9ff7fd.css"],"js":["404_78An.f8827e7d.js"],"map":["404_78An.f8827e7d.js.map"]}},"about_kzxx":{"Client":{"css":["about_kzxx.0c9ff7fd.css"],"js":["about_kzxx.b8ca2878.js"],"map":["about_kzxx.b8ca2878.js.map"]}},"cv_tq48":{"Client":{"css":["cv_tq48.7dd0c0f3.css"],"js":["cv_tq48.8910292a.js"],"map":["cv_tq48.8910292a.js.map"]}},"playground_WjPn":{"Client":{"css":["playground_WjPn.b9d535ef.css"],"js":["playground_WjPn.4fd79644.js"],"map":["playground_WjPn.4fd79644.js.map"]}},"post_ffL2":{"Client":{"css":["post_ffL2.0c9ff7fd.css"],"js":["post_ffL2.af919cc7.js"],"map":["post_ffL2.af919cc7.js.map"]}},"posts_SzJm":{"Client":{"css":["posts_SzJm.0c9ff7fd.css"],"js":["posts_SzJm.789f46c8.js"],"map":["posts_SzJm.789f46c8.js.map"]}},"project_Qgdo":{"Client":{"css":["project_Qgdo.0c9ff7fd.css"],"js":["project_Qgdo.74cbef3b.js"],"map":["project_Qgdo.74cbef3b.js.map"]}},"projects_3eZ0":{"Client":{"css":["projects_3eZ0.00261485.css"],"js":["projects_3eZ0.78717430.js"],"map":["projects_3eZ0.78717430.js.map"]}},"templates_IwU3":{"Client":{"css":["templates_IwU3.681f7773.css"],"js":["templates_IwU3.4b1d92a4.js"],"map":["templates_IwU3.4b1d92a4.js.map"]}}}
 }
 
 /***/ }),
@@ -264,10 +264,16 @@ module.exports = require("marko/dist/runtime/html/helpers/escape-xml");
 /* 9 */
 /***/ (function(module, exports) {
 
-module.exports = require("marko/dist/runtime/helpers/to-string");
+module.exports = require("marko/dist/runtime/html/helpers/attr");
 
 /***/ }),
 /* 10 */
+/***/ (function(module, exports) {
+
+module.exports = require("marko/dist/runtime/helpers/to-string");
+
+/***/ }),
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -361,12 +367,6 @@ marko_template.meta = {
   };
 
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
-
-/***/ }),
-/* 11 */
-/***/ (function(module, exports) {
-
-module.exports = require("marko/dist/runtime/html/helpers/attr");
 
 /***/ }),
 /* 12 */
@@ -843,7 +843,7 @@ marko_template.meta = {
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_componentType = "/marko-webpack$1.0.0/src/templates/projects.marko",
     marko_renderer = __webpack_require__(1),
-    template = __webpack_require__(46),
+    template = __webpack_require__(47),
     module_MARKOWEBPACKMANIFEST_module = __webpack_require__(6),
     MARKOWEBPACKMANIFEST_module = module_MARKOWEBPACKMANIFEST_module.default || module_MARKOWEBPACKMANIFEST_module,
     getBundleName = module_MARKOWEBPACKMANIFEST_module.getBundleName,
@@ -939,7 +939,7 @@ marko_template.meta = {
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_componentType = "/marko-webpack$1.0.0/src/templates/posts.marko",
     marko_renderer = __webpack_require__(1),
-    template = __webpack_require__(47),
+    template = __webpack_require__(48),
     module_MARKOWEBPACKMANIFEST_module = __webpack_require__(6),
     MARKOWEBPACKMANIFEST_module = module_MARKOWEBPACKMANIFEST_module.default || module_MARKOWEBPACKMANIFEST_module,
     getBundleName = module_MARKOWEBPACKMANIFEST_module.getBundleName,
@@ -1035,7 +1035,7 @@ marko_template.meta = {
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_componentType = "/marko-webpack$1.0.0/src/templates/cv.marko",
     marko_renderer = __webpack_require__(1),
-    template = __webpack_require__(48),
+    template = __webpack_require__(49),
     module_MARKOWEBPACKMANIFEST_module = __webpack_require__(6),
     MARKOWEBPACKMANIFEST_module = module_MARKOWEBPACKMANIFEST_module.default || module_MARKOWEBPACKMANIFEST_module,
     getBundleName = module_MARKOWEBPACKMANIFEST_module.getBundleName,
@@ -1131,7 +1131,7 @@ marko_template.meta = {
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_componentType = "/marko-webpack$1.0.0/src/templates/playground.marko",
     marko_renderer = __webpack_require__(1),
-    template = __webpack_require__(51),
+    template = __webpack_require__(52),
     module_MARKOWEBPACKMANIFEST_module = __webpack_require__(6),
     MARKOWEBPACKMANIFEST_module = module_MARKOWEBPACKMANIFEST_module.default || module_MARKOWEBPACKMANIFEST_module,
     getBundleName = module_MARKOWEBPACKMANIFEST_module.getBundleName,
@@ -1227,7 +1227,7 @@ marko_template.meta = {
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_componentType = "/marko-webpack$1.0.0/src/templates/index.marko",
     marko_renderer = __webpack_require__(1),
-    template = __webpack_require__(53),
+    template = __webpack_require__(54),
     module_MARKOWEBPACKMANIFEST_module = __webpack_require__(6),
     MARKOWEBPACKMANIFEST_module = module_MARKOWEBPACKMANIFEST_module.default || module_MARKOWEBPACKMANIFEST_module,
     getBundleName = module_MARKOWEBPACKMANIFEST_module.getBundleName,
@@ -1328,7 +1328,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var compression__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(compression__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var serve_static__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(20);
 /* harmony import */ var serve_static__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(serve_static__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _templates_404_marko__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(10);
+/* harmony import */ var _templates_404_marko__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(11);
 /* harmony import */ var _templates_404_marko__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_templates_404_marko__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _templates_post_marko__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(21);
 /* harmony import */ var _templates_post_marko__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_templates_post_marko__WEBPACK_IMPORTED_MODULE_6__);
@@ -1600,13 +1600,17 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     markdown = module_markdown.default || module_markdown,
     helpers_escape_xml = __webpack_require__(8),
     marko_escapeXml = helpers_escape_xml.x,
-    marko_str = __webpack_require__(9),
+    marko_str = __webpack_require__(10),
     Layout_template = __webpack_require__(5),
     marko_loadTag = __webpack_require__(2),
     Layout_tag = marko_loadTag(Layout_template);
 
 function render(input, out, __component, component, state) {
   var data = input;
+
+  var date = new Date(input.publishedAt);
+
+  const options = { weekday: "short", year: "numeric", month: "long", day: "numeric" };
 
   Layout_tag({
       class: "page__cv",
@@ -1617,7 +1621,13 @@ function render(input, out, __component, component, state) {
         },
       body: {
           renderBody: function(out) {
-            out.w("<h2>" +
+            if (input.publishedAt) {
+              out.w("<h6 style=\"margin-bottom: calc(0px - var(--rem-4))\">" +
+                marko_escapeXml(date.toLocaleDateString(undefined, options)) +
+                "</h6>");
+            }
+
+            out.w("<h2 style=\"max-width: 800px\">" +
               marko_escapeXml(input.title) +
               "</h2><div grid><div span=\"5\">" +
               marko_str(markdown(input.body)) +
@@ -1670,7 +1680,7 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     image = module_image.default || module_image,
     helpers_escape_xml = __webpack_require__(8),
     marko_escapeXml = helpers_escape_xml.x,
-    marko_str = __webpack_require__(9),
+    marko_str = __webpack_require__(10),
     Layout_template = __webpack_require__(5),
     marko_loadTag = __webpack_require__(2),
     Layout_tag = marko_loadTag(Layout_template);
@@ -1748,6 +1758,9 @@ marko_template.meta = {
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_componentType = "/marko-webpack$1.0.0/src/templates/about.marko",
     marko_renderer = __webpack_require__(1),
+    module_image = __webpack_require__(46),
+    image = module_image.default || module_image,
+    marko_attr = __webpack_require__(9),
     Layout_template = __webpack_require__(5),
     marko_loadTag = __webpack_require__(2),
     Layout_tag = marko_loadTag(Layout_template);
@@ -1763,7 +1776,9 @@ function render(input, out, __component, component, state) {
         },
       body: {
           renderBody: function(out) {
-            out.w("<h2>About</h2><div grid><div span=\"5\"><p>My name is Gavin. Ever since I can remember I’ve enjoyed taking things apart and seeing how they work. There is a certain feeling you get from having an idea and seeing it happen. For this reason I enjoy working with people to understand how things work (or don’t work in some cases) and helping solve real problems. I choose the right tools and the right methodologies to improve a situation the best I can. My strengths lie in product design and user research practices.</p>\n<p>I've devoted a lot of my time to exploring how design decisions should be captured and how Designs Systems can reflect these decisions. I have created several frameworks that provide benefits to using Design Systems. This site for example was built using <a href=\"https://typolize.now.sh/\">Typolize</a> which helps harmonise typography and spacing. With it you can easily create designs which work well across multiple devices with little effort. If you'd like to see more of the things I've been working on your can check out my <a href=\"https://github.com/limitlessloop\">Github</a> repos or <a href=\"https://dribbble.com/limitlessloop\">Dribbble</a> profile.</p>\n<p>When I’m not creating things, I like to cook, indulge in retro gaming and collect Lego. If you'd like to collaborate or want to find out more about what I'm doing you can follow me on <a href=\"https://twitter.com/gavinmcfarland\">Twitter</a>.</p>\n</div></div>");
+            out.w("<h2>About</h2><div grid><div span=\"3\" style=\"margin-top: calc(0px - var(--rem-0)); margin-bottom: var(--rem-3)\"><img" +
+              marko_attr("src", image) +
+              " style=\"border-radius: 999px; overflow: hidden; max-width: 360px\" width=\"200\" height=\"200\"></div><div span=\"4\"><h5>Two Parts Deisgner, One Part Engineer</h5><p>My name is Gavin. Ever since I can remember I’ve enjoyed taking things apart and seeing how they work. There is a certain feeling you get from having an idea and seeing it happen. For this reason I enjoy working with people to understand how things work (or don’t work in some cases) and helping solve real problems. I choose the right tools and the right methodologies to improve a situation the best I can. My strengths lie in product design and user research practices.</p>\n<p>I've devoted a lot of my time to exploring how design decisions should be captured and how Designs Systems can reflect these decisions. I have created several frameworks that provide benefits to using Design Systems. This site for example was built using <a href=\"https://typolize.now.sh/\">Typolize</a> which helps harmonise typography and spacing. With it you can easily create designs which work well across multiple devices with little effort. If you'd like to see more of the things I've been working on your can check out my <a href=\"https://github.com/limitlessloop\">Github</a> repos or <a href=\"https://dribbble.com/limitlessloop\">Dribbble</a> profile.</p>\n<h5>Other Interests</h5>\n<p>When I’m not creating things, I like to cook, indulge in retro gaming and collect Lego. If you'd like to collaborate or want to find out more about what I'm doing you can follow me on <a href=\"https://twitter.com/gavinmcfarland\">Twitter</a>.</p>\n</div></div>");
           }
         }
     }, out, __component, "0");
@@ -1785,6 +1800,12 @@ marko_template.meta = {
 
 /***/ }),
 /* 46 */
+/***/ (function(module, exports) {
+
+module.exports = "/static/5f6b64f6d9ea2873cd21afd4970fc2c9.png";
+
+/***/ }),
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1838,7 +1859,7 @@ marko_template.meta = {
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 47 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1851,7 +1872,7 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_forOf = __webpack_require__(14),
     helpers_escape_xml = __webpack_require__(8),
     marko_escapeXml = helpers_escape_xml.x,
-    marko_attr = __webpack_require__(11),
+    marko_attr = __webpack_require__(9),
     Layout_template = __webpack_require__(5),
     marko_loadTag = __webpack_require__(2),
     Layout_tag = marko_loadTag(Layout_template);
@@ -1902,7 +1923,7 @@ marko_template.meta = {
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 48 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1914,11 +1935,11 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_renderer = __webpack_require__(1),
     module_markdown = __webpack_require__(7),
     markdown = module_markdown.default || module_markdown,
-    marko_forIn = __webpack_require__(49),
+    marko_forIn = __webpack_require__(50),
     helpers_escape_xml = __webpack_require__(8),
     marko_escapeXml = helpers_escape_xml.x,
-    marko_str = __webpack_require__(9),
-    Section_template = __webpack_require__(50),
+    marko_str = __webpack_require__(10),
+    Section_template = __webpack_require__(51),
     marko_loadTag = __webpack_require__(2),
     Section_tag = marko_loadTag(Section_template),
     Layout_template = __webpack_require__(5),
@@ -1986,13 +2007,13 @@ marko_template.meta = {
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 49 */
+/* 50 */
 /***/ (function(module, exports) {
 
 module.exports = require("marko/dist/runtime/helpers/for-in");
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2033,7 +2054,7 @@ marko_template.meta = {
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2045,7 +2066,7 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_renderer = __webpack_require__(1),
     module_markdown = __webpack_require__(7),
     markdown = module_markdown.default || module_markdown,
-    Button_template = __webpack_require__(52),
+    Button_template = __webpack_require__(53),
     marko_loadTag = __webpack_require__(2),
     Button_tag = marko_loadTag(Button_template),
     Layout_template = __webpack_require__(5),
@@ -2095,7 +2116,7 @@ marko_template.meta = {
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2139,7 +2160,7 @@ marko_template.meta = {
 /* WEBPACK VAR INJECTION */}.call(this, "/index.js"))
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2154,10 +2175,10 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     module_image = __webpack_require__(13),
     image = module_image.default || module_image,
     marko_forOf = __webpack_require__(14),
-    marko_attr = __webpack_require__(11),
+    marko_attr = __webpack_require__(9),
     helpers_escape_xml = __webpack_require__(8),
     marko_escapeXml = helpers_escape_xml.x,
-    marko_str = __webpack_require__(9),
+    marko_str = __webpack_require__(10),
     Layout_template = __webpack_require__(5),
     marko_loadTag = __webpack_require__(2),
     Layout_tag = marko_loadTag(Layout_template);
@@ -2199,21 +2220,7 @@ function render(input, out, __component, component, state) {
                 ">Read More &rarr;</a></p></div></div>");
             });
 
-            out.w("</div><hr class=\"fullwidth\"><h4>What I'm Thinking</h4><ul>");
-
-            var $for$1 = 0;
-
-            marko_forOf(input.posts, function(post, index) {
-              var $keyScope$1 = "[" + (($for$1++) + "]");
-
-              out.w("<li class=\"text-crop-none\" style=\"display: inline;\"><h3><a" +
-                marko_attr("href", post.url) +
-                ">" +
-                marko_escapeXml(post.title) +
-                "</a></h3></li>");
-            });
-
-            out.w("</ul></div></div><hr class=\"fullwidth\"><div><div grid><h4 span=\"3\">Things I've Made</h4><div style=\"margin-bottom: var(--em-3);\" span=\"3\"><h6>PostCSS Plugins</h6><ul><li><a href=\"https://github.com/limitlessloop/postcss-proportional-spacing\">Proportional Spacing</a></li><li><a href=\"https://github.com/limitlessloop/postcss-negative-padding\">Negative Padding</a></li><li><a href=\"https://github.com/limitlessloop/postcss-border-align\">Border Align</a></li><li><a href=\"https://github.com/limitlessloop/postcss-custom-values\">Custom Values</a></li><li><a href=\"https://github.com/limitlessloop/postcss-sqrt\">Sqrt and Pow Functions</a></li><li><a href=\"https://github.com/limitlessloop/flex-gap-polyfill\">Flex Gap Polyfill</a></li></ul></div><div span=\"2\"><h6>Figma Resources</h6><ul><li><a href=\"https://www.figma.com/community/file/784773846783975923\">Redlining Kit</a></li><li><a href=\"https://www.figma.com/community/file/776921648331857127\">Device Frames</a></li><li><a href=\"https://www.figma.com/community/file/776917132627530982\">Design Deliverables</a></li><li><a href=\"https://www.figma.com/community/file/776913337659021541\">Icon Template</a></li><li><a href=\"https://www.figma.com/community/file/817057027097651580\">Syntax Designer</a></li></ul></div></div></div>");
+            out.w("</div></div></div><hr class=\"fullwidth\"><div><div grid><h4 span=\"3\">Things I've Made</h4><div style=\"margin-bottom: var(--em-3);\" span=\"3\"><h6>PostCSS Plugins</h6><ul><li><a href=\"https://github.com/limitlessloop/postcss-proportional-spacing\">Proportional Spacing</a></li><li><a href=\"https://github.com/limitlessloop/postcss-negative-padding\">Negative Padding</a></li><li><a href=\"https://github.com/limitlessloop/postcss-border-align\">Border Align</a></li><li><a href=\"https://github.com/limitlessloop/postcss-custom-values\">Custom Values</a></li><li><a href=\"https://github.com/limitlessloop/postcss-sqrt\">Sqrt and Pow Functions</a></li><li><a href=\"https://github.com/limitlessloop/flex-gap-polyfill\">Flex Gap Polyfill</a></li></ul></div><div span=\"2\"><h6>Figma Resources</h6><ul><li><a href=\"https://www.figma.com/community/file/784773846783975923\">Redlining Kit</a></li><li><a href=\"https://www.figma.com/community/file/776921648331857127\">Device Frames</a></li><li><a href=\"https://www.figma.com/community/file/776917132627530982\">Design Deliverables</a></li><li><a href=\"https://www.figma.com/community/file/776913337659021541\">Icon Template</a></li><li><a href=\"https://www.figma.com/community/file/817057027097651580\">Syntax Designer</a></li></ul></div></div></div>");
           }
         }
     }, out, __component, "0");

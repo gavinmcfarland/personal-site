@@ -46,3 +46,7 @@
 		background: var(--black);
 	}
 }
+
+pre code {
+	background-color: hsla(0,0%,70%,8%);
+}
