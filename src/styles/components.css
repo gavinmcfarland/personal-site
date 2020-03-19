@@ -67,6 +67,7 @@ pre {
 }
 
 iframe {
+	display: block;
 	margin-top: var(--em-2);
 	margin-bottom: var(--em-2);
 }
