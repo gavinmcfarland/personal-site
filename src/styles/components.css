@@ -51,8 +51,8 @@ code {
 }
 
 p code, ul code {
-	padding-left: var(--em--2);
-	padding-right: var(--em--2);
+	padding-left: var(--em--1);
+	padding-right: var(--em--1);
 	white-space: nowrap;
 }
 
@@ -243,7 +243,7 @@ pre {
 
 .Project__Content img {
 	margin-top: var(--rem-1);
-	margin-bottom: 0;
+	margin-bottom: var(--rem-1);
 }
 
 .Project__Content
