@@ -13,6 +13,18 @@ img {
 	background-repeat: no-repeat; */
 }
 
+ol {
+	list-style: decimal;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	display: list-item !important;
+}
+
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	border-bottom: none;
 }
@@ -38,13 +50,13 @@ code {
 	letter-spacing: -0.05em;
 }
 
-p>code {
+p code, ul code {
 	padding-left: var(--em--2);
 	padding-right: var(--em--2);
 	white-space: nowrap;
 }
 
-pre>code {
+pre code {
 	padding: var(--em-0);
 	overflow-x: scroll;
 }

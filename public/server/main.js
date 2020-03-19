@@ -220,7 +220,7 @@ marko_template.meta = {
 
 module.exports = {
   getBundleName: function(){return "Client"},
-  entries: {"404_78An":{"Client":{"css":["404_78An.742ca6d0.css"],"js":["404_78An.f8827e7d.js"],"map":["404_78An.f8827e7d.js.map"]}},"about_kzxx":{"Client":{"css":["about_kzxx.742ca6d0.css"],"js":["about_kzxx.b8ca2878.js"],"map":["about_kzxx.b8ca2878.js.map"]}},"cv_tq48":{"Client":{"css":["cv_tq48.2e443339.css"],"js":["cv_tq48.8910292a.js"],"map":["cv_tq48.8910292a.js.map"]}},"playground_WjPn":{"Client":{"css":["playground_WjPn.9b390235.css"],"js":["playground_WjPn.4fd79644.js"],"map":["playground_WjPn.4fd79644.js.map"]}},"post_ffL2":{"Client":{"css":["post_ffL2.742ca6d0.css"],"js":["post_ffL2.1295ca5e.js"],"map":["post_ffL2.1295ca5e.js.map"]}},"posts_SzJm":{"Client":{"css":["posts_SzJm.742ca6d0.css"],"js":["posts_SzJm.789f46c8.js"],"map":["posts_SzJm.789f46c8.js.map"]}},"project_Qgdo":{"Client":{"css":["project_Qgdo.742ca6d0.css"],"js":["project_Qgdo.cedefd37.js"],"map":["project_Qgdo.cedefd37.js.map"]}},"projects_3eZ0":{"Client":{"css":["projects_3eZ0.cd32d1f6.css"],"js":["projects_3eZ0.78717430.js"],"map":["projects_3eZ0.78717430.js.map"]}},"templates_IwU3":{"Client":{"css":["templates_IwU3.0f6c1e90.css"],"js":["templates_IwU3.4b1d92a4.js"],"map":["templates_IwU3.4b1d92a4.js.map"]}}}
+  entries: {"404_78An":{"Client":{"css":["404_78An.dc66af21.css"],"js":["404_78An.f8827e7d.js"],"map":["404_78An.f8827e7d.js.map"]}},"about_kzxx":{"Client":{"css":["about_kzxx.dc66af21.css"],"js":["about_kzxx.4de84997.js"],"map":["about_kzxx.4de84997.js.map"]}},"cv_tq48":{"Client":{"css":["cv_tq48.88ba2581.css"],"js":["cv_tq48.c512cac3.js"],"map":["cv_tq48.c512cac3.js.map"]}},"playground_WjPn":{"Client":{"css":["playground_WjPn.21a1443f.css"],"js":["playground_WjPn.f4299eef.js"],"map":["playground_WjPn.f4299eef.js.map"]}},"post_ffL2":{"Client":{"css":["post_ffL2.1b94145b.css"],"js":["post_ffL2.42407623.js"],"map":["post_ffL2.42407623.js.map"]}},"posts_SzJm":{"Client":{"css":["posts_SzJm.dc66af21.css"],"js":["posts_SzJm.c69c17fa.js"],"map":["posts_SzJm.c69c17fa.js.map"]}},"project_Qgdo":{"Client":{"css":["project_Qgdo.dc66af21.css"],"js":["project_Qgdo.2e9bf5c0.js"],"map":["project_Qgdo.2e9bf5c0.js.map"]}},"projects_3eZ0":{"Client":{"css":["projects_3eZ0.5b8775a4.css"],"js":["projects_3eZ0.581a5eb0.js"],"map":["projects_3eZ0.581a5eb0.js.map"]}},"templates_IwU3":{"Client":{"css":["templates_IwU3.e2747374.css"],"js":["templates_IwU3.c3bba2c1.js"],"map":["templates_IwU3.c3bba2c1.js.map"]}}}
 }
 
 /***/ }),
@@ -1340,7 +1340,7 @@ function render(input, out, __component, component, state) {
 
             out.w("<h1 style=\"max-width: 800px; font-size: var(--font-size-h2)\">" +
               marko_escapeXml(input.title) +
-              "</h1><div grid><div span=\"5\">" +
+              "</h1><div grid class=\"content\"><div span=\"5\">" +
               marko_str(markdown(input.body)) +
               "</div></div>");
           }
@@ -1354,6 +1354,14 @@ marko_template._ = marko_renderer(render, {
   });
 
 marko_template.meta = {
+    deps: [
+      {
+          type: "css",
+          code: ".content ul {\n\t\tlist-style: square;\n\t}",
+          virtualPath: "./post.marko.css",
+          path: "./post.marko"
+        }
+    ],
     id: "/marko-webpack$1.0.0/src/templates/post.marko",
     tags: [
       "../components/Layout/index.marko"
