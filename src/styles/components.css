@@ -66,6 +66,11 @@ pre {
 	margin-bottom: var(--em-2);
 }
 
+iframe {
+	margin-top: var(--em-2);
+	margin-bottom: var(--em-2);
+}
+
 /* Component spacing */
 
 .Section__Title {

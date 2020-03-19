@@ -220,7 +220,7 @@ marko_template.meta = {
 
 module.exports = {
   getBundleName: function(){return "Client"},
-  entries: {"404_78An":{"Client":{"css":["404_78An.e64bf225.css"],"js":["404_78An.196965bf.js"],"map":["404_78An.196965bf.js.map"]}},"about_kzxx":{"Client":{"css":["about_kzxx.e64bf225.css"],"js":["about_kzxx.b416b993.js"],"map":["about_kzxx.b416b993.js.map"]}},"cv_tq48":{"Client":{"css":["cv_tq48.cf7806b9.css"],"js":["cv_tq48.c512cac3.js"],"map":["cv_tq48.c512cac3.js.map"]}},"playground_WjPn":{"Client":{"css":["playground_WjPn.d8a457bd.css"],"js":["playground_WjPn.f4299eef.js"],"map":["playground_WjPn.f4299eef.js.map"]}},"post_ffL2":{"Client":{"css":["post_ffL2.6d921a10.css"],"js":["post_ffL2.42407623.js"],"map":["post_ffL2.42407623.js.map"]}},"posts_SzJm":{"Client":{"css":["posts_SzJm.e64bf225.css"],"js":["posts_SzJm.c69c17fa.js"],"map":["posts_SzJm.c69c17fa.js.map"]}},"project_Qgdo":{"Client":{"css":["project_Qgdo.e64bf225.css"],"js":["project_Qgdo.8cd83c12.js"],"map":["project_Qgdo.8cd83c12.js.map"]}},"projects_3eZ0":{"Client":{"css":["projects_3eZ0.c2995f2f.css"],"js":["projects_3eZ0.f67e78db.js"],"map":["projects_3eZ0.f67e78db.js.map"]}},"templates_IwU3":{"Client":{"css":["templates_IwU3.638b194d.css"],"js":["templates_IwU3.c3bba2c1.js"],"map":["templates_IwU3.c3bba2c1.js.map"]}}}
+  entries: {"404_78An":{"Client":{"css":["404_78An.2156ceaf.css"],"js":["404_78An.3cf15145.js"],"map":["404_78An.3cf15145.js.map"]}},"about_kzxx":{"Client":{"css":["about_kzxx.2156ceaf.css"],"js":["about_kzxx.d8e7331f.js"],"map":["about_kzxx.d8e7331f.js.map"]}},"cv_tq48":{"Client":{"css":["cv_tq48.2e64a751.css"],"js":["cv_tq48.c512cac3.js"],"map":["cv_tq48.c512cac3.js.map"]}},"playground_WjPn":{"Client":{"css":["playground_WjPn.528b5234.css"],"js":["playground_WjPn.f4299eef.js"],"map":["playground_WjPn.f4299eef.js.map"]}},"post_ffL2":{"Client":{"css":["post_ffL2.705cae89.css"],"js":["post_ffL2.99810910.js"],"map":["post_ffL2.99810910.js.map"]}},"posts_SzJm":{"Client":{"css":["posts_SzJm.2156ceaf.css"],"js":["posts_SzJm.c69c17fa.js"],"map":["posts_SzJm.c69c17fa.js.map"]}},"project_Qgdo":{"Client":{"css":["project_Qgdo.2156ceaf.css"],"js":["project_Qgdo.a6ff8aea.js"],"map":["project_Qgdo.a6ff8aea.js.map"]}},"projects_3eZ0":{"Client":{"css":["projects_3eZ0.2bdbb783.css"],"js":["projects_3eZ0.581a5eb0.js"],"map":["projects_3eZ0.581a5eb0.js.map"]}},"templates_IwU3":{"Client":{"css":["templates_IwU3.16802ab4.css"],"js":["templates_IwU3.c3bba2c1.js"],"map":["templates_IwU3.c3bba2c1.js.map"]}}}
 }
 
 /***/ }),
@@ -435,7 +435,15 @@ function urlFor(source) {
 
 const serializers = {
 	types: {
-		code: props => '```' + props.node.language + '\n' + props.node.code + '\n```'
+		code: props => '```' + props.node.language + '\n' + props.node.code + '\n```',
+		figma: props => (`<iframe
+			height="450"
+			style="width: 100%"
+			src=https://www.figma.com/embed?embed_host=gavinmcfarland.co.uk&url=${props.node.url}
+			allowfullscreen
+			frameBorder="no"
+			allowTransparency
+		  />`)
 	}
 }
 

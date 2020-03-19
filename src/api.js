@@ -25,7 +25,15 @@ function urlFor(source) {
 
 const serializers = {
 	types: {
-		code: props => '```' + props.node.language + '\n' + props.node.code + '\n```'
+		code: props => '```' + props.node.language + '\n' + props.node.code + '\n```',
+		figma: props => (`<iframe
+			height="450"
+			style="width: 100%"
+			src=https://www.figma.com/embed?embed_host=gavinmcfarland.co.uk&url=${props.node.url}
+			allowfullscreen
+			frameBorder="no"
+			allowTransparency
+		  />`)
 	}
 }
 
