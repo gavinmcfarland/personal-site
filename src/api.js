@@ -70,7 +70,7 @@ async function getContent() {
 				projectId: 'kvqmg9w0',
 				dataset: 'production'
 			})
-			post.url = '/posts/' + post.slug.current
+			post.url = '/thoughts/' + post.slug.current
 			if (post.mainImage) {
 				post.image.url = urlFor(post.mainImage).width(543).url()
 			}

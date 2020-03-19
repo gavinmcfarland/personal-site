@@ -11,10 +11,6 @@ hr {
 	margin-bottom: unset;
 }
 
-:not(p)>code {
-	display: block;
-}
-
 
 a {
 	display: inline;

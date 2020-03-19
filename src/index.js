@@ -47,22 +47,22 @@ api.then(content => {
 		Home.render({ projects: content.projects, ...content.home, work: content.projects, posts: content.posts }, res);
 	});
 
-	app.get("/cv", (req, res) => {
-		res.setHeader("Content-Type", "text/html; charset=utf-8");
-		Cv.render({ ...content.resume }, res);
-	});
+	// app.get("/cv", (req, res) => {
+	// 	res.setHeader("Content-Type", "text/html; charset=utf-8");
+	// 	Cv.render({ ...content.resume }, res);
+	// });
 
-	app.get("/playground", (req, res) => {
-		res.setHeader("Content-Type", "text/html; charset=utf-8");
-		Playground.render({ ...content.resume }, res);
-	});
+	// app.get("/playground", (req, res) => {
+	// 	res.setHeader("Content-Type", "text/html; charset=utf-8");
+	// 	Playground.render({ ...content.resume }, res);
+	// });
 
-	app.get("/projects", (req, res) => {
-		res.setHeader("Content-Type", "text/html; charset=utf-8");
-		Projects.render({}, res);
-	});
+	// app.get("/work", (req, res) => {
+	// 	res.setHeader("Content-Type", "text/html; charset=utf-8");
+	// 	Projects.render({}, res);
+	// });
 
-	app.get("/posts", (req, res) => {
+	app.get("/thoughts", (req, res) => {
 		res.setHeader("Content-Type", "text/html; charset=utf-8");
 		Posts.render({ posts: content.posts }, res);
 	});
@@ -72,7 +72,7 @@ api.then(content => {
 		About.render({}, res);
 	});
 
-	app.get("/posts/:post", (req, res) => {
+	app.get("/thoughts/:post", (req, res) => {
 		res.setHeader("Content-Type", "text/html; charset=utf-8");
 
 		let err = true;

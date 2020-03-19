@@ -3,11 +3,10 @@ import image from "./image-placeholder.png"
 
 <Layout.page_home>
 	<@body>
-		<!-- <h2>$!{input.intro}</h2> -->
-		<h2>Product Designer Focused on Automated Design Systems and Design Tooling.</h2>
+		<h2>${input.intro}</h2>
 		<div>
 			<div>
-				<h4>People I've Helped</h4>
+				<h5>People I've Helped</h5>
 				<div gap="5">
 					<for|project, index| of=input.work>
 						<div.Card grid>
@@ -17,9 +16,9 @@ import image from "./image-placeholder.png"
 								</if>
 							</a>
 							<div class="Card__Content" span="4">
-								<h5 style="margin-bottom: var(--rem-1)">
+								<h4 style="margin-bottom: var(--rem-1)">
 									<a href=project.url>${project.title}</a>
-								</h5>
+								</h4>
 								<p style="margin-bottom: var(--em-2); opacity: 0.6">${project.client}</p>
 								$!{markdown(project.excerpt)}<p style="margin-top: var(--em-2);">
 									<a href=project.url>Read More &rarr;</a>
@@ -31,23 +30,23 @@ import image from "./image-placeholder.png"
 				<!-- <div style="text-align: right; margin-top: var(--rem-4);">
 					<a class="Button" href="/">More Work</a>
 				</div> -->
-				<!-- <hr class="fullwidth"/>
-				<h4>What I'm Thinking</h4>
+				<hr class="fullwidth"/>
+				<h5>What I'm Thinking</h5>
 				<ul>
 					<for|post, index| of=input.posts>
 						<li class="text-crop-none" style="display: inline;">
-							<h3>
+							<h4>
 								<a href=post.url>${post.title}</a>
-							</h3>
+							</h4>
 						</li>
 					</for>
-				</ul> -->
+				</ul>
 			</div>
 		</div>
 		<hr class="fullwidth"/>
 		<div>
 			<div grid>
-				<h4 span="3">Things I've Made</h4>
+				<h5 span="3">Things I've Made</h5>
 				<div style="margin-bottom: var(--em-3);" span="3">
 					<h6>PostCSS Plugins</h6>
 					<ul>
