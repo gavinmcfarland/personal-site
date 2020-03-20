@@ -48,6 +48,10 @@ blockquote, p, li, h1, h2, h3, h4, h5, h6, nav, pre {
     display: block !important;
 }
 
+:root {
+	--font-size-h3: var(--font-size-3) !important;
+}
+
 
 
 

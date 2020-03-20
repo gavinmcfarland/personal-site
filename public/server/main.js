@@ -220,7 +220,7 @@ marko_template.meta = {
 
 module.exports = {
   getBundleName: function(){return "Client"},
-  entries: {"404_78An":{"Client":{"css":["404_78An.3e42e82a.css"],"js":["404_78An.f8827e7d.js"],"map":["404_78An.f8827e7d.js.map"]}},"about_kzxx":{"Client":{"css":["about_kzxx.3e42e82a.css"],"js":["about_kzxx.d8e7331f.js"],"map":["about_kzxx.d8e7331f.js.map"]}},"cv_tq48":{"Client":{"css":["cv_tq48.e3449d60.css"],"js":["cv_tq48.c512cac3.js"],"map":["cv_tq48.c512cac3.js.map"]}},"playground_WjPn":{"Client":{"css":["playground_WjPn.e1b909dd.css"],"js":["playground_WjPn.091fbcd0.js"],"map":["playground_WjPn.091fbcd0.js.map"]}},"post_ffL2":{"Client":{"css":["post_ffL2.2ec42c59.css"],"js":["post_ffL2.42407623.js"],"map":["post_ffL2.42407623.js.map"]}},"posts_SzJm":{"Client":{"css":["posts_SzJm.3e42e82a.css"],"js":["posts_SzJm.c69c17fa.js"],"map":["posts_SzJm.c69c17fa.js.map"]}},"project_Qgdo":{"Client":{"css":["project_Qgdo.3e42e82a.css"],"js":["project_Qgdo.a6ff8aea.js"],"map":["project_Qgdo.a6ff8aea.js.map"]}},"projects_3eZ0":{"Client":{"css":["projects_3eZ0.c58cd66e.css"],"js":["projects_3eZ0.581a5eb0.js"],"map":["projects_3eZ0.581a5eb0.js.map"]}},"templates_IwU3":{"Client":{"css":["templates_IwU3.3cfa3e5d.css"],"js":["templates_IwU3.b2944aff.js"],"map":["templates_IwU3.b2944aff.js.map"]}}}
+  entries: {"404_78An":{"Client":{"css":["404_78An.fc87db01.css"],"js":["404_78An.f8827e7d.js"],"map":["404_78An.f8827e7d.js.map"]}},"about_kzxx":{"Client":{"css":["about_kzxx.fc87db01.css"],"js":["about_kzxx.4de84997.js"],"map":["about_kzxx.4de84997.js.map"]}},"cv_tq48":{"Client":{"css":["cv_tq48.2984fc67.css"],"js":["cv_tq48.c512cac3.js"],"map":["cv_tq48.c512cac3.js.map"]}},"playground_WjPn":{"Client":{"css":["playground_WjPn.b2ca8898.css"],"js":["playground_WjPn.f4299eef.js"],"map":["playground_WjPn.f4299eef.js.map"]}},"post_ffL2":{"Client":{"css":["post_ffL2.b9b9acac.css"],"js":["post_ffL2.42407623.js"],"map":["post_ffL2.42407623.js.map"]}},"posts_SzJm":{"Client":{"css":["posts_SzJm.fc87db01.css"],"js":["posts_SzJm.c69c17fa.js"],"map":["posts_SzJm.c69c17fa.js.map"]}},"project_Qgdo":{"Client":{"css":["project_Qgdo.fc87db01.css"],"js":["project_Qgdo.2e9bf5c0.js"],"map":["project_Qgdo.2e9bf5c0.js.map"]}},"projects_3eZ0":{"Client":{"css":["projects_3eZ0.8d494db6.css"],"js":["projects_3eZ0.581a5eb0.js"],"map":["projects_3eZ0.581a5eb0.js.map"]}},"templates_IwU3":{"Client":{"css":["templates_IwU3.812441e2.css"],"js":["templates_IwU3.c3bba2c1.js"],"map":["templates_IwU3.c3bba2c1.js.map"]}}}
 }
 
 /***/ }),
@@ -424,7 +424,8 @@ const imageUrlBuilder = __webpack_require__(30)
 const client = sanityClient({
 	projectId: 'kvqmg9w0',
 	dataset: 'production',
-	useCdn: false
+	useCdn: false,
+	token: 'skvF3aFZn51Bn8FIE9JHJHDTfdty4Jb8PchEpcA7M18q1QhcvqlgbeKz1wWh3QChX33v3xeihQ8mEDbV5GMrkPZa6jnOw9xDIbbmnLtVjyl1W8S2EVReI1kxbeKNceL4BO0FeSZfoMy8FLYDbO0D1z0hsEi6NBItisK87fn83C2GOFcqF6Bo'
 })
 
 const builder = imageUrlBuilder(client)
@@ -1426,12 +1427,12 @@ function render(input, out, __component, component, state) {
 
             out.w("<h1 style=\"max-width: 800px; font-size: var(--font-size-h2)\">" +
               marko_escapeXml(input.title) +
-              "</h1><div grid><div span=\"5\" style=\"margin-bottom: var(--rem-5);\"><div style=\"font-size: var(--font-size-2);\">" +
+              "</h1><div grid><div span=\"5\" style=\"font-size: var(--font-size-2); margin-bottom: var(--em-3)\">" +
               marko_str(markdown(input.excerpt)) +
-              "</div></div>");
+              "</div>");
 
             if (input.goal || input.role) {
-              out.w("<div span=\"3\" style=\"margin-bottom: var(--rem-5);\">");
+              out.w("<div span=\"3\" style=\"margin-bottom: var(--em-4);\">");
 
               if (input.goal) {
                 out.w("<h6>Goal</h6>" +

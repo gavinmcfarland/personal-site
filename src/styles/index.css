@@ -13,12 +13,6 @@
 	}
 }
 
-@media (max-width: 1200px) {
-	:root {
-		--font-ratio: 1.25;
-	}
-}
-
 @media (max-width: 900px) {
 	:root {
 		--spacing-ratio: 0.666;

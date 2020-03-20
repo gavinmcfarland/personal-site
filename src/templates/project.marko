@@ -8,11 +8,9 @@ import image from "./image-placeholder.png"
 		</if>
 		<h1 style="max-width: 800px; font-size: var(--font-size-h2)">${input.title}</h1>
 		<div grid>
-			<div span="5" style="margin-bottom: var(--rem-5);">
-				<div style="font-size: var(--font-size-2);">$!{markdown(input.excerpt)}</div>
-			</div>
+			<div span="5" style="font-size: var(--font-size-2); margin-bottom: var(--em-3)">$!{markdown(input.excerpt)}</div>
 			<if(input.goal || input.role)>
-				<div span="3" style="margin-bottom: var(--rem-5);">
+				<div span="3" style="margin-bottom: var(--em-4);">
 					<if(input.goal)>
 						<h6>Goal</h6>
 						$!{markdown(input.goal)}

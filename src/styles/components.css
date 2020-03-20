@@ -70,6 +70,10 @@ iframe {
 	display: block;
 }
 
+h5, h6 {
+	margin-bottom: var(--em-1);
+}
+
 /* Component spacing */
 
 .Section__Title {
@@ -250,6 +254,10 @@ iframe {
 	margin-bottom: var(--rem-1);
 }
 
+.Project__Content h3, .Project_Content h4, .Project_Content h5, .Project_Content h6 {
+	/* max-width: 400px; */
+}
+
 .text-crop-none {
 	display: block;
 }
@@ -265,9 +273,9 @@ iframe {
 .aspect-ratio {
 	position: relative;
 	height: 0;
-	padding-bottom: 75%;
-	margin-top: var(--em-2);
-	margin-bottom: var(--em-2);
+	padding-bottom: 56%;
+	margin-top: var(--rem-3);
+	margin-bottom: var(--rem-3);
 }
 
 .aspect-ratio iframe {
