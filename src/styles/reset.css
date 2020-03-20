@@ -41,6 +41,10 @@ code {
 	font-size: 0.85em;
 }
 
+iframe {
+	display: block;
+}
+
 /* Overriding Typolize, need to update typolize */
 
 pre::after, pre::before {
@@ -53,10 +57,6 @@ pre code {
 
 blockquote, p, li, h1, h2, h3, h4, h5, h6, nav, pre {
     display: block !important;
-}
-
-:root {
-	--font-size-h3: var(--font-size-3) !important;
 }
 
 .App {
@@ -75,87 +75,3 @@ blockquote, p, li, h1, h2, h3, h4, h5, h6, nav, pre {
 .Footer {
 	flex-grow: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Old Styles */
-
-/* html {
-	height: 100%;
-}
-
-html, body {
-	min-height: 100%;
-}
-
-body {
-	margin: 0;
-}
-
-h1, h2, h3, h4, h5, h6, p, ul, ol, li, code, pre {
-	margin: unset;
-}
-
-a {
-	text-decoration: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-weight: normal;
-}
-
-ul, ol {
-	list-style: none;
-	padding-left: unset;
-}
-
-ol {
-    counter-reset: number;
-}
-
-ol li::before {
-	counter-increment: number;
-}
-
-ol li::before, ul li::after {
-	display: inline-block;
-}
-
-
-table {
-	border-collapse: collapse;
-	font-size: unset;
-}
-
-figure {
-	margin: unset;
-}
-
-img {
-	width: 100%;
-	height: auto;
-}
-
-hr {
-	height: 0;
-	border: none;
-} */

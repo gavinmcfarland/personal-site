@@ -8,7 +8,7 @@ $ const options = { weekday: "short", year: "numeric", month: "long", day: "nume
 		<if(input.publishedAt)>
 			<h6 style="margin-bottom: calc(0px - var(--rem-4))">${date.toLocaleDateString(undefined, options)}</h6>
 		</if>
-		<h1 style="max-width: 800px; font-size: var(--font-size-h2)">${input.title}</h1>
+		<h1 style="max-width: 25ch; font-size: var(--font-size-h2)">${input.title}</h1>
 		<div grid class="content">
 			<div span="5">$!{markdown(input.body)}</div>
 		</div>

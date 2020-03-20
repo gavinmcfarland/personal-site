@@ -1,8 +1,5 @@
 /* Elements */
 
-img {
-	margin-bottom: var(--em-0);
-}
 
 :not(div) > a {
 	text-decoration: none;
@@ -29,10 +26,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	border-bottom: none;
 }
 
-h3, h4, h5 {
-	margin-top: var(--em-3);
-    margin-bottom: var(--em-2);
-}
+
 
 body {
 	padding-left: var(--rem-3);
@@ -46,13 +40,13 @@ hr {
 
 code {
 	cursor: text;
-	border-radius: 1px;
-	letter-spacing: -0.05em;
+	border-radius: 2px;
+	letter-spacing: -0.09em;
 }
 
 p code, ul code {
-	padding-left: var(--em--1);
-	padding-right: var(--em--1);
+	padding-left: 0.2em;
+	padding-right: 0.2em;
 	white-space: nowrap;
 }
 
@@ -61,18 +55,8 @@ pre code {
 	overflow-x: scroll;
 }
 
-pre {
-	margin-top: var(--em-2);
-	margin-bottom: var(--em-2);
-}
 
-iframe {
-	display: block;
-}
 
-h5, h6 {
-	margin-bottom: var(--em-1);
-}
 
 /* Component spacing */
 
@@ -271,6 +255,8 @@ h5, h6 {
 }
 
 .aspect-ratio {
+	border-radius: 2px;
+	overflow: hidden;
 	position: relative;
 	height: 0;
 	padding-bottom: 56%;

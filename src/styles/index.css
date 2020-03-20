@@ -2,21 +2,25 @@
 @import './reset';
 @import './numbers';
 @import 'typolize';
+@import './variables';
+@import './variables';
 @import './colors';
+@import './spacing';
 @import './layout';
 @import './components';
 @import './syntax-colors';
 
-@media (min-width: 1500px) {
+/* @media (min-width: 1500px) {
 	:root {
 		--font-base: 18px;
 	}
-}
+} */
 
 @media (max-width: 900px) {
 	:root {
 		--spacing-ratio: 0.666;
 		--font-ratio: 1.2;
+		--font-base: 16px;
 	}
 }
 
