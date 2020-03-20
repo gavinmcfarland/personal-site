@@ -14,8 +14,7 @@ const imageUrlBuilder = require('@sanity/image-url')
 const client = sanityClient({
 	projectId: 'kvqmg9w0',
 	dataset: 'production',
-	useCdn: false,
-	token: 'skvF3aFZn51Bn8FIE9JHJHDTfdty4Jb8PchEpcA7M18q1QhcvqlgbeKz1wWh3QChX33v3xeihQ8mEDbV5GMrkPZa6jnOw9xDIbbmnLtVjyl1W8S2EVReI1kxbeKNceL4BO0FeSZfoMy8FLYDbO0D1z0hsEi6NBItisK87fn83C2GOFcqF6Bo'
+	useCdn: true
 })
 
 const builder = imageUrlBuilder(client)
