@@ -1,3 +1,10 @@
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+}
 /* Remove default border from hr */
 
 * {
@@ -50,6 +57,23 @@ blockquote, p, li, h1, h2, h3, h4, h5, h6, nav, pre {
 
 :root {
 	--font-size-h3: var(--font-size-3) !important;
+}
+
+.App {
+	display: flex;
+	flex-direction: column;
+}
+
+.Nav {
+	flex-grow: 0;
+}
+
+.Container {
+	flex-grow: 1;
+}
+
+.Footer {
+	flex-grow: 0;
 }
 
 
