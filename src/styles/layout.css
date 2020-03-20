@@ -33,6 +33,20 @@
 }
 
 @media (min-width: 900px) {
+
+	/* .Project__Content {
+		display: contents;
+		grid-column: 1/-1;
+	}
+
+	.Project__Content > * {
+		grid-column: 1/6;
+	} */
+
+	.Project__Content .wide {
+		width: calc((100% / 5) * 8 + var(--rem-2))
+	}
+
 	[grid] {
 		--cols: 8;
 		grid-template-columns: repeat(var(--cols), 1fr);
