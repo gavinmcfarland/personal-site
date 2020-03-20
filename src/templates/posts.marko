@@ -1,3 +1,4 @@
+$ const options = { weekday: "short", year: "numeric", month: "long", day: "numeric" };
 <Layout>
 	<@title>Thoughts</@title>
 	<@body>
@@ -8,6 +9,9 @@
 					<h3>
 						<a href=post.url>${post.title}</a>
 					</h3>
+					<if(post.publishedAt)>
+						<p style="margin-top: calc(0px - var(--em-3))">${new Date(post.publishedAt).toLocaleDateString(undefined, options)}</p>
+					</if>
 				</li>
 			</for>
 		</ul>
