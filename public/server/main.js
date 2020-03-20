@@ -220,7 +220,7 @@ marko_template.meta = {
 
 module.exports = {
   getBundleName: function(){return "Client"},
-  entries: {"404_78An":{"Client":{"css":["404_78An.83497652.css"],"js":["404_78An.3cf15145.js"],"map":["404_78An.3cf15145.js.map"]}},"about_kzxx":{"Client":{"css":["about_kzxx.83497652.css"],"js":["about_kzxx.4de84997.js"],"map":["about_kzxx.4de84997.js.map"]}},"cv_tq48":{"Client":{"css":["cv_tq48.8e733960.css"],"js":["cv_tq48.c512cac3.js"],"map":["cv_tq48.c512cac3.js.map"]}},"playground_WjPn":{"Client":{"css":["playground_WjPn.711c1d64.css"],"js":["playground_WjPn.f4299eef.js"],"map":["playground_WjPn.f4299eef.js.map"]}},"post_ffL2":{"Client":{"css":["post_ffL2.416da8c1.css"],"js":["post_ffL2.99810910.js"],"map":["post_ffL2.99810910.js.map"]}},"posts_SzJm":{"Client":{"css":["posts_SzJm.83497652.css"],"js":["posts_SzJm.c69c17fa.js"],"map":["posts_SzJm.c69c17fa.js.map"]}},"project_Qgdo":{"Client":{"css":["project_Qgdo.83497652.css"],"js":["project_Qgdo.2e9bf5c0.js"],"map":["project_Qgdo.2e9bf5c0.js.map"]}},"projects_3eZ0":{"Client":{"css":["projects_3eZ0.6599773a.css"],"js":["projects_3eZ0.581a5eb0.js"],"map":["projects_3eZ0.581a5eb0.js.map"]}},"templates_IwU3":{"Client":{"css":["templates_IwU3.8efec034.css"],"js":["templates_IwU3.c3bba2c1.js"],"map":["templates_IwU3.c3bba2c1.js.map"]}}}
+  entries: {"404_78An":{"Client":{"css":["404_78An.5fcd4e97.css"],"js":["404_78An.f8827e7d.js"],"map":["404_78An.f8827e7d.js.map"]}},"about_kzxx":{"Client":{"css":["about_kzxx.5fcd4e97.css"],"js":["about_kzxx.4de84997.js"],"map":["about_kzxx.4de84997.js.map"]}},"cv_tq48":{"Client":{"css":["cv_tq48.2d757301.css"],"js":["cv_tq48.c512cac3.js"],"map":["cv_tq48.c512cac3.js.map"]}},"playground_WjPn":{"Client":{"css":["playground_WjPn.7fce3ad8.css"],"js":["playground_WjPn.f4299eef.js"],"map":["playground_WjPn.f4299eef.js.map"]}},"post_ffL2":{"Client":{"css":["post_ffL2.71de05a2.css"],"js":["post_ffL2.42407623.js"],"map":["post_ffL2.42407623.js.map"]}},"posts_SzJm":{"Client":{"css":["posts_SzJm.5fcd4e97.css"],"js":["posts_SzJm.c69c17fa.js"],"map":["posts_SzJm.c69c17fa.js.map"]}},"project_Qgdo":{"Client":{"css":["project_Qgdo.5fcd4e97.css"],"js":["project_Qgdo.2e9bf5c0.js"],"map":["project_Qgdo.2e9bf5c0.js.map"]}},"projects_3eZ0":{"Client":{"css":["projects_3eZ0.88b875ca.css"],"js":["projects_3eZ0.581a5eb0.js"],"map":["projects_3eZ0.581a5eb0.js.map"]}},"templates_IwU3":{"Client":{"css":["templates_IwU3.18d3c95e.css"],"js":["templates_IwU3.c3bba2c1.js"],"map":["templates_IwU3.c3bba2c1.js.map"]}}}
 }
 
 /***/ }),
@@ -424,7 +424,7 @@ const imageUrlBuilder = __webpack_require__(30)
 const client = sanityClient({
 	projectId: 'kvqmg9w0',
 	dataset: 'production',
-	useCdn: true
+	useCdn: false
 })
 
 const builder = imageUrlBuilder(client)
@@ -436,14 +436,14 @@ function urlFor(source) {
 const serializers = {
 	types: {
 		code: props => '```' + props.node.language + '\n' + props.node.code + '\n```',
-		figma: props => `<iframe
+		figma: props => `<div class="aspect-ratio"><iframe
 	height="450"
 	style="width: 100%"
 	src="https://www.figma.com/embed?embed_host=gavinmcfarland.co.uk&url=${props.node.url}"
 	allowfullscreen
 	frameBorder="no"
 	allowTransparency
-	></iframe>`
+	></iframe></div>`
 	}
 }
 
