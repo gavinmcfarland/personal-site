@@ -180,17 +180,17 @@ function render(input, out, __component, component, state) {
 
   marko_dynamicTag(out, input.body, null, null, null, null, __component, "20");
 
-  out.w("</main><footer class=\"Footer fullwidth\"><ul><li>Copyright 2020 &copy; Limitless Loop</li><li><a href=\"https://typolize.now.sh/\">Built with Typolize</a></li></ul><ul class=\"Footer_Link\"><li><a href=\"https://twitter.com/gavinmcfarland\">Twitter</a></li><li><a href=\"https://github.com/limitlessloop\">Github</a></li><li><a href=\"https://www.figma.com/@limitlessloop\">Figma</a></li><li><a href=\"https://dribbble.com/limitlessloop\">Dribbble</a></li></ul>");
+  out.w("</main><footer class=\"Footer fullwidth\"><ul><li>Copyright 2020 &copy; Limitless Loop</li><li><a href=\"https://typolize.now.sh/\">Built with Typolize</a></li></ul><ul class=\"Footer_Link\"><li><a href=\"https://twitter.com/gavinmcfarland\">Twitter</a></li><li><a href=\"https://github.com/limitlessloop\">Github</a></li><li><a href=\"https://www.figma.com/@limitlessloop\">Figma</a></li><li><a href=\"https://dribbble.com/limitlessloop\">Dribbble</a></li><li><a href=\"https://www.linkedin.com/in/gavinmcfarland/\">LinkedIn</a></li></ul>");
 
-  marko_dynamicTag(out, input.footer, null, null, null, null, __component, "35");
+  marko_dynamicTag(out, input.footer, null, null, null, null, __component, "37");
 
   out.w("</footer></div>");
 
-  marko_dynamicTag(out, input.scripts, null, null, null, null, __component, "36");
+  marko_dynamicTag(out, input.scripts, null, null, null, null, __component, "38");
 
   init_components_tag({}, out);
 
-  await_reorderer_tag({}, out, __component, "37");
+  await_reorderer_tag({}, out, __component, "39");
 
   out.w("</body></html>");
 }
@@ -220,7 +220,7 @@ marko_template.meta = {
 
 module.exports = {
   getBundleName: function(){return "Client"},
-  entries: {"404_78An":{"Client":{"css":["404_78An.de837069.css"],"js":["404_78An.f8827e7d.js"],"map":["404_78An.f8827e7d.js.map"]}},"about_kzxx":{"Client":{"css":["about_kzxx.de837069.css"],"js":["about_kzxx.4de84997.js"],"map":["about_kzxx.4de84997.js.map"]}},"cv_tq48":{"Client":{"css":["cv_tq48.9575a582.css"],"js":["cv_tq48.c32779ae.js"],"map":["cv_tq48.c32779ae.js.map"]}},"playground_WjPn":{"Client":{"css":["playground_WjPn.8ba63497.css"],"js":["playground_WjPn.0acb2228.js"],"map":["playground_WjPn.0acb2228.js.map"]}},"post_ffL2":{"Client":{"css":["post_ffL2.f5aefe05.css"],"js":["post_ffL2.2f5d8b90.js"],"map":["post_ffL2.2f5d8b90.js.map"]}},"posts_SzJm":{"Client":{"css":["posts_SzJm.de837069.css"],"js":["posts_SzJm.b0bd00ce.js"],"map":["posts_SzJm.b0bd00ce.js.map"]}},"project_Qgdo":{"Client":{"css":["project_Qgdo.de837069.css"],"js":["project_Qgdo.74cbef3b.js"],"map":["project_Qgdo.74cbef3b.js.map"]}},"projects_3eZ0":{"Client":{"css":["projects_3eZ0.161ca3b0.css"],"js":["projects_3eZ0.ddc0bc46.js"],"map":["projects_3eZ0.ddc0bc46.js.map"]}},"templates_IwU3":{"Client":{"css":["templates_IwU3.2aaa8673.css"],"js":["templates_IwU3.c3bba2c1.js"],"map":["templates_IwU3.c3bba2c1.js.map"]}}}
+  entries: {"404_78An":{"Client":{"css":["404_78An.de837069.css"],"js":["404_78An.f8827e7d.js"],"map":["404_78An.f8827e7d.js.map"]}},"about_kzxx":{"Client":{"css":["about_kzxx.de837069.css"],"js":["about_kzxx.4de84997.js"],"map":["about_kzxx.4de84997.js.map"]}},"cv_tq48":{"Client":{"css":["cv_tq48.9575a582.css"],"js":["cv_tq48.c512cac3.js"],"map":["cv_tq48.c512cac3.js.map"]}},"playground_WjPn":{"Client":{"css":["playground_WjPn.8ba63497.css"],"js":["playground_WjPn.f4299eef.js"],"map":["playground_WjPn.f4299eef.js.map"]}},"post_ffL2":{"Client":{"css":["post_ffL2.f5aefe05.css"],"js":["post_ffL2.42407623.js"],"map":["post_ffL2.42407623.js.map"]}},"posts_SzJm":{"Client":{"css":["posts_SzJm.de837069.css"],"js":["posts_SzJm.c69c17fa.js"],"map":["posts_SzJm.c69c17fa.js.map"]}},"project_Qgdo":{"Client":{"css":["project_Qgdo.de837069.css"],"js":["project_Qgdo.2e9bf5c0.js"],"map":["project_Qgdo.2e9bf5c0.js.map"]}},"projects_3eZ0":{"Client":{"css":["projects_3eZ0.161ca3b0.css"],"js":["projects_3eZ0.581a5eb0.js"],"map":["projects_3eZ0.581a5eb0.js.map"]}},"templates_IwU3":{"Client":{"css":["templates_IwU3.2aaa8673.css"],"js":["templates_IwU3.c3bba2c1.js"],"map":["templates_IwU3.c3bba2c1.js.map"]}}}
 }
 
 /***/ }),
