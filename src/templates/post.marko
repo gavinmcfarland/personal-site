@@ -1,20 +1,27 @@
 import markdown from '../scripts/markdown'
+import avatar from './avatar.png'
 
 $ var date = new Date(input.publishedAt);
 $ const options = { weekday: "short", year: "numeric", month: "long", day: "numeric" };
 <Layout>
 	<@title>${input.title}</@title>
 	<@head>
+		<meta name="twitter:card" content="summary"/>
+		<!-- <meta name="twitter:site" content="@nytimesbits" /> -->
+		<meta name="twitter:creator" content="@gavinmcfarland"/>
 		<meta property="og:title" content=`${input.title}`/>
 		<if(input.url)>
-			<meta property="og:url" content=`https://gavinmcfarland.co.uk/${input.url}`/>
+			<meta property="og:url" content=`https://gavinmcfarland.co.uk${input.url}`/>
 		</if>
 		<if(input.excerpt)>
 			<meta property="og:description" content=`${input.excerpt}`/>
 		</if>
 		<if(input.mainImage)>
-			<meta property="og:image" content=`${input.mainImage}`/>
+			<meta property="og:image" content=`https://gavinmcfarland.co.uk${input.mainImage}`/>
 		</if>
+		<else>
+			<meta property="og:image" content=`https://gavinmcfarland.co.uk${avatar}`/>
+		</else>
 	</@head>
 	<@body>
 		<if(input.publishedAt)>
