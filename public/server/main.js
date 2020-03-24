@@ -220,7 +220,7 @@ marko_template.meta = {
 
 module.exports = {
   getBundleName: function(){return "Client"},
-  entries: {"404_78An":{"Client":{"css":["404_78An.64053103.css"],"js":["404_78An.f8827e7d.js"],"map":["404_78An.f8827e7d.js.map"]}},"about_kzxx":{"Client":{"css":["about_kzxx.64053103.css"],"js":["about_kzxx.4de84997.js"],"map":["about_kzxx.4de84997.js.map"]}},"cv_tq48":{"Client":{"css":["cv_tq48.008dc572.css"],"js":["cv_tq48.c512cac3.js"],"map":["cv_tq48.c512cac3.js.map"]}},"playground_WjPn":{"Client":{"css":["playground_WjPn.24477a2a.css"],"js":["playground_WjPn.f4299eef.js"],"map":["playground_WjPn.f4299eef.js.map"]}},"post_ffL2":{"Client":{"css":["post_ffL2.28f5a2e6.css"],"js":["post_ffL2.42407623.js"],"map":["post_ffL2.42407623.js.map"]}},"posts_SzJm":{"Client":{"css":["posts_SzJm.64053103.css"],"js":["posts_SzJm.c69c17fa.js"],"map":["posts_SzJm.c69c17fa.js.map"]}},"project_Qgdo":{"Client":{"css":["project_Qgdo.64053103.css"],"js":["project_Qgdo.2e9bf5c0.js"],"map":["project_Qgdo.2e9bf5c0.js.map"]}},"projects_3eZ0":{"Client":{"css":["projects_3eZ0.481aed22.css"],"js":["projects_3eZ0.581a5eb0.js"],"map":["projects_3eZ0.581a5eb0.js.map"]}},"templates_IwU3":{"Client":{"css":["templates_IwU3.ddea53f2.css"],"js":["templates_IwU3.c3bba2c1.js"],"map":["templates_IwU3.c3bba2c1.js.map"]}}}
+  entries: {"404_78An":{"Client":{"css":["404_78An.1e271f79.css"],"js":["404_78An.f8827e7d.js"],"map":["404_78An.f8827e7d.js.map"]}},"about_kzxx":{"Client":{"css":["about_kzxx.1e271f79.css"],"js":["about_kzxx.4de84997.js"],"map":["about_kzxx.4de84997.js.map"]}},"cv_tq48":{"Client":{"css":["cv_tq48.5c864251.css"],"js":["cv_tq48.c512cac3.js"],"map":["cv_tq48.c512cac3.js.map"]}},"playground_WjPn":{"Client":{"css":["playground_WjPn.0efdd413.css"],"js":["playground_WjPn.f4299eef.js"],"map":["playground_WjPn.f4299eef.js.map"]}},"post_ffL2":{"Client":{"css":["post_ffL2.2c42fb5f.css"],"js":["post_ffL2.42407623.js"],"map":["post_ffL2.42407623.js.map"]}},"posts_SzJm":{"Client":{"css":["posts_SzJm.1e271f79.css"],"js":["posts_SzJm.c69c17fa.js"],"map":["posts_SzJm.c69c17fa.js.map"]}},"project_Qgdo":{"Client":{"css":["project_Qgdo.1e271f79.css"],"js":["project_Qgdo.2e9bf5c0.js"],"map":["project_Qgdo.2e9bf5c0.js.map"]}},"projects_3eZ0":{"Client":{"css":["projects_3eZ0.2f709265.css"],"js":["projects_3eZ0.581a5eb0.js"],"map":["projects_3eZ0.581a5eb0.js.map"]}},"templates_IwU3":{"Client":{"css":["templates_IwU3.ad530b0b.css"],"js":["templates_IwU3.c3bba2c1.js"],"map":["templates_IwU3.c3bba2c1.js.map"]}}}
 }
 
 /***/ }),
@@ -445,7 +445,7 @@ const serializers = {
 	allowTransparency
 	></iframe></div></div>`,
 		codesandbox: props => `<div class="Frame wide"><iframe
-	src="https://codesandbox.io/embed/${props.node.container}?autoresize=0&hidedevtools=1&fontsize=14&hidenavigation=1&module=%2Fstyles.css&theme=${props.node.theme}&view=${props.node.view}"
+	src="https://codesandbox.io/embed/${props.node.container}?codemirror=1&autoresize=0&hidedevtools=1&fontsize=14&hidenavigation=1&module=%2Fstyles.css&theme=${props.node.theme}&view=${props.node.view}"
 	style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
 	title="zealous-fast-c2dng"
 	allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"

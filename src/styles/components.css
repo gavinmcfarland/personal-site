@@ -258,8 +258,8 @@ pre code {
 	border: 1px solid lightgrey;
 	border-radius: 4px;
 	overflow: hidden;
-	margin-top: var(--rem-3);
-	margin-bottom: var(--rem-3);
+	margin-top: var(--rem-2);
+	margin-bottom: var(--rem-2);
 }
 
 .aspect-ratio {
