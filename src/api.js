@@ -36,7 +36,7 @@ const serializers = {
 	></iframe></div></div>`,
 		codesandbox: props => `<div class="Frame wide"><iframe
 	src="https://codesandbox.io/embed/${props.node.container}?codemirror=1&autoresize=0&hidedevtools=1&fontsize=14&hidenavigation=1&module=%2Fstyles.css&theme=${props.node.theme}&view=${props.node.view}"
-	style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+	style="width:100%; height:500px; border:0; verflow:hidden;"
 	title="zealous-fast-c2dng"
 	allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
 	sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
