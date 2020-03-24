@@ -14,7 +14,8 @@ const imageUrlBuilder = require('@sanity/image-url')
 const client = sanityClient({
 	projectId: 'kvqmg9w0',
 	dataset: 'production',
-	useCdn: true
+	useCdn: false,
+	token: 'skqYDnBsmf0m8ty5r4vOXig2puxKLCPjqTMgNm6cSoWnBMBywCTUoVGCw5o0wLQ5PhlheiaF4sCFXMEKXY4VMZTjk0jYEG2GIGO5WCFr4z0e1LMh4umIfhGY3wiB0PXL955pbRm7PUpgBqJlj0WBAicP8BaLbsI3QcR7N7eBcoC8O6O53EZa'
 })
 
 const builder = imageUrlBuilder(client)
@@ -33,7 +34,14 @@ const serializers = {
 	allowfullscreen
 	frameBorder="no"
 	allowTransparency
-	></iframe></div></div>`
+	></iframe></div></div>`,
+		codesandbox: props => `<div class="wide"><div><iframe
+	src="https://codesandbox.io/embed/${props.node.container}?autoresize=1&fontsize=14&hidenavigation=1&module=%2Fstyles.css&theme=${props.node.theme}&view=${props.node.view}"
+	style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+	title="zealous-fast-c2dng"
+	allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+	sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+  ></iframe></div></div>`
 	}
 }
 
@@ -69,11 +77,6 @@ async function getContent() {
 		posts.forEach(post => {
 			post.image = {}
 			post.body = toMarkdown(post.body, {
-				serializers,
-				projectId: 'kvqmg9w0',
-				dataset: 'production'
-			})
-			post.description = toMarkdown(post.description, {
 				serializers,
 				projectId: 'kvqmg9w0',
 				dataset: 'production'
