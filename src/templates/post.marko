@@ -4,6 +4,18 @@ $ var date = new Date(input.publishedAt);
 $ const options = { weekday: "short", year: "numeric", month: "long", day: "numeric" };
 <Layout>
 	<@title>${input.title}</@title>
+	<@head>
+		<meta property="og:title" content=`${input.title}`/>
+		<if(input.url)>
+			<meta property="og:url" content=`https://gavinmcfarland.co.uk/${input.url}`/>
+		</if>
+		<if(input.excerpt)>
+			<meta property="og:description" content=`${input.excerpt}`/>
+		</if>
+		<if(input.mainImage)>
+			<meta property="og:image" content=`${input.mainImage}`/>
+		</if>
+	</@head>
 	<@body>
 		<if(input.publishedAt)>
 			<h6 style="margin-bottom: calc(0px - var(--rem-4))">${date.toLocaleDateString(undefined, options)}</h6>

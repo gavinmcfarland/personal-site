@@ -12,6 +12,9 @@ import faviconAppleTouch from "./apple-touch-icon.png"
 		<link rel="icon" type="image/png" sizes="32x32" href=favicon32/>
 		<link rel="icon" type="image/png" sizes="16x16" href=favicon16/>
 		<!-- <link rel="manifest" href="/site.webmanifest"/> -->
+		<meta name="twitter:card" content="summary"/>
+		<!-- <meta name="twitter:site" content="@nytimesbits" /> -->
+		<meta name="twitter:creator" content="@gavinmcfarland"/>
 		<title>
 			<if(input.title)>
 				<${input.title}/>
@@ -19,6 +22,7 @@ import faviconAppleTouch from "./apple-touch-icon.png"
 			</if>
 			<else>Gavin McFarland</else>
 		</title>
+		<${input.head}/>
 		<!-- <link> tags to include optimized CSS URLs will be included below: -->
 		<${input.styles}/>
 		<link href="https://fonts.googleapis.com/css?family=Fira+Code|Fira+Mono|Fira+Sans&display=swap" rel="stylesheet"/>

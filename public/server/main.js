@@ -135,7 +135,7 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     favicon16 = module_favicon16.default || module_favicon16,
     module_faviconAppleTouch = __webpack_require__(35),
     faviconAppleTouch = module_faviconAppleTouch.default || module_faviconAppleTouch,
-    marko_attr = __webpack_require__(9),
+    marko_attr = __webpack_require__(7),
     marko_dynamicTag = __webpack_require__(3),
     marko_loadTag = __webpack_require__(2),
     component_globals_tag = marko_loadTag(__webpack_require__(36)),
@@ -152,10 +152,10 @@ function render(input, out, __component, component, state) {
     marko_attr("href", favicon32) +
     "><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\"" +
     marko_attr("href", favicon16) +
-    "><title>");
+    "><meta name=\"twitter:card\" content=\"summary\"><meta name=\"twitter:creator\" content=\"@gavinmcfarland\"><title>");
 
   if (input.title) {
-    marko_dynamicTag(out, input.title, null, null, null, null, __component, "8");
+    marko_dynamicTag(out, input.title, null, null, null, null, __component, "10");
 
     out.w(" | Gavin McFarland");
   } else {
@@ -164,7 +164,9 @@ function render(input, out, __component, component, state) {
 
   out.w("</title>");
 
-  marko_dynamicTag(out, input.styles, null, null, null, null, __component, "9");
+  marko_dynamicTag(out, input.head, null, null, null, null, __component, "11");
+
+  marko_dynamicTag(out, input.styles, null, null, null, null, __component, "12");
 
   out.w("<link href=\"https://fonts.googleapis.com/css?family=Fira+Code|Fira+Mono|Fira+Sans&amp;display=swap\" rel=\"stylesheet\"><script src=\"//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js\"></script><script>hljs.initHighlightingOnLoad();</script><script async defer data-domain=\"gavinmcfarland.co.uk\" src=\"https://plausible.io/js/plausible.js\"></script>");
 
@@ -178,19 +180,19 @@ function render(input, out, __component, component, state) {
 
   out.w("<div class=\"App\"><header class=\"Nav fullwidth\"><span class=\"Logo fullwidth\"><a href=\"/\">G</a></span><nav><a href=\"/thoughts\">Thoughts</a><a href=\"/about\">About</a></nav></header><main class=\"Container\">");
 
-  marko_dynamicTag(out, input.body, null, null, null, null, __component, "20");
+  marko_dynamicTag(out, input.body, null, null, null, null, __component, "23");
 
   out.w("</main><footer class=\"Footer fullwidth\"><ul><li>Copyright 2020 &copy; Limitless Loop</li><li><a href=\"https://typolize.now.sh/\">Built with Typolize</a></li></ul><ul class=\"Footer_Link\"><li><a href=\"https://twitter.com/gavinmcfarland\">Twitter</a></li><li><a href=\"https://github.com/limitlessloop\">Github</a></li><li><a href=\"https://www.figma.com/@limitlessloop\">Figma</a></li><li><a href=\"https://dribbble.com/limitlessloop\">Dribbble</a></li><li><a href=\"https://www.linkedin.com/in/gavinmcfarland/\">LinkedIn</a></li></ul>");
 
-  marko_dynamicTag(out, input.footer, null, null, null, null, __component, "37");
+  marko_dynamicTag(out, input.footer, null, null, null, null, __component, "40");
 
   out.w("</footer></div>");
 
-  marko_dynamicTag(out, input.scripts, null, null, null, null, __component, "38");
+  marko_dynamicTag(out, input.scripts, null, null, null, null, __component, "41");
 
   init_components_tag({}, out);
 
-  await_reorderer_tag({}, out, __component, "39");
+  await_reorderer_tag({}, out, __component, "42");
 
   out.w("</body></html>");
 }
@@ -220,11 +222,17 @@ marko_template.meta = {
 
 module.exports = {
   getBundleName: function(){return "Client"},
-  entries: {"404_78An":{"Client":{"css":["404_78An.1e271f79.css"],"js":["404_78An.f8827e7d.js"],"map":["404_78An.f8827e7d.js.map"]}},"about_kzxx":{"Client":{"css":["about_kzxx.1e271f79.css"],"js":["about_kzxx.4de84997.js"],"map":["about_kzxx.4de84997.js.map"]}},"cv_tq48":{"Client":{"css":["cv_tq48.5c864251.css"],"js":["cv_tq48.c512cac3.js"],"map":["cv_tq48.c512cac3.js.map"]}},"playground_WjPn":{"Client":{"css":["playground_WjPn.0efdd413.css"],"js":["playground_WjPn.f4299eef.js"],"map":["playground_WjPn.f4299eef.js.map"]}},"post_ffL2":{"Client":{"css":["post_ffL2.2c42fb5f.css"],"js":["post_ffL2.42407623.js"],"map":["post_ffL2.42407623.js.map"]}},"posts_SzJm":{"Client":{"css":["posts_SzJm.1e271f79.css"],"js":["posts_SzJm.c69c17fa.js"],"map":["posts_SzJm.c69c17fa.js.map"]}},"project_Qgdo":{"Client":{"css":["project_Qgdo.1e271f79.css"],"js":["project_Qgdo.2e9bf5c0.js"],"map":["project_Qgdo.2e9bf5c0.js.map"]}},"projects_3eZ0":{"Client":{"css":["projects_3eZ0.2f709265.css"],"js":["projects_3eZ0.581a5eb0.js"],"map":["projects_3eZ0.581a5eb0.js.map"]}},"templates_IwU3":{"Client":{"css":["templates_IwU3.ad530b0b.css"],"js":["templates_IwU3.c3bba2c1.js"],"map":["templates_IwU3.c3bba2c1.js.map"]}}}
+  entries: {"404_78An":{"Client":{"css":["404_78An.1e271f79.css"],"js":["404_78An.f8827e7d.js"],"map":["404_78An.f8827e7d.js.map"]}},"about_kzxx":{"Client":{"css":["about_kzxx.1e271f79.css"],"js":["about_kzxx.b416b993.js"],"map":["about_kzxx.b416b993.js.map"]}},"cv_tq48":{"Client":{"css":["cv_tq48.5c864251.css"],"js":["cv_tq48.c512cac3.js"],"map":["cv_tq48.c512cac3.js.map"]}},"playground_WjPn":{"Client":{"css":["playground_WjPn.0efdd413.css"],"js":["playground_WjPn.f4299eef.js"],"map":["playground_WjPn.f4299eef.js.map"]}},"post_ffL2":{"Client":{"css":["post_ffL2.2c42fb5f.css"],"js":["post_ffL2.42407623.js"],"map":["post_ffL2.42407623.js.map"]}},"posts_SzJm":{"Client":{"css":["posts_SzJm.1e271f79.css"],"js":["posts_SzJm.c69c17fa.js"],"map":["posts_SzJm.c69c17fa.js.map"]}},"project_Qgdo":{"Client":{"css":["project_Qgdo.1e271f79.css"],"js":["project_Qgdo.2e9bf5c0.js"],"map":["project_Qgdo.2e9bf5c0.js.map"]}},"projects_3eZ0":{"Client":{"css":["projects_3eZ0.2f709265.css"],"js":["projects_3eZ0.f67e78db.js"],"map":["projects_3eZ0.f67e78db.js.map"]}},"templates_IwU3":{"Client":{"css":["templates_IwU3.ad530b0b.css"],"js":["templates_IwU3.c3bba2c1.js"],"map":["templates_IwU3.c3bba2c1.js.map"]}}}
 }
 
 /***/ }),
 /* 7 */
+/***/ (function(module, exports) {
+
+module.exports = require("marko/dist/runtime/html/helpers/attr");
+
+/***/ }),
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var MarkdownIt = __webpack_require__(39)
@@ -255,16 +263,10 @@ module.exports = function(string) {
 
 
 /***/ }),
-/* 8 */
-/***/ (function(module, exports) {
-
-module.exports = require("marko/dist/runtime/html/helpers/escape-xml");
-
-/***/ }),
 /* 9 */
 /***/ (function(module, exports) {
 
-module.exports = require("marko/dist/runtime/html/helpers/attr");
+module.exports = require("marko/dist/runtime/html/helpers/escape-xml");
 
 /***/ }),
 /* 10 */
@@ -445,7 +447,7 @@ const serializers = {
 	allowTransparency
 	></iframe></div></div>`,
 		codesandbox: props => `<div class="Frame wide"><iframe
-	src="https://codesandbox.io/embed/${props.node.container}?codemirror=1&autoresize=0&hidedevtools=1&fontsize=14&hidenavigation=1&module=%2Fstyles.css&theme=${props.node.theme}&view=${props.node.view}"
+	src="https://codesandbox.io/embed/${props.node.container}?codemirror=1&autoresize=0&hidedevtools=1&fontsize=14&hidenavigation=1&module=%2Fstyles.css&theme=${props.node.theme}"
 	style="width:100%; height:500px; border:0; verflow:hidden;"
 	title="zealous-fast-c2dng"
 	allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
@@ -1318,10 +1320,11 @@ module.exports = require("marko/dist/core-tags/core/await/reorderer-renderer");
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_componentType = "/marko-webpack$1.0.0/src/templates/post.marko",
     marko_renderer = __webpack_require__(1),
-    module_markdown = __webpack_require__(7),
+    module_markdown = __webpack_require__(8),
     markdown = module_markdown.default || module_markdown,
-    helpers_escape_xml = __webpack_require__(8),
+    helpers_escape_xml = __webpack_require__(9),
     marko_escapeXml = helpers_escape_xml.x,
+    marko_attr = __webpack_require__(7),
     marko_str = __webpack_require__(10),
     Layout_template = __webpack_require__(5),
     marko_loadTag = __webpack_require__(2),
@@ -1338,6 +1341,31 @@ function render(input, out, __component, component, state) {
       title: {
           renderBody: function(out) {
             out.w(marko_escapeXml(input.title));
+          }
+        },
+      head: {
+          renderBody: function(out) {
+            out.w("<meta property=\"og:title\"" +
+              marko_attr("content", "" + input.title) +
+              ">");
+
+            if (input.url) {
+              out.w("<meta property=\"og:url\"" +
+                marko_attr("content", "https://gavinmcfarland.co.uk/" + input.url) +
+                ">");
+            }
+
+            if (input.excerpt) {
+              out.w("<meta property=\"og:description\"" +
+                marko_attr("content", "" + input.excerpt) +
+                ">");
+            }
+
+            if (input.mainImage) {
+              out.w("<meta property=\"og:image\"" +
+                marko_attr("content", "" + input.mainImage) +
+                ">");
+            }
           }
         },
       body: {
@@ -1403,11 +1431,11 @@ module.exports = require("markdown-it-attrs");
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_componentType = "/marko-webpack$1.0.0/src/templates/project.marko",
     marko_renderer = __webpack_require__(1),
-    module_markdown = __webpack_require__(7),
+    module_markdown = __webpack_require__(8),
     markdown = module_markdown.default || module_markdown,
     module_image = __webpack_require__(13),
     image = module_image.default || module_image,
-    helpers_escape_xml = __webpack_require__(8),
+    helpers_escape_xml = __webpack_require__(9),
     marko_escapeXml = helpers_escape_xml.x,
     marko_str = __webpack_require__(10),
     Layout_template = __webpack_require__(5),
@@ -1488,7 +1516,7 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_renderer = __webpack_require__(1),
     module_image = __webpack_require__(43),
     image = module_image.default || module_image,
-    marko_attr = __webpack_require__(9),
+    marko_attr = __webpack_require__(7),
     Layout_template = __webpack_require__(5),
     marko_loadTag = __webpack_require__(2),
     Layout_tag = marko_loadTag(Layout_template);
@@ -1694,9 +1722,9 @@ var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_componentType = "/marko-webpack$1.0.0/src/templates/posts.marko",
     marko_renderer = __webpack_require__(1),
     marko_forOf = __webpack_require__(14),
-    helpers_escape_xml = __webpack_require__(8),
+    helpers_escape_xml = __webpack_require__(9),
     marko_escapeXml = helpers_escape_xml.x,
-    marko_attr = __webpack_require__(9),
+    marko_attr = __webpack_require__(7),
     Layout_template = __webpack_require__(5),
     marko_loadTag = __webpack_require__(2),
     Layout_tag = marko_loadTag(Layout_template);
@@ -1863,10 +1891,10 @@ marko_template.meta = {
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_componentType = "/marko-webpack$1.0.0/src/templates/cv.marko",
     marko_renderer = __webpack_require__(1),
-    module_markdown = __webpack_require__(7),
+    module_markdown = __webpack_require__(8),
     markdown = module_markdown.default || module_markdown,
     marko_forIn = __webpack_require__(49),
-    helpers_escape_xml = __webpack_require__(8),
+    helpers_escape_xml = __webpack_require__(9),
     marko_escapeXml = helpers_escape_xml.x,
     marko_str = __webpack_require__(10),
     Section_template = __webpack_require__(50),
@@ -2090,7 +2118,7 @@ marko_template.meta = {
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_componentType = "/marko-webpack$1.0.0/src/templates/playground.marko",
     marko_renderer = __webpack_require__(1),
-    module_markdown = __webpack_require__(7),
+    module_markdown = __webpack_require__(8),
     markdown = module_markdown.default || module_markdown,
     Button_template = __webpack_require__(53),
     marko_loadTag = __webpack_require__(2),
@@ -2196,14 +2224,14 @@ marko_template.meta = {
 var marko_template = module.exports = __webpack_require__(0).t(__filename),
     marko_componentType = "/marko-webpack$1.0.0/src/templates/index.marko",
     marko_renderer = __webpack_require__(1),
-    module_markdown = __webpack_require__(7),
+    module_markdown = __webpack_require__(8),
     markdown = module_markdown.default || module_markdown,
     module_image = __webpack_require__(13),
     image = module_image.default || module_image,
-    helpers_escape_xml = __webpack_require__(8),
+    helpers_escape_xml = __webpack_require__(9),
     marko_escapeXml = helpers_escape_xml.x,
     marko_forOf = __webpack_require__(14),
-    marko_attr = __webpack_require__(9),
+    marko_attr = __webpack_require__(7),
     marko_str = __webpack_require__(10),
     Layout_template = __webpack_require__(5),
     marko_loadTag = __webpack_require__(2),
