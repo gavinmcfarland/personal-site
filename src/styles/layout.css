@@ -83,6 +83,10 @@
 	[span="8"] {
 		grid-column: span 8;
 	}
+
+	.wide {
+		width: calc((100% / 5) * 8 + var(--rem-2))
+	}
 }
 
 /* Not supported in Chrome */
@@ -127,4 +131,3 @@ body {
 	padding-left: inherit;
 	padding-right: inherit;
 }
-

@@ -254,14 +254,18 @@ pre code {
 	display: none;
 }
 
-.aspect-ratio {
-	border-radius: 2px;
+.Frame {
+	border: 1px solid lightgrey;
+	border-radius: 4px;
 	overflow: hidden;
+	margin-top: var(--rem-3);
+	margin-bottom: var(--rem-3);
+}
+
+.aspect-ratio {
 	position: relative;
 	height: 0;
 	padding-bottom: 56%;
-	margin-top: var(--rem-3);
-	margin-bottom: var(--rem-3);
 }
 
 .aspect-ratio iframe {
