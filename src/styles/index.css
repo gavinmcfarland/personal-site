@@ -2,10 +2,9 @@
 @import './reset';
 @import './numbers';
 @import 'typolize';
-@import './variables';
+@import 'typolize/theme/default';
 @import './variables';
 @import './colors';
-@import './spacing';
 @import './layout';
 @import './components';
 @import './syntax-colors';
@@ -38,3 +37,62 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+  [text-gap="none"] > *+* {
+	margin-top: 0;
+  }
+
+  [text-gap="1"] > *+* {
+	margin-top: var(--rem-1);
+  }
+
+  [text-gap="2"] > *+* {
+	margin-top: var(--rem-2);
+  }
+
+  [text-gap="3"] > *+* {
+	margin-top: var(--rem-3);
+  }
+
+  [text-gap="4"] > *+* {
+	margin-top: var(--rem-4);
+  }
+
+  [text-gap="5"] > *+* {
+	margin-top: var(--rem-5);
+  }
+
+  [text-gap-self="none"] {
+	--text-gap-self: 0;
+  }
+
+  [text-gap-self="1"] {
+	--text-gap-self: 1rem;
+  }
+
+  [text-gap-self="2"] {
+	--text-gap-self: 3rem;
+  }
+
+  [text-gap-self="3"] {
+	--text-gap-self: 3rem;
+  }
+
+  [text-gap-self="4"] {
+	--text-gap-self: 4rem;
+  }
+
+  [text-gap-self="5"] {
+	--text-gap-self: 5rem;
+  }

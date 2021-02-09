@@ -178,11 +178,11 @@ function render(input, out, __component, component, state) {
 
   component_globals_tag({}, out);
 
-  out.w("<div class=\"App\"><header class=\"Nav fullwidth\"><span class=\"Logo fullwidth\"><a href=\"/\">G</a></span><nav><a href=\"/thoughts\">Thoughts</a><a href=\"/about\">About</a></nav></header><main class=\"Container\">");
+  out.w("<div class=\"App has-bfc\"><header class=\"Nav fullwidth has-bfc\"><span class=\"Logo fullwidth\"><a href=\"/\">G</a></span><nav><a href=\"/thoughts\">Thoughts</a><a href=\"/about\">About</a></nav></header><main class=\"Container\">");
 
   marko_dynamicTag(out, input.body, null, null, null, null, __component, "21");
 
-  out.w("</main><footer class=\"Footer fullwidth\"><ul><li>Copyright 2020 &copy; Limitless Loop</li><li><a href=\"https://typolize.now.sh/\">Built with Typolize</a></li></ul><ul class=\"Footer_Link\"><li><a href=\"https://twitter.com/gavinmcfarland\">Twitter</a></li><li><a href=\"https://github.com/limitlessloop\">Github</a></li><li><a href=\"https://www.figma.com/@limitlessloop\">Figma</a></li><li><a href=\"https://dribbble.com/limitlessloop\">Dribbble</a></li><li><a href=\"https://www.linkedin.com/in/gavinmcfarland/\">LinkedIn</a></li></ul>");
+  out.w("</main><footer class=\"Footer fullwidth\"><ul><li>Copyright 2021 &copy; Limitless Loop</li><li><a href=\"https://typolize.now.sh/\">Built with Typolize</a></li></ul><ul class=\"Footer_Link\"><li><a href=\"https://twitter.com/gavinmcfarland\">Twitter</a></li><li><a href=\"https://github.com/limitlessloop\">Github</a></li><li><a href=\"https://www.figma.com/@limitlessloop\">Figma</a></li><li><a href=\"https://dribbble.com/limitlessloop\">Dribbble</a></li><li><a href=\"https://www.linkedin.com/in/gavinmcfarland/\">LinkedIn</a></li></ul>");
 
   marko_dynamicTag(out, input.footer, null, null, null, null, __component, "38");
 
@@ -222,7 +222,7 @@ marko_template.meta = {
 
 module.exports = {
   getBundleName: function(){return "Client"},
-  entries: {"404_78An":{"Client":{"css":["404_78An.1e271f79.css"],"js":["404_78An.3cf15145.js"],"map":["404_78An.3cf15145.js.map"]}},"about_kzxx":{"Client":{"css":["about_kzxx.1e271f79.css"],"js":["about_kzxx.4de84997.js"],"map":["about_kzxx.4de84997.js.map"]}},"cv_tq48":{"Client":{"css":["cv_tq48.5c864251.css"],"js":["cv_tq48.c512cac3.js"],"map":["cv_tq48.c512cac3.js.map"]}},"playground_WjPn":{"Client":{"css":["playground_WjPn.0efdd413.css"],"js":["playground_WjPn.f4299eef.js"],"map":["playground_WjPn.f4299eef.js.map"]}},"post_ffL2":{"Client":{"css":["post_ffL2.2c42fb5f.css"],"js":["post_ffL2.99810910.js"],"map":["post_ffL2.99810910.js.map"]}},"posts_SzJm":{"Client":{"css":["posts_SzJm.1e271f79.css"],"js":["posts_SzJm.c69c17fa.js"],"map":["posts_SzJm.c69c17fa.js.map"]}},"project_Qgdo":{"Client":{"css":["project_Qgdo.1e271f79.css"],"js":["project_Qgdo.2e9bf5c0.js"],"map":["project_Qgdo.2e9bf5c0.js.map"]}},"projects_3eZ0":{"Client":{"css":["projects_3eZ0.2f709265.css"],"js":["projects_3eZ0.581a5eb0.js"],"map":["projects_3eZ0.581a5eb0.js.map"]}},"templates_IwU3":{"Client":{"css":["templates_IwU3.ad530b0b.css"],"js":["templates_IwU3.c3bba2c1.js"],"map":["templates_IwU3.c3bba2c1.js.map"]}}}
+  entries: {"404_78An":{"Client":{"css":["404_78An.93885d75.css"],"js":["404_78An.f8827e7d.js"],"map":["404_78An.f8827e7d.js.map"]}},"about_kzxx":{"Client":{"css":["about_kzxx.93885d75.css"],"js":["about_kzxx.4de84997.js"],"map":["about_kzxx.4de84997.js.map"]}},"cv_tq48":{"Client":{"css":["cv_tq48.21a5105f.css"],"js":["cv_tq48.c512cac3.js"],"map":["cv_tq48.c512cac3.js.map"]}},"playground_WjPn":{"Client":{"css":["playground_WjPn.2e643cdf.css"],"js":["playground_WjPn.f4299eef.js"],"map":["playground_WjPn.f4299eef.js.map"]}},"post_ffL2":{"Client":{"css":["post_ffL2.b0a70584.css"],"js":["post_ffL2.42407623.js"],"map":["post_ffL2.42407623.js.map"]}},"posts_SzJm":{"Client":{"css":["posts_SzJm.93885d75.css"],"js":["posts_SzJm.c69c17fa.js"],"map":["posts_SzJm.c69c17fa.js.map"]}},"project_Qgdo":{"Client":{"css":["project_Qgdo.93885d75.css"],"js":["project_Qgdo.2e9bf5c0.js"],"map":["project_Qgdo.2e9bf5c0.js.map"]}},"projects_3eZ0":{"Client":{"css":["projects_3eZ0.b3540e27.css"],"js":["projects_3eZ0.581a5eb0.js"],"map":["projects_3eZ0.581a5eb0.js.map"]}},"templates_IwU3":{"Client":{"css":["templates_IwU3.cf88afcd.css"],"js":["templates_IwU3.c3bba2c1.js"],"map":["templates_IwU3.c3bba2c1.js.map"]}}}
 }
 
 /***/ }),
@@ -1117,11 +1117,10 @@ const port = process.env.PORT || 8080;
 app.enable('strict routing');
 app.use(compression__WEBPACK_IMPORTED_MODULE_3___default()());
 app.use(express_slash__WEBPACK_IMPORTED_MODULE_1___default()());
-app.use("/static", serve_static__WEBPACK_IMPORTED_MODULE_4___default()("dist/client"));
+app.use('/static', serve_static__WEBPACK_IMPORTED_MODULE_4___default()('dist/client'));
 
-_api__WEBPACK_IMPORTED_MODULE_2___default.a.then(content => {
-
-	app.get("/", (req, res) => {
+_api__WEBPACK_IMPORTED_MODULE_2___default.a.then((content) => {
+	app.get('/', (req, res) => {
 		_templates_index_marko__WEBPACK_IMPORTED_MODULE_13___default.a.render({ projects: content.projects, ...content.home, work: content.projects, posts: content.posts }, res);
 	});
 
@@ -1140,27 +1139,26 @@ _api__WEBPACK_IMPORTED_MODULE_2___default.a.then(content => {
 	// 	Projects.render({}, res);
 	// });
 
-	app.get("/thoughts", (req, res) => {
-		res.setHeader("Content-Type", "text/html; charset=utf-8");
+	app.get('/thoughts', (req, res) => {
+		res.setHeader('Content-Type', 'text/html; charset=utf-8');
 		_templates_posts_marko__WEBPACK_IMPORTED_MODULE_10___default.a.render({ posts: content.posts }, res);
 	});
 
-	app.get("/about", (req, res) => {
-		res.setHeader("Content-Type", "text/html; charset=utf-8");
+	app.get('/about', (req, res) => {
+		res.setHeader('Content-Type', 'text/html; charset=utf-8');
 		_templates_about_marko__WEBPACK_IMPORTED_MODULE_8___default.a.render({}, res);
 	});
 
-	app.get("/thoughts/:post", (req, res) => {
-		res.setHeader("Content-Type", "text/html; charset=utf-8");
+	app.get('/thoughts/:post', (req, res) => {
+		res.setHeader('Content-Type', 'text/html; charset=utf-8');
 
 		let err = true;
 
 		for (let post of content.posts) {
-
 			// If page exists then render page
 			if (req.params.post === post.slug.current) {
 				_templates_post_marko__WEBPACK_IMPORTED_MODULE_6___default.a.render(post, res);
-				err = false
+				err = false;
 			}
 		}
 
@@ -1168,11 +1166,10 @@ _api__WEBPACK_IMPORTED_MODULE_2___default.a.then(content => {
 		if (err) {
 			_templates_404_marko__WEBPACK_IMPORTED_MODULE_5___default.a.render({}, res.status(404));
 		}
-
 	});
 
-	app.get("/work/:post", (req, res) => {
-		res.setHeader("Content-Type", "text/html; charset=utf-8");
+	app.get('/work/:post', (req, res) => {
+		res.setHeader('Content-Type', 'text/html; charset=utf-8');
 
 		let err = true;
 
@@ -1180,7 +1177,7 @@ _api__WEBPACK_IMPORTED_MODULE_2___default.a.then(content => {
 			// If page exists then render page
 			if (req.params.post === post.slug.current) {
 				_templates_project_marko__WEBPACK_IMPORTED_MODULE_7___default.a.render(post, res);
-				err = false
+				err = false;
 			}
 		}
 
@@ -1188,25 +1185,24 @@ _api__WEBPACK_IMPORTED_MODULE_2___default.a.then(content => {
 		if (err) {
 			_templates_404_marko__WEBPACK_IMPORTED_MODULE_5___default.a.render({}, res.status(404));
 		}
-
 	});
 
 	// Render 404 for any unkown routes
-	app.use(function (req, res) {
+	app.use(function(req, res) {
 		_templates_404_marko__WEBPACK_IMPORTED_MODULE_5___default.a.render({}, res.status(404));
 	});
 
 	// Start the server
-	app.listen(port, err => {
+	app.listen(port, (err) => {
 		if (err) {
 			throw err;
 		}
 
-		if (port !== "0") {
+		if (port !== '0') {
 			console.log(`Listening on port ${port}`);
 		}
 	});
-})
+});
 
 
 /***/ }),
@@ -2252,7 +2248,7 @@ function render(input, out, __component, component, state) {
           renderBody: function(out) {
             out.w("<h1 style=\"font-size: var(--font-size-h2); max-width: 25ch\">" +
               marko_escapeXml(input.intro) +
-              "</h1><div><div><h5>People I've Helped</h5><div gap=\"5\">");
+              "</h1><div><div><h5>People I've Helped</h5><div text-gap=\"5\" class=\"has-bfc\">");
 
             var $for$0 = 0;
 
@@ -2296,7 +2292,7 @@ function render(input, out, __component, component, state) {
                 "</a></h4></li>");
             });
 
-            out.w("</ul></div></div><hr class=\"fullwidth\"><div><div grid><h5 span=\"3\">Things I've Made</h5><div style=\"margin-bottom: var(--em-3);\" span=\"3\"><h6>PostCSS Plugins</h6><ul><li><a href=\"https://github.com/limitlessloop/postcss-proportional-spacing\">Proportional Spacing</a></li><li><a href=\"https://github.com/limitlessloop/postcss-negative-padding\">Negative Padding</a></li><li><a href=\"https://github.com/limitlessloop/postcss-border-align\">Border Align</a></li><li><a href=\"https://github.com/limitlessloop/postcss-custom-values\">Custom Values</a></li><li><a href=\"https://github.com/limitlessloop/postcss-sqrt\">Sqrt and Pow Functions</a></li><li><a href=\"https://github.com/limitlessloop/flex-gap-polyfill\">Flex Gap Polyfill</a></li></ul></div><div span=\"2\"><h6>Figma Resources</h6><ul><li><a href=\"https://www.figma.com/community/file/784773846783975923\">Redlining Kit</a></li><li><a href=\"https://www.figma.com/community/file/776921648331857127\">Device Frames</a></li><li><a href=\"https://www.figma.com/community/file/776917132627530982\">Design Deliverables</a></li><li><a href=\"https://www.figma.com/community/file/776913337659021541\">Icon Template</a></li><li><a href=\"https://www.figma.com/community/file/817057027097651580\">Syntax Designer</a></li></ul></div></div></div>");
+            out.w("</ul></div></div><hr class=\"fullwidth\"><div><div grid><h5 span=\"3\">Things I've Made</h5><div style=\"margin-bottom: var(--em-3);\" span=\"3\"><h6>PostCSS Plugins</h6><ul><li><a href=\"https://github.com/limitlessloop/postcss-proportional-spacing\">Proportional Spacing</a></li><li><a href=\"https://github.com/limitlessloop/postcss-negative-padding\">Negative Padding</a></li><li><a href=\"https://github.com/limitlessloop/postcss-border-align\">Border Align</a></li><li><a href=\"https://github.com/limitlessloop/postcss-custom-values\">Custom Values</a></li><li><a href=\"https://github.com/limitlessloop/postcss-sqrt\">Sqrt and Pow Functions</a></li><li><a href=\"https://github.com/limitlessloop/flex-gap-polyfill\">Flex Gap Polyfill</a></li></ul></div><div span=\"2\"><h6>Figma Resources</h6><ul><li><a href=\"https://www.figma.com/community/plugin/908303483495091267/Layer-Styles\">Layer Styles</a></li><li><a href=\"https://www.figma.com/community/plugin/885838970710285271/Table-Creator\">Table Creator</a></li><li><a href=\"https://www.figma.com/community/file/776921648331857127\">Device Frames</a></li><li><a href=\"https://www.figma.com/community/file/776913337659021541\">Icon Template</a></li><li><a href=\"https://www.figma.com/community/file/817057027097651580\">Syntax Designer</a></li></ul></div></div></div>");
           }
         }
     }, out, __component, "0");

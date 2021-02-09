@@ -1,10 +1,10 @@
-import express from "express";
+import express from 'express';
 import slash from 'express-slash';
 import api from './api';
 // Enable gzip compression for all HTTP responses
-import compression from "compression";
+import compression from 'compression';
 // Allow all of the generated files to be served up by Express
-import serveStatic from "serve-static";
+import serveStatic from 'serve-static';
 
 // const sanity = require("./sanity");
 
@@ -23,15 +23,15 @@ import serveStatic from "serve-static";
 //   })
 // })
 
-import Error404 from "./templates/404.marko";
-import Post from "./templates/post.marko";
-import Project from "./templates/project.marko";
-import About from "./templates/about.marko";
-import Projects from "./templates/projects.marko";
-import Posts from "./templates/posts.marko";
-import Cv from "./templates/cv.marko";
-import Playground from "./templates/playground.marko";
-import Home from "./templates/index.marko";
+import Error404 from './templates/404.marko';
+import Post from './templates/post.marko';
+import Project from './templates/project.marko';
+import About from './templates/about.marko';
+import Projects from './templates/projects.marko';
+import Posts from './templates/posts.marko';
+import Cv from './templates/cv.marko';
+import Playground from './templates/playground.marko';
+import Home from './templates/index.marko';
 
 const app = express();
 const port = process.env.PORT || 8080;
@@ -39,11 +39,10 @@ const port = process.env.PORT || 8080;
 app.enable('strict routing');
 app.use(compression());
 app.use(slash());
-app.use("/static", serveStatic("dist/client"));
+app.use('/static', serveStatic('dist/client'));
 
-api.then(content => {
-
-	app.get("/", (req, res) => {
+api.then((content) => {
+	app.get('/', (req, res) => {
 		Home.render({ projects: content.projects, ...content.home, work: content.projects, posts: content.posts }, res);
 	});
 
@@ -62,27 +61,26 @@ api.then(content => {
 	// 	Projects.render({}, res);
 	// });
 
-	app.get("/thoughts", (req, res) => {
-		res.setHeader("Content-Type", "text/html; charset=utf-8");
+	app.get('/thoughts', (req, res) => {
+		res.setHeader('Content-Type', 'text/html; charset=utf-8');
 		Posts.render({ posts: content.posts }, res);
 	});
 
-	app.get("/about", (req, res) => {
-		res.setHeader("Content-Type", "text/html; charset=utf-8");
+	app.get('/about', (req, res) => {
+		res.setHeader('Content-Type', 'text/html; charset=utf-8');
 		About.render({}, res);
 	});
 
-	app.get("/thoughts/:post", (req, res) => {
-		res.setHeader("Content-Type", "text/html; charset=utf-8");
+	app.get('/thoughts/:post', (req, res) => {
+		res.setHeader('Content-Type', 'text/html; charset=utf-8');
 
 		let err = true;
 
 		for (let post of content.posts) {
-
 			// If page exists then render page
 			if (req.params.post === post.slug.current) {
 				Post.render(post, res);
-				err = false
+				err = false;
 			}
 		}
 
@@ -90,11 +88,10 @@ api.then(content => {
 		if (err) {
 			Error404.render({}, res.status(404));
 		}
-
 	});
 
-	app.get("/work/:post", (req, res) => {
-		res.setHeader("Content-Type", "text/html; charset=utf-8");
+	app.get('/work/:post', (req, res) => {
+		res.setHeader('Content-Type', 'text/html; charset=utf-8');
 
 		let err = true;
 
@@ -102,7 +99,7 @@ api.then(content => {
 			// If page exists then render page
 			if (req.params.post === post.slug.current) {
 				Project.render(post, res);
-				err = false
+				err = false;
 			}
 		}
 
@@ -110,22 +107,21 @@ api.then(content => {
 		if (err) {
 			Error404.render({}, res.status(404));
 		}
-
 	});
 
 	// Render 404 for any unkown routes
-	app.use(function (req, res) {
+	app.use(function(req, res) {
 		Error404.render({}, res.status(404));
 	});
 
 	// Start the server
-	app.listen(port, err => {
+	app.listen(port, (err) => {
 		if (err) {
 			throw err;
 		}
 
-		if (port !== "0") {
+		if (port !== '0') {
 			console.log(`Listening on port ${port}`);
 		}
 	});
-})
+});
