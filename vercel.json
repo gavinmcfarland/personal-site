@@ -5,10 +5,10 @@
 	},
 	"builds": [{
 		"src": "public/client/**",
-		"use": "@now/static"
+		"use": "@vercel/static"
 	}, {
 		"src": "public/server/main.js",
-		"use": "@now/node"
+		"use": "@vercel/node"
 	}],
 	"alias": ["www.gavinmcfarland.co.uk"],
 	"routes": [{

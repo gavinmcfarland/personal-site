@@ -1,10 +1,13 @@
+import markdown from '../scripts/markdown'
+
 <Layout>
 	<@title>404</@title>
 	<@body>
 		<div>
-			<Markdown>
+			$!{markdown(`# 404 Page not found`)}
+			<!-- <Markdown>
 				# 404 Page not found
-			</Markdown>
+			</Markdown> -->
 		</div>
 	</@body>
 </Layout>

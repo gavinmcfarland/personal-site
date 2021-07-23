@@ -44,10 +44,12 @@ module.exports = [
 			new CSSExtractPlugin({
 				filename: "[name].[contenthash:8].css"
 			}),
-			new CopyWebpackPlugin([{
-				from: path.join(__dirname, "content/assets"), //Will resolve to RepoDir/src/assets
-				to: "../client" //Copies all files from above dest to public/assets
-			}, ]),
+			new CopyWebpackPlugin({
+				patterns: [{
+					from: path.join(__dirname, "content/assets"), //Will resolve to RepoDir/src/assets
+					to: "../client" //Copies all files from above dest to public/assets
+				}, ]
+			}),
 			isProd && new OptimizeCssAssetsPlugin(),
 			markoPlugin.browser
 		]
@@ -75,10 +77,12 @@ module.exports = [
 			new CSSExtractPlugin({
 				filename: "[name].[contenthash:8].css"
 			}),
-			new CopyWebpackPlugin([{
-				from: path.join(__dirname, "content/assets"), //Will resolve to RepoDir/src/assets
-				to: "../client" //Copies all files from above dest to public/assets
-			}, ]),
+			new CopyWebpackPlugin({
+				patterns: [{
+					from: path.join(__dirname, "content/assets"), //Will resolve to RepoDir/src/assets
+					to: "../client" //Copies all files from above dest to public/assets
+				},]
+			}),
 			isDev && spawnedServer,
 			markoPlugin.server
 		]
