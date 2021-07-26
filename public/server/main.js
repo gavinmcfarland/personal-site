@@ -382,7 +382,7 @@ _marko_template._ = renderer_default()(function (input, out, _componentDef, _com
 
     out.w(" | Gavin McFarland");
   } else {
-    out.w("Gavin McFarland");
+    out.w("Gavin McFarland - Product Designer and Engineer");
   }
 
   out.w("</title>");
@@ -451,7 +451,7 @@ _404_marko_marko_template._ = renderer_default()(function (input, out, _componen
   getAssets(entry) {
     return this.build[entry];
   },
-  build: {"404_SorP":{"js":["404_SorP.93871430.js"]},"about_j7b7":{"js":["about_j7b7.2f55e8ee.js"]},"cv_NVa3":{"js":["cv_NVa3.657a6363.js"]},"playground_XpWT":{"js":["playground_XpWT.51b052ee.js"]},"post_Zj91":{"js":["post_Zj91.fa73695f.js"]},"posts_rK6z":{"js":["posts_rK6z.eaafd5d1.js"]},"project_Fc9u":{"js":["project_Fc9u.8ed4b45d.js"]},"projects_FXQR":{"js":["projects_FXQR.93fcba84.js"]},"templates_-xIm":{"js":["templates_-xIm.667001c1.js"]}}
+  build: {"404_SorP":{"css":["539.672686c3.css"],"js":["404_SorP.d824eec0.js"]},"about_j7b7":{"css":["539.672686c3.css"],"js":["about_j7b7.9ff75005.js"]},"cv_NVa3":{"css":["539.672686c3.css","cv_NVa3.b2ee4b3d.css"],"js":["cv_NVa3.63c9d81a.js"]},"playground_XpWT":{"css":["539.672686c3.css"],"js":["playground_XpWT.57e8f7cc.js"]},"post_Zj91":{"css":["539.672686c3.css","post_Zj91.43018e42.css"],"js":["post_Zj91.b3ef2fc6.js"]},"posts_rK6z":{"css":["539.672686c3.css"],"js":["posts_rK6z.c014c60f.js"]},"project_Fc9u":{"css":["539.672686c3.css"],"js":["project_Fc9u.0f871272.js"]},"projects_FXQR":{"css":["539.672686c3.css","projects_FXQR.0e0058af.css"],"js":["projects_FXQR.1f54cd66.js"]},"templates_-xIm":{"css":["539.672686c3.css"],"js":["templates_-xIm.75cc751e.js"]}}
 });
 ;// CONCATENATED MODULE: external "marko/dist/core-tags/core/__flush_here_and_after__.js"
 const _flush_here_and_after_js_namespaceObject = require("marko/dist/core-tags/core/__flush_here_and_after__.js");
