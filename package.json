@@ -25,7 +25,7 @@
         "markdown-it-highlightjs": "^3.0.0",
         "markdown-it-implicit-figures": "^0.9.0",
         "markdown-it-prism": "^2.0.5",
-        "marked": "^0.7.0",
+        "marked": "^4.0.10",
         "marko": "^4.19.1",
         "postcss-comment": "^2.0.0",
         "postcss-gutters": "git+https://github.com/limitlessloop/postcss-gutters.git",
