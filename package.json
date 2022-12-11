@@ -16,7 +16,7 @@
         "@sanity/image-url": "^0.140.17",
         "chokidar": "^3.3.1",
         "compression": "^1.7.4",
-        "express": "^4.17.1",
+        "express": "^4.17.3",
         "express-slash": "^2.0.1",
         "json-server": "^0.15.1",
         "karamel": "git+https://github.com/limitlessloop/karamel.git",
